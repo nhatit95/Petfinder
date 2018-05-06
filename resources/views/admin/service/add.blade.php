@@ -1,13 +1,13 @@
 @extends('templates.admin.master')
 @section('title')
-Create a new Event
+Create a new Service
 @endsection
 @section('content')
 	<div class="row">
         <div class="col-lg-12 col-md-12">
             <div class="content-wrapper">
                 <div class="box-header">
-                  <h3 class="box-title">Create a new Event</h3>                     
+                  <h3 class="box-title">Create a new Service</h3>                     
 
                 </div>
                 <div class="content">
@@ -20,12 +20,12 @@ Create a new Event
                             </ul>
                         </div>
                     @endif
-                    <form role="form" action="{{ route('admin.event.add') }}" method="post" enctype="multipart/form-data">
+                    <form role="form" action="{{ route('admin.service.add') }}" method="post" enctype="multipart/form-data">
                         {{csrf_field()}}
                         <div class="box-body">
                             <div class="form-group">
-                              <label for="">Event name</label>
-                              <input type="text" class="form-control" required="true" name="event_name" id="event_name" placeholder="Enter the name of event">
+                              <label for="">Service name</label>
+                              <input type="text" class="form-control" required="true" name="service_name" id="service_name" placeholder="Enter the name of post">
                             </div>
 
                             <div class="form-group">
@@ -38,20 +38,13 @@ Create a new Event
                             </div>
 
                             <div class="form-group">
-                              <label for="">User name</label>
+                              <label for="">User</label>
                               <input type="text" class="form-control" disabled="true" required="true" name="username" id="username" placeholder="{{Auth::user()->username}}">
                             </div>
 
                             <div class="form-group">
-                              <label>Time will be held</label>
-
-                              <div class="input-group">
-                                <div class="input-group-addon">
-                                  <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="date" id="time" name="time" class="form-control" placeholder ="'dd/mm/yyyy'" data-mask>
-                              </div>
-                              <!-- /.input group -->
+                              <label for="">Description</label>
+                              <input type="text" class="form-control" required="true" name="description" id="description" placeholder="Enter the age of post">
                             </div>
 
                             <div class="form-group">
@@ -60,13 +53,8 @@ Create a new Event
                             </div>
 
                             <div class="form-group">
-                              <label for="">Location</label>
-                              <input type="text" class="form-control" required="true" name="location" id="location" placeholder="Enter the location of event">
-                            </div>
-
-                            <div class="form-group">
-                              <label for="">Price</label>
-                              <input type="text" class="form-control" required="true" name="price" id="price" placeholder="Enter the price of event">
+                              <label for="">Service's price</label>
+                              <input type="text" class="form-control" required="true" name="price" id="price" placeholder="Enter the name of post">
                             </div>
 
                             <div class="form-group">

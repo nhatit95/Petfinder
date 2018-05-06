@@ -1,6 +1,6 @@
 @extends('templates.admin.master')
 @section('title')
-Manage Events
+Manage Services
 @endsection
 @section('content')
 
@@ -8,13 +8,13 @@ Manage Events
 <div class="content-wrapper">
     <div class="box">
         <div class="box-header">
-          <h3 class="box-title">List of Events</h3>
+          <h3 class="box-title">List of Services</h3>
           <hr>
               @if(Session::has('msg'))
                   <p class="alert alert-success">{{ Session::get('msg') }}</p>
               @endif
               <p style="text-align: center;">
-                <a href="{{route('admin.event.add')}}" class="addtop"><img src="assets/img/add.png" alt="" /> 
+                <a href="{{route('admin.service.add')}}" class="addtop"><img src="assets/img/add.png" alt="" /> 
                   <button type="button" class="btn bg-green margin">Creat a new item</button>
                 </a>
               </p>
@@ -25,15 +25,13 @@ Manage Events
       <table id="example1" class="table table-bordered table-striped">
         <thead>
         <tr>
-          <th>Event ID</th>
-          <th>Event name</th>
+          <th>Service ID</th>
+          <th>Service Name</th>
           <th>Category</th>
-          <th>Host</th>
-          <th>Time</th>
+          <th>Author</th>
+          <th>description</th>
           <th>Avatar</th>
-          <th>Location</th>
           <th>Price</th>
-          <!-- <th>Content</th> -->
           <th>Status</th>
           <th>Edit</th>
           <th>Delete</th>
@@ -42,24 +40,22 @@ Manage Events
         <tbody>
           @foreach($oItems as $Item)
             @php
-              $event_id   = $Item->event_id;
-              $event_name = $Item->event_name;
-              $cat_id     = $Item->cat_id;
-              $user_id    = $Item->user_id;
-              $time       = $Item->time;
-              $avatar     = $Item->avatar;
-              $location   = $Item->location;
-              $price      = $Item->price;
-              $content    = $Item->content;
-              $status     = $Item->status;
-              $picUrl     = asset('/storage/app/files/'.$avatar);
-              $nopicUrl   = asset('/storage/app/files/nopic.jpg');
-              $urlEdit    = route('admin.event.edit', [$event_id]);
-              $urlDel     = route('admin.event.del', [$event_id]);
+              $service_id   = $Item->service_id;
+              $service_name = $Item->service_name;
+              $cat_id       = $Item->cat_id;
+              $user_id      = $Item->user_id;
+              $description  = $Item->description;
+              $avatar       = $Item->avatar;
+              $price        = $Item->price;        
+              $status       = $Item->status;
+              $picUrl       = asset('/storage/app/files/'.$avatar);
+              $nopicUrl     = asset('/storage/app/files/nopic.jpg');
+              $urlEdit      = route('admin.service.edit', [$service_id]);
+              $urlDel       = route('admin.service.del', [$service_id]);
             @endphp
           <tr>
-            <td>{{$event_id}}</td>
-            <td>{{$event_name}}</td>
+            <td>{{$service_id}}</td>
+            <td>{{$service_name}}</td>
             @foreach($arCats as $arCat)
               @if($cat_id  == $arCat->cat_id)
                   <td >{{$arCat->cat_name}}</td>
@@ -71,7 +67,7 @@ Manage Events
               @endif
             @endforeach
 
-            <td>{{$time}}</td>
+            <td>{{$description}}</td>
             <td>
                 @if($avatar == '')
                     <img src="{{$nopicUrl}}" alt="" height="80px" width="80px" />
@@ -79,12 +75,10 @@ Manage Events
                     <img src="{{$picUrl}}" alt="" height="80px" width="80px" />
                 @endif
             </td>
-            <td>{{$location}}</td>
             <td>{{$price}}</td>
-            <!-- <td>{{$content}}</td> -->
             <td>{{$status}}</td>
 
-            <td>
+            <td >
               <a href="{{$urlEdit}}"> <button type="button" class="btn bg-green margin">Edit</button> </a>              
             </td>
             <td>

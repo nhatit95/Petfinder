@@ -77,7 +77,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Event's list</a></li>
+            <li><a href="{{route('admin.event.index')}}"><i class="fa fa-circle-o"></i> Event's list</a></li>
             <li><a href="{{route('admin.event_cat.index')}}" ><i class="fa fa-circle-o"></i> Categories's list</a></li>
           </ul>
         </li>
@@ -91,8 +91,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{route('admin.user.index')}}" ><i class="fa fa-circle-o"></i> Categories's list</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Pet's list</a></li>
+            <li><a href="{{route('admin.pet.index')}}"><i class="fa fa-circle-o"></i> Pet's list</a></li>
+            <li><a href="{{route('admin.pet_cat.index')}}" ><i class="fa fa-circle-o"></i> Categories's list</a></li>
           </ul>
         </li>
 
@@ -105,8 +105,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{route('admin.user.index')}}" ><i class="fa fa-circle-o"></i> Categories's list</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Post's list</a></li>
+            <li><a href="{{route('admin.post.index')}}"><i class="fa fa-circle-o"></i> Post's list</a></li>
+            <li><a href="{{route('admin.post_cat.index')}}" ><i class="fa fa-circle-o"></i> Categories's list</a></li>
           </ul>
         </li>
 
@@ -119,8 +119,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{route('admin.user.index')}}" ><i class="fa fa-circle-o"></i>Categories's list</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Service's list</a></li>
+            <li><a href="{{route('admin.service.index')}}"><i class="fa fa-circle-o"></i> Service's list</a></li>
+            <li><a href="{{route('admin.service_cat.index')}}" ><i class="fa fa-circle-o"></i>Categories's list</a></li>
           </ul>
         </li>
         

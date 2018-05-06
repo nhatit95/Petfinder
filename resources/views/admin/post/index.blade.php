@@ -1,6 +1,6 @@
 @extends('templates.admin.master')
 @section('title')
-Manage Events
+Manage Posts
 @endsection
 @section('content')
 
@@ -8,13 +8,13 @@ Manage Events
 <div class="content-wrapper">
     <div class="box">
         <div class="box-header">
-          <h3 class="box-title">List of Events</h3>
+          <h3 class="box-title">List of Posts</h3>
           <hr>
               @if(Session::has('msg'))
                   <p class="alert alert-success">{{ Session::get('msg') }}</p>
               @endif
               <p style="text-align: center;">
-                <a href="{{route('admin.event.add')}}" class="addtop"><img src="assets/img/add.png" alt="" /> 
+                <a href="{{route('admin.post.add')}}" class="addtop"><img src="assets/img/add.png" alt="" /> 
                   <button type="button" class="btn bg-green margin">Creat a new item</button>
                 </a>
               </p>
@@ -25,15 +25,14 @@ Manage Events
       <table id="example1" class="table table-bordered table-striped">
         <thead>
         <tr>
-          <th>Event ID</th>
-          <th>Event name</th>
+          <th>Post ID</th>
+          <th>Post Name</th>
           <th>Category</th>
-          <th>Host</th>
-          <th>Time</th>
+          <th>Author</th>
+          <th>Discription</th>
           <th>Avatar</th>
-          <th>Location</th>
-          <th>Price</th>
-          <!-- <th>Content</th> -->
+          <th>Create at</th>
+          <th>Update at</th>
           <th>Status</th>
           <th>Edit</th>
           <th>Delete</th>
@@ -42,24 +41,23 @@ Manage Events
         <tbody>
           @foreach($oItems as $Item)
             @php
-              $event_id   = $Item->event_id;
-              $event_name = $Item->event_name;
-              $cat_id     = $Item->cat_id;
-              $user_id    = $Item->user_id;
-              $time       = $Item->time;
-              $avatar     = $Item->avatar;
-              $location   = $Item->location;
-              $price      = $Item->price;
-              $content    = $Item->content;
-              $status     = $Item->status;
-              $picUrl     = asset('/storage/app/files/'.$avatar);
-              $nopicUrl   = asset('/storage/app/files/nopic.jpg');
-              $urlEdit    = route('admin.event.edit', [$event_id]);
-              $urlDel     = route('admin.event.del', [$event_id]);
+              $post_id     = $Item->post_id;
+              $post_name   = $Item->post_name;
+              $cat_id      = $Item->cat_id;
+              $user_id     = $Item->user_id;
+              $discription = $Item->discription;
+              $avatar      = $Item->avatar;
+              $create_at   = $Item->create_at;
+              $update_at   = $Item->update_at;              
+              $status      = $Item->status;
+              $picUrl      = asset('/storage/app/files/'.$avatar);
+              $nopicUrl    = asset('/storage/app/files/nopic.jpg');
+              $urlEdit     = route('admin.post.edit', [$post_id]);
+              $urlDel      = route('admin.post.del', [$post_id]);
             @endphp
           <tr>
-            <td>{{$event_id}}</td>
-            <td>{{$event_name}}</td>
+            <td>{{$post_id}}</td>
+            <td>{{$post_name}}</td>
             @foreach($arCats as $arCat)
               @if($cat_id  == $arCat->cat_id)
                   <td >{{$arCat->cat_name}}</td>
@@ -71,7 +69,7 @@ Manage Events
               @endif
             @endforeach
 
-            <td>{{$time}}</td>
+            <td>{{$discription}}</td>
             <td>
                 @if($avatar == '')
                     <img src="{{$nopicUrl}}" alt="" height="80px" width="80px" />
@@ -79,12 +77,11 @@ Manage Events
                     <img src="{{$picUrl}}" alt="" height="80px" width="80px" />
                 @endif
             </td>
-            <td>{{$location}}</td>
-            <td>{{$price}}</td>
-            <!-- <td>{{$content}}</td> -->
+            <td>{{$create_at}}</td>
+            <td>{{$update_at}}</td>
             <td>{{$status}}</td>
 
-            <td>
+            <td >
               <a href="{{$urlEdit}}"> <button type="button" class="btn bg-green margin">Edit</button> </a>              
             </td>
             <td>

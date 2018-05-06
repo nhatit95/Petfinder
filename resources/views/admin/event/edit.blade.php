@@ -1,6 +1,6 @@
 @extends('templates.admin.master')
 @section('title')
-Update information
+Update information about event
 @endsection
 @section('content')
 	<div class="row">
@@ -20,89 +20,40 @@ Update information
                             </ul>
                         </div>
                     @endif
-                    <form role="form" action="{{ route('admin.user.edit', ['id' => $oItem->id]) }}" method="post" enctype="multipart/form-data">
+
+                    <form role="form" action="{{ route('admin.event.edit', ['id' => $oItem->event_id]) }}" method="post" enctype="multipart/form-data">
                         {{csrf_field()}}
                         <div class="box-body">
                             <div class="form-group">
-                              <label for="">Username</label>
-                              <input type="text" class="form-control" required="true" name="username" id="username" value="{{$oItem->username}}">
+                              <label for="">Event name</label>
+                              <input type="text" class="form-control" required="true" name="event_name" id="event_name" value="{{$oItem->event_name}}">
                             </div>
 
                             <div class="form-group">
-                              <label for="">Full of name</label>
-                              <input type="text" class="form-control" required="true" name="fullname" id="fullname" value="{{$oItem->fullname}}">
-                            </div>
-
-                            <div class="form-group">
-                              <label for="" style="color: red">New Password</label>
-                              <input type="password" class="form-control"  name="new_password" id="new_password" placeholder="Enter password">
-                            </div>
-
-
-                            <!-- <div class="form-group">
-                              <label for="">Role</label>
-                              <input type="text" class="form-control" id="role" placeholder="Enter role">
-                            </div> -->
-
-                            <div class="form-group">
-                                <label>Role</label>
-                                <select class="form-control select2" name="role" id="role" required="true" style="width: 100%;">
-                                  @foreach($arRoles as $arRole)
-                                    @if($oItem->role_id == $arRole->role_id)
-                                        <option selected="selected" value="{{$arRole->role_id}}">{{$arRole->role_name}}</option>
+                                <label>Category</label>
+                                <select class="form-control select2" name="cat_id" id="cat_id" required="true" style="width: 100%;">
+                                  @foreach($arCats as $arCat)
+                                    @if($oItem->cat_id == $arCat->cat_id)
+                                        <option selected="selected" value="{{$arCat->cat_id}}">{{$arCat->cat_name}}</option>
                                     @else
-                                        <option value="{{$arRole->role_id}}">{{$arRole->role_name}}</option>
+                                        <option value="{{$arCat->cat_id}}">{{$arCat->cat_name}}</option>
                                     @endif
                                   @endforeach
                                 </select>
                             </div>
 
                             <div class="form-group">
-                              <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" class="form-control" required="true" name="email" id="email" value="{{$oItem->email}}"/>
-                            </div>
+                              <label>Time will be held</label>
 
-                            <div class="form-group">
-                                <label>Phone number:</label>
-
-                                <input type="tel" required="true" pattern="^[0-9-+s()]*$" name="phone_number" id="phone_number" class="form-control" value="{{$oItem->phone_number}}">
-                                <!-- /.input group -->
-                            </div>
-
-                            <div class="form-group">
-                                <label>Gender</label>
-                                <select class="form-control select2" name="gender" id="gender" required="true" style="width: 100%;">
-                                  <option selected="selected">Man</option>
-                                  <option>Woman</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Date masks:</label>
-
-                                <div class="input-group">
-                                  <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                  </div>
-                                  <input type="date" id="birthday" name="birthday" class="form-control" value="{{$oItem->birthday}}" data-mask>
+                              <div class="input-group">
+                                <div class="input-group-addon">
+                                  <i class="fa fa-calendar"></i>
                                 </div>
-                                <!-- /.input group -->
+                                <input type="date" id="time" name="time" class="form-control" value="{{$oItem->time}}" data-mask>
                               </div>
-                            
-                            <div class="form-group">
-                                <label>Status</label>
-                                <select class="form-control select2" name="status" id="status" required="true" style="width: 100%;">
-                                  @if($oItem->status == 'Actived')
-                                    <option selected="true">Actived</option>
-                                    <option >Blocked</option>
-                                  @else
-                                    <option >Actived</option>
-                                    <option selected="true">Blocked</option>
-                                  @endif
-
-                                </select>
+                              <!-- /.input group -->
                             </div>
-                            
+
                             <div class="form-group">
                                 <label>Choose a new picture</label>
                                 <input type="file" name="newPicture" placeholder="Choose your picture" value="Choose your picture" />
@@ -112,15 +63,52 @@ Update information
                                 <img src="{{ asset('storage/app/files/'.$oItem->avatar) }}" name="oldPicture" width="30%" height="30%">
                             </div>
 
+                            <div class="form-group">
+                              <label for="">Location</label>
+                              <input type="text" class="form-control" required="true" name="location" id="location" value="{{$oItem->location}}">
                             </div>
+
+                            <div class="form-group">
+                              <label for="">Price</label>
+                              <input type="text" class="form-control" required="true" name="price" id="price" value="{{$oItem->location}}">
+                            </div>
+
+                            <div class="form-group">
+                              <label for="">Status</label>
+                              <input type="text" class="form-control" required="true" name="status" id="status" value="{{$oItem->status}}">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Contents</label>
+                                <textarea class="ckeditor" id="content" required="true" rows="5" name="content" >{{$oItem->content}}</textarea>
+                                <script>
+                                     CKEDITOR.replace( 'content',
+                                      {
+                                        filebrowserBrowseUrl : '{{ $ADMIN_URL }}ckfinder/ckfinder.html',
+                                        filebrowserImageBrowseUrl : '{{ $ADMIN_URL }}ckfinder/ckfinder.html?type=Images',
+                                        filebrowserFlashBrowseUrl : '{{ $ADMIN_URL }}ckfinder/ckfinder.html?type=Flash',
+                                        filebrowserUploadUrl : '{{ $ADMIN_URL }}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                                        filebrowserImageUploadUrl : '{{ $ADMIN_URL }}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+                                        filebrowserFlashUploadUrl : '{{ $ADMIN_URL }}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+                                      });
+                                  </script>
+                            </div>
+
+                          </div>
                           <!-- /.box-body -->
 
                           <div class="box-footer">
                             <button type="submit" class="btn btn-primary">Submit</button>
                           </div>
 
+                          <div class="form-group" style="visibility: hidden;">
+                              <input type="text" class="form-control" name="user_id" value="{{Auth::user()->id}}" >
+                            </div>
+
                         <div class="clearfix"></div>
                     </form>
+
+                    
                 </div>
             </div>
         </div>

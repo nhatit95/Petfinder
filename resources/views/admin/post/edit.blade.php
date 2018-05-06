@@ -1,13 +1,13 @@
 @extends('templates.admin.master')
 @section('title')
-Create a new Event
+Update information about post
 @endsection
 @section('content')
 	<div class="row">
         <div class="col-lg-12 col-md-12">
             <div class="content-wrapper">
                 <div class="box-header">
-                  <h3 class="box-title">Create a new Event</h3>                     
+                  <h3 class="box-title">Update infomation</h3>                     
 
                 </div>
                 <div class="content">
@@ -20,63 +20,56 @@ Create a new Event
                             </ul>
                         </div>
                     @endif
-                    <form role="form" action="{{ route('admin.event.add') }}" method="post" enctype="multipart/form-data">
+
+                    <form role="form" action="{{ route('admin.post.edit', ['id' => $oItem->post_id]) }}" method="post" enctype="multipart/form-data">
                         {{csrf_field()}}
                         <div class="box-body">
+
                             <div class="form-group">
-                              <label for="">Event name</label>
-                              <input type="text" class="form-control" required="true" name="event_name" id="event_name" placeholder="Enter the name of event">
+                              <label for="">Pet name</label>
+                              <input type="text" class="form-control" required="true" name="post_name" id="post_name" value="{{$oItem->post_name}}">
                             </div>
 
                             <div class="form-group">
                                 <label>Category</label>
                                 <select class="form-control select2" name="cat_id" id="cat_id" required="true" style="width: 100%;">
                                   @foreach($arCats as $arCat)
-                                    <option selected="false" value="{{$arCat->cat_id}}">{{$arCat->cat_name}}</option>
+                                    @if($oItem->cat_id == $arCat->cat_id)
+                                        <option selected="selected" value="{{$arCat->cat_id}}">{{$arCat->cat_name}}</option>
+                                    @else
+                                        <option value="{{$arCat->cat_id}}">{{$arCat->cat_name}}</option>
+                                    @endif
                                   @endforeach
                                 </select>
                             </div>
 
                             <div class="form-group">
-                              <label for="">User name</label>
+                              <label for="">Author</label>
                               <input type="text" class="form-control" disabled="true" required="true" name="username" id="username" placeholder="{{Auth::user()->username}}">
                             </div>
 
                             <div class="form-group">
-                              <label>Time will be held</label>
-
-                              <div class="input-group">
-                                <div class="input-group-addon">
-                                  <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="date" id="time" name="time" class="form-control" placeholder ="'dd/mm/yyyy'" data-mask>
-                              </div>
-                              <!-- /.input group -->
+                              <label for="">Discription</label>
+                              <input type="text" class="form-control" required="true" name="discription" id="discription" value="{{$oItem->discription}}">
                             </div>
 
                             <div class="form-group">
-                                <label>Avatar</label>
-                                <input type="file" name="hinhanh" required="true" />
+                                <label>Choose a new picture</label>
+                                <input type="file" name="newPicture" placeholder="Choose your picture" value="Choose your picture" />
                             </div>
-
                             <div class="form-group">
-                              <label for="">Location</label>
-                              <input type="text" class="form-control" required="true" name="location" id="location" placeholder="Enter the location of event">
-                            </div>
-
-                            <div class="form-group">
-                              <label for="">Price</label>
-                              <input type="text" class="form-control" required="true" name="price" id="price" placeholder="Enter the price of event">
+                                <label>Your current picture</label> <br />
+                                <img src="{{ asset('storage/app/files/'.$oItem->avatar) }}" name="oldPicture" width="30%" height="30%">
                             </div>
 
                             <div class="form-group">
                               <label for="">Status</label>
-                              <input type="text" class="form-control" required="true" name="status" id="status" placeholder="Enter the status">
+                              <input type="text" class="form-control" required="true" name="status" id="status" value="{{$oItem->status}}">
                             </div>
 
                             <div class="form-group">
                                 <label>Contents</label>
-                                <textarea class="ckeditor" id="content" required="true" rows="5" name="content" placeholder="Enter your email content"></textarea>
+                                <textarea class="ckeditor" id="content" required="true" rows="5" name="content">{{$oItem->content}}</textarea>
                                 <script>
                                      CKEDITOR.replace( 'content',
                                       {
@@ -103,6 +96,7 @@ Create a new Event
 
                         <div class="clearfix"></div>
                     </form>
+                   
                 </div>
             </div>
         </div>

@@ -85,6 +85,237 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 
 	});
 
+	Route::group(['prefix' => 'event'], function(){
+		Route::get('',[
+			'uses' => 'EventController@index',
+			'as'   => 'admin.event.index'
+		]);
+
+		Route::get('add',[
+			'uses' => 'EventController@getAdd',
+			'as'   => 'admin.event.add'
+		]);
+
+		Route::post('add',[
+			'uses' => 'EventController@postAdd',
+			'as'   => 'admin.event.add'
+		]);
+
+		Route::get('edit/{id}',[
+			'uses' => 'EventController@getEdit',
+			'as'   => 'admin.event.edit'
+		]);
+
+		Route::post('edit/{id}',[
+			'uses' => 'EventController@postEdit',
+			'as'   => 'admin.event.edit'
+		]);
+
+		Route::get('del/{id}',[
+			'uses' => 'EventController@del',
+			'as'   => 'admin.event.del'
+		]);
+
+	});
+
+	Route::group(['prefix' => 'pet_cat'], function(){
+		Route::get('',[
+			'uses' => 'PetCatController@index',
+			'as'   => 'admin.pet_cat.index'
+		]);
+
+		Route::get('add',[
+			'uses' => 'PetCatController@getAdd',
+			'as'   => 'admin.pet_cat.add'
+		]);
+
+		Route::post('add',[
+			'uses' => 'PetCatController@postAdd',
+			'as'   => 'admin.pet_cat.add'
+		]);
+
+		Route::get('edit/{id}',[
+			'uses' => 'PetCatController@getEdit',
+			'as'   => 'admin.pet_cat.edit'
+		]);
+
+		Route::post('edit/{id}',[
+			'uses' => 'PetCatController@postEdit',
+			'as'   => 'admin.pet_cat.edit'
+		]);
+
+		Route::get('del/{id}',[
+			'uses' => 'PetCatController@del',
+			'as'   => 'admin.pet_cat.del'
+		]);
+
+	});
+
+	Route::group(['prefix' => 'pet'], function(){
+		Route::get('',[
+			'uses' => 'PetController@index',
+			'as'   => 'admin.pet.index'
+		]);
+
+		Route::get('add',[
+			'uses' => 'PetController@getAdd',
+			'as'   => 'admin.pet.add'
+		]);
+
+		Route::post('add',[
+			'uses' => 'PetController@postAdd',
+			'as'   => 'admin.pet.add'
+		]);
+
+		Route::get('edit/{id}',[
+			'uses' => 'PetController@getEdit',
+			'as'   => 'admin.pet.edit'
+		]);
+
+		Route::post('edit/{id}',[
+			'uses' => 'PetController@postEdit',
+			'as'   => 'admin.pet.edit'
+		]);
+
+		Route::get('del/{id}',[
+			'uses' => 'PetController@del',
+			'as'   => 'admin.pet.del'
+		]);
+
+	});
+
+	Route::group(['prefix' => 'post_cat'], function(){
+		Route::get('',[
+			'uses' => 'PostCatController@index',
+			'as'   => 'admin.post_cat.index'
+		]);
+
+		Route::get('add',[
+			'uses' => 'PostCatController@getAdd',
+			'as'   => 'admin.post_cat.add'
+		]);
+
+		Route::post('add',[
+			'uses' => 'PostCatController@postAdd',
+			'as'   => 'admin.post_cat.add'
+		]);
+
+		Route::get('edit/{id}',[
+			'uses' => 'PostCatController@getEdit',
+			'as'   => 'admin.post_cat.edit'
+		]);
+
+		Route::post('edit/{id}',[
+			'uses' => 'PostCatController@postEdit',
+			'as'   => 'admin.post_cat.edit'
+		]);
+
+		Route::get('del/{id}',[
+			'uses' => 'PostCatController@del',
+			'as'   => 'admin.post_cat.del'
+		]);
+
+	});
+
+		Route::group(['prefix' => 'service_cat'], function(){
+		Route::get('',[
+			'uses' => 'ServiceCatController@index',
+			'as'   => 'admin.service_cat.index'
+		]);
+
+		Route::get('add',[
+			'uses' => 'ServiceCatController@getAdd',
+			'as'   => 'admin.service_cat.add'
+		]);
+
+		Route::post('add',[
+			'uses' => 'ServiceCatController@postAdd',
+			'as'   => 'admin.service_cat.add'
+		]);
+
+		Route::get('edit/{id}',[
+			'uses' => 'ServiceCatController@getEdit',
+			'as'   => 'admin.service_cat.edit'
+		]);
+
+		Route::post('edit/{id}',[
+			'uses' => 'ServiceCatController@postEdit',
+			'as'   => 'admin.service_cat.edit'
+		]);
+
+		Route::get('del/{id}',[
+			'uses' => 'ServiceCatController@del',
+			'as'   => 'admin.service_cat.del'
+		]);
+
+	});
+
+	Route::group(['prefix' => 'service'], function(){
+		Route::get('',[
+			'uses' => 'ServiceController@index',
+			'as'   => 'admin.service.index'
+		]);
+
+		Route::get('add',[
+			'uses' => 'ServiceController@getAdd',
+			'as'   => 'admin.service.add'
+		]);
+
+		Route::post('add',[
+			'uses' => 'ServiceController@postAdd',
+			'as'   => 'admin.service.add'
+		]);
+
+		Route::get('edit/{id}',[
+			'uses' => 'ServiceController@getEdit',
+			'as'   => 'admin.service.edit'
+		]);
+
+		Route::post('edit/{id}',[
+			'uses' => 'ServiceController@postEdit',
+			'as'   => 'admin.service.edit'
+		]);
+
+		Route::get('del/{id}',[
+			'uses' => 'ServiceController@del',
+			'as'   => 'admin.service.del'
+		]);
+
+	});
+
+	Route::group(['prefix' => 'post'], function(){
+		Route::get('',[
+			'uses' => 'PostController@index',
+			'as'   => 'admin.post.index'
+		]);
+
+		Route::get('add',[
+			'uses' => 'PostController@getAdd',
+			'as'   => 'admin.post.add'
+		]);
+
+		Route::post('add',[
+			'uses' => 'PostController@postAdd',
+			'as'   => 'admin.post.add'
+		]);
+
+		Route::get('edit/{id}',[
+			'uses' => 'PostController@getEdit',
+			'as'   => 'admin.post.edit'
+		]);
+
+		Route::post('edit/{id}',[
+			'uses' => 'PostController@postEdit',
+			'as'   => 'admin.post.edit'
+		]);
+
+		Route::get('del/{id}',[
+			'uses' => 'PostController@del',
+			'as'   => 'admin.post.del'
+		]);
+
+	});
+
 	Route::group(['prefix' => 'message'], function(){
 		Route::get('',[
 			'uses' => 'MessageController@index',

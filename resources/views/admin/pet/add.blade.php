@@ -1,13 +1,13 @@
 @extends('templates.admin.master')
 @section('title')
-Create a new Event
+Create a new Pet
 @endsection
 @section('content')
 	<div class="row">
         <div class="col-lg-12 col-md-12">
             <div class="content-wrapper">
                 <div class="box-header">
-                  <h3 class="box-title">Create a new Event</h3>                     
+                  <h3 class="box-title">Create a new Pet</h3>                     
 
                 </div>
                 <div class="content">
@@ -20,12 +20,12 @@ Create a new Event
                             </ul>
                         </div>
                     @endif
-                    <form role="form" action="{{ route('admin.event.add') }}" method="post" enctype="multipart/form-data">
+                    <form role="form" action="{{ route('admin.pet.add') }}" method="post" enctype="multipart/form-data">
                         {{csrf_field()}}
                         <div class="box-body">
                             <div class="form-group">
-                              <label for="">Event name</label>
-                              <input type="text" class="form-control" required="true" name="event_name" id="event_name" placeholder="Enter the name of event">
+                              <label for="">Pet name</label>
+                              <input type="text" class="form-control" required="true" name="pet_name" id="pet_name" placeholder="Enter the name of pet">
                             </div>
 
                             <div class="form-group">
@@ -38,20 +38,13 @@ Create a new Event
                             </div>
 
                             <div class="form-group">
-                              <label for="">User name</label>
+                              <label for="">Owner</label>
                               <input type="text" class="form-control" disabled="true" required="true" name="username" id="username" placeholder="{{Auth::user()->username}}">
                             </div>
 
                             <div class="form-group">
-                              <label>Time will be held</label>
-
-                              <div class="input-group">
-                                <div class="input-group-addon">
-                                  <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="date" id="time" name="time" class="form-control" placeholder ="'dd/mm/yyyy'" data-mask>
-                              </div>
-                              <!-- /.input group -->
+                              <label for="">Age</label>
+                              <input type="number" class="form-control" required="true" name="age" id="age" placeholder="Enter the age of pet">
                             </div>
 
                             <div class="form-group">
@@ -60,13 +53,18 @@ Create a new Event
                             </div>
 
                             <div class="form-group">
-                              <label for="">Location</label>
-                              <input type="text" class="form-control" required="true" name="location" id="location" placeholder="Enter the location of event">
+                              <label for="">Gender</label>
+                              <input type="text" class="form-control" required="true" name="gender" id="gender" placeholder="Enter the gender of Pet">
                             </div>
 
                             <div class="form-group">
-                              <label for="">Price</label>
-                              <input type="text" class="form-control" required="true" name="price" id="price" placeholder="Enter the price of event">
+                              <label for="">City</label>
+                              <input type="text" class="form-control" required="true" name="city" id="city" placeholder="Enter the location of Pet">
+                            </div>
+
+                            <div class="form-group">
+                              <label for="">Address</label>
+                              <input type="text" class="form-control" required="true" name="address" id="address" placeholder="Enter the address of Pet">
                             </div>
 
                             <div class="form-group">
@@ -75,10 +73,10 @@ Create a new Event
                             </div>
 
                             <div class="form-group">
-                                <label>Contents</label>
-                                <textarea class="ckeditor" id="content" required="true" rows="5" name="content" placeholder="Enter your email content"></textarea>
+                                <label>Discription</label>
+                                <textarea class="ckeditor" id="discription" required="true" rows="5" name="discription" placeholder="Enter your email content"></textarea>
                                 <script>
-                                     CKEDITOR.replace( 'content',
+                                     CKEDITOR.replace( 'discription',
                                       {
                                         filebrowserBrowseUrl : '{{ $ADMIN_URL }}ckfinder/ckfinder.html',
                                         filebrowserImageBrowseUrl : '{{ $ADMIN_URL }}ckfinder/ckfinder.html?type=Images',
