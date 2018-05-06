@@ -1,0 +1,5076 @@
+/*--// ShortCode Setup //--*/
+.kd-tab {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 25px 0px;
+}
+.kd-horizontal-tab .nav-tabs {
+	margin: 0px;
+}
+.kd-horizontal-tab .nav-tabs > li > a {
+	background-color: #f9f9f9;
+}
+.kd-horizontal-tab .tab-content {
+	padding: 20px 0px 0px 0px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: #ffffff;
+}
+/* Vertical Tab */
+.kd-vertical-tab .nav-tabs {
+	float: left;
+	width: 30%;
+}
+.kd-vertical-tab .nav-tabs li {
+	width: 100%;
+}
+.kd-vertical-tab .tab-content {
+	float: left;
+	width: 70%;
+	border-left: 1px solid #eeeeee;
+	padding: 0px 0px 0px 20px;
+}
+.kd-vertical-tab .nav-tabs > li.active > a:hover {
+	border: none;
+}
+.kd-vertical-tab .nav-tabs {
+	border-bottom: 1px solid #eeeeee;
+}
+.kd-vertical-tab .nav-tabs > li.active > a, .kd-vertical-tab .nav-tabs > li.active > a:focus {
+	border: none;
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	background-color: #ffffff;
+}
+.kd-vertical-tab .nav-tabs > li {
+	margin: 0px;
+}
+.kd-vertical-tab .nav-tabs > li > a {
+	background-color: #f9f9f9;
+	margin: 0px;
+	border: none;
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-radius: 0px;
+}
+.kd-vertical-tab.tabs.kd-tab ul{
+	margin:0px;
+	padding:0px;
+}
+/* DropCap */
+.kd-dropcap p::first-letter {
+	font-size: 43px;
+	color: #777777;
+	float: left;
+	padding: 10px 15px 0px 0px;
+}
+/* Message Box */
+.close {
+	line-height: 26px;
+	font-size: 32px;
+}
+.genral-message {
+	background-color: #f9f9f9;
+	border: 2px solid #eeeeee;
+}
+.success-message {
+	background-color: #e4f5ba;
+	border: 2px solid #cbdaa5;
+}
+.warning-message {
+	background-color: #fdedbf;
+	border: 2px solid #e4c789;
+}
+.error-message {
+	background-color: #fcd4cb;
+	border: 2px solid #e1a197;
+}
+.information-message {
+	background-color: #e3eff7;
+	border: 2px solid #a6c4d8;
+}
+pre {
+	padding: 9.5px 25px;
+}
+/* Table ShortCode */
+.kd-table {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 30px 0px;
+}
+.kd-table tr td {
+	border: none;
+	border-bottom: 1px solid #eeeeee;
+}
+.kd-table tr th {
+	color: #ffffff;
+	padding: 4px 20px;
+	border: none;
+}
+.kd-table tbody {
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+}
+.kd-table tbody tr td {
+	padding: 10px 20px;
+}
+.kd-tableone thead {
+	background-color: #f34a53;
+}
+.kd-tabletwo thead {
+	background-color: #11b7ad;
+}
+/* Services */
+.kd-userservices article {
+	margin-bottom: 30px;
+}
+.kd-smallview i {
+	float: left;
+	width: 40px;
+	height: 40px;
+	color: #ffffff;
+	background-color: #11b7ad;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 18px;
+	padding: 10px 0px 0px 0px;
+	margin: 6px 0px 0px 0px;
+}
+.kd-smallview i ~ .services-info {
+	padding: 0px 0px 0px 50px;
+}
+/* Image Frame */
+.kd-imageframe {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.kd-imageframe a.frame-thumb {
+	display: inline-block;
+	box-shadow: 0px 0px 4px 1px #999;
+}
+.kd-imageframe h1 {
+	font-weight: 300;
+	margin: 0px 0px 15px 0px;
+}
+.kd-imageframe span {
+	font-size: 22px;
+	color: #999999;
+	margin: 0px 0px 20px 0px;
+	display: inline-block;
+	width: 100%;
+}
+.kd-imageframe p {
+	margin: 0px 0px 10px 0px;
+}
+.frame-btn {
+	float: left;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	border-radius: 4px;
+	font-size: 14px;
+	position: relative;
+	margin-top: 15px;
+}
+/* List Style */
+.unorder-list li {
+	list-style: inside none disc;
+}
+.kd-list {
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.kd-list li {
+	margin: 0px 0px 10px 0px;
+}
+.order-list li {
+	list-style: desimal inside;
+}
+.icon-list li {
+	list-style: none;
+}
+.icon-list li i {
+	margin-right: 6px;
+	color: #666;
+}
+.squareicon-list li {
+	list-style: none;
+	float: left;
+	width: 100%;
+}
+.squareicon-list li i {
+	float: left;
+	width: 25px;
+	height: 25px;
+	background-color: #333;
+	color: #ffffff;
+	margin-right: 15px;
+	border-radius: 100%;
+	text-align: center;
+	padding: 8px 0px 0px 0px;
+	font-size: 10px;
+}
+/* Accordion Setup */
+.kd-accordion {
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.kd-accordion .accordion {
+	display: inline-block;
+	width: 100%;
+	background-color: #ffffff;
+	border: 1px solid #eeeeee;
+	padding: 15px 20px;
+	color: #444444;
+	font-size: 16px;
+	font-weight:normal;
+	margin: 0px 0px 3px 0px;
+	position: relative;
+}
+.kd-accordion .accordion span {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 50px;
+	height: 100%;
+	color: #777777;
+	border-left: 1px solid #eeeeee;
+	font-size: 16px;
+	padding: 18px 0px 0px 0px;
+	text-align: center;
+}
+.kd-accordion .accordion.accordion-open span:before {
+	content: "\f068";
+	font-family:fontawesome;
+}
+.kd-accordion .accordion.accordion-close span:before{
+	content: "\f067";
+	font-family:fontawesome;
+}
+.accordion-content > p {padding: 20px;text-align: justify;}
+/* Button's */
+.kd-button, .kd-icon {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 20px 0px;
+}
+.custom-btn {
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #f34a53;
+	color: #ffffff;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	font-weight: bold;
+}
+.kd-small{
+	padding: 8px 15px;
+}
+.kd-medium {
+	padding: 13px 26px;
+}
+.kd-large {
+	padding: 17px 26px;
+}
+/* Icon's */
+.plain-icon {
+	font-size: 36px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.plain-icon a {
+	margin-right: 20px;
+}
+.plain-icon a {
+	color: #777777;
+}
+/* Modren Icon */
+.circle-icon a {
+	display: inline-block;
+	background-color: #f24952;
+	width: 65px;
+	height: 65px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 24px;
+	border-radius: 100%;
+	padding: 13px 0px;
+	margin-right: 12px;
+}
+.square-icon a {
+	display: inline-block;
+	background-color: #11b7ad;
+	width: 65px;
+	height: 65px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 28px;
+	border-radius: 5px;
+	padding: 13px 0px;
+	margin-right: 12px;
+}
+/* Divider */
+.kd-divider {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+.kd-divider span {
+	display: inline-block;
+	font-size:30px;
+	width: 100%;
+}
+/* Progress */
+.custom-skills {
+	float: left;
+	width: 100%;
+}
+/*.progress {
+	height: 25px;
+	border-radius: 0px;
+}*/
+.progressbar-back-text { display: none; }
+.progress-bar {
+	font-weight: bold;
+	font-size: 14px;
+	text-align: right;
+	line-height: 23px;
+	padding: 0px 10px;
+}
+.circle-progress {
+	float: left;
+	width: 25%;
+	list-style: none;
+	padding: 0px 20px 0px 0px;
+}
+.circle-progress:nth-child(4n) { padding-right: 0px; }
+.defoult-map {
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+}
+/*--// ShortCode Setup //--*/
+.alert{clear:both;}
+.alert i{
+}
+.check-list li{
+	list-style:none;
+	margin-bottom:10px;
+}
+.check-list li:before{
+	display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size:inherit;text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	transform:translate(0, 0);
+	font-family:'FontAwesome';
+}
+.demo-sep{clear:both;}
+.sep-single{height:1px;background-color:#e7e6e6;}
+.sep-double{height:6px;border-top:1px solid #e7e6e6;border-bottom:1px solid #e7e6e6;}
+.sep-dotted{border-bottom:2px dotted #e7e6e6;}
+.sep-dashed{border-bottom:2px dashed #e7e6e6;}
+.sep-shadow{background:transparent url(../img/sep-shadow.png) no-repeat top center;height:7px;width:100%;}
+.code {
+    background: none repeat scroll 0 0 ghostwhite;
+    padding: 20px;
+	clear:both;
+}
+.code p{
+	margin-bottom:0px;
+}
+.kode_shortcode-map{clear:both;}
+
+.one_third{
+	width:33.33%;
+	float:left;
+	padding:15px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.two_third{
+	width:66.66%;
+	float:left;
+	padding:15px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.one_half{
+	width:50%;
+	float:left;
+	padding:15px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.full-service-description.col-md-12 .one_half{
+	padding:0px 15px 0px 0px;
+}
+.one_fourth{
+	width:25%;
+	float:left;
+	padding:15px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.three_fourth{
+	width:75%;
+	float:left;
+	padding:15px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.fontawesome-icon {
+	padding: 19px 0px;
+	width: 65px;
+	height: 65px;
+	display: inline-block;
+	text-align: center;
+	font-size: 24px;
+	margin-right:12px;
+}
+.fontawesome-icon.circle-yes {
+	border-radius: 100%;
+}
+.fontawesome-icon.circle-no {
+	border-radius: 5px;
+}
+/* Divider */
+.kd-modrentitle .kd-divider{
+	margin:0px;
+}
+.kd-divider {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 15px 0px;
+}
+.kd-divider span {
+	display: inline-block;
+}
+.divider2 span {
+	border-bottom: 1px solid #eeeeee;
+}
+.divider3 span {
+	border-bottom: 1px dotted #eeeeee;
+}
+.divider4 span {
+	border: 5px double #eeeeee;
+}
+.divider5 span {
+	border: 1px dashed #eeeeee;
+}
+/*--// ShortCode Setup //--*/
+
+/*--// Our Skill Setup //--*/
+
+.our-skills {
+	float: left;
+	width: 100%;
+}
+.heading-style3.white h2, .heading-style3.white p {
+	color: #ffffff;
+}
+.skills-title {
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	margin: 0 0 47px;
+}
+.skills-title h2 {
+	font-size: 48px;
+	line-height: 48px;
+	text-transform: uppercase;
+	margin: 0 0 20px;
+	color: #fff;
+}
+.skills-title p {
+	margin: 0;
+}
+.our-skills ul li {
+	list-style: none;
+}
+.progress-holder {
+	float: left;
+	width: 100%;
+}
+.progress-holder span {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 600;
+	color: #fff;
+	margin: 0 0 10px;
+	display: block;
+}
+.progress-holder .progress {
+	float: left;
+	width: 100%;
+	padding: 0;
+	border-radius: 10px;
+	height: auto;
+	margin: 0 0 50px;
+	text-align: left;
+}
+.progress-holder .progress .progress-bar {
+	margin: 0;
+	height: 20px;
+	padding: 0 10px;
+	text-align: right;
+	font-weight: bold;
+}
+.progress .bg-color1 {
+	background-color: #03acdc !important;
+}
+.progress .bg-color2 {
+	background-color: #ffcc0e !important;
+}
+.progress .bg-color3 {
+	background-color: #18e2ba !important;
+}
+.progress .bg-color4 {
+	background-color: #f65353 !important;
+}
+.progress .bg-color5 {
+	background-color: #564bb5 !important;
+}
+.progress .bg-color6 {
+	background-color: #52c854 !important;
+}
+.dropcap p:first-letter,.dropcap2 p:first-letter,.dropcap{
+	font-size: 40px;
+	color: #777777;
+	margin: 0px 15px 3px 0px;
+	text-transform: uppercase;
+	float: left;
+	line-height: 1;
+}
+.dropcap2 p:first-letter{
+	width: 65px;
+	height: 65px;
+	background-color: #101010;
+	color: #999;
+	text-align: center;
+	padding-top: 11px;
+}
+/* Counter */
+
+/* Services */
+.kode-services,.kode-services figure img {
+	float: left;
+	width: 100%;
+}
+.kode-services article {
+	margin: 0px -4px 24px 0px;
+}
+.kode-services figure {
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.kode-services figure:before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.kode-services:hover figure:before {
+	opacity: 1;
+}
+.kode-services.type-2 figure ~ .kode-service-info {
+	padding: 24px 0px 0px 295px;
+}
+.kode-services .kode-service-info h2 {
+	margin: 0px 0px 8px 0px;
+}
+.kode-services .kode-service-info p { margin-bottom: 15px; }
+.kode-services .kode-service-info a.kd-readmore {
+	display: inline-block;
+	padding: 10px 16px;
+	color: #333333;
+	border-radius: 4px;
+	background-color: #e4e4e4;
+}
+.kode-services .kode-service-info a.kd-readmore:hover { color: #ffffff; }
+/*==// Services CSS Starts //==*/
+.kd-services {
+	text-align: center;
+	margin-bottom: 30px;
+	float: left;
+	width: 100%;
+}
+.kd-services i {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	color: #ffffff;
+	font-size: 45px;
+	padding: 26px 0px 0px 0px;
+	margin: 0px 0px 24px 0px;
+}
+.kd-services:hover i {
+	box-shadow: 0px 0px 0px 8px #fff inset;
+}
+.kd-services h5 {
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px;
+}
+.kd-services .kd-readmore{
+	float:none;
+	text-align:center;
+}
+.kd-services p{
+	margin:0px 0px 25px 0px;
+}
+
+
+.kd-testimonial {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.kd-testimonial i, .kd-testimonial p, .kd-testimonial span {
+	color: #ffffff;
+}
+.kd-testimonial p {
+	font-size: 22px;
+}
+.kd-testimonial i {
+	font-size: 80px;
+	line-height: 0.6;
+}
+.kd-testimonial .bx-wrapper .bx-pager.bx-default-pager a {
+	background-color: #91989a;
+}
+.bx-wrapper .bx-controls-direction a{
+	width:auto;
+	left:0px;
+}
+.bx-wrapper .bx-controls-direction a.bx-next{
+	right:0px;
+	left:auto
+}
+.kd-testimonial ul.bxslider{
+	float:left;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.kd-testimonial .bx-wrapper li{
+	padding:0px 100px;
+}
+.kd-testimonial .bx-wrapper .bx-pager.bx-default-pager a:hover, .kd-testimonial .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background-color: #ffffff;
+}
+.kd-testimonial .bx-wrapper .bx-pager, .kd-testimonial .bx-wrapper .bx-controls-auto {
+	position: static;
+}
+.kode-testimonial-white .kdtwitter a,
+.kode-testimonial-white h2{
+	color:#fff;
+}
+.kode-background-video .kode-video-bg {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+	width:100%;
+	height:100%;
+}
+.kode-background-video  .container{
+	position:relative;
+}
+
+/*
+===========================================
+			SERVICES SECTION
+===========================================
+*/
+.kode-services-3{
+	float:left;
+	width:100%;
+	text-align:center;
+	background-color:#fff;
+	padding:40px 20px;
+	border-bottom:solid 3px transparent;
+	overflow:hidden;
+}
+.kode-services-3:hover{
+	box-shadow:0px 10px 15px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow:0px 10px 15px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow:0px 10px 15px 0px rgba(0,0,0,0.1);
+}
+.kode-services-3 i{
+	width:100%;
+	float:left;
+	font-size:60px;
+	margin:0px 0px 15px 0px;
+}
+.kode-services-3:hover i{
+	transform:scale(4);
+	opacity:0.5
+}
+.kode-services-3 .kode-text-3{
+	position:relative;
+	z-index:10;
+}
+.kode-services-3 h2{
+	font-size:24px;
+	color:#333333;		
+}
+.kode-services-3 p{
+	line-height:24px;
+}
+.kode-services-3 a.kode-read-more{
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.btn-filled{
+	display:inline-block;
+	font-size:18px;
+	text-transform:uppercase;
+	padding:10px 30px;
+	color:#fff;
+	font-weight:bold;
+}
+.btn-filled:hover{
+	background-color:#000;
+	text-decoration:none;
+	color:#fff;
+}
+
+.btn-filled-rounded{
+	display:inline-block;
+	font-size:16px;
+	text-transform:uppercase;
+	padding:5px 20px;
+	color:#fff;
+	font-weight:bold;
+	border-radius:50px;
+}
+.btn-filled-rounded:hover{
+	background-color:#000;
+	text-decoration:none;
+	color:#fff;
+}
+
+.btn-borderd{
+	display:inline-block;
+	font-size:18px;
+	text-transform:uppercase;
+	padding:10px 30px;
+	color:#fff;
+	font-weight:bold;
+	border:solid 2px #fff;
+}
+.btn-borderd:hover{
+	text-decoration:none;
+	color:#fff;
+}
+
+.kode-services-3, .kode-services-3 i, .kode-cause-list .kode-thumb img, .kode-cause-list,  .btn-borderd, .kode-event-list:before, .kode-event-list img, .kode-team-member a:before, .kode-social-icons ul li a, .kode-team-member .kode-text, .kode-blog-list, .kode-blog-list .kode-avatar, .kode-blog-list .kode-thumb img, .widget-recentpost ul li a, .widget-social-network ul li span, .widget-social-network .input-container button, .widget-social-network ul li i, .footer-nav ul li a, .kd-accordion .accordion, .kode-testimonials-cover .bx-wrapper .bx-controls-direction a, .pagination > li > a, .pagination > li > span, .kode-event-list-2, .kode-event-list-2 img, .kode-event-list-2 .kode-thumb a:before, .kode-blog-list .kode-thumb a:before, .kode-cause-list .kode-thumb a:before, .widget-categories ul li a, .widget-categories ul li:before, .widget-blog ul li a, .widget-blog ul li .kode-thumb img, .widget-blog ul li .kode-thumb a:before, .widget-tags ul li a, .widget-archive ul li a, .widget-archive ul li:before, .widget-social ul li a, .widget-flickr ul li:before, .widget-flickr ul li img, .kode-gallery-item a.like, .kode-gallery-item, .kode-gallery-item .kode-text, .kode-gallery-item a.like, .kode-gallery-item .kode-thumb a:before, .kode-gallery-item .kode-thumb img, .kode-blog-list i, .kode-contact-icon i, .kode-contact-icon, .kode-product, .kode-product .kode-text h4 a, .kode-product .kode-text h2 a, .kode-product .kode-thumb:before, .kode-product .btn-filled.cart, .kode-product .btn-filled.view, .kode-blog-detail .kode-thumb, .kode-blog-option .kode-tags a, .kode-share-blog ul li a, .kode-comments .kode-text a.reply, .kode-fund-raised ul li a, .kode-shop-detail .product-quantity .qtyminus, .kode-shop-detail .product-quantity .qtyplus, .kode-team-member, .kode-team-detail .prectic-areas ul li a, .navigation ul li a, .header-2 .nav-content .kode-donate-now a{
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+/* Divider */
+.kd-divider {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+.kd-divider{
+	display: inline-block;
+	font-size:30px;
+	width: 100%;
+}
+.div-single{
+	border-bottom: 1px solid #eeeeee;
+}
+.div-double {
+	border-bottom: 1px dotted #eeeeee;
+}
+.div-dotted{
+	border: 5px double #eeeeee;
+}
+.div-dashed{
+	border: 1px dashed #eeeeee;
+}
+.div-shadow{background:transparent url(../img/sep-shadow.png) no-repeat top center;height:7px;width:100%;}
+
+
+
+.strip-info li{list-style:none;}
+
+
+
+.kode_pet_lnk_1{
+	display:inline-block;
+	background-color:#fff;
+	box-shadow:0px 0px 0px 5px rgba(255,255,255,0.5);
+	-moz-box-shadow:0px 0px 0px 5px rgba(255,255,255,0.5);
+	-webkit-box-shadow:0px 0px 0px 5px rgba(255,255,255,0.5);
+	border-radius:50px;
+	padding:20px 25px;
+	text-transform:uppercase;
+	line-height:normal;
+	font-weight:bold;
+	overflow:hidden;
+}
+.kode_pet_link_2{
+	display:inline-block;
+	font-weight:bold;
+	text-transform:uppercase;
+	background-color:#fff;
+	font-size:20px;
+	padding:15px 30px;
+	border-radius:40px;
+	line-height:normal;
+	box-shadow:0px 0px 0px 5px rgba(255,255,255,0.5);
+	-moz-box-shadow:0px 0px 0px 5px rgba(255,255,255,0.5);
+	-webkit-box-shadow:0px 0px 0px 5px rgba(255,255,255,0.5);
+	overflow:hidden;
+}
+.back-to-top{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	height:40px;
+}
+.back-to-top a{	
+	text-align:center; 
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	font-size:30px;
+	position:relative;
+	padding:0px 12px;
+}
+.back-to-top:before{
+	content:"";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 76px 76px;
+	border-color: transparent transparent #5b5b5b transparent;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+
+}
+.back-to-top a i{
+	line-height:normal;
+}
+.back-to-top a:hover{
+	text-decoration:none;
+}
+
+
+
+/*
+============================================
+		Pet Accordian Wrap CSS Start
+============================================
+*/
+.kode_goal_wrap{
+	margin-bottom:17px;
+	float:left;
+	width:100%;	
+}
+.kode_goal_wrap .kode-accordion-new {
+    cursor: pointer;
+    padding: 8px 20px 12px;
+}
+.kode_goal_wrap .kode-accordion-new{
+	background-color:#fff;	
+}
+.kode_goal_wrap h6{
+	margin:0px;
+}
+.kode_goal_wrap .accordion-close h6,
+.kode_goal_wrap .accordion-open h6
+{	 
+	font-size:20px !important;
+	color:#666666;
+	margin:0px;
+	font-weight:bold !important;
+}
+.kode_goal_wrap .accordion-close h6:after{
+	content:"\f067";
+	font-family:fontawesome;
+	float:right;
+	line-height: 24px;
+	font-size:14px;
+}
+/*Description style*/
+.kf_pet_accord_des{
+	float:left;
+	width:100%;
+	position:relative;
+	padding-top:18px;
+}
+.kf_pet_accord_des figure{
+	float:left;
+	width:80px;	
+}
+.kf_accord_img_des{
+	float:none;	
+}
+.kf_accord_img_des p{
+	font-size:14px;
+	padding:5px;
+}
+.kode_goal_wrap .accordion-close{
+	background:#f2f2f2;
+}
+/*Accordian Open*/
+.kode_goal_wrap .accordion-open h6{
+	color:#fff;	
+}
+.kode_goal_wrap .accordion-open h6:after{
+	content:"\f068";
+	font-family:fontawesome;
+	float:right;
+	font-size:14px;	
+	line-height: 24px;
+}
+
+/*
+	  ============================================================
+		  Sweep To Right Effect
+	  ============================================================
+*/
+
+.kode_effect_5 {
+	font-size:17px;
+	text-transform:capitalize;
+	color:#fff;
+	padding:7px 44px 8px;
+	border:1px solid #fff;
+	border-radius:30px;
+	font-weight:bold;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: relative;
+	overflow:hidden;
+	box-shadow:0px 0px 0px 5px rgba(255,255,255,0.5);
+	-moz-box-shadow:0px 0px 0px 5px rgba(255,255,255,0.5);
+	-webkit-box-shadow:0px 0px 0px 5px rgba(255,255,255,0.5);
+}
+.about_trusted_bg .kode_effect_5{
+	box-shadow:none;
+}
+.about_trusted_bg p{
+	color:#fff;
+}
+.kode_effect_5:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  border-radius:30px;
+  background-color:#000;
+}
+.kode_effect_5:hover, .kode_effect_5:focus, .kode_effect_5:active {
+  color: white;
+}
+.kode_effect_5:hover:before, .kode_effect_5:focus:before, .kode_effect_5:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.kode_shortcode_heading h3{
+	font-size:30px !important;
+	margin:0px;
+}
+/*
+	  ==============================================================
+		   Flat Shortcode ShortCode
+	  ==============================================================
+*/
+.kf_flat_link_1{
+	display:inline-block;
+	padding:15px 30px;
+	background-color:#fff !important;
+	color:#000 !important;
+	line-height:normal;
+	font-size:14px;
+	line-height: 14px;
+	font-weight:bold;
+}
+.kf_flat_link_1:hover{
+	background-color:#000 !important;
+	color:#fff !important;	
+}
+/* Clinic Short Code Style */
+.kf_flat_link_1.kf_clinic_link{
+	background-color:#000 !important;
+	color:#fff !important;
+}
+.kode-sc3-1{
+	background-color:#f5f5f5;
+	padding:50px 0px 30px;
+	border-radius:0 10px 10px;
+	position:relative;
+	text-align:center;
+}
+.kode-sc3-1:before{
+	border-radius:5px 4px 0px 0px;
+    border-top: 4px solid transparent;
+    content: "";
+    left: -4px;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 0%;
+	transition: all 0.3s ease-in;
+}
+.kode-sc3-1:after{
+	border-left: 6px solid transparent;
+    border-radius: 0 14px;
+    top: 0%;
+    height:0;
+	content: "";
+    left: -4px;
+    position: absolute;
+	transition: all 0.3s ease-in;
+}
+.kode-sc3-1:hover:before{width:95%;}
+.kode-sc3-1:hover:after{ height:100%;}
+.kode-sc3-1 h3{
+	font-size:20px;
+	font-weight:bold;
+	margin:0px;
+	padding:0 0 30px;
+	position:relative;
+}
+.kode-sc3-1 h3:before{
+	position:absolute;
+	left:0px;
+	right:0px;
+	bottom:6px;
+	content:"";
+	border-bottom:3px solid #909090;
+	margin:0 auto;
+	width:10%;
+}
+.kode-sc3-1 span{
+	font-size:48px;
+	font-weight:bold;
+	display:inline-block;
+	padding:30px 0 0;
+	line-height:0px;
+}
+.kode-sc3-1 span sub{
+	font-size:60px;
+	display:inline-block;
+	margin:0px;
+	bottom:0px;
+}
+.kode-sc3-1 span sup{
+	font-size:16px;
+	color:#666;
+	font-weight:normal;
+	top:0px;
+}
+.kode-sc3-1 ul{
+	width:100%;
+	padding:18px 0;
+	margin:18px auto 30px;
+	border-top:1px solid #d1d1d1;
+	border-bottom:1px solid #d1d1d1;
+	width:80%;
+}
+.kode-sc3-1 ul li{
+	list-style:none;
+	font-size:18px;
+	color:#818181;
+	text-decoration:none;
+	padding:9px 10px;
+}
+.kode-sc3-1 .kode-button a{
+	display:inline-block;
+	padding:7.5px 25px;
+	border:1px solid #000;
+	text-decoration:none;
+	color:#333333;
+	position:relative;
+	overflow:hidden;
+	border-radius:5px;
+	transition: all 0.3s ease-in-out;
+}
+/* .kode-sc3-1 .kode-button a:before{
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	content:"";
+	right:0px;
+	transform:rotate(45deg);
+	transition: all 0.3s ease-in-out;
+}
+.kode-sc3-1 .kode-button a:hover:before{
+	transform:rotate(0deg);
+	background-color:rgba(0,0,0,0.3);
+	height:100%;
+	transition: all 0.3s ease-in-out;
+	border-color:transparent;
+	color:#fff;
+} */
+.kode-sc3-1:hover .kode-button a{
+	background-color:#966a39;
+	color:#fff;
+	border:1px solid transparent;
+	transition: all 0.3s ease-in-out;
+} 
+
+.kode-sc3-1:hover:before,
+.kode-sc3-1:hover:after{	
+	border-color:#966a39;
+	transition: all 0.5s ease-in-out;
+}
+/* Cart Page style */
+.return-to-shop .button{
+	background-color:#000;
+}
+
+/*
+============================================
+			PET PRICE TABLE WRAP START
+============================================
+*/
+.kf_pet_price_bg{
+	background-color:#f4f4f4;	
+}
+.kf_pet_price_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:40px;
+	border:1px solid #eaeaea;
+	text-align:center;
+	background-color:#fff;	
+}
+.kf_pet_price_wrap h5{
+	color:#000;
+	font-size:20px;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding-bottom:30px;
+	border-bottom:1px solid #c9c9c9;
+	text-align:center;	
+}
+.kf_pet_price_wrap ul{
+	float:left;
+	width:100%;
+	padding:30px 0px;
+	border-bottom:1px solid #c9c9c9;	
+	margin:0px;
+}
+.kf_pet_price_wrap ul li{
+	display:inline-block;
+	font-size:18px;
+	text-align:left;
+	color:#333333;
+	position:relative;
+	font-style:italic;
+	width:100%;
+	padding:9px 0px 9px 40px;	
+}
+.kf_pet_price_wrap ul li:after{
+	content:"\f00c";
+	font-family:fontawesome;
+	position:absolute;
+	top:13px;
+	left:-2px;
+	font-size:12px;
+	width:25px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	border-radius:100%;
+	border:1px solid #d5d5d5;
+	padding:0px 3px 0px 0px;
+}
+.kf_pricetable_price{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;
+	padding:35px 0px;	
+}
+.kf_pricetable_price h3{
+	font-size:48px !important;
+	color:#333333;
+	font-weight:bold;
+	line-height:normal;
+	display:inline-block;	
+}
+.kf_pricetable_price sup{
+	color:#333;
+	font-size:20px;
+	line-height:normal;	
+	left:-1px;
+	top:-8px;
+}
+.kf_pricetable_price sub{
+	font-size:16px;
+	color:#333;
+	bottom:-3px;
+	right:-8px;	
+}
+.kf_pet_price_wrap > a{
+	display:inline-block;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding:8px 25px;	
+}
+/*Hover style*/
+.kf_pet_price_wrap:hover h5,
+.kf_pet_price_wrap:hover ul li,
+.kf_pet_price_wrap:hover ul li a,
+.kf_pet_price_wrap:hover .kf_pricetable_price h3,
+.kf_pet_price_wrap:hover .kf_pricetable_price sup,
+.kf_pet_price_wrap:hover .kf_pricetable_price sub
+{
+	color:#fff;	
+}
+.kf_pet_price_wrap:hover h5,
+.kf_pet_price_wrap:hover ul{
+	border-bottom:1px solid #fff;	
+}
+.kf_pet_price_wrap:hover ul li:after{
+	border:1px solid #fff;
+	background-color:#fff;	
+}
+.kf_pet_price_wrap:hover > a{
+	background-color:#fff !important;
+	color:#333;	
+}
+.kf_pet_price_wrap > a:hover{
+	background-color:#000 !important;
+	color:#fff;	
+}
+
+/*
+============================================
+			PET UPDATE BLOG WRAP START
+============================================
+*/
+.kf_update_blog_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	border:1px solid #d8d8d8;	
+}
+.kf_update_blog_wrap figure{
+	display:block;
+	position:relative;	
+}
+.kf_update_blog_wrap figure:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.4);
+	z-index:9999;
+}
+.kf_update_blog_wrap figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_blog_update_des{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:25px 20px;	
+}
+.kf_blog_update_des h5 a{
+	color:#333333;
+	text-transform:uppercase;
+	font-size:20px;
+	font-weight:bold;
+	display:block;
+	margin:0 0 14px;	
+}
+.kf_blog_update_des ul{
+	float:left;
+	width:100%;
+	padding:0px 0px 20px;
+	margin:0px 0px 20px;
+	border-bottom:1px solid #d8d8d8;
+	position:relative;	
+}
+.kf_blog_update_des ul:before{
+	content:"";
+	position:absolute;
+	bottom:-2px;
+	left:0px;
+	width:70%;
+	height:3px;	
+}
+.kf_blog_update_des ul:after{
+	content:"";
+	position:absolute;
+	bottom:-3px;
+	left:0px;
+	width:50px;
+	height:5px;	
+}
+.kf_blog_update_des ul > a{
+	display:inline-block;
+	font-size:16px;
+	color:#999999;	
+}
+.kf_blog_update_des p{
+	font-size:16px;
+	color:#666666;
+	line-height:24px;
+	margin:0px 0px 20px;
+	text-align:left;	
+}
+.kf_blog_update_des > a{
+	display:inline-block;
+	float:left;
+	border:1px solid #bdbdbd;
+	color:#666666;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:15px;
+	text-transform:uppercase;
+}
+.kf_blog_update_meta{
+	float:right;
+	margin-top:6px;	
+}
+.kf_blog_update_meta > li{
+	display:inline-block;
+	text-align:right;
+	color:#666666;
+	padding:6px 5px;	
+}
+.kf_blog_update_meta > li > i{
+	font-size:15px;
+	margin-right:5px;	
+}
+.col-md-3 .kode-item .kf_update_blog_wrap .kf_blog_update_des ul.kf-post-meta-update > li{
+	width:100%;
+	margin:0px;
+}
+.col-md-3 .kode-item .kf_update_blog_wrap .kf_blog_update_des ul.kf-post-meta-update > li.blog-info a{
+	float:none;
+	text-align:left;
+}
+.col-md-3 .kode-item .kf_update_blog_wrap .kf_blog_update_des .kf_blog_update_meta{
+	float:left;
+	margin-top:12px;
+}
+.col-md-3 .kode-item .kf_update_blog_wrap .kf_blog_update_des .kf_blog_update_meta > li{
+	text-align:left;
+}
+/*Hover style*/
+.kf_update_blog_wrap:hover{
+	box-shadow:0px 3px 3px 0px rgba(0,0,0,0.3);	
+}
+.kf_update_blog_wrap:hover figure img{
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-o-transform:scale(1.2);	
+}
+/*
+============================================
+			PET UPDATE STORE WRAP START
+============================================
+*/
+.kf_update_store_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	border:1px solid #d4d4d4;
+	min-height:359px;
+}
+.kf_update_store_wrap figure{
+	width:100%;
+	position:relative;
+	text-align:center;	
+	overflow:hidden;	
+}
+.kf_update_store_wrap figure:before{
+	content:"";
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	margin:auto;
+	width:30px;
+	height:3px;
+}
+.kf_update_img_des{
+	position:absolute;
+	text-align:center;
+	width:100%;
+	height:0px;
+	bottom:-20px;
+	left:0px;
+	padding:40px 40px;
+	z-index:999;
+	background-color:rgba(0,0,0,0.85);
+	opacity:0;	
+}
+.kf_update_img_des p{
+	font-size:14px;
+	color:#fff;	
+}
+.kf_update_img_des > a{
+	display:inline-block;
+	color:#fff;
+	font-size:16px;	
+}
+.kf_new_item{
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:9999;
+	padding:10px 6px;
+	opacity:0;
+}
+.kf_new_item p{
+	margin:0px;
+	font-size:16px;
+	text-transform:uppercase;
+	color:#fff;
+	z-index:9999;
+	position:absolute;
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);	
+}
+.kf_new_item:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 80px 80px 0 0;
+	border-color: #54cd38 transparent transparent transparent;	
+}
+.kf_update_store_des{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;
+	padding:15px 0px 0px;	
+}
+.kf_update_store_des h5{
+	font-size:18px;
+	color:#333;
+	text-transform:uppercase;
+	margin:0px 0px 5px;
+	font-weight:bold;	
+}
+.kf_update_store_des p{
+	font-size:16px;
+	font-weight:bold;
+	margin:0px 0px 15px;	
+}
+.kf_update_store_des ul{
+	float:left;
+	width:100%;	
+}
+.kf_update_store_des ul li{
+	display:inline-block;
+	text-align:center;
+	position:relative;
+	margin-bottom:0px;
+}
+.kf_update_store_des ul li a{
+	display:block;
+	width:38px;
+	height:38px;
+	border:1px solid #d4d4d4;
+	color:#666666;
+	line-height:38px;
+	margin-bottom:-1px;
+}
+.children-sec-list{
+	list-style:none;
+}
+.kf_update_store_des ul{
+	margin:0px;
+	list-style:none;
+}
+.kf_update_store_des ul li:first-child{
+	margin-right:-4px;	
+}
+/*Hover style*/
+.kf_update_store_wrap:hover .kf_update_img_des{
+	opacity:1;
+	bottom:0px;
+	height:100%;	
+}
+.kf_update_store_wrap:hover .kf_new_item{
+	opacity:1;	
+}
+.kf_update_store_wrap:hover .kf_update_store_des{
+	background-color:#f3f3f3;	
+}
+.kf_update_store_des ul li:hover a{
+	color:#fff;	
+}
+
+
+
+
+/*
+	  ==============================================================
+		   Top Bar Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_topbar{
+	float:left;
+	width:100%;
+	position:relative;
+	background-color:#323232;
+	padding:10px 0px;	
+}
+.kf_pet_callus{
+	float:left;
+	width:auto;
+	position:relative;	
+}
+.kf_pet_callus ul{
+	float:left;
+	width:100%;
+	margin:0px;
+}
+.kf_pet_callus ul li{
+	display:inline-block;
+	position:relative;
+	color:#ffffff;
+	padding:0px 10px;
+	margin:0px;
+}
+.kf_pet_callus ul li a{
+	display:inline-block;
+	color:#cacaca;	
+	font-size:14px;
+}
+.kf_pet_callus ul li i{
+	margin-right:8px;	
+}
+.kf_pet_callus ul li:first-child{
+	padding-left:0px;	
+}
+/*Ui-Element Style*/
+.kf_pet_ui_element{
+	float:right;
+	width:auto;	
+}
+.kf_pet_ui_element ul{
+	float:left;
+	width:100%;
+	margin:auto;	
+}
+.kf_pet_ui_element ul li{
+	float:left;
+	position:relative;
+	margin:0px;	
+}
+.kf_pet_ui_element ul li a{
+	display:block;
+	padding:2px 8px 0;
+	color:#cacaca;	
+}
+.kf_pet_ui_element ul li:last-child a{
+	padding-right:0px;	
+}
+/*
+	  ==============================================================
+		   Top Bar Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Logo Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_logo_nav{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:10px 0px;	
+}
+.kf_pet_logo{
+	float:left;
+	width:auto;
+	position:relative;	
+}
+.kf_pet_logo a{
+	display:block;	
+}
+/*
+	  ==============================================================
+		   Logo Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Main Navigation Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_navigation{
+	float:right;
+	position:relative;
+	text-align:center;	
+}
+.kf_pet_logo_nav .kf_pet_navigation{
+	margin-right:20px;
+}
+.kf_pet_navigation ul{
+	float:left;
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_navigation ul li{
+	display:inline-block;
+	position:relative;
+	margin:0px;	
+}
+.kf_pet_navigation ul li a{
+	display:block;
+	font-size:14px;
+	line-height:normal;
+	color:#838383;
+	padding:26px 12px 22px;
+	text-transform:uppercase;
+	font-weight:600;	
+}
+/*Second Drop Down*/
+.kf_pet_navigation ul ul{
+	position:absolute;
+	top:120%;
+	left:0px;
+	min-width:250px;
+	background-color:#fff;
+	z-index:10;	
+	opacity:0;
+	visibility:hidden;
+	border-bottom:3px solid;
+}
+.kf_pet_navigation ul ul li{
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_navigation ul ul li a{
+	padding:15px 15px;
+	text-align:left;
+	line-height:normal;
+	font-family: 'Open Sans', sans-serif;
+}
+/*Third Drop Down*/
+.kf_pet_navigation ul ul ul {
+    left: 100% !important;
+    top: 0;
+}
+/*Hover Style*/
+.kf_pet_navigation ul li:hover > ul{
+	opacity:1;
+	visibility:visible;
+	top:100%;	
+}
+.kf_pet_navigation ul ul li:hover > ul{
+	top:0px;
+	left:100%;	
+}
+.kf_pet_navigation ul ul li:hover > a{
+	padding-left:25px;	
+}
+/*
+	  ==============================================================
+		   Main Navigation Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Search Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_search{
+	float:right;
+	width:auto;
+	position:relative;
+	text-align:center;
+	margin:18px 8px 0 0;	
+}
+.kf_pet_search  > a{
+	display:inline-block;
+	width:38px;
+	height:38px;	
+	background-color:#f1f1f1;
+	color:#3c4a55;
+	line-height:38px;	
+}
+.kf_pet_search  > a:hover,
+.kf_pet_cart_item > a:hover{
+	color:#fff;	
+}
+/*
+	  ==============================================================
+		   Search Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Cart Item Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_cart_item{
+	float:right;
+	width:auto;
+	position:relative;
+	text-align:center;
+	margin:18px 0 0;	
+}
+.kf_pet_cart_item  > a{
+	display:inline-block;
+	width:38px;
+	height:38px;	
+	background-color:#f1f1f1;
+	color:#3c4a55;
+	line-height:38px;	
+}
+.kf_pet_cart_item  > span{
+	background-color: #3c4a55;
+    border-radius: 100%;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    height: 16px;
+    line-height: 15px;
+    position: absolute;
+    left: 20px;
+    top: -2px;
+    width: 16px;	
+}
+.kf_pet_cart_des{
+	float:right;
+	width:auto;
+	margin:-4px 0 0 10px;
+	text-align:center;	
+}
+.kf_pet_cart_des h5{
+	color:#3c4a55;
+	font-size:14px;
+	line-height:20px;
+	margin:0px;
+	font-weight:600;	
+}
+.kf_pet_cart_des h6{
+	font-weight:600;
+	margin:0px;	
+}
+/*
+	  ==============================================================
+		   Cart Item Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Banner Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_banner{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_banner ul{
+	float:left;
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_banner ul li{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_banner ul li img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_banner_caption{
+	position:absolute;
+	top:42%;
+	margin:-80px 0 0 -550px;
+	width:440px;
+	text-align:center;
+	left:50%;	
+}
+.kf_pet_banner_caption h2,
+.kf_pet_banner_caption h3{
+	color:#3c4a55;
+	line-height:normal;
+	text-transform:uppercase;
+	font-weight:bold;	
+}
+.kf_pet_banner_caption h3{
+	margin:0px 0px 15px;	
+}
+.kf_pet_banner_caption a{
+	display:inline-block;
+	padding:12px 25px;
+	line-height:normal;
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight:400;
+	font-size:18px;
+	background-color:#3c4a55;
+	text-transform:uppercase;	
+}
+/*Banner Style*/
+.kf_pet_banner .bx-wrapper .bx-pager{
+	display:none;	
+}
+/*
+	  ==============================================================
+		   Banner Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Banner Services Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_service_wrap{
+	width:100%;
+	position:relative;
+	padding:55px 25px;
+	min-height:198px;
+	display:inline-block;
+	margin: 0px;
+	text-align:center;
+	vertical-align:bottom;
+}
+.kf_pet_service_wrap i{
+	border:1px solid #fff;
+	display:inline-block;
+	color:#fff;
+	font-size:40px;
+	text-align:center;
+	width:66px;
+	height:66px;
+	line-height:66px;	
+	margin:0px 0px 17px;	
+}
+.kf_pet_service_wrap h4{
+	color:#fff;
+	display:block;
+	clear:both;
+	font-weight:bold;
+	margin:0 0 4px;
+	text-transform:uppercase;	
+}
+.kf_pet_service_wrap p{
+	color:#fff;
+	font-size:15px;
+	margin:0 0 16px;	
+}
+.kf_pet_service_wrap a{
+	position:relative;
+	z-index: 10;
+}
+/*Hover Style*/
+.kf_pet_service_wrap a:hover{
+	background-color:#fff;
+	color: #333;
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+/*
+	  ==============================================================
+		   Banner Services Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Background Color Code Css Start
+	  ==============================================================
+*/
+.kf_pet_bg1{
+	background-color:#76cd1f;	
+}
+
+.kf_pet_bg2{
+	background-color:#d15174;	
+}
+
+.kf_pet_bg3{
+	background-color:#d87553;	
+}
+
+.kf_pet_bg4{
+	background-color:#38cddc;	
+}
+.kf_pet_bg5{
+	background-color:#3c4a55;	
+}
+/*
+	  ==============================================================
+		   Background Color Code Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Heading Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_heading_1{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;
+	padding:0 0px 20px;
+	margin:0px 0px 25px;	
+}
+.kf_pet_heading_1:before{
+	content:"";
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	margin:auto;
+	width:100px;
+	height:1px;
+	background-color:#999999;	
+}
+.kf_pet_heading_1 h4{
+	text-transform:uppercase;
+	font-weight:700;
+	font-size:24px;
+	margin:0px 0px 10px;
+}
+.kf_pet_heading_1 p{
+	margin:0px;	
+}
+/*extra class*/
+.kf_pet_heading_1.kf_pet_hdg_white h4{
+	color:#fff;	
+}
+.kf_pet_heading_1.kf_pet_hdg_white::before{
+	background-color:#fff;	
+}
+.kf_pet_heading_1.kf_pet_hdg_white p{
+	color:#fff;	
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1, .h1, h2, .h2, h3, .h3,
+h4, .h4, h5, .h5, h6, .h6{
+	color:#333;
+}
+/*
+	  ==============================================================
+		   Heading Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Looking Pet Services Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_looking_bg{
+	padding-bottom:20px;	
+}
+.kf_pet_looking_wrap{
+	float:left;
+	width:100%;
+	position:relative;	
+	overflow:hidden;	
+}
+.kf_pet_looking_wrap figure{
+	display:block;
+	position:relative;	
+}
+.kf_pet_looking_wrap figure:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(255,255,255,0.95);
+	opacity:0;	
+}
+.kf_pet_looking_wrap figure:after{
+	content:"";
+	position:absolute;
+	top:10px;
+	left:10px;
+	right:10px;
+	bottom:10px;
+	border:1px solid #ddd;
+	opacity:0;	
+}
+.kf_pet_looking_wrap figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_looking_des{
+	position:absolute;
+	bottom:20px;
+	left:0px;
+	width:100%;
+	background-color: #fff;
+}
+.kf_looking_icon{
+	float:left;
+	position:relative;
+	width:60px;
+	text-align:center;
+	padding:21px 9px;	
+}
+.kf_pet_looking_des i{
+	text-align:center;
+	width:36px;
+	color:#fff;
+	height:36px;
+	display:inline-block;	
+	border:1px solid #fff;
+	line-height:36px;
+	font-size:20px;	
+}
+.kf_pet_looking_heading{
+	padding:20px 10px 20px 75px;
+}
+.kf_pet_looking_heading h5{
+	color:#666666;
+	font-weight:600;
+	margin:0px;
+	text-transform:uppercase;	
+}
+.kf_pet_looking_heading p{
+	color:#666666;
+	margin:0px;
+	line-height:normal;	
+}
+.kf_looking_hover_wrap{
+	position:absolute;
+	top:50%;
+	left:0px;
+	width:100%;
+	height:100%;
+	text-align:center;
+	padding:10px 30px;
+	margin:-50px 0px 0px;
+	z-index:10;
+	opacity:0;
+}
+.kf_looking_hover_wrap h5{
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:0px 0px 10px;	
+}
+.kf_looking_hover_wrap p{
+	font-size:16px;
+	margin:0px 0px 15px;	
+}
+.kf_looking_hover_wrap > a{
+	border:1px solid #6e6e6e;
+	color:#454545;
+}
+/*Hover Style*/
+.kf_pet_looking_wrap:hover .kf_pet_looking_des{
+	bottom:10px;
+	opacity:0;	
+}
+.kf_pet_looking_wrap:hover .kf_looking_hover_wrap{
+	margin:-93px 0 0;
+}
+.kf_pet_looking_wrap:hover .kf_looking_hover_wrap,
+.kf_pet_looking_wrap:hover figure:before,
+.kf_pet_looking_wrap:hover figure:after{
+	opacity:1;
+}
+.kf_looking_hover_wrap > a:hover{
+	color:#fff;	
+}
+/*
+	  ==============================================================
+		   Looking Pet Services Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Pet Clinic & Shop Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_clinic_shop_bg{
+	float:left;
+	width:100%;
+	position:relative;	
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;	
+}
+.kf_pet_clinic_shop_bg:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:50%;
+	height:100%;
+	background-color:#373737;	
+	background-repeat:no-repeat;
+	background-position:center;	
+}
+.kf_pet_clinic_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;	
+}
+.kf_pet_clinic_wrap h3{
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:0px 0px 25px;
+	line-height:normal;	
+}
+.kf_pet_clinic_wrap i{
+	display:block;
+	font-size:150px;
+	color:#fff;
+	margin:0px 0px 25px;
+	line-height:normal;	
+}
+.kf_pet_clinic_wrap > a:hover{
+	background-color:#000;
+	border:1px solid #000;
+	color:#fff;	
+}
+/*
+	  ==============================================================
+		   Pet Clinic & Shop Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Pet Appointment Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_appointment_bg{
+	position:relative;	
+}
+.kf_pet_appointment_bg:before{
+	content:"";
+	position:absolute;
+	bottom:-213px;
+	right:0px;
+	width:20%;
+	height:100%;
+	background-image:url(extra-images/pet-appointment-bg.png);
+	background-repeat:no-repeat;
+	background-size:100%;	
+}
+.kf_pet_appointment_bg .kf_pet_heading_1{
+	text-align:left;	
+}
+.kf_pet_appointment_bg .kf_pet_heading_1::before{
+	right:auto;	
+}
+.kf_pet_appointment_wrap{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_field{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_field input[type="text"]{
+	width:100%;
+	float:left;
+	height:50px;
+	border:1px solid #ccc;
+	padding:8px 15px;
+	margin:0px 0px 25px;
+	font-size:15px;	
+}
+.kf_pet_field textarea{
+	width:100%;
+	float:left;
+	min-height:140px;
+	border:1px solid #ccc;
+	padding:20px 15px;
+	margin:0px 0px 25px;
+	font-size:15px;	
+}
+
+/*Hover style*/
+.kf_pet_field input[type="text"]:focus{
+	box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.15);	
+}
+.kf_pet_field input[type="submit"]:hover,
+.kf_pet_field button:hover{
+	color:#fff;	
+}
+/*
+	  ==============================================================
+		   Pet Appointment Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Pet Client Says Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_client_bg{
+	position:relative;	
+}
+.kf_pet_client_bg::before{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	background-image:url(extra-images/pet-client-says-bg.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.kf_pet_client_bg::after{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.8);
+}
+.kf_pet_client_bg .container{
+	position:relative;
+	z-index:10;	
+}
+.kf_pet_client_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;
+}
+.kf_pet_client_wrap ul{
+	float:left;
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_client_wrap ul li{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_client_wrap ul li figure{
+	margin:0px 0px 25px;
+	display:inline-block;
+}
+.kf_pet_client_wrap ul li figure img{
+	width:auto;
+	height:auto;
+	border-radius:100%;
+	display:inline-block;	
+}
+.kf_pet_client_wrap ul li p{
+	color:#fff;
+	font-size:16px;
+	margin:0px 0px 24px;
+	padding:0px 250px;	
+}
+.kf_pet_client_wrap ul li h5{
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;	
+}
+/*Slider Style*/
+.kf_pet_client_wrap .bx-wrapper .bx-pager{
+	padding:0px;	
+}
+.kf_pet_client_wrap .bx-wrapper .bx-pager.bx-default-pager a{
+	background:transparent;	
+	border:1px solid #fff;
+}
+.kf_pet_client_wrap .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.kf_pet_client_wrap .bx-wrapper .bx-pager.bx-default-pager a.active{
+		background:#fff;
+}
+/*
+	  ==============================================================
+		   Pet Client Says Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Find Best Campanion Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_campanion{
+	float:left;
+	width:100%;
+	position:relative;
+	box-shadow:0 2px 2px 1px rgba(0, 0, 0, 0.18);	
+}
+.kf_pet_campanion figure{
+	position:relative;	
+}
+.kf_pet_campanion figure::before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:0;
+	background-color:rgba(0,0,0,0.75);	
+}
+.kf_pet_campanion figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_cam_des{
+	float:left;
+	width:100%;
+	position:relative;
+	background-color:#fbfbfc;
+	padding:18px 20px 8px;	
+}
+.kf_pet_cam_des h5 > a{
+	display:inline-block;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#666666;
+	width:100%;	
+}
+.kf_pet_cam_des p{
+	color:#666666;	
+}
+.kf_pet_cam_des span{
+	display:inline-block;
+	text-align:center;
+	line-height:50px;
+	background-color:#fbfbfc;
+	position:absolute;
+	top:-25px;
+	right:20px;
+	width:50px;
+	height:50px;
+	color:#666666;
+	font-size:20px;	
+	box-shadow:0 1px 2px 1px rgba(0, 0, 0, 0.18);	
+}
+.kf_pet_cam_hover{
+	position:absolute;
+	top:36%;
+	left:0px;
+	width:100%;
+	text-align:center;
+	padding:20px;
+	margin:0px 0px 0px;
+	opacity:0;	
+}
+.kf_pet_cam_hover a{
+	display:inline-block;
+	width:50px;
+	height:50px;	
+	border:2px solid #fff;
+	font-size:18px;
+	line-height:50px;
+	margin:0px 0px 15px;
+	color:#fff;	
+}
+.kf_pet_cam_hover p{
+	color:#fff;
+	font-size:16px;	
+}
+.kf_pet_cam_hover_hdg{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	text-align:center;
+	opacity:0;	
+}
+.kf_pet_cam_hover_hdg > h5 > a{
+	display:inline-block;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#fff;
+	width:100%;	
+}
+/*Hover Style*/
+.kf_pet_campanion:hover figure:before{
+	height:100%;	
+}
+.kf_pet_campanion:hover .kf_pet_cam_des h5 > a{
+	opacity:0;
+}
+.kf_pet_campanion:hover .kf_pet_cam_des p{
+	opacity:0;	
+}
+.kf_pet_campanion:hover .kf_pet_cam_hover{
+	opacity:1;
+	margin:-90px 0 0;
+}
+.kf_pet_campanion:hover span{
+	right:0px;
+	opacity:0;	
+}
+.kf_pet_campanion:hover .kf_pet_cam_hover_hdg{
+	opacity:1;
+	bottom:30px;	
+}
+/*
+	  ==============================================================
+		   Find Best Campanion Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   How Many Saved Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_saved_bg{
+	position:relative;
+	background-image:url(extra-images/saved-bg.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;	
+}
+.kf_pet_saved_bg:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.75);	
+}
+.kf_pet_saved_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.kf_pet_saved_wrap h4{
+	font-size:34px !important;
+	color:#fff;
+	position:relative;
+	padding:0px 0px 15px;
+	margin:0px 0px 15px;
+	font-weight:bold;
+	text-transform:uppercase;	
+}
+.kf_pet_saved_wrap h4:before{
+	content:"";
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100px;
+	height:2px;
+	background-color:#fff;	
+}
+.kf_pet_saved_wrap p{
+	color:#fff;	
+}
+/*Counter Wrap Start*/
+.kf_pet_counter{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;	
+}
+.kf_pet_counter i{
+	display:inline-block;
+	color:#fff;
+	font-size:60px;
+	margin:0px 0px 18px;
+}
+.kf_pet_counter h3{
+	font-size:60px;
+	line-height:60px;
+	font-weight:normal;
+	color:#fff;	
+	margin:0px 0px 13px;
+}
+.kf_pet_counter p{
+	color:#fff;
+	font-size:18px;
+	text-transform:uppercase;	
+}
+/*
+	  ==============================================================
+		   How Many Saved Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Update Our Shop Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_shop_bg{
+	padding-bottom:30px;	
+}
+.kf_pet_shop_wrap{
+	margin:0px 0px 30px;	
+}
+.product-listing2 ul{
+	list-style:none;
+}
+.product-listing2 ul li{
+	margin:0px;
+	display:inline-block;
+}
+.kf_pet_shop_wrap,
+.kf_pet_product_img{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;	
+}
+.kf_pet_product_img{
+	border:1px solid #d2d2d2;
+	margin:0px 0px 15px;	
+}
+.kf_pet_product_img figure{
+	border-bottom:1px solid #d2d2d2;
+	padding:30px 0px;	
+	overflow:hidden;
+	position:relative;	
+}
+.kf_pet_product_img img{
+	width:auto;
+	height:auto;	
+}
+.kf_pet_scl_icon,
+.kf_pet_scl_icon ul{
+	float:left;
+	width:100%;	
+}
+.kf_pet_scl_icon ul{
+	margin:0px;
+	padding:8px 0px;
+}
+.kf_pet_scl_icon ul li{
+	display:inline-block;
+	position:relative;
+	margin:0px;	
+}
+.kf_pet_scl_icon ul li a{
+	display:block;
+	width:30px;
+	height:30px;	
+	border:1px solid #b2b2b2;
+	line-height:30px;
+	font-size:14px;
+	color:#b2b2b2;
+	margin-right:5px;	
+}
+.kf_pet_product_des{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;	
+}
+.kf_pet_product_des span{
+	display:inline-block;
+	color:#fff;
+	font-size:15px;
+	padding:3px 5px;
+	float: left;
+	width: 50%;
+	margin-bottom: 15px;
+}
+.kf_pet_product_des span:nth-child(2){
+	text-decoration:line-through;
+	background-color:#b2b2b2;	
+}
+.kf_pet_product_des h5 > a{
+	display:block;
+	font-weight:600;
+	text-transform:uppercase;
+	margin:0px 0px 6px;	
+}
+.kf_pet_product_des ul{
+	margin:0px;	
+}
+.kf_pet_product_des ul a{
+	display:inline-block;
+	position:relative;	
+}
+/*Hover Style*/
+.kf_pet_shop_wrap:hover .kf_pet_scl_icon{
+	background-color:#f0f0f0;	
+}
+.kf_pet_scl_icon ul li:hover a{
+	color:#fff;	
+}
+.kf_pet_shop_wrap:hover .kf_pet_product_img figure img{
+	transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-o-transform:scale(1.2);	
+}
+/*
+	  ==============================================================
+		   Update Our Shop Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Why Choose Us Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_choose_bg{
+	position:relative;
+	background-image:url(extra-images/choose-us-bg.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;	
+}
+.kf_pet_choose_bg::before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.8);
+}
+.kf_pet_choose_bg .container{
+	position:relative;
+	z-index:99;	
+}
+.kf_pet_choose{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:0 0 15px;	
+}
+.kf_choose_hdg{
+	float:left;
+	width:100%;
+	position:relative;
+	background-color:#fff;	
+}
+.kf_choose_hdg h5{
+	display:inline-block;	
+	margin:0px;
+	padding:0px;
+}
+.kf_choose_hdg h5 > a{
+	color:#666666;
+	font-weight:bold;
+	padding:22px 20px 18px;
+	display:inline-block;
+	text-transform:uppercase;	
+}
+.kf_choose_hdg span{
+	float:right;
+	padding:18px 20px 20px;
+	font-size:24px;
+	font-weight:bold;
+	color:#666666;
+	border-left:1px solid #f1f1f1;	
+}
+.kf_pet_choose_des{
+	float:left;
+	width:100%;
+	position:relative;
+	background-color:#fff;	
+}
+.kf_pet_choose_inner{
+	padding:25px 20px;	
+}
+.kf_pet_choose_des figure{
+	width:120px;
+	float:left;	
+}
+.kf_pet_choose_des figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_choose_img_des{
+	float:none;
+	padding:0px 0px 0px 140px;
+	width:auto;	
+}
+.kf_pet_choose_img_des p{
+	padding:10px 0px 0px;	
+}
+/*Video Wrap Style*/
+.kf_pet_video_wrap{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+/*On Open Style*/
+.kf_pet_choose .kf_choose_hdg.accordion-open h5 > a,
+.kf_pet_choose .kf_choose_hdg.accordion-open span,
+.kf_pet_choose .kf_choose_hdg:hover h5 > a,
+.kf_pet_choose .kf_choose_hdg:hover span
+{
+	color:#fff;	
+}
+.kf_pet_choose .kf_choose_hdg.accordion-open span{
+	border-left:1px solid #fff;	
+}
+.kf_choose_hdg.accordion-open .fa-angle-up::before{
+	content:"\f107";	
+}
+/*
+	  ==============================================================
+		   Why Choose Us Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Latest News Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_news_bg{	
+}
+.kf_pet_news_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:0px 0px 30px;	
+}
+.kf_pet_news_wrap figure{
+	width:100%;
+	float:left;
+	position:relative;	
+}
+.kf_pet_news_wrap figure::before{
+	content:"";
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:0px;
+	height:4px;	
+}
+.kf_pet_news_wrap figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_news_link{
+	position:absolute;
+	bottom:-10px;
+	left:30px;
+	width:50px;
+	height:50px;
+	background-color:#333333;
+	text-align:center;
+	z-index:10;	
+}
+.kf_pet_news_link > a{
+	color:#fff;
+	line-height:50px;
+	font-size:20px;	
+}
+.kf_pet_news_des{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:20px 20px 10px;
+	border:1px solid #e5e5e5;	
+}
+.kf_pet_news_des::before{
+	content:"";
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:0px;
+	height:2px;	
+}
+.kf_pet_news_des h5 > a{
+	display:block;
+	color:#333333;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin:0px 0px 12px;
+	line-height:normal;	
+}
+.kf_pet_news_des ul{
+	width:100%;
+	float:left;
+	margin:0px 0px 15px;
+	text-align:center;	
+}
+.kf_pet_news_des ul li{
+	display:inline-block;
+	position:relative;
+	color:#666666;
+	width:49%;
+	margin:0 0 0 -1px;
+	text-align:center;
+	border:1px solid #e5e5e5;	
+}
+.kf_pet_news_des ul li i{
+	display:inline-block;
+	float:none;
+	margin-right:10px;
+}
+.kf_pet_news_des ul li a{
+	display:inline-block;
+	padding:7px 0px 5px;
+	color:#adadad;
+	line-height:normal;	
+	float:none !important;
+}
+.kf_pet_news_des .kf-readmore{
+	margin-bottom:12px;
+	float:left;
+	color:#999;
+}
+/*Hover Style*/
+.kf_pet_news_wrap:hover figure::before,
+.kf_pet_news_wrap:hover .kf_pet_news_des:before
+{
+	width:100%;	
+}
+.kf_pet_news_des ul li:hover,
+.kf_pet_news_des ul li:hover a{
+	color:#fff;	
+}
+/*
+	  ==============================================================
+		   Latest News Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Blog Page Css Start
+	  ==============================================================
+*/
+.kf_pet_inner_banner{
+	float:left;
+	width:100%;
+	position:relative;
+	background-image:url(extra-images/pet-inner-banner-01.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	min-height:230px;	
+}
+.kf_pet_inner_banner:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.75);	
+}
+.kf_pet_breadcrumb{
+	float:left;
+	width:100%;
+	padding:70px 0 0;
+	text-align:center;
+	position:relative;	
+}
+.kf_pet_breadcrumb > h3{
+	color:#fff;
+	text-transform:uppercase;
+	line-height:normal;
+	font-weight:bold;
+	font-family: 'Open Sans', sans-serif;	
+}
+.kf_pet_breadcrumb ul{
+	float:left;
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_breadcrumb ul li{
+	display:inline-block;
+	position:relative;	
+}
+.kf_pet_breadcrumb ul li:before{
+	content:"\f101";
+	position:absolute;
+	font-family:fontawesome;
+	top:2px;
+	left:-4px;
+	font-size:14px;	
+}
+.kf_pet_breadcrumb ul li:first-child:before{
+	display:none;	
+}
+.kf_pet_breadcrumb ul li a{
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+	padding:0px 10px;	
+}
+/*
+	  ==============================================================
+		   Blog Page Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Pagination Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_pagination{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;	
+}
+.kf_pet_pagination ul{
+	float:left;
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_pagination ul li{
+	display:inline-block;
+	position:relative;
+	margin:0px;	
+}
+.kf_pet_pagination ul li a{
+	color:#b1b1b1;
+	display:block;
+	border:1px solid #dedede;
+	padding:7px 15px 4px;
+	line-height:normal;
+	font-size:16px;
+}
+.kf_pet_pagination ul li:first-child a,
+.kf_pet_pagination ul li:last-child a{
+	padding:5px 23px 3px;
+	font-size:18px;	
+}
+/*Hover Style*/
+.kf_pet_pagination ul li:hover a{
+	color:#fff;	
+}
+/*
+	  ==============================================================
+		   Pagination Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Pet Shop Sorting Wrap Css Start
+	  ==============================================================
+*/
+.kf_sorting_outer_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:0px 0px 25px;
+	border-bottom:1px solid #e9e9e9;
+	margin:0px 0px 30px;	
+}
+.kf_pet_soting_result{
+	float:left;
+	width:35%;
+	position:relative;	
+}
+.kf_pet_soting_result span,
+.kf_sorting_element span
+{
+	display:inline-block;
+	line-height:normal;
+	font-weight:bold;
+	color:#3c4a55;
+	font-size:14px;
+	padding:10px 0px 0px;	
+}
+/*Sorting Element Style*/
+.kf_sorting_element{
+	float:left;
+	width:65%;
+	position:relative;
+	text-align:right;	
+}
+.kf_sorting_element span{
+	margin:0px 10px 0px 0px;	
+}
+.kf_sorting_element .btn-group{
+	margin:0px 8px 0px 0px;
+	display:inline-block;	
+}
+.kf_sorting_element .btn{
+	border-radius:0px;
+	height:40px;
+	padding:0px 15px;
+	color:#3c4a55;
+	border:1px solid #e9e9e9;	
+}
+.kf_sorting_element .dropdown-menu{
+	border:0px;
+	border-radius:0px;	
+}
+.kf_sorting_element  .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default:hover,
+.kf_sorting_element  .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default,
+.kf_sorting_element .dropdown-menu > li > a,
+.kf_sorting_element .dropdown-menu > li > a:hover,
+.kf_sorting_element .btn.btn-default.dropdown-toggl,
+.kf_sorting_element .btn.btn-default.dropdown-toggl .open,
+.kf_sorting_element .btn.btn-default.dropdown-toggle:hover{
+	color:#3c4a55 !important;
+}
+/*thumbnail style*/
+.kf_sorting_element > a{
+	width:40px;
+	height:40px;
+	color:#3c4a55;
+	text-align:center;
+	line-height:43px;
+	font-size:20px;
+	display:inline-block;	
+	border:1px solid #e9e9e9;
+	margin:0px 8px 0px 0px;
+	float:right;
+}
+/*
+	  ==============================================================
+		   Pet Shop Sorting Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Blog Detail Page Css Start
+	  ==============================================================
+*/
+.kf_pet_blog_detail{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_blog_detail > figure{
+	position:relative;
+	margin:0px 0px 40px;
+	border-bottom:2px solid;	
+}
+.kf_pet_blog_detail figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_blog_icon{
+	position:absolute;
+	bottom:-20px;
+	left:20px;
+	width:65px;
+	height:65px;
+	text-align:center;	
+}
+.kf_pet_blog_icon a{
+	display:block;
+	color:#fff;
+	font-size:36px;
+	line-height:65px;	
+}
+.kf_pet_blog_detail h4 > a{
+	display:block;
+	font-size:30px;
+	text-transform:uppercase;
+	margin:0px 0px 10px;
+	line-height:normal;	
+	font-weight:600;
+}
+.kf_pet_blog_detail ul.kode-post-meta-one{
+	float:left;
+	width:100%;
+	margin:0px;
+	line-height:normal;
+	margin:0px 0px 12px;	
+}
+.kf_pet_blog_detail ul.kode-post-meta-one a:first-child{
+	padding-left:0px;
+	border-left:0px;	
+}
+.kf_pet_detail_images{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:5px 0px 12px;	
+}
+.kf_pet_detail_images > figure{
+	width:48%;
+	float:left;
+	margin:0px 0px 0px 30px;
+	border:2px solid #eeeeee;
+	overflow:hidden;	
+}
+.kf_pet_detail_images > figure:first-child{
+	margin-left:0px;	
+}
+.kf_pet_blog_detail blockquote{
+	padding:40px 20px 20px;
+	border-left:0px;
+	border-bottom:2px solid;
+	text-align:center;
+	background-color:#f9f9f9;
+	margin:0px 0px 12px;
+}
+.kf_pet_blog_detail blockquote p{
+	font-style:italic;
+	color:#666;	
+	position:relative;
+}
+.kf_pet_blog_detail blockquote p:before{
+	content:"\f10d";
+	font-family:fontawesome;
+	position:absolute;
+	top:-58px;
+	left:0px;
+	right:0px;
+	margin:auto;
+	width:45px;
+	height:45px;
+	background-color:#fff;
+	border-radius:100%;
+	line-height:45px;
+	font-size:22px;
+	color:#666666;
+	font-style:normal;
+	box-shadow:0px 0px 0px 5px #eeeeee;	
+}
+/*
+	  ==============================================================
+		   Blog Detail Page Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Blog Comment Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_admin_commnt{
+	float:left;
+	width:100%;
+	position:relative;
+	background-color:#f9f9f9;
+	padding:15px 20px;
+	margin:0px 0px 30px;	
+}
+.kf_pet_admin_commnt figure{
+	float:left;
+	width:120px;	
+}
+.kf_pet_admin_commnt figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_admin_des{
+	float:none;
+	padding:10px 0px 0px 140px;	
+}
+.kf_pet_admin_des h6 > a{
+	display:block;
+	font-family: 'Raleway', sans-serif;
+	font-size:16px;
+	line-height:normal;
+	text-transform:uppercase;
+	margin:0px 0px 8px;
+	font-weight:bold;	
+}
+.kf_pet_admin_des p{
+	color:#666666;	
+}
+/*Client Comment Style*/
+.kf_pet_comment{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:0px 0px 20px;	
+}
+.kf_pet_comment h4{
+	font-size:24px;
+	text-transform:uppercase;
+	font-weight:600;	
+}
+.kf_pet_comment ul{
+	float:left;
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_comment ul li{
+	padding:20px 0px;
+	border-bottom:1px solid #e7e7e7;
+	margin:0px;	
+}
+.kf_pet_comment ul li,
+.kf_client_comment{
+	position:relative;
+	width:100%;
+	float:left;	
+}
+.kf_client_comment figure{
+	float:left;
+	width:90px;
+	border:1px solid #e7e7e7;
+	padding:5px;
+	border-radius:100%;
+	background-color:#fff;
+}
+.kf_client_comment figure img{
+	border-radius:100%;
+	width:100%;
+	height:auto;	
+}
+.kf_pet_client_des{
+	float:none;
+	padding:0px 0px 0px 110px;	
+}
+.kf_pet_client_des h6 > a{
+	font-size:16px;
+	text-transform:uppercase;
+	float:left;
+	font-weight:bold;
+	margin:0px 0px 10px;	
+}
+.kf_pet_client_des span{
+	float:right;
+	color:#656565;
+	font-size:14px;	
+}
+.kf_pet_client_des p{
+	width:100%;
+	float:left;
+	margin:0px 0px 12px;	
+}
+.kf_pet_client_des > a{
+	border:1px solid #ccc;
+	padding:7px 20px 4px;
+	color:#666666;
+	text-transform:uppercase;
+	float:left;
+	font-weight:600;	
+}
+/*Second ul Style*/
+.kf_pet_comment ul ul{
+	padding:0px 0px 0px 50px;
+	border-top:1px solid #e7e7e7;
+	margin:20px 0px 0px;	
+}
+.kf_pet_comment ul ul li{
+	border:0px;
+	padding-bottom:0px;	
+}
+/*Hover Style*/
+.kf_pet_client_des a:hover{
+	color:#fff;	
+}
+/*
+	  ==============================================================
+		   Blog Comment Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Post Comment Wrap Css Start
+	  ==============================================================
+*/
+.kf_post_comment{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_post_comment h4{
+	font-size:24px;
+	text-transform:uppercase;
+	font-weight:600;
+	margin:0px 0px 12px;	
+}
+.kf_post_field{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_post_field input[type="text"],
+.kf_post_field input[type="email"],
+.kf_post_field textarea{
+	width:100%;
+	float:left;
+	border:1px solid #ccc;
+	height:40px;
+	padding:8px 15px;
+	margin:0px 0px 15px;
+	color:#666;	
+}
+.kf_post_field textarea{
+	min-height:140px;	
+}
+.kf_post_field input[type="submit"],
+.kf_post_field button{
+	float:left;
+	border:0px;
+	border:1px solid #ccc;
+	font-size:16px;
+	text-transform:uppercase;
+	padding:7px 15px;
+	background-color:transparent;
+	color:#666;
+	font-weight:600;	
+}
+/*Hover Style*/
+.kf_post_field input[type="submit"]:hover,
+.kf_post_field button:hover{
+	color:#fff;	
+}
+/*
+	  ==============================================================
+		   Post Comment Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Services We Offer Css Start
+	  ==============================================================
+*/
+.kf_pet_offer_bg .kf_pet_heading_1{
+	text-align:left;	
+}
+.kf_pet_offer_bg .kf_pet_heading_1::before{
+	right:auto;	
+}
+.kf_pet_offer_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:0px 0px 17px;
+}
+.kf_pet_offer_wrap > a{
+	width:62px;
+	height:62px;
+	float:left;	
+	line-height:72px;
+	font-size:35px;
+	text-align:center;
+	color:#fff	
+}
+.kf_pet_offer_des{
+	float:none;
+	padding:0px 0px 0px 75px;
+	width:auto;	
+}
+.kf_pet_offer_des h4 > a{
+	display:block;
+	position:relative;
+	color:#666666;
+	padding:0px 0px 10px;
+	margin:0px 0px 10px;
+	font-weight:500;
+	text-transform:uppercase;
+}
+.kf_pet_offer_des h4 > a::before{
+	content:"";
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:30px;
+	height:2px;
+	background-color:#666666;	
+}
+/*
+	  ==============================================================
+		   Services We Offer Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Our Mission Css Start
+	  ==============================================================
+*/
+.kf_pet_mission{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_mission ul{
+	float:left;
+	width:100%;
+	margin:0px;
+}
+.kf_pet_mission ul li{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_mission ul li figure{
+	margin:0px 0px 10px;
+	width:100%;
+	float:left;	
+}
+.kf_pet_mission ul li figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_mission_des{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+/*Bx-Slider Style*/
+.kf_pet_mission .bx-wrapper .bx-pager{
+	display:none;	
+}
+.kf_pet_mission .bx-wrapper .bx-controls-direction a{
+	background-color:#999999;
+	width:28px;
+	height:28px;
+	line-height: 28px;
+	font-size:0px;
+	text-indent:inherit;
+	text-align:center;
+}
+.kf_pet_mission .bx-wrapper .bx-prev{
+	right:43px;
+	left:auto;	
+}
+.kf_pet_mission .bx-wrapper .bx-controls-direction a.bx-prev:before,
+.kf_pet_mission .bx-wrapper .bx-controls-direction a.bx-next:before{
+	content:"\f104";
+	position:absolute;
+	font-family:fontawesome;
+	color:#fff;
+	font-size:16px;
+	top:2px;
+	left:0px;
+	width:100%;
+	height:100%;	
+}
+.kf_pet_mission .bx-wrapper .bx-controls-direction a.bx-next:before{
+	content:"\f105";	
+}
+/*
+	  ==============================================================
+		   Our Mission Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Latest Price Table Css Start
+	  ==============================================================
+*/
+.kf_pet_price_bg_new{
+	position:relative;
+	background-image:url(extra-images/pet-price-table-bg.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;	
+}
+.kf_pet_price_bg_new:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.75);	
+}
+.kf_pet_price_wrap_new,
+.kf_pet_price_des_new{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;
+	background-color:#fff;	
+}
+.kf_pet_price_wrap_new h4{
+	font-weight:600;
+	text-transform:capitalize;
+	color:#fff;
+	line-height:normal;
+	margin:0px;
+	padding:23px 0px;
+	background-color:#3c4a55;	
+}
+.kf_pet_price_des_new{
+	border:1px solid #cdcdcd;	
+}
+.kf_pet_price_des_new ul{
+	width:100%;
+	float:left;
+	margin:0px;
+	padding:20px;
+}
+.kf_pet_price_des_new ul li{
+	display:inline-block;
+	position:relative;
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_price_des_new ul li a{
+	display:block;
+	color:#666666;
+	padding:18px 0px;
+	border-bottom:1px solid rgba(0,0,0,0.1);
+	font-size:15px;	
+}
+.kf_pet_price_des_new > a{
+	display:inline-block;
+	color:#fff;
+	padding:8px 25px;
+	font-size:15px;
+	margin:18px 0px;	
+}
+/*Hover Style*/
+.kf_pet_price_des_new > a:hover{
+	background-color:#000 !important;
+}
+.kf_pet_price_wrap_new:hover{
+	transform:scale(1.02);	
+	-moz-transform:scale(1.02);	
+	-webkit-transform:scale(1.02);	
+}
+/*
+	  ==============================================================
+		   Latest Price Table Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Our Team Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_team_bg{
+	padding-bottom:25px;	
+}
+.kf_pet_taem_wrap_new{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:0px 0px 30px;	
+}
+.kf_pet_taem_wrap_new figure{
+	overflow:hidden;	
+}
+.kf_pet_taem_wrap_new figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_team_des_new{
+	float:left;
+	width:100%;
+	position:relative;
+	background-color:#f9f9f9;
+	text-align:center;
+	padding:20px 20px 10px;	
+}
+.kf_pet_team_des_new h5 > a{
+	display:block;
+	text-transform:uppercase;
+	font-weight:600;
+	position:relative;
+	padding:0px 0px 10px;
+	margin:0px 0px 10px;	
+}
+.kf_pet_team_des_new h5 > a::before{
+	content:"";
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	width:30px;
+	height:1px;	
+	margin:auto;
+}
+.kf_pet_team_des_new p{
+	text-transform:capitalize;	
+}
+/*Hover style*/
+.kf_pet_taem_wrap_new:hover .kf_pet_team_des_new h5 > a,
+.kf_pet_taem_wrap_new:hover .kf_pet_team_des_new p{
+	color:#fff;	
+}
+.kf_pet_taem_wrap_new:hover .kf_pet_team_des_new h5 > a::before{
+	background-color:#fff !important;	
+}
+/*
+	  ==============================================================
+		   Our Team Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Contact Detail Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_services{
+	float:left;
+	width:100%;
+	border-bottom:1px solid #d5d5d5;
+}
+.col-md-3.padding_0 {
+    padding: 0;
+}
+.kf_pet_contact_list{
+	float:left;
+	width:100%;
+	text-align:center;
+	padding:40px 30px;
+	position:relative;
+}
+.kf_pet_contact_list:hover{
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+}
+.kf_pet_contact_list::before{
+	position:absolute;
+	content:"";
+	left:0px;
+	bottom:-2px;
+	width:0;
+	height:4px;
+}
+.kf_pet_contact_list:hover::before{
+	width:100%;
+}
+.kf_pet_contact_list:hover{
+	background-color:#efefef;
+}
+.kf_pet_contact_list a{
+	width:80px;
+	height:80px;
+	text-align:center;
+	border-radius:100%;
+	border:1px solid #b2b2b2;
+	display:inline-block;
+	font-size:30px;
+	color:#b2b2b2;
+	margin-bottom:20px;
+}
+.kf_pet_contact_list:hover a{
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
+    color: #fff;
+}
+.kf_pet_contact_list a i{
+	line-height:80px;
+}
+.kf_pet_contact_list h5{
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-bottom:10px;
+	color:#b2b2b2;
+}
+.kf_pet_contact_list p{
+	font-size:16px;
+	color:#b2b2b2;
+	margin:0px;
+	padding:0px 20px;
+}
+/*Hover style*/
+.kf_pet_contact_list:hover h5,
+.kf_pet_contact_list:hover p{
+	color:#666666;
+}
+/*
+	  ==============================================================
+		   Contact Detail Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Contact Us Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_contactus{
+	float:left;
+	width:100%;
+}
+.kf_pet_contactus input[type="text"],
+.kf_pet_contactus input[type="email"]{
+	width:100%;
+	height:50px;
+	font-size:16px;
+	color:#999999;
+	border:1px solid #ccc;
+	padding:8px 15px;
+	margin-bottom:30px;
+}
+.kf_pet_contactus textarea{
+	width:100%;
+	height:185px;
+	font-size:16px;
+	font-weight:Light;
+	color:#999999;
+	padding:20px 20px;
+	border:1px solid #ccc;
+	margin-bottom:30px;
+}
+.kf_pet_contactus input[type="text"]:focus,
+.kf_pet_contactus input[type="email"]:focus,
+.kf_pet_contactus textarea:focus{
+	box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.15);	
+}
+.kf_pet_contactus input[type="submit"],
+.kf_pet_contactus button{
+	background: none;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 30px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 0px ;
+}
+/*Hover Style*/
+.kf_pet_contactus input[type="submit"]:hover,
+.kf_pet_contactus button:hover{
+	color:#fff;	
+}
+.kf-pet_map {
+    float: left;
+    width: 100%;
+}
+.kf-pet_map iframe {
+    height: 325px;
+    width: 100%;
+	margin:0px;
+}
+/*
+	  ==============================================================
+		   Contact Us Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   404 Page Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_error_bg{
+	padding-top:7px;	
+}
+.kf_pet_404page{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;	
+}
+.kf_pet_404page h2{
+	font-size:300px;
+	line-height:normal;
+	font-weight:bold;
+	line-height:280px;
+	font-family: 'Open Sans', sans-serif;	
+}
+.kf_pet_404page h3{
+	font-size:60px;
+	font-weight:bold;
+	line-height:normal;
+	text-transform:uppercase;	
+}
+.kf_pet_404page p{
+	font-size:40px;
+	color:#666666;
+	line-height:normal;
+	margin:0 0 18px;	
+}
+.kf_pet_404page span{
+	display:block;
+	color:#999999;
+	font-size:18px;
+	font-weight:600;
+	margin:0 0 32px;
+	line-height:normal;	
+}
+.kf_pet_404page > a{
+	display:inline-block;
+	padding:9px 30px 7px;
+	background-color:#4d4d4d;
+	color:#fff;
+	font-size:18px;
+	font-weight:600;
+	margin:0px 0px 0px 25px;	
+}
+.kf_pet_404page > a:first-of-type{
+	margin-left:0px;	
+}
+/*
+	  ==============================================================
+		   404 Page Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Comming Soon Page Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_comming{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;	
+}
+.kf_pet_comming h2{
+	font-size:60px;
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:normal;
+	margin:0px 0px 10px;	
+}
+.kf_pet_comming h5{
+	font-weight:normal;
+	margin:0px 0px 30px;	
+}
+.kf_pet_comming ul{
+	float:left;
+	width:100%;
+	margin:0px 0px 15px;
+	border:1px solid #666666;	
+}
+.kf_pet_comming ul li{
+	margin:0px;
+	display:inline-block;
+	padding:0 75px;
+	position:relative;
+}
+.kf_pet_comming ul li:first-child{
+	padding-left:63px;	
+}
+.kf_pet_comming ul li:before{
+	content:":";
+	position:absolute;
+	top:0px;
+	left:-22px;
+	width:50px;
+	height:100%;
+	font-size:90px;
+	font-weight:lighter;
+	color:#e2e2e2;	
+}
+.kf_pet_comming ul li:first-child:before{
+	display:none;	
+}
+.kf_pet_comming ul li span{
+	font-size:100px;
+	line-height:normal;
+	font-weight:lighter;
+	color:#4d4d4d;	
+}
+.kf_pet_comming ul li p{
+	font-size:20px;
+	text-transform:uppercase;
+	font-weight:600;
+	line-height:normal;	
+}
+/*
+	  ==============================================================
+		   Comming Soon Page Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Gallery Page Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_filter_nav{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;
+	margin:0px 0px 30px;	
+}
+.kf_pet_filter_nav ul{
+	margin:0px;
+	display:inline-block;
+	border-bottom:1px solid #999999;	
+}
+.kf_pet_filter_nav ul li{
+	display:inline-block;
+	position:relative;
+	margin:0px;	
+}
+.kf_pet_filter_nav ul li.active::before,
+.kf_pet_filter_nav ul li::before{
+	content:"";
+	position:relative;
+	position:absolute;
+	bottom:-2px;
+	left:0px;
+	height:3px;
+	width:0px;	
+}
+.kf_pet_filter_nav ul li a{
+	display:block;
+	color:#999999;
+	padding:5px 15px;
+	text-transform:uppercase;
+	font-weight:bold;	
+}
+/*Hover Style*/
+.kf_pet_filter_nav ul li.active::before,
+.kf_pet_filter_nav ul li:hover::before{
+	width:100%;	
+}
+/*Gallery List Style*/
+.filterable_container{
+	float:left;
+	width:100%;
+	margin:0px -10px;	
+}
+.kf_pet_gallery_1{
+	width:48.2%;
+	float:left;
+	position:relative;
+	margin:0px 10px;	
+}
+.kf_pet_gallery_wrap{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_gallery_wrap::before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:0px;
+	z-index:10;	
+}
+.kf_pet_gallery_wrap figure{
+	position:relative;	
+	float:left;
+	width:100%;
+	position:relative;
+}
+.kf_pet_gallery_wrap figure::before{
+	content:"";
+	position:absolute;
+	left:10px;
+	right:10px;
+	top:10px;
+	bottom:10px;
+	z-index:10;	
+}
+.kf_pet_gallery_wrap figure::after{
+	content:"";
+	position:absolute;
+	left:10px;
+	right:10px;
+	top:10px;
+	bottom:10px;
+	z-index:10;	
+}
+.kf_pet_gallery_wrap figure::before{
+	border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    transform: scale(0, 1);	
+}
+.kf_pet_gallery_wrap figure::after{
+	border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: scale(1, 0);	
+}
+.kf_pet_gallery_wrap figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_gallery_icon{
+	position:absolute;
+	top:50%;
+	width:100%;
+	text-align:center;
+	margin:-25px 0px 0px;
+	z-index:20;	
+}
+.kf_pet_gallery_icon > a{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	font-size:22px;
+	color:#fff;	
+	border:1px solid #fff;
+	margin:0px 0px 0px 10px;
+	opacity:0;	
+}
+.kf_pet_gallery_icon > a:first-of-type{
+	margin-left:0px;	
+}
+.kf_pet_gallery_icon > a:nth-child(1){
+	transform:translate3d(-60px, -60px, 0px);	
+}
+.kf_pet_gallery_icon > a:nth-child(2){
+	transform:translate3d(60px,-60px,0);	
+}
+/*Hover Style*/
+.kf_pet_gallery_wrap:hover figure:before,
+.kf_pet_gallery_wrap:hover figure:after{
+    transform: scale(1);	
+}
+.kf_pet_gallery_wrap:hover::before{
+	height:100%;
+	opacity:0.75;	
+}
+.kf_pet_gallery_icon > a:hover{
+	background-color:#fff;	
+}
+.kf_pet_gallery_wrap:hover .kf_pet_gallery_icon > a:nth-child(1),
+.kf_pet_gallery_wrap:hover .kf_pet_gallery_icon > a:nth-child(2){
+	transform:translate(0px,0px);
+	opacity:1;	
+}
+/*
+	  ==============================================================
+		   Gallery Page Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Gallery-02 Page Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_gallery_2{
+	width:31.2%;
+	float:left;
+	position:relative;
+	margin:0px 10px;	
+}
+/*
+	  ==============================================================
+		   Gallery-02 Page Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Gallery-03 Page Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_gallery_3{
+	width:23.2%;
+	float:left;
+	position:relative;
+	margin:0px 10px;	
+}
+/*
+	  ==============================================================
+		   Gallery-03 Page Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Shop Detail Page Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_detail_outer_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:0px 0px 30px 0px;	
+}
+.kf_pet_shop_slider{
+	float:left;
+	width:100%;
+	position:relative;
+	border:1px solid #c0c0c0;
+	padding:30px;
+	margin:0px 0px 15px;	
+}
+.kf_pet_shop_slider ul{
+	float:left;
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_shop_slider ul li{
+	position:relative;
+	float:left;
+	width:100%;
+}
+.kf_pet_shop_slider ul li img{
+	width:auto;
+	height:auto;	
+}
+.kf_shop_pager{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_shop_pager a{
+	border:1px solid #e2e2e2;
+	display:inline-block;
+	width:30.5%;
+	margin-left:10px;
+	position:relative;	
+}
+.kf_shop_pager a:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+	opacity:0;	
+}
+.kf_shop_pager a:first-child{
+	margin-left:0px;	
+}
+/*Hover Style*/
+.kf_shop_pager a.active:before,
+.kf_shop_pager a:hover:before{
+	opacity:1;	
+}
+/*Item Detail Wrap Style*/
+.kf_pet_item_detail{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_item_detail h4{
+	font-weight:bold;
+	text-transform:uppercase;
+	display:inline-block;
+	text-align:left;
+	color:#3c4a55;
+	margin:0px 0px 7px;	
+}
+.kf_pet_item_detail span{
+	display:inline-block;
+	text-align:right;
+	font-weight:bold;
+	font-size:24px;
+	float:right;
+	color:#3c4a55;	
+}
+.kf_pet_item_detail ul{
+	float:left;
+	width:100%;
+	margin:0px 0px 10px;	
+}
+.kf_pet_item_detail ul a{
+	display:inline-block;
+	position:relative;
+}
+.kf_pet_item_detail p{
+	margin:0px 0px 15px;	
+}
+.kf_pet_item_spec_wrap{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:0px 0px 20px 0px;	
+}
+.kf_pet_item_spec{
+	float:left;
+	width:auto;
+	position:relative;	
+}
+.kf_pet_item_spec h5{
+	text-transform:capitalize;
+	font-size:16px;
+	font-weight:700;
+	margin:0px 0px 15px;
+	color:#3c4a55;	
+}
+.kf_pet_item_spec .btn{
+	border-radius:0px;
+	padding:10px 12px;
+	min-width:175px;
+	text-align:right;
+	margin:0px 20px 0px 0px;
+	border:1px solid #e2e2e2;
+	color:#666666;	
+}
+.kf_pet_item_spec .btn i{
+	display: inline-block;
+    padding-left: 110px;
+    text-align: right;
+	color:#666666;	
+}
+.kf_pet_item_spec .dropdown-menu li a{
+	color:#666666;
+	width:100%;	
+}
+.kf_pet_item_spec #incdec{
+	width:70px;
+	position:relative;	
+}
+.kf_pet_item_spec #incdec input[type="text"]{
+	height:41px;
+	border:1px solid #e2e2e2;
+	color:#666666;	
+}
+.kf_pet_item_spec .kode_increment{
+	position:absolute;
+	top:-3px;
+	right:0px;
+	width:20px;	
+}
+.kf_pet_item_spec .kode_increment > button{
+	background:none;
+	color:#666666;	
+}
+/*Add to Cart Style*/
+.kf_pet_add_cart{
+	float:left;
+	width:auto;	
+}
+.kf_pet_add_cart > a{
+	display:inline-block;
+	color:#fff;
+	padding:13px 20px 9px;
+	font-weight:600;
+	text-transform:uppercase;
+	font-size:15px;
+	line-height:normal;	
+}
+.kf_pet_add_cart > a > i{
+	margin-right:10px;	
+}
+/*Hover Style*/
+.kf_pet_add_cart > a:hover{
+	background-color:#000;	
+}
+/*Social Icon style*/
+.kf_pet_cart_scl{
+	float:left;
+	width:auto;
+	margin:8px 0px 0px 20px;	
+}
+.kf_pet_cart_scl ul{
+	float:left;
+	width:100%;
+	margin:auto;	
+}
+.kf_pet_cart_scl ul li{
+	display:inline-block;
+	position:relative;	
+}
+.kf_pet_cart_scl ul li a{
+	width:32px;
+	height:32px;
+	border-radius:100%;
+	border:1px solid #e2e2e2;
+	line-height:34px;
+	color:#acacac;
+	font-size:16px;
+	text-align:center;
+	margin:0px 3px 0px 0px;	
+}
+/*Hover style*/
+.kf_pet_cart_scl ul li a:hover{
+	color:#fff;	
+}
+/*Product Detail Tab Wrap Style*/
+.kf_pet_prdct_tab_wrap{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_prdct_tab_wrap ul{
+	margin:0px;
+	float:left;
+	width:100%;
+	border-bottom:1px solid #e7e7e7;
+}
+.kf_pet_prdct_tab_wrap ul li{
+	display:inline-block;
+	position:relative;
+	margin:0px;	
+}
+.kf_pet_prdct_tab_wrap ul li a{
+	display:block;
+	min-width:200px;
+	padding:10px 0 6px;
+	line-height:normal;
+	background-color:#f5f5f5;
+	margin:0px 10px 0px 0px;
+	color:#3c4a55;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:600;
+	text-align:center;	
+}
+/*Hover Style*/
+.kf_pet_prdct_tab_wrap ul li.active a,
+.kf_pet_prdct_tab_wrap ul li:hover a{
+	background-color:#b6b6b6;
+	color:#ffffff;	
+}
+/*Tab Description Style*/
+.kf_pet_prdct_tab_des{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:15px 5px;
+	margin:0px 0px 20px;	
+}
+.kf_pet_prdct_tab_des p{
+	line-height:30px;	
+}
+/*Best Seller Style*/
+.kf_pet_best_seller{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_best_seller > h5{
+	position:relative;
+	color:#3c4a55;
+	margin:0px 0px 10px;
+	line-height:normal;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:0px 0px 10px;	
+}
+.kf_pet_best_seller > h5:before{
+	content:"";
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:40px;
+	height:2px;	
+}
+.kf_pet_best_seller p{
+	color:#666666;
+	margin:0px 0px 25px;	
+}
+/*
+	  ==============================================================
+		   Shop Detail Page Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Services Page Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_service_bg{
+	padding-bottom:20px;	
+}
+.kf_pet_services_border{
+	float:left;
+	width:100%;
+	position:relative;
+	border-bottom:1px solid #f1f1f1;
+	margin:0 0 25px;	
+}
+.kf_pet_service_broucher{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_service_broucher figure{
+	position:relative;
+	float:left;
+	width:100%;
+	margin:0px 0px 15px;	
+}
+.kf_pet_service_broucher figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_service_broucher ul{
+	float:left;
+	width:100%;
+	margin:0px;	
+}
+.kf_pet_service_broucher ul li{
+	display:inline-block;
+	position:relative;
+	width:100%;
+	margin:0px 0px 10px;	
+}
+.kf_pet_service_broucher ul li a{
+	display:block;
+	padding:11px 15px 8px;
+	border:1px solid #f1f1f1;
+	color:#666666;
+	font-size:16px;
+	text-transform:uppercase;	
+}
+.kf_pet_service_broucher ul li a i{
+	margin:0px 15px 0px 0px;	
+}
+/*Standered Chunk Wrap Style*/
+.kf_pet_chunk_list{
+	float:left;
+	width:100%;
+	position:relative;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-top:1px solid #cccccc;	
+}
+.kf_pet_chunk_hdg{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:15px 15px;	
+}
+.kf_pet_chunk_hdg i{
+	margin:0px 20px 0px 0px;	
+}
+.kf_pet_chunk_hdg h6{
+	display:inline-block;
+	color:#666666;
+	font-weight:500;
+	text-transform:uppercase;	
+}
+.kf_pet_chunk_des{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_chunk_des p{
+	line-height:28px;
+	padding:15px 15px 10px;	
+}
+.kf_pet_aside_hdg .kf_pet_chunk_list:last-child{
+	border-bottom:1px solid #cccccc;	
+}
+/*open Style*/
+.kf_pet_chunk_hdg.accordion-open{
+	background-color:#4d4d4d;
+}
+.kf_pet_chunk_hdg.accordion-open h6,
+.kf_pet_chunk_hdg.accordion-open .fa-angle-right::before{
+	color:#fff;	
+}
+.kf_pet_chunk_hdg.accordion-open .fa-angle-right::before{
+	content:"\f107";
+}
+/*Testimonial Wrap Style*/
+.kf_pet_testi_wrap ul{
+	float:left;
+	width:100%;
+	margin:0px;
+	position:relative;	
+}
+.kf_pet_testi_wrap ul li{
+	position:relative;
+	float:left;
+	width:100%;	
+}
+.kf_pet_testi_wrap ul li p{
+	background-color:#f1f1f1;
+	padding:15px 10px;
+	margin:0px 0px 15px;
+	font-style:italic;
+	color:#666;
+	font-size:15px;	
+}
+.kf_pet_testi_des{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:right;	
+}
+.kf_pet_testi_des figure{
+	display:inline-block;
+	width:70px;	
+	float:right;
+}
+.kf_pet_testi_des figure img{
+	border:1px solid #cccccc;	
+	padding:8px;
+	width:auto;
+	height:auto;	
+}
+.kf_pet_des_user{
+	padding:18px 85px 0px 0px;	
+}
+.kf_pet_des_user h6{
+	font-size:16px;
+	text-transform:capitalize;
+	font-weight:bold;	
+}
+.kf_pet_des_user a{
+	font-size:16px;
+	color:#666666;	
+}
+.kf_pet_testi_wrap .bx-controls{
+	display:none;
+}
+/*Bx-Slider Style*/
+
+/*Featured Client Style*/
+.kf_pet_featurd_client .kode-ul-parent{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:0px;
+}
+.kf_pet_featurd_client .item{
+	width:48.5%;
+	display:inline-block;
+	position:relative;
+	text-align:center;
+	min-height:90px;
+	line-height:90px;
+	border:1px solid #cccccc;
+	margin:0px 0px 15px 15px;	
+}
+.kf_pet_featurd_client .item:nth-child(even){
+	margin-left:0px;	
+}
+.kf_pet_featurd_client .item a{
+	display:block;	
+}
+.kf_pet_featurd_client .item img{
+	width:auto;
+	height:auto;	
+}
+/*Margin Style*/
+.kf_pet_featurd_client.kf_pet_aside_hdg{
+	margin:0px;	
+}
+.kf_pet_featurd_client .kode_pet_value{
+	border:none;
+	width:100%;	
+	margin:0px;
+}
+/*
+	  ==============================================================
+		   Services Page Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Blog-06 Page Wrap Css Start
+	  ==============================================================
+*/
+.kf_pet_blog_grid{
+	float:left;
+	width:100%;
+	margin-bottom:30px;
+}
+.kf_pet_blog_grid figure{
+	position:relative;
+	display:block;
+	border-bottom:2px solid #656565;
+	margin-bottom:40px;
+}
+.kf_pet_grid_icon{
+	position:absolute;
+	width:60px;
+	line-height:60px;
+	height:60px;
+	bottom:-25px;
+	left:30px;
+	background-color:#656565;
+	text-align:center;
+}
+.kf_pet_grid_icon > a{
+	display:inline-block;
+	color:#fff;
+	font-size:30px;
+	line-height:62px;	
+}
+.kf_pet_grid_des{
+	float:left;
+	width:100%;
+	 margin-bottom: 18px;
+}
+.kf_pet_grid_des h4{
+	margin:0 0 14px;
+	text-transform:uppercase;
+	font-weight:600;
+}
+.kf_pet_grid_des ul{
+	padding:0px;
+	float:left;
+	width:100%;
+	margin:0 0 14px;
+}
+.kf_pet_grid_des ul li{
+	list-style:none;
+	float:left;
+	border-left:1px solid #ccc;
+	margin:0px;
+	line-height:13px;
+	padding: 0px 0px 0px 12px;
+}
+.kf_pet_grid_des ul li i{
+	float: left;
+	margin-right: 5px;
+
+}
+.kf_pet_grid_des li:first-child {
+    border: none;
+    padding: 0px;
+}
+.kf_pet_grid_des ul li a{
+	text-decoration:none;
+	color:#656565;
+	font-size:13px;
+	display:inline-block;
+	padding-right:20px;
+}
+.kf_pet_grid_des ul li span{
+	height:14px;
+	width:14px;
+	border-radius:100%;
+	display:inline-block;
+	font-size:10px;
+	color:#fff;
+	margin:0px 10px 0px 20px;
+	text-align:center;
+	line-height:14px;
+}
+.kf_pet_grid_des p{
+	margin:0px;
+	font-size:16px;
+	line-height:25px;
+	padding-right: 5px;
+}
+.kf_pet_grid_readmore{
+	float:left;
+	width:100%;
+	padding:14px 0px;
+	border-top:1px solid #e9e9e9;
+	border-bottom:1px solid #e9e9e9;
+	position:relative;
+}
+.kf_pet_grid_readmore::before{
+	position:absolute;
+	content:"";
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	border-top:1px solid transparent;
+	border-bottom:1px solid transparent;
+	width:0;
+	z-index: -1;
+}
+.kf_pet_blog_grid:hover .kf_pet_grid_readmore::before{
+	width:100%;
+}
+.kf_pet_blog_social {
+    float: right;
+    margin: 5px 0 0;
+}
+.kf_pet_grid_readmore > a {
+	text-decoration:none;
+	color:#656565;
+	font-size:16px;
+	font-weight:Bold;
+	display:inline-block;
+	text-transform:uppercase;
+	padding:11px 0 0;
+}
+.kf_pet_blog_social span{
+	color: #b2b2b2;
+    display: inline-block;
+    font-size: 16px;
+	padding:9px 0px 0px;
+}
+.kf_pet_blog_social ul{
+	float:right;
+	margin:0px;
+	padding:0px;
+}
+.kf_pet_blog_social ul li{
+	list-style:none;
+	float:left;
+	margin:0px;
+}
+.kf_pet_blog_social ul li a{
+	height:40px;
+	width:40px;
+	text-align:center;
+	display:inline-block;
+	border-radius:100%;
+	border:1px solid #b4b4b4;
+	font-size:15px;
+	color:#b2b2b2;
+	margin-left:8px;
+}
+.kf_pet_blog_social ul li a:hover{
+	color:#fff !important;
+}
+.kf_pet_grid_readmore ul li a i{
+	line-height:38px;
+}
+/*
+	  ==============================================================
+		   Blog-06 Page Wrap Css End
+	  ==============================================================
+*/	
+
+.no-padding [class*="col-md-"]{
+	padding:0px;	
+}
+
+
+
+
+.content-wrapper .pagebuilder-wrapper .kode-parallax-wrapper.kode-no-fixed:after{
+	background-attachment:scroll !important;	
+	background-size:auto !important;	
+}
+.kf_pet_client_wrap .bx-has-pager{
+	display:none;
+}
+footer.kode-footer-style-2{
+	padding:90px 0px 0px;
+	float:left;
+}
+/*
+	  ==============================================================
+		   Pet Client Says 2 Wrap Css Start
+	  ==============================================================
+*/
+.kode-testimonial-bg-white{
+	background-color:#eee !important;	
+}
+.kf_pet_testimonial2_bg{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_testi2_wrap{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_testi2_wrap:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	opacity:0.8;	
+}
+.kf_pet_testi2_wrap figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_pet_testi2_slider {
+    bottom: 0;
+    height: 100px;
+    left: 0;    
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 180px;
+}
+
+.kf_pet_testi2_des{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_testi2_des h4{
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:0px 0px 10px;	
+}
+.kf_pet_testi2_des p{
+	color:#fff;
+	font-weight:600;	
+}
+/*Other Testimonial Carousel Style*/
+.kf_pet_testi_3_wrap,
+.kf_pet_testi_3{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.kf_pet_testi_3{
+	border-bottom:3px solid #f3f3f3;
+	padding:50px;
+	margin:0px 0px 50px;
+	background-color:#fff;	
+}
+.kf_pet_testi_3:before{
+	content:"";
+	position:absolute;
+	bottom:-40px;
+	left:50px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 40px 0 0;
+	border-color: #fff transparent transparent transparent;	
+}
+.kf_pet_testi_3 p{
+	position:relative;	
+}
+.kf_pet_testi_3 p:before{
+	content:"\f10d";
+	font-family:fontawesome;
+	position:absolute;
+	font-size:15px;
+	color:#999999;
+	top:-35px;
+	left:0px;	
+}
+.kf_pet_testi_3 p:after{
+	bottom: -30px;
+    color: #999999;
+    content: "";
+    font-family: fontawesome;
+    font-size: 15px;    
+    margin: auto;
+    position: absolute;
+    right:40px;
+    text-align: center;	
+}
+.kf_pet_testi_3_fig{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kf_pet_testi_3_fig figure{
+	width:80px;
+	float:left;	
+}
+.kf_pet_testi_3_fig figure img{
+	width:100%;
+	height:auto;	
+	border:3px solid #f3f3f3;	
+}
+.kf_pet_testi_3_fig_des{
+	float:none;
+	width:auto;
+	padding:15px 0px 0px 100px;	
+}
+.kf_pet_testi_3_fig_des h5 > a{
+	display:block;
+	font-weight:600;
+	text-transform:uppercase;
+	margin:0px 0px 5px;	
+}
+.kf_pet_testi_3_fig_des span{
+	display:block;
+	text-transform:capitalize;
+	font-weight:600;
+	color:#999999;	
+}
+/*Carousel Style*/
+.kf_pet_testi_3_wrap .owl-item .item{
+	margin-left:30px;	
+}
+.kf_pet_testi_3_wrap .owl-dots{
+	display:none !important;	
+}
+
+/*
+	  ==============================================================
+		   Pet Client Says 2 Wrap Css End
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Word Press Default Styling Start
+	  ==============================================================
+*/
+.kf_pet_callus ul.kode_store_faq_area li a:hover{
+	background:none !important;	
+}
+.kode-gutter-gallery ul li{
+	list-style:none;	
+	margin:0px;
+}
+/*
+	  ==============================================================
+		   Word Press Default Styling End
+	  ==============================================================
+*/
+.kode-simple-heading{
+	float:left;
+	width:100%;
+}
+.kode-padding-with .columns{
+	margin-bottom:30px;
+}
+.kf_pet_testi_3_fig_des > h5{
+	margin:0px;
+}
+.kode-thumb-link{
+	padding:30px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	font-size:18px;
+	margin-bottom:15px;
+}
+.kode-link-post{
+	float:left;
+	width:100%;
+}
+.kode-title-link.kf_pet_news_des,
+.kode-title-quote.kf_pet_news_des{
+	border:none;
+	padding:0px;
+	text-align:center;
+}
+.kode-title-link.kf_pet_news_des h5,
+.kode-title-quote.kf_pet_news_des h5{
+	margin-top:15px;
+	display:block;
+}
+.kode-title-link.kf_pet_news_des .kf_pet_news_link ,
+.kode-title-quote.kf_pet_news_des .kf_pet_news_link{
+	position:relative;	
+	left:0;
+	right:0;
+	margin:auto;
+	bottom:0;
+}
+.kode-top-quote blockquote{
+	border:none;
+	background:none;
+	padding:0px;
+}
+.woocommerce.widget_products.kode-widget .product_list_widget > li {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+}
+
+
+
+
+.btn-style-filled, .kf_pet_newsletter input[type="submit"], .kf_pet_newsletter button{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 14px;
+	display: inline-block;
+	padding: 15px 30px;
+	background: #f29100;
+	border: solid 1px #f29100;
+	font-weight: bold;
+}
+.btn-style-filled:hover, .kf_pet_newsletter input[type="submit"]:hover, .kf_pet_newsletter button:hover{
+	background-color: #000 !important;
+	border-color: #000;
+
+}
+
+.btn-style-border, .kf_pet_field input[type="submit"], .kf_pet_field button{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #333;
+	line-height: 14px;
+	display: inline-block;
+	padding: 15px 30px;
+	border: solid 1px #ccc;
+	background: none;
+	font-weight: bold;
+}
+
+.btn-style-border.white, .kf_pet_link_1{
+	border: solid 1px #fff;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 14px;
+	display: inline-block;
+	padding: 15px 30px;
+	font-weight: bold;
+}
+
+.kode-post-meta-one{
+	float: left;
+	width: 100%;
+	list-style: none;
+}
+.kode-post-meta-one li{
+	float: left;
+	margin-left: 10px;
+}
+.kode-post-meta-one li:first-child{
+	margin-left: 0px;
+}
+.kode-post-meta-one li i{
+	float: left;
+	margin: 0px 5px 0px 0px;
+}
+.kode-post-meta-one li a{
+	border: none;
+	padding: 0px;
+
+}
+.kf_pet_scl_icon ul li a.added .fa-shopping-cart::before{
+	content:"\f218";
+}
+.added_to_cart.wc-forward{
+	display:none;	
+}

@@ -19,36 +19,103 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 		'as'	=> 'admin.index.index'
 	]);
 
-	Route::group(['prefix' => 'cat'], function(){
+	Route::group(['prefix' => 'role'], function(){
 		Route::get('',[
-			'uses' => 'CatController@index',
-			'as'   => 'admin.cat.index'
+			'uses' => 'RoleController@index',
+			'as'   => 'admin.role.index'
 		]);
 
 		Route::get('add',[
-			'uses' => 'CatController@getAdd',
-			'as'   => 'admin.cat.add'
+			'uses' => 'RoleController@getAdd',
+			'as'   => 'admin.role.add'
 		]);
 
 		Route::post('add',[
-			'uses' => 'CatController@postAdd',
-			'as'   => 'admin.cat.add'
+			'uses' => 'RoleController@postAdd',
+			'as'   => 'admin.role.add'
 		]);
 
 		Route::get('edit/{id}',[
-					'uses' => 'CatController@getEdit',
-					'as'   => 'admin.cat.edit'
+					'uses' => 'RoleController@getEdit',
+					'as'   => 'admin.role.edit'
 		]);
 
 		Route::post('edit/{id}',[
-					'uses' => 'CatController@postEdit',
-					'as'   => 'admin.cat.edit'
+					'uses' => 'RoleController@postEdit',
+					'as'   => 'admin.role.edit'
 		]);
 
 		Route::get('del/{id}',[
-					'uses' => 'CatController@del',
-					'as'   => 'admin.cat.del'
+					'uses' => 'RoleController@del',
+					'as'   => 'admin.role.del'
 		]);
+
+	});
+
+	Route::group(['prefix' => 'event_cat'], function(){
+		Route::get('',[
+			'uses' => 'EventCatController@index',
+			'as'   => 'admin.event_cat.index'
+		]);
+
+		Route::get('add',[
+			'uses' => 'EventCatController@getAdd',
+			'as'   => 'admin.event_cat.add'
+		]);
+
+		Route::post('add',[
+			'uses' => 'EventCatController@postAdd',
+			'as'   => 'admin.event_cat.add'
+		]);
+
+		Route::get('edit/{id}',[
+			'uses' => 'EventCatController@getEdit',
+			'as'   => 'admin.event_cat.edit'
+		]);
+
+		Route::post('edit/{id}',[
+			'uses' => 'EventCatController@postEdit',
+			'as'   => 'admin.event_cat.edit'
+		]);
+
+		Route::get('del/{id}',[
+			'uses' => 'EventCatController@del',
+			'as'   => 'admin.event_cat.del'
+		]);
+
+	});
+
+	Route::group(['prefix' => 'message'], function(){
+		Route::get('',[
+			'uses' => 'MessageController@index',
+			'as'   => 'admin.message.index'
+		]);
+
+		Route::get('add',[
+			'uses' => 'MessageController@getAdd',
+			'as'   => 'admin.message.add'
+		]);
+
+		Route::post('add',[
+			'uses' => 'MessageController@postAdd',
+			'as'   => 'admin.message.add'
+		]);
+
+		Route::get('edit/{id}',[
+			'uses' => 'MessageController@getEdit',
+			'as'   => 'admin.message.edit'
+		]);
+
+		Route::post('edit/{id}',[
+			'uses' => 'MessageController@postEdit',
+			'as'   => 'admin.message.edit'
+		]);
+
+		Route::get('del/{id}',[
+			'uses' => 'MessageController@del',
+			'as'   => 'admin.message.del'
+		]);
+
 	});
 
 	Route::group(['prefix' => 'user'], function(){
@@ -121,25 +188,25 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 	});
 });
 
-Route::group(['namespace' => 'Cnews', 'prefix' => ''], function(){
-	Route::get('', [
+Route::group(['namespace' => 'petfinder', 'prefix' => ''], function(){
+	Route::get('home', [
 		'uses'  => 'IndexNewsController@index',
-		'as'	=> 'cnews.news.index'
+		'as'	=> 'petfinder.news.index'
 	]);
 
 	Route::get('add', [
 		'uses'  => 'NewsController@add',
-		'as'	=> 'cnews.news.add'
+		'as'	=> 'petfinder.news.add'
 	]);
 
 	Route::get('{slug}-{id}.html', [
 		'uses'  => 'NewsController@detail',
-		'as'	=> 'cnews.news.detail'
+		'as'	=> 'petfinder.news.detail'
 	]);
 	
 	Route::get('tin-tuc/{slug}-{id}', [
 		'uses'  => 'NewsController@cat',
-		'as'	=> 'cnews.news.cat'
+		'as'	=> 'petfinder.news.cat'
 	]);
 
 	

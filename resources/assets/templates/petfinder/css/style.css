@@ -1,0 +1,6266 @@
+/*
+Theme Name: Pet Care
+Theme URI: http://kodeforest.net/wp-demo/petcare
+Description: Pet Care WordPress Theme
+Author: KodeForest
+Author URI: http://www.kodeforest.com
+Version: 1.5
+License: 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, light, yellow, two-columns, fluid-layout, custom-background, custom-colors, featured-images, theme-options
+Text Domain: pet-care
+*/
+
+/**
+ * Table of Contents :
+ *
+* 1.0 - Default Css
+* 2.0 - Pet Header Wrap Style
+* 3.0 - Pet Logo Wrap Style
+* 4.0 - Pet UI Element Wrap Style
+* 5.0 - Pet Search Wrap Style
+* 6.0 - Pet Social Icon Wrap Style
+* 7.0 - Pet Navigation Wrap Style
+* 8.0 - Pet Banner Wrap Style
+* 9.0 - Pet Download Sermon Wrap Style
+* 10.0 - Pet Heading Wrap Style
+* 11.0 - Find Out Best Pet Wrap Style
+* 11.1 - Pet Supper Homeless Wrap Style
+* 12.0 - Pet Find Best Companion Wrap Style
+* 13.0 - Pet Image Gallery Wrap Style
+* 14.0 - Pet Trusted country Wrap Style
+* 15.0 - Pet  Our Blog Wrap Style
+* 16.0 - Pet Testimonial Wrap Style
+* 17.0 - Pet Valueable Client Wrap Style
+* 18.0 - Pet Appoitment Wrap Style
+* 19.0 - Pet Map Wrap Style
+* 20.0 - Our Agents Wrap Style
+* 21.0 - Radial Out Effect
+* 22.0 - Sweep To Right Effect
+* 22.1 - Testimonial Image Effect
+
+[Color codes]
+
+Background:	#ffffff (white)
+Content:	#999999 (light black)
+Header h1:	#111111 (dark black)
+Header h2:	#111111 (dark black)
+Footer:		#000000 (dark black)
+
+a (standard):	#999999 (light black)
+a (visited):	#999999 (light black)
+a (active):	#999999 (light black)
+
+[Typography]
+  
+Body copy:		14px/ 'Lato', sans-serif;
+Headers:		'Josefin Sans', sans-serif;
+Input, textarea:	'Lato', sans-serif;
+Sidebar heading:	'Lato', sans-serif;
+
+-------------------------------------------------------------------*/
+.screen-reader-text{}
+.bypostauthor{}
+.kode_wrapper, header, .kode_pet_content, section, footer {
+	float: left;
+	width: 100%;
+}
+footer .container {
+	position: relative;
+	z-index: 999;
+}
+section {
+	padding: 50px 0px;
+}
+/*
+	  ==============================================================
+		   Pet Header Wrap Style
+	  ==============================================================
+*/
+.kode_pet_hdr {
+	padding: 0;
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.kode_pet_hdr:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 2px;
+}
+.kode_pet_top_strip {
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 17px 0px 15px 0px;
+	background-color: #3d3f42;
+	background-image: url(images/pet-hdr-strip-bg.jpg);
+	background-repeat: repeat-x;
+}
+.kode_pet_top_strip .top-info {
+	float: left;
+	margin: 5px 0px;
+}
+.kode_pet_top_strip .top-info a {
+	float: left;
+	margin: 0px 15px 0px 0px;
+	color: #e1e1e2;
+}
+.kode_pet_top_strip .top-info a i {
+	float: left;
+	margin: 4px 7px 0px 0px;
+}
+/*
+	  ==============================================================
+		   Pet Logo Wrap Style
+	  ==============================================================
+*/
+.kode_pet_logo {
+	float: left;
+	margin: 26px 0px;
+}
+.kode_pet_logo a {
+	display: inline-block;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/*
+	  ==============================================================
+		   Pet UI Element Wrap Style
+	  ==============================================================
+*/
+.kode_pet_ui_elmnt {
+	float: right;
+}
+/*
+	  ==============================================================
+		   Pet Search Wrap Style
+	  ==============================================================
+*/
+.kode_pet_search {
+	float: left;
+	width: 318px;
+	border: none;
+	position: relative;
+	padding-top: 2px;
+}
+.kode_pet_search input[type="text"] {
+	border: 0px;
+	width: 100%;
+	height: 34px;
+	padding: 0px;
+	border: 1px solid #666;
+	border-radius: 40px;
+	padding: 5px 42px 5px 15px;
+	background: none;
+	color: #fff;
+}
+.kode_pet_search input[type="text"]:focus{
+	border:1px solid;
+}
+.kode_pet_search .kode-search label:hover{
+	background-color:#fff !important;
+}
+.kode_pet_search .kode-search label:hover:before{
+	color:#000 !important
+}
+.pet_search a, .kode_pet_search .kode-search label {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	font-size: 14px;
+	color: #fff;
+	position: absolute;
+	right: 1px;
+	top: 2px;
+	line-height: 29px;
+	text-align: center;
+	border-radius: 100%;
+	z-index: 9999;
+	padding: 0px;
+}
+.kode_pet_search label input[type="submit"] {
+	padding: 0px;
+	visibility: hidden;
+	opacity: 0;
+}
+.kode_pet_search:hover a:before {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+/*
+	  ==============================================================
+		   Pet Social Icon Wrap Style
+	  ==============================================================
+*/
+.kode_pet_scl_icon {
+	float: left;
+	padding-top: 2px;
+}
+.kode_pet_scl_icon ul {
+	float: left;
+	width: 100%;
+	margin: 0px;
+	list-style: none;
+}
+.kode_pet_scl_icon ul li {
+	float: left;
+	position: relative;
+	margin: 0px 10px 0px 0px;
+}
+.kode_pet_scl_icon ul li a {
+	display: block;
+	width: 34px;
+	height: 34px;
+	border-radius: 100%;
+	font-size: 12px;
+	color: #fff;
+	line-height: 32px;
+	position: relative;
+	text-align: center;
+	z-index: 100;
+	background-color: #666666;
+}
+.kode_pet_scl_icon ul li a:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	border-radius: 100%;
+	opacity: 0;
+	z-index: -1;
+}
+.kode_pet_scl_icon ul li:hover a:before {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+.kode_pet_scl_icon ul li:first-child a {
+	margin-left: 0px;
+}
+/*
+	  ==============================================================
+		   Pet Navigation Wrap Style
+	  ==============================================================
+*/
+.current {
+	border-top: 6px solid;
+}
+.dl-menuwrapper {
+	display: none;
+}
+.kode_pet_navigation {
+	float: left;
+	width: 100%;
+	text-align: center;
+	left: 0px;
+	z-index: 9999;
+	position: absolute;
+	left: 0px;
+	top: 100%;
+}
+.kode_pet_navigation .container {
+	background-color: #fff;
+	position: relative;
+	background-image: url(images/pet-hdr-strip-bg.jpg);
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+.kode_pet_navigation .nav-cover:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 112px 20px 0px 0;
+	border-color: rgba(0,0,0,0.4) transparent transparent transparent;
+	position: absolute;
+	left: 100%;
+	top: 0px;
+}
+.kode_pet_navigation .nav-cover:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 20px 112px 0;
+	border-color: transparent rgba(0,0,0,0.4) transparent transparent;
+	position: absolute;
+	right: 100%;
+	top: 0px;
+}
+.kode_pet_navigation nav {
+	background-color: transparent;
+	border: 0px;
+}
+.kode_pet_navigation nav {
+	border-radius: 0px;
+	margin: 0px 0px;
+	min-height: 1px;
+	float: right;
+}
+.kode_pet_navigation .navbar-default .navbar-collapse, .kode_pet_navigation .navbar-default .navbar-form {
+	background-color: transparent;
+	border: 0px;
+}
+.kode_pet_navigation .navbar-collapse {
+	padding: 0px;
+}
+.kode_pet_navigation nav ul {
+	float: none;
+	text-align: center;
+}
+.kode_pet_navigation nav ul > li {
+	float: left;
+	margin: 0px 2px;
+	position: relative;
+}
+.kode_pet_navigation .navigation ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.kode_navi_clinic ul{
+	display:inline-block;
+	margin:0px 0px -6px;
+}
+.kode_navi_clinic .kode-navigation-wrapper{
+	width:100%;
+}
+.kode_pet_navigation .navigation ul li a {
+	color: #666666;
+	text-transform: uppercase;
+	padding: 42px 12px;
+	font-weight: bold;
+	border-top: solid 6px transparent;
+	display: block;
+}
+.kode_pet_navigation > .navigation ul ul li {
+	border: none;
+}
+.kode_pet_navigation .navigation ul li a.current {
+	border-top: solid 6px #ccc;
+}
+.kode_pet_navigation .navigation ul ul li a {
+	border: none;
+}
+.kode_pet_navigation .navigation ul > li.active a, .kode_pet_navigation .navigation ul > li:hover a {
+	background: none;
+}
+.kode_pet_navigation .navbar-default .navbar-nav > .active > a:hover {
+	background: none;
+}
+.kf_sticky {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999999;
+	
+}
+.kf_sticky > .container{
+	box-shadow:0 0 10px 1px rgba(0,0,0,0.18);
+}
+.kf_sticky{
+	position:fixed;	
+}
+.kf_sticky .logo, .kf_sticky, .kf_sticky .navbar-nav > li, .kf_sticky .kd-search {
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+}
+.capcha_image_frame {
+	float: left;
+	height: 45px;
+}
+.kode_pet_banner .bx-controls-direction {
+	display: none;
+}
+.navigation .menu .sub-menu .sub-menu .sub-menu, .navigation .menu .sub-menu, .navigation .sub-menu, .navigation .children, .navbar-nav .children {
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	background-color: #222126;
+	margin: 0px 0px 0px 0px;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 99999999999;
+	min-width: 240px;
+	box-shadow:0px 10px 20px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow:0px 10px 20px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0px 10px 20px 0px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.navigation .menu ul li:hover > .sub-menu li:hover > .sub-menu, .navigation .menu > .sub-menu li:hover > .sub-menu li:hover > .sub-menu, .navigation .menu ul li:hover > .sub-menu, .navigation .menu > .sub-menu li:hover > .sub-menu, .navigation ul li:hover > .sub-menu, .navigation .sub-menu li:hover > .sub-menu, .navbar-nav > li:hover > .children, .navbar-nav .children > li:hover > .children {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transform: translateX(0px);
+}
+.navigation .menu .sub-menu li, .navigation .sub-menu li, .navbar-nav .children li {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin:0px;
+}
+.navigation .menu .sub-menu li a, .navigation .sub-menu li a, .navbar-nav .children li a {
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: capitalize;
+	padding: 12px 15px;
+	display: block;
+	text-align: left;
+	font-weight: normal;
+}
+.navigation .menu .sub-menu li a:hover, .navigation .sub-menu li a:hover, .navbar-nav .children li a:hover{
+	color: #fff;
+
+}
+/*.navigation .menu .sub-menu li:first-child a, .navigation .sub-menu li:first-child a, .navbar-nav .children li:first-child a{
+	border:none;
+}*/
+.navigation .menu .sub-menu li a:before, .navigation .sub-menu li a:before, .navbar-nav .children li a:before {
+	content: "\f105";
+	font-family: FontAwesome;
+	display: inline-block;
+	padding: 0px 14px 0px 0px;
+}
+
+.navigation .menu .sub-menu .sub-menu .sub-menu, .navigation .menu .sub-menu .sub-menu, .navigation .sub-menu .sub-menu, .navbar-nav .children .children {
+	top: 0;
+	left: 100%;
+	margin: 0px;
+}
+.navigation .menu .sub-menu > li:hover > a, .navigation .sub-menu > li:hover > a, .sub-menu > li:hover > a:before, .navbar-nav .children > li:hover > a, .children > li:hover > a:before {
+	color: #ffffff;
+}
+.kode_pet_navigation nav ul > li.last ul, .navigation ul > li.last ul{
+	left:auto !important;
+	right:0 !important;
+}
+.kode_pet_navigation nav ul > li.last ul ul, .navigation ul > li.last ul ul{
+	left:auto !important;
+	right:100% !important;
+	top:0px;
+}
+.kode_pet_navigation nav ul > li ul ul, .navigation ul > li.last ul ul{
+}
+/*
+	  ==============================================================
+		   Pet Banner Wrap Style
+	  ==============================================================
+*/
+.kode-slider-item .flexslider, .kode-slider-item, .kode_pet_banner {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.kode-slider-item ul, .kode_pet_banner ul {
+	float: left;
+	width: 100%;
+}
+.kode-slider-item ul li, .kode_pet_banner ul li{
+	padding:0px !important;
+}
+.kode-slider-item ul li:before, .kode_pet_banner ul li:before {
+	content: "";
+	background-color: #000;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+}
+.kode-slider-item ul li img, .kode_pet_banner ul li img {
+	width: 100%;
+	height: auto;
+}
+.kode-caption-wrapper {
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	width: 535px;
+	text-align: center;
+	margin: -100px -535px 0 0;
+}
+.kode-caption-wrapper.position-left, .kode-caption.position-left {
+	text-align: left;
+	right: auto;
+	margin: 10px 0 0 -510px;
+	left: 50%;
+}
+.kode-caption-wrapper.position-right, .kode-caption.position-right {
+	text-align: left;
+	left: auto;
+	margin: -100px -590px 0 0;
+	right: 50%;
+	text-align: right;
+}
+.kode-caption .kode-caption-title {
+	color: #fff;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin: 0px 0px 20px 0px;
+	font-size: 70px;
+	line-height: 70px;
+	font-family: 'Slabo 27px', serif;
+}
+.kode-caption .kode-caption-text {
+	font-size: 20px;
+	color: #fff;
+	margin: 0px 0px 20px 0px;
+}
+.kode-caption h2 span {
+	display: block;
+}
+/* Link Style */
+.kode-caption .kf_flat_link_1{
+	padding:10px 30px 11px;
+}
+.kode-caption .kode-linksection {
+	display: inline-block;
+	font-size: 16px;	
+	font-weight: bold;
+	line-height: normal;
+	text-transform: uppercase;
+	margin: 0px 0px 0px 0px;
+}
+
+.kode-caption .bx-wrapper {
+	margin: 0 auto;
+}
+.kode-caption .bx-wrapper .bx-viewport {
+	border: 0px;
+}
+.kode-caption .bx-wrapper .bx-pager {
+	padding: 0px;
+}
+.kode-caption .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	bottom: 40px;
+	/*right:50%;
+	margin:0px -300px;
+	text-align:right;*/
+	font-size: 0px;
+}
+.kode-caption .bx-wrapper .bx-pager.bx-default-pager a {
+	background-color: #fff;
+}
+.kode-caption .bx-wrapper .bx-pager.bx-default-pager a:hover, .kode-caption .bx-wrapper .bx-pager.bx-default-pager a.active {
+	border: 3px solid #fff;
+	border-radius: 100%;
+	width: 13px;
+	height: 13px;
+}
+/*
+	  ==============================================================
+		   Pet Download Sermon Wrap Style
+	  ==============================================================
+*/
+.kode_pet_dwnld {
+	float: left;
+	width: 100%;
+}
+.kode_pet_dwnld h5 {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	line-height: 68px;
+	margin:0px;
+	font-size: 22px;
+}
+.kode_pet_dwnld a {
+	float: right;
+	margin-top: 13px;
+	padding:10px 30px 11px;
+}
+/*
+	  ==============================================================
+		   Pet Services Wrap Style
+	  ==============================================================
+*/
+.kode_pet_service_lst {
+	float: left;
+	width: 100%;
+	position: relative;
+	border: 1px solid #eeeeee;
+	padding: 5px;
+	text-align: center;
+	overflow:hidden;
+}
+.kode_pet_service_lst figure {
+	border: 1px solid #eeeeee;
+	overflow:hidden;
+	float:left;
+	width:100%;
+	position:relative;
+}
+.kode-service-classic .columns{
+	margin-bottom:30px;
+}
+.kf_pet_services .kode-service-classic .columns{
+	margin-bottom:0px;
+}
+.no-padding.kode-contact-us.kf_pet_services{
+	margin-top:-50px;
+}
+.kode_pet_service_lst figure img {
+	width: 100%;
+	height: auto;
+}
+.kode_pet_service_lst figure:before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 0px;
+	background-color:#000;
+}
+.kode_pet_service_lst:hover figure:before {
+	height: 100%;
+	opacity: 0.3;
+}
+.kode-service-desc-petcare{
+	position:absolute;
+	bottom:-86px;
+	width:100%;
+	transition:all 0.3s ease-in-out;
+}
+.kode_pet_service_caption h5 a{
+	color:#fff;
+}
+.kode_pet_service_lst:hover .kode-service-desc-petcare {
+    margin-top:-80px;
+    top: 50%;
+}
+.kode_pet_service_caption{
+	float:left;
+	width:100%;
+	padding:12px 0;
+}
+.kode_pet_service_caption h5{
+	font-weight:normal;
+	font-size:22px;
+	text-transform:uppercase;
+	color:#fff;
+}
+.kode_pet_service_hover {
+    float: left;
+    opacity: 0;
+    padding: 0 20px;
+    width: 100%;
+	visibility:hidden;
+}
+.kode_pet_service_hover p{
+	color: #fff;
+    line-height: 24px;
+    margin: 0 0 20px;
+}
+.kode_pet_service_hover h3{
+	margin-top:10px;
+}
+.kode_pet_service_hover span{
+	color: #fff !important;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+	font-size:14px;
+}
+.kode_pet_service_hover span:before {
+    background-color: #fff;
+    bottom: -50px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+.kode_pet_service_hover span:after {
+    background-color: #fff;
+    bottom:-58px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -14px;
+    position: absolute;
+    width: 30px;
+}
+.kode_pet_service_hover span a{
+	color:#fff;
+}
+/* hover style */
+.kode_pet_service_lst:hover .kode_pet_service_caption{
+	background:none;
+	padding-bottom:8px;
+}
+.kode_pet_service_lst:hover .kode_pet_service_hover{
+	opacity:1;
+	visibility:visible;
+}
+/* Comment */
+/*.kode_pet_service_caption {
+	float: left;
+	width: 100%;
+	padding: 15px 0px;
+	position: absolute;
+	bottom: 0px;
+}
+ .kode_pet_service_hover {
+	float: left;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: -140px;
+	padding: 0px 25px;
+	margin: -70px 0px 0px;
+	opacity: 0;
+	padding:0px 20px;
+}
+.kode_pet_service_hover p {
+	line-height: 24px;
+	color: #fff;
+	margin: 0px 0px 20px;
+	word-break: break-all;
+}
+.kode_pet_service_hover a {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	font-weight: bold;
+}
+.kode_pet_service_hover a:before {
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	width: 50px;
+	left: 50%;
+	height: 2px;
+	background-color: #fff;
+	margin-left: -25px;
+}
+.kode_pet_service_hover a:after {
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	width: 30px;
+	left: 50%;
+	height: 2px;
+	background-color: #fff;
+	margin-left: -14px
+}
+.kode-service-desc-petcare{
+	width:100%;
+	bottom:0px;
+	position:absolute;
+	left:0px;
+}
+.kode_pet_service_lst:hover .kode-service-desc-petcare{
+	top:0px;
+	left:0px;
+}
+.kode_pet_service_hover a:hover {
+	color: #323232;
+}
+.kode_pet_service_hover a:hover:before, .kode_pet_service_hover a:hover:after {
+	background-color: #323232;
+}
+.kode_pet_service_lst:hover .kode_pet_service_caption {
+	top: 32px;
+	background: none;
+	padding: 0px;
+	top:0px;
+	left:0px;
+}
+.kode_pet_service_lst:hover .kode_pet_service_hover {
+	bottom: 80%;
+	opacity: 1;
+	left:0px;
+	top:40px;
+}
+.kode_pet_service_caption h5 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+} */
+/*
+	  ==============================================================
+		   Pet Heading Wrap Style
+	  ==============================================================
+*/
+/*
+	  ==============================================================
+		   Pet Heading Wrap Style
+	  ==============================================================
+*/
+/*Heading 1 Style*/
+.kode_pet_heading_1, .kode_pet_heading_2, .kode_pet_heading_3 {
+	float: left;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.kode_pet_heading_1 h3, .kode_pet_heading_2 h3, .kode_pet_heading_3 h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0px 0px 16px;
+	font-size: 30px;
+	line-height: 25px;
+}
+.kode_pet_heading_1 span, .kode_pet_heading_2 span, .kode_pet_heading_3 span {
+	float: none;
+	display: inline-block;
+	position: relative;
+}
+.kode_pet_heading_1 span {
+	margin-bottom: 7px;
+}
+.kode_pet_heading_1 span:before, .kode_pet_heading_3 span:before, .kode_pet_heading_1 span:after, .kode_pet_heading_3 span:after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: -60px;
+	width: 60px;
+	height: 1px;
+	background-color: #666666;
+}
+.kode_pet_heading_1 span:after, .kode_pet_heading_3 span:after{
+	left: auto;
+	right: -60px;
+
+}
+.kode_pet_heading_1 i {
+	display: inline-block;
+	font-size: 20px;
+	color: #000000;
+	position: relative;
+	z-index: 9999;
+	padding: 0px 8px;
+}
+.kode_pet_heading_1 p {
+	word-break: break-all;
+	padding: 0px 120px;
+	text-align: center;
+	margin: 0px;
+}
+/*Heading 2 Style*/
+.kode_pet_heading_2 h3 {
+	color: #fff;
+}
+.kode_pet_heading_2 span:before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: -78px;
+	right: 0px;
+	margin: auto;
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+}
+.kode_pet_heading_2 span:after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	right: 132px;
+	left: auto;
+	margin: auto;
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+}
+.kode_pet_heading_2 i {
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	position: relative;
+	z-index: 9999;
+	padding: 0px 8px;
+}
+/*Heading 3 Style*/
+.kode_pet_heading_3 span {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.kode_pet_heading_3 p {
+	margin-bottom: 0px;
+}
+.kode_pet_heading_3 i {
+	display: inline-block;
+	font-size: 18px;
+	color: #000000;
+	position: relative;
+	z-index: 9999;
+	padding: 0px 8px;
+	background-color: #ededed;
+}
+/*Heading 2 style*/
+.kode_pet_heading_4 {
+	float: left;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.kode_pet_heading_4 h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0px 0px 20px;
+	line-height: 25px;
+	font-size: 30px;
+	color: #fff;
+}
+.kode_pet_heading_4 h4 {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	font-style: italic;
+	margin: 0px 0px 25px;
+	line-height: 30px;
+	font-size: 40px;
+	margin-bottom: 56px;
+}
+.kode_pet_heading_4 span {
+	float: left;
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+}
+.kode_pet_heading_4 span:before {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: -75px;
+	right: 0px;
+	margin: auto;
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+}
+.kode_pet_heading_4 span:after {
+	content: "";
+	position: absolute;
+	top: 14px;
+	right: -70px;
+	left: 0px;
+	margin: auto;
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+}
+.kode_pet_heading_4 i {
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	position: relative;
+	z-index: 9999;
+	padding: 0px 8px;
+}
+/*
+	  ============================================================
+		  Love Pet Wrap Start
+	  ============================================================
+*/
+.kode-services-left {
+	float: left;
+	position: relative;
+}
+.kode-services i {
+	float: left;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 64px;
+	background-color: #fff;
+	/* box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.18); */
+	border:2px solid #ccc;
+	border-radius: 100%;
+	font-size: 30px;
+	color: #333;
+}
+.kode-services-right .kode_love_des_left {
+	padding: 0px 0px 0px 90px;
+	float: none;
+}
+.kode-services-left.kode-services i {
+	float: right;
+}
+.kode-services-left .kode_love_des_left p {
+	text-align: right;
+}
+.kode-services-left .kode_love_des_left {
+	padding: 0px 90px 0px 0px;
+	float: none;
+	text-align: right;
+}
+.kode-services-right .kode_love_des_left p {
+	text-align: left;
+}
+.kode_pet_service_caption h5 {
+	font-size: 20px;
+    line-height: 18px;
+    margin: 5px 0;
+    text-transform:uppercase;
+}
+.kode-services-right h5, .kode-services-left h5 {
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+	line-height: 20px;
+	font-size: 22px;
+}
+.kode-services-left p, .kode-services-right p {
+	margin: 0px;
+	line-height: 23px;
+}
+.kode-services-left:hover i, .kode-services-right:hover i {
+	color: #fff;
+}
+/*Image Wrap Style*/
+.kode_love_img figure img {
+	width: 100%;
+	height: auto;
+}
+/*
+	  ==============================================================
+		   Pet Supper Homeless Wrap Style
+	  ==============================================================
+*/
+.kode_pet_homeless_bg {
+	background-image: url(images/pet-donate-bg1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	padding-bottom: 64px;
+}
+.kode_pet_homeless_bg:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #262626;
+	opacity: 0.7;
+}
+.kode_pet_homeless_bg .container {
+	position: relative;
+	z-index: 999999;
+}
+.kode_price_outer_wrap {
+	width: 985px;
+	margin: 25px auto 56px;
+	box-shadow: 0px 0px 0px 30px rgba(255,255,255,0.12);
+}
+/*Donate 1 Style*/
+
+.kode_donate1 {
+	float: left;
+	width: 31%;
+	background-color: #27ae60;
+	text-align: center;
+	padding: 50px 30px;
+	position: relative;
+	z-index: 99999;
+}
+.kode_donate1:after{
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	width:100%;
+	height:100%;
+	opacity:0.4;
+	background:#fff;
+}
+.kode_donate1 h3, .kode_donate2 h3 {
+	color: #fff;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 28px;
+	line-height: 20px;
+	margin:0px 0px 10px 0px;
+}
+.kode_donate1 h2, .kode_donate2 h2 {
+	color: #fff;
+	font-weight: bold;
+	font-size: 56px;
+	line-height: 50px;
+	text-transform: uppercase;
+	margin:0px;
+}
+.kode_donate1:before {
+	content: "";
+	position: absolute;
+	top: 52px;
+	left: 0px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 128px 0 0 136px;
+	border-color: transparent transparent transparent rgba(255, 255, 255, 0.12);
+	z-index: -1;
+	opacity: 0;
+}
+.kode_donate1:hover:before {
+	opacity: 1;
+	border-width: 178px 0 0 306px;
+	top: 1px;
+}
+/*Donate 2 Style*/
+.kode_donate2 {
+	float: left;
+	width: 38%;
+	text-align: center;
+	padding: 50px 30px;
+	position: relative;
+	z-index: 9999;
+}
+.kode_donate2:before {
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: 0px;
+	width: 100%;
+	height: 117%;
+	z-index: -1;
+}
+.kode_donate2:after {
+	content: "";
+	position: absolute;
+	top: 45px;
+	left: 0px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 150px 0 0 230px;
+	border-color: transparent transparent transparent rgba(255,255,255,0.6);
+	z-index: -1;
+	opacity: 0;
+}
+.kode_donate2:hover:after {
+	opacity: 1;
+	border-width: 211px 0 0 376px;
+	top: -15px;
+}
+.span_top, .span_bottom {
+	position: relative;
+	display: block;
+}
+.span_top:before {
+	content: "";
+	position: absolute;
+	top: -65px;
+	left: -45px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 15px 15px;
+	border-color: transparent transparent #45a82e transparent;
+}
+.span_top:after {
+	content: "";
+	position: absolute;
+	top: -65px;
+	right: -44px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 0 0 15px;
+	border-color: transparent transparent transparent #45a82e;
+}
+.span_bottom:before {
+	content: "";
+	position: absolute;
+	bottom: -65px;
+	left: -45px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 15px 15px 0;
+	border-color: transparent #45a82e transparent transparent;
+}
+.span_bottom:after {
+	content: "";
+	position: absolute;
+	bottom: -65px;
+	right: -45px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 15px 0 0;
+	border-color: #45a82e transparent transparent transparent;
+}
+/*Read MOre Style*/
+.kode_homless_read {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.kode_homless_read h6 {
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.kode_homless_read a {
+	display: inline-block;
+	position: relative;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.kode_homless_read a:before {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+	right: 0px;
+	width: 50px;
+	height: 1px;
+	margin: auto;
+	background-color: #fff;
+}
+.kode_homless_read a:after {
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 0px;
+	right: 0px;
+	width: 25px;
+	height: 1px;
+	margin: auto;
+	background-color: #fff;
+}
+/*
+	  ==============================================================
+		   Pet Find Best Companion Wrap Style
+	  ==============================================================
+*/
+#our-pets {
+	padding-bottom: 25px;
+}
+.kode_moq_piler {
+	float: left;
+	width: 100%;
+	/* margin: 0px 0px 28px; */
+	position: relative;
+	text-align: center;
+	box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.18);
+	background: #000;
+}
+.kode_moq_piler figure {
+	border-bottom: 3px solid;
+}
+.kode_moq_piler figure img {
+	width: 100%;
+	height: auto;
+}
+.kode_moq_piler_logo {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 0px;
+	background-color: #fff;
+	border-top: 3px solid;
+	padding: 54px 0px 0px;
+}
+.kode_moq_piler_logo i {
+	width: 80px;
+	height: 80px;
+	font-size: 35px;
+	border-radius: 100%;
+	color: #fff;
+	line-height: 80px;
+	/* border: 3px solid; */
+	position: absolute;
+	top: -44px;
+	margin: auto 0px auto -44px;
+}
+.kode_moq_piler_logo h5 {
+	color: #0b0b0b;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+	padding: 0px 0px 20px;
+	font-size:19px;
+}
+.kode_moq_piler_logo h5:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	border-bottom: 1px solid;
+	width: 15%;
+	height: 100%;
+}
+.kode_moq_piler:hover .kode_moq_piler_logo {
+	background: none;
+	border: 0px;
+}
+.kode_moq_piler:hover figure {
+	opacity: 0.4;
+}
+.kode_moq_piler:hover .kode_moq_piler_logo h5 {
+	color: #fff !important;
+}
+.kode_moq_piler:hover .kode_moq_piler_logo h5:before {
+	border-color: #fff;
+}
+.kode_moq_piler:hover .kode_moq_piler_logo {
+	bottom: 88px;
+}
+.kode_moq_piler:hover .kode_moq_piler_logo i {
+	background-color: #fff !important;
+}
+.kode_moq_piler:hover {
+	box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.18);
+}
+/*
+	  ==============================================================
+		   Pet Image Gallery Wrap Style
+	  ==============================================================
+*/
+.gallery-no-space .gallery-item {
+	padding: 0px
+}
+.margin-bottom-30{
+	margin-bottom:30px !important;
+}
+.kode-gutter-gallery_bg {
+	background-color: #ededed;
+	padding-bottom: 0px;
+}
+.pet_no_padding {
+	padding: 0px;
+}
+.kode-gutter-gallery {
+	float: left;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.kode-gutter-gallery figure img {
+	width: 100%;
+	height: auto;
+}
+
+.kode_pet_galry_icon {
+	float: left;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: -10%;
+	margin: -20px 0px 0px;
+	opacity: 0;
+	z-index: -9999999;
+}
+.kode_pet_galry_icon li {
+	display: inline-block;
+	position: relative;
+}
+.kode_pet_galry_icon li a {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	font-size: 15px;
+	text-align: center;
+	line-height: 45px;
+	font-weight: bold;
+	margin: 0px 0px 0px 10px;
+	position: relative;
+	z-index: 99999;
+	background-color: #fff;
+}
+.kode_pet_galry_icon li a:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 0px;
+	height: 0px;
+	border-radius: 100%;
+	z-index: -1;
+}
+.kode_pet_galry_icon li:hover a:before {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+.kode_pet_galry_icon li:hover a {
+	color: #fff;
+}
+.kode_pet_galry_icon li:first-child {
+	margin-left: 0px;
+}
+.kode-gutter-gallery .gallery-item:hover figure:before {
+	height: 100%;
+	opacity: 0.6;
+}
+.kode-gutter-gallery .gallery-item:hover .kode_pet_galry_icon {
+	top: 50%;
+	opacity: 1;
+	z-index: 9999999;
+}
+.gallery-item.col-md-3 figure.effect-hera figcaption:before{
+	height:150px;
+	width:150px;
+}
+/*
+	  ==============================================================
+		   Pet Trusted country Wrap Style
+	  ==============================================================
+*/
+.kode_pet_trusted_bg {
+	position: relative;
+	background-image: url(images/see-more-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.kode_pet_trusted_bg:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+}
+.kode_pet_trusted {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.kode_pet_trusted h3 {
+	float: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin:0px;
+}
+.kode_pet_trusted p {
+	float: left;
+	word-break: break-all;
+	margin: 0px;
+	font-size: 15px;
+}
+.kode_pet_trusted a {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	display: inline-block;
+	padding: 15px 30px;
+	line-height: 13px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*
+	  ==============================================================
+		  Pet  Our Blog Wrap Style
+	  ==============================================================
+*/
+.kode_latest_blog_outer {
+	padding-bottom: 0px;
+}
+.kode_latest_blog {
+	margin-top: 15px;
+	float: left;
+	width: 100%;
+}
+.kode_pet_blog {
+	float: left;
+	width: 100%;
+	border: 2px solid #ededed;
+	border-radius: 3px;
+	position: relative;
+	padding: 30px;
+}
+.our-blogs .kode_pet_blog {
+	margin-bottom: 50px;
+}
+.kode_pet_blog h6 {
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	right:0px;
+	width: 200px;
+	color: #666;
+	background-color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: auto;
+	padding: 0 20px;
+	text-align: center;
+}
+.kode_pet_blog figure {
+	margin: 0px 0px 30px;
+}
+.kode_pet_blog figure img {	
+	height: auto;
+}
+.kode_pet_blog_des {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.kode_pet_blog_des h5 {
+	margin:0px 0px 10px 0px;	
+	color: #333;	
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.kode_pet_blog_des h5.kode-post-title {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+.kode-postsection ul li h6, .kode-editor p {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+.kode-postsection ul li h6 {
+	line-height: 30px;
+}
+.kode_pet_blog_des > ul.kode-post-meta-detail-new {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 15px;
+	padding: 0px;
+}
+.kode_pet_blog_des > ul.kode-post-meta-detail-new > li {
+	display: inline-block;
+	position: relative;
+	text-transform: capitalize;
+	margin: 0px;
+	line-height: 16px;
+	padding:0px 10px 
+}
+
+.kode_pet_blog_des > ul.kode-post-meta-detail-new{
+	margin:0px;
+}
+.kode_pet_blog_des > ul > li.blog-info{
+	margin: 0px 0px 10px 0px;
+}
+.kode_pet_blog_des ul.kode-post-meta-detail-new > li > a {
+	display: block;
+	color: #b8b8b8;
+	font-size: 12px;
+}
+.kode_pet_blog_des ul.kode-post-meta-detail-new li a b, .kode_pet_blog_des ul.kode-post-meta-detail-new li a strong {
+	font-weight: 400;
+}
+.kode_pet_blog_des ul.kode-post-meta-detail-new li i {
+	margin: 0px 5px 0px;
+	float: left;
+	color: #b8b8b8;
+}
+.kode_pet_blog_des ul.kode-post-meta-detail-new li:first-child {
+	border: 0px;
+}
+.kode-simple-grid .kode_pet_blog_des p{
+	margin: 0px 0px 23px;
+}
+.col-md-8.columns .col-md-6.columns  .kode-simple-grid .kode_pet_blog_des .blog-info.blog-category i,
+.kode-simple-grid .kode_pet_blog_des .blog-info.blog-category .sep,
+.kode-simple-grid .kode_pet_blog_des .blog-info.blog-category a{
+	float:left;
+}
+.kode_pet_blog_des > a{
+	border:1px solid #999999;
+	color:#333;
+	padding:15px 29px;
+	font-size: 14px;
+	line-height: 14px;
+	border-radius: 0px;
+	text-transform: uppercase;
+}
+/*.kode_pet_blog_des > a {
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: 2px solid #999999;
+	border-radius: 30px;
+	line-height: 18px;
+	padding: 15px 25px;
+	color: #333;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/*
+	  ==============================================================
+		   Pet Testimonial Wrap Style
+	  ==============================================================
+*/
+.kode_gallery_wrap, .kode_gallery_img {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.kode_gallery_img figure:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+.kode_gallery_img figure:after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 0px;
+}
+.kode_gallery_img figure img {
+	width: 100%;
+	height: auto;
+}
+.no_padding {
+	padding: 0px;
+}
+/*Gallery TEstimonial Wrap Style*/
+.gallery_testimonial .owl-buttons {
+	display: none;
+}
+/*Image Description*/
+.kode_test_des {
+	position: absolute;
+	top: 0%;
+	margin: -124px 0 0;
+	padding: 0 10px;
+	text-align: center;
+	opacity: 0;
+}
+.kode_test_des p {
+	color: #fff;
+	word-break: break-all;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+.kode_test_des p:before {
+	content: "\f10d";
+	font-family: fontawesome;
+	position: absolute;
+	top: -40px;
+	left: 30px;
+	color: #fff;
+	font-size: 30px;
+}
+.kode_test_des p:after {
+	content: "\f10e";
+	font-family: fontawesome;
+	position: absolute;
+	bottom: -30px;
+	right: 30px;
+	color: #fff;
+	font-size: 30px;
+}
+.kode_test_des h5 {
+	color: #fff;
+	font-weight: bold;
+	text-transform: capitalize;
+	line-height: 26px;
+}
+.kode_gallery_img:hover .kode_test_des {
+	top: 50%;
+	opacity: 1;
+}
+.kode_gallery_img:hover figure:after {
+	opacity: 0.8;
+	height: 100%;
+}
+/*
+	  ==============================================================
+		   Pet Valueable Client Wrap Style
+	  ==============================================================
+*/
+.kode_pet_brnd_lst {
+	float: left;
+}
+.kode_pet_value {
+	border: 2px solid #efefef;
+	margin: 0px 0px 0px 20px;
+	float: left;
+	padding: 25px;
+}
+.kode_pet_value a {
+	display: block;
+}
+.kode_pet_value img {
+	width: 100%;
+	height: auto;
+}
+.kode_pet_value:hover {
+	box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.13);
+}
+.kode_pet_brnd_lst .owl-controls {
+	display: none !important;
+}
+.kf_pet_featurd_client .kode_pet_value{
+	padding:0px;
+}
+.col-md-8 .kode-item .kf_pet_featurd_client .item{
+	margin-left:9px;
+}
+.col-md-8 .kode-item .kf_pet_featurd_client .item:nth-child(2n){
+	margin-left:0px;
+}
+
+/*
+	  ==============================================================
+		   Pet Appoitment Wrap Style
+	  ==============================================================
+*/
+.kode_pet_appoit_bg {
+	position: relative;
+	background-color: #ededed;
+}
+.kode_pet_appoit_bg:before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/pet-appotmnt-01.png);
+	background-size: 19%;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+.kode_pet_appoit_bg:after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/pet-appotmnt-01.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 29%;
+}
+.kode_pet_appoit_bg .container {
+	position: relative;
+	z-index: 99999;
+}
+.kode_pet_appotmnt_contact {
+	padding-bottom: 42px;
+}
+.kode_pet_appotmnt {
+	width: 750px;
+	margin: auto;
+	position: relative;
+	z-index: 99999999999999;
+}
+.kode_pet_appotmnt form {
+	float: left;
+	width: 100%;
+}
+.kode_appotmnt_field {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 40px;
+}
+.kode_appotmnt_field input[type="text"] {
+	width: 100%;
+	height: 38px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 8px 10px;
+	color: #000000;
+	position:relative;
+	z-index:999;
+}
+.kode_appotmnt_field textarea {
+	width: 100%;
+	height: 115px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 8px 10px;
+	resize: none;
+	color: #000000;
+}
+.kode_pet_app_btn {
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+}
+.kode_pet_app_btn input[type="submit"], .kode_pet_app_btn button {
+	border: 0px;
+	/* border-radius: 40px; */
+	color: #fff !important;
+	font-weight: bold;
+	background-color:#000 !important;
+	line-height: normal;
+	font-size: 16px;
+	position: relative;
+	padding:10px 30px 11px;
+}
+/*
+	  ==============================================================
+		   Pet Map Wrap Style
+	  ==============================================================
+*/
+.kode_pet_map {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.kode_pet_map .map-canvas {
+	width: 100%;
+	float: left;
+	height: 300px;
+}
+/*
+	  ==============================================================
+		   Our Agents Wrap Style
+	  ==============================================================
+*/
+.kode-pagesection {
+	padding-bottom: 7px;
+}
+.kode-pagesection.kode-404-page-section{
+	padding:0px;
+}
+.simple-column{
+	float:left;
+	width:100%;
+}
+.agents {
+	float: left;
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.agents .thumb {
+	float: left;
+	width: 100%;
+}
+.agents .thumb img {
+	width: 100%;
+}
+.agents .caption {
+	float: left;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	padding: 15px;
+	background-color: #000;
+	text-align: center;
+	height: 14%
+}
+.agents:hover .caption {
+	height: 48%;
+}
+.agents .caption p {
+	color: #fff;
+}
+.agents .caption h2 {
+	margin: 0px 0px 10px 0px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+}
+.agents .caption h2 a {
+	color: #fff;
+}
+.agents .social-icons {
+	width: 100%;
+	text-align: center;
+}
+.agents .social-icons ul li {
+	float: none;
+	display: inline-block;
+}
+/* SubHeader */
+.kode-subheader {
+	float: left;
+	width: 100%;
+	background: url(images/subheader-bg.jpg);
+	min-height: 295px;
+	position: relative;
+	text-align: center;
+	margin-bottom:50px;
+	background-size: cover;
+}
+.kode-subheader:before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.65);
+	z-index: 0;
+}
+
+.kode-subheader.subheader-height {
+	padding: 154px 0px 0px 0px;
+}
+.header-style-2.kode-subheader.subheader-height{
+	padding:83px 0 80px;
+	min-height:auto;
+}
+.kode-ul-parent br{
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+.header-style-3.kode-subheader.subheader-height{
+	padding:60px 0px;
+	min-height:auto;
+}
+.kode-subheader h2 {
+	color: #ffffff;
+	text-transform: capitalize;
+	font-size: 38px;	
+	font-weight: 600;
+	line-height: 1;
+	margin: 0px 0px 10px;
+}
+.kode-breadcrumb {
+	display: inline-block;
+	margin: 0px 0px 0px -15px;
+}
+.kode-breadcrumb li {
+	display: inline-block;
+	list-style: none;
+	padding: 0px 15px;
+	color:#fff;
+	position: relative;
+}
+.kode-breadcrumb li:before {
+	content: "\f105";
+	font-family: FontAwesome;
+	position: absolute;
+	right: -5px;
+	top: 0px;
+	color: #ffffff;
+}
+.kode-breadcrumb li:last-child {
+	padding-right: 0px;
+}
+.kode-breadcrumb li:last-child:before {
+	display: none;
+}
+.kode-breadcrumb li strong,
+.kode-breadcrumb li a {
+	color: #ffffff;
+	font-size: 15px;
+	font-weight:400;
+}
+/* SubHeader */
+.kode-blog-list > ul > li {
+	list-style: none;
+	margin-bottom: 27px;
+}
+.kode-blog-list ul li figure {
+	margin: 0px;
+	overflow: hidden;
+	position:relative;
+}
+.kode-blog-list ul li figure, .kode-blog-list ul li figure > a, .kode-blog-list ul li figure img {
+	float: left;
+	width: 100%;
+}
+.kode-blog-list figure figcaption {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: auto;
+	z-index: 3;
+}
+.kode-category {
+	float: right;
+}
+.kode-category a {
+	float: left;
+	padding: 4px 10px 1px;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 500;
+}
+.kode-blog-info {
+	background-color: ghostwhite;
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 20px 40px;
+}
+.kode-blog-info time {
+	display: inline-block;
+	color: #9a9a9a;
+	margin-bottom: 10px;
+}
+.kode-blog-info h2 {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.kode-blog-list ul li .mask {
+	position: absolute; /* Center the mask */
+	top: 50px;
+	left: 128px;
+	cursor: pointer;
+	border-radius: 50px;
+	border-width: 60px;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border: 60px solid rgba(0, 0, 0, 0.7);
+	box-sizing: border-box;
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: scale(4);
+	-moz-transform: scale(4);
+	-ms-transform: scale(4);
+	-o-transform: scale(4);
+	transform: scale(4);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.kode-blog-list ul li:hover .mask {
+	opacity: 0;
+	border: 0px solid rgba(0,0,0,0.7);
+	visibility: hidden;
+}
+/* Pagination */
+.pagination {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0px 30px 0px;
+}
+.pagination a, .pagination span {
+	display: inline-block;
+	border: 1px solid #d7d7d7;
+	color: #4e4e4e;
+	padding: 6px 13px 7px;
+	margin-right: 14px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+.pagination a:hover, .pagination span {
+	color: #ffffff;
+}
+/* Blog Large */
+.kode-large-blog .kode-blog-info p {
+	font-size: 16px;
+}
+.kode-large-blog ul {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+.kode-tag {
+	float: left;
+}
+.kode-tag a {
+	float: left;
+	padding: 2px 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	position: relative;
+	margin-right: 25px;
+	background-color: #30302d;
+}
+.kode-tag a span {
+	position: relative;
+}
+.kode-tag a:before, .kode-tag a:after {
+	content: '';
+	position: absolute;
+	left: -10px;
+	top: 0px;
+	width: 20px;
+	height: 100%;
+	background-color: #30302d;
+	-webkit-transform: skewX(-30deg);
+	-moz-transform: skewX(-30deg);
+	-ms-transform: skewX(-30deg);
+	-o-transform: skewX(-30deg);
+	transform: skewX(-30deg);
+}
+.kode-tag a:after{
+	right: -10px;
+	left:auto;
+}
+
+.kode-tag a:hover {
+	color: #ffffff;
+}
+.kode-large-blog figure figcaption {
+	padding: 0px 20px 15px 30px;
+}
+.kode-blog-post {
+	float: right;
+	padding: 0px 10px;
+}
+.kode-blog-post ul {
+	margin: 0px;
+}
+.kode-blog-post ul li {
+	float: left;
+	list-style: none;
+	padding: 2px 10px;
+	color: #fff;
+	font-weight: 500;
+	border: 1px solid #fff;
+}
+.kode-blog-post ul li a {
+	color: #fff;
+	font-weight: 500;
+}
+.kode-blog-post ul li i {
+	margin-right: 7px;
+}
+.kode-inncat a {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.kode-large-blog .kode-blog-info {
+	padding: 40px 40px;
+}
+.kode-large-blog .kode-blog-info h2 {
+	margin: 0px 0px 25px 0px;
+	font-size: 30px;
+}
+.kode-large-blog .flex-control-paging {
+	display: none;
+}
+/* BlogDetail */
+.detail-info {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.detail-info h2 {	
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 0px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	display:inline-block;
+}
+#kodecomments ul li .text p,
+.kode-subheader h2{
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+.detail-info .kode-socialnetwork {
+	float: right;
+	padding: 0px 0px 0px 0px;
+}
+.kode-socialnetwork ul {
+	float: left;
+	padding: 2px 0px 0px 0px;
+}
+.kode-socialnetwork ul li {
+	display: inline-block;
+	list-style: none;
+	margin-left: 15px;
+	line-height: 1;
+	padding: 2px 0px 0px 0px;
+}
+.kode-socialnetwork span {
+	float: left;
+	color: #30302d;
+	text-transform: uppercase;
+}
+/* Detail Editor */
+.kode-editor {
+	float: left;
+	width: 100%;
+	padding-bottom: 8px;
+}
+.kode-editor p {
+	/* margin-bottom: 20px; */
+}
+blockquote {
+	float: left;
+	width: 100%;
+	padding: 50px 30px;
+	font-size: 18px;
+	color: #666666;
+	background-color: #f5f5f5;
+	line-height: 35px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 25px;
+	border-left: 4px solid;
+	margin: 0px 0 9px 0px;
+}
+blockquote:before {
+	content: "\f10d";
+	font-family: FontAwesome;
+	font-size: 20px;
+	padding: 0px 20px 0px 0px;
+	display: inline-block;
+}
+blockquote:after {
+	content: "\f10e";
+	font-family: FontAwesome;
+	font-size: 20px;
+	padding: 0px 0px 0px 5px;
+	display: inline-block;
+	position: relative;
+	top: 4px;
+}
+/* Admin Post */
+.kode-admin-post {
+	float: left;
+	width: 100%;
+	padding: 30px 0px 30px 0px;
+	position: relative;
+	margin: 0px 0px 35px 0px;
+	border: 1px solid #dddddd;
+	border-left: none;
+	border-right: none;
+}
+.kode-admin-post figure {
+	border: 3px solid #efefef;
+	float: left;
+	width: 104px;
+	margin: 0px 0px 0px 0px;
+}
+.kode-admin-post figure img,
+.kode-admin-post figure a {
+	float: left;	
+	width: 100%;
+}
+.kode-admin-post figure ~ .admin-info {
+	padding: 15px 0px 0px 142px;
+}
+.admin-info h2 {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin:0px;
+}
+/*  NextPrev Post */
+.kode-postsection {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 32px;
+	margin-bottom: 30px;
+}
+.widget_categories ul, ul.recent-posts, .kode-postsection ul {
+	padding: 0px;
+	margin: 0px;
+}
+.kode-postsection ul li {
+	float: left;
+	width: 50%;
+	list-style: none;
+	margin-bottom: 3px;
+}
+.kode-postsection ul li a {
+	font-size: 24px;
+	color: #666666;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.kode-postsection ul li a i {
+	margin-right: 15px;
+}
+.kode-postsection ul li h6 {
+	margin: 0px;
+	font-style: italic;
+}
+.kode-postsection ul li.kode-next {
+	float: right;
+	text-align: right;
+}
+.kode-postsection ul li.kode-next a {
+	float: right;
+	width: 100%;
+}
+.kode-postsection ul li.kode-next a i {
+	margin: 0px 0px 0px 15px;
+}
+/* Comment */
+#kodecomments {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+	padding: 0px 0px 15px 0px;
+	margin: 0px 0px 40px 0px;
+}
+#kodecomments > ul > ul {
+	margin: 0px;
+}
+#kodecomments > ul > li {
+	float: left;
+	width: 100%;
+	list-style: none;
+}
+#kodecomments > ul > li {
+	margin-bottom: 25px;
+}
+#kodecomments ul li figure {
+	float: left;
+	width: 60px;
+}
+#kodecomments ul li figure, #kodecomments ul li figure img {
+	border-radius: 4px;
+}
+#kodecomments ul li figure ~ .text {
+	padding: 0px 0px 0px 100px;
+	float: none;
+	width: auto;
+}
+#kodecomments ul li .text h6 {
+	margin: 0px;
+	font-weight: 600;
+	float: left;
+	text-transform: uppercase;
+}
+#kodecomments ul li .text .replay-btn {
+	font-weight: 600;
+}
+.comment-info {
+	float: left;
+	width: 100%;
+	background-color: #f5f5f5;
+	padding: 22px 30px;
+	position: relative;
+	border-radius: 4px;
+}
+.comment-info:before {
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: 10px;
+	border-top: 8px solid transparent;
+	border-right: 8px solid #f5f5f5;
+	border-bottom: 8px solid transparent;
+}
+#kodecomments ul li .text p {
+	margin-top: 8px;
+	margin-bottom: 0px;
+	display: inline-block;
+}
+.short-time {
+	float: right;
+	font-size: 12px;
+}
+.short-time span {
+	color: #666666;
+	font-weight: 600;
+}
+#kodecomments .children li {
+	margin-bottom: 0px;
+}
+#kodecomments .children > li {
+	padding: 0px 0px 0px 100px;
+}
+#kodecomments ul ul.children li {
+	margin-top: 32px;
+}
+/* Comment Form */
+#koderespond, #koderespond form, #koderespond form p.kd-textarea, #koderespond form p textarea {
+	float: left;
+	width: 100%;
+}
+#koderespond {
+	margin-bottom: 25px
+}
+#koderespond h2 {
+	margin: 0px 0px 15px 0px;
+	text-transform: uppercase;
+}
+#koderespond form p {
+	float: left;
+	width: 33.333%;
+	padding: 0px 20px 20px 0px;
+	margin: 0px;
+	position: relative;
+}
+#koderespond form p i {
+	position: absolute;
+	right: 42px;
+	top: 11px;
+}
+#koderespond form p.kd-phone i, #koderespond form p.kd-textarea i {
+	right: 20px;
+}
+#koderespond form p:nth-child(3n), #koderespond form p.kd-textarea {
+	padding-right: 0px;
+}
+#koderespond form input[type="text"] {
+	float: left;
+	width: 100%;
+	border: 1px solid #e6e6e6;
+	background-color: #f5f5f5;
+	height: 45px;
+	padding: 9px 20px;
+	border-radius: 5px;
+}
+#koderespond form input[type="text"]:focus, #koderespond form p textarea:focus {
+	border: 1px solid;
+}
+#koderespond form p textarea {
+	height: 140px;
+	border: 1px solid #e6e6e6;
+	color: #666666;
+	padding: 9px 20px;
+	border-radius: 5px;
+	background-color: #f5f5f5;
+	resize: none;
+}
+#koderespond form p input[type="button"], #koderespond form p input[type="submit"] {
+	display: inline-block;
+	padding: 8px 40px;
+	color: #ffffff;
+	border: none;
+	text-transform: uppercase;
+	border-radius: 4px;
+	font-weight: bold;
+	margin-top: 10px;
+	font-size: 16px;
+	position: relative;
+	border: 2px solid transparent;
+}
+#koderespond form p.kd-button {
+	width: 100%;
+}
+#koderespond form p input[type="button"]:hover, #koderespond form p input[type="submit"]:hover {
+	border: 2px solid;
+	background: transparent;
+}
+/*
+	  ============================================================
+		  Radial Out Effect
+	  ============================================================
+*/
+.hvr-radial-out {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
+}
+.hvr-radial-out:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 50px;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	background-color: #fff;
+}
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+	color: white;
+}
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+	-webkit-transform: scale(2);
+	transform: scale(2);
+}
+/*
+	  ============================================================
+		  Sweep To Right Effect
+	  ============================================================
+*/
+.hvr-sweep-to-right {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.5);
+	-moz-box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.5);
+	-webkit-box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.5);
+}
+.hvr-sweep-to-right:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+	border-radius: 30px;
+	background-color: #000;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+	color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+/*
+	  ============================================================
+		  Testimonial Image Effect
+	  ============================================================
+*/
+figure.effect-apollo img {
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05, 1.05, 1);
+	transform: scale3d(1.05, 1.05, 1);
+}
+figure.effect-apollo figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+	transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+figure.effect-apollo:hover img {
+	opacity: 0.3;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+	transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+.kode-inner-page section {
+	padding: 30px 0px 0px 0px;
+}
+.gallery-no-space ul.kode-item {
+	margin-bottom: 0px;
+}
+ul.kode-item {
+	padding: 0px;
+}
+.gallery-item {
+	list-style: none;
+}
+.gallery-item figure {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	float: left;
+}
+figure.effect-hera p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+	-webkit-transform-origin: 50%;
+	transform-origin: 50%;
+}
+figure.effect-hera figcaption::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	border: 2px solid #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
+	transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
+	-webkit-transform-origin: 50%;
+	transform-origin: 50%;
+}
+figure.effect-hera p {
+	width: 100%;
+	text-align: center;
+}
+figure.effect-hera p a {
+	color: #54cd38;
+	margin-right: 4px;
+	position: relative;
+}
+figure.effect-hera p a i {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 100%;
+	line-height: 40px;
+	opacity: 0;
+	z-index: 99999;
+	position: relative;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+figure.effect-hera p a i:hover {
+	color: #fff;
+}
+figure.effect-hera p a:first-child i {
+	-webkit-transform: translate3d(-60px, -60px, 0);
+	transform: translate3d(-60px, -60px, 0);
+}
+figure.effect-hera p a:nth-child(2) i {
+	-webkit-transform: translate3d(60px, -60px, 0);
+	transform: translate3d(60px, -60px, 0);
+}
+figure.effect-hera:hover figcaption::before {
+	opacity: 1;
+	-webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
+	transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
+}
+figure.effect-hera:hover h2 {
+	opacity: 0;
+	-webkit-transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
+	transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
+}
+figure.effect-hera:hover p i:empty {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0); /* just because it's stronger than nth-child */
+	opacity: 1;
+}
+/* Counter */
+.kode-counter {
+	list-style: none;
+	text-align: center;
+}
+.counter-icon {
+	display: inline-block;
+	/* width: 152px;
+	height: 152px; */
+	text-align: center;
+	/* border: 4px solid;
+	border-radius: 100%; */
+	color: #ffffff;
+	font-size: 80px;
+	line-height:50px;
+	/* line-height: 152px; */
+	margin-bottom: 10px;
+}
+.word-count {
+	font-size: 65px;
+	color: #ffffff;
+	display: inline-block;
+	line-height: 1;
+	margin-bottom:10px;
+}
+.word-count:after {
+	font-size: 65px;
+}
+.kode-counter h6 {
+	text-transform: uppercase;
+	color: #ffffff;
+	margin: 0px;
+	font-size:20px;
+}
+.kode_gallery_img figure:after, .kode_pet_service_lst figure:before {
+	background: #000;
+}
+.content.kode-main-content-k {
+	float: left;
+	padding: 0px;
+	width: 100%;
+}
+.kode-type-3, .kode-type-2 {
+	float: left;
+	width: 100%;
+}
+.blog-info.blog-tag a {
+	color: #fff;
+}
+.blog-info.blog-tag .sep, .blog-info.blog-tag i {
+	display: none;
+}
+
+.blog-info a {
+	float: right;
+}
+.kode-blog-thumbnail {
+	overflow:hidden;
+}
+ul.kode-team-network-kick {
+	margin: 0px;
+}
+.commentlist {
+	padding: 0px;
+	margin: 0px;
+}
+.kode-subheader.subheader-height {
+	/*margin: 0px 0px 50px 0px;*/
+}
+#breadcrumbs {
+	margin: 0px;
+	padding: 0px;
+}
+/* ShopList */
+.kode-shop-list, .shop-list-thumb, .shop-list-thumb img, .kode-shop-list figure, .kode-pro-info, .list-price {
+	float: left;
+	width: 100%;
+}
+.kode-shop-list ul li {
+	list-style: none;
+	margin-bottom: 30px;
+}
+.shop-wrap {
+	float: left;
+	width: 100%;
+	padding: 5px;
+	background-color: #f9f9f9;
+	border: 1px solid #e2e2e2;
+}
+.kode-shop-list figure {
+	border-bottom: 2px solid #626262;
+	position: relative;
+	margin:0px 0px 10px;
+}
+.kode-shop-list figure figcaption {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	text-align: center;
+	opacity: 0;
+}
+.kode-shop-list ul li:hover figcaption {
+	opacity: 1;
+}
+.kode-shop-list figure figcaption a {
+	font-size: 100px;
+	color: #ffffff;
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	top: 50%;
+	margin: -75px 0 0;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+}
+.kode-shop-list ul li:hover figcaption a {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.add-cart:hover {
+	color: #ffffff;
+}
+.kode-pro-info {
+	padding: 10px 8px 10px 8px;
+}
+.kode-pro-info h4 {
+	font-weight: 500;
+	text-transform: uppercase;
+	margin: 0px 0px 10px;
+	line-height: 1;
+}
+
+.shop-wrap .kode-pro-info .list-price a.add_to_cart{
+	color:#fff;
+	border:0px;
+	padding:8px 15px 8px;
+}
+.shop-wrap .kode-pro-info .list-price a.add_to_cart:hover{
+	color:#fff;
+	background-color:#000 !important;
+}
+.list-price {
+	padding-top: 20px;
+}
+.list-price span {
+	float: left;
+	color: #2b2b2b;
+	font-size: 24px;
+	padding: 0px 0px 0px 0px;
+}
+.add-cart {
+	float: right;
+	padding: 6px 20px 4px 20px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
+}/* Pagination starts */
+.page-numbers, .page-links, .kode-pagination {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+.page-numbers {
+	text-align: center;
+	width: auto;
+	float: none;
+}
+.woocommerce-pagination {
+	margin-bottom: 30px !important;
+}
+.page-links .page-links-title {
+	width: 80px;
+	
+}
+.page-numbers li a, .page-numbers li span, .page-links > a, .page-links > span, .kode-pagination a, .kode-pagination span {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #d7d7d7;
+	color: #999999;
+	line-height: 32px;
+	margin-right: 4px;
+}
+.page-numbers li a.next, .page-numbers li span.next, .page-numbers li a.prev, .page-numbers li span.prev, .kode-pagination a.next, .kode-pagination span.next, .kode-pagination a.prev, .kode-pagination span.prev {
+	width: auto;
+	padding: 0 10px;
+}
+.page-numbers.current {
+	color: #fff;
+}
+.page-numbers li a:hover, .page-links > a:hover, .kode-pagination a:hover {
+	color: #ffffff;
+	background-color: #54cd38;
+}
+.kode-main-content .kode_pet_blog_des {
+	text-align: left;
+}
+.kode_pet_blog_des ul li i, .kode_pet_blog_des ul li:first-child {
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.kode-blog-content ul li:last-child {
+	margin-bottom: 0px;
+}
+.kode-blog-content ul li {
+	margin-bottom: 10px;
+}
+.post-password-form label input[type="password"] {
+	height: 43px !important;
+}
+.body-wrapper {
+	overflow: hidden;
+}
+.kode-edit-reply {
+	margin-top: 10px;
+}
+.kode_pet_foo_lst h6 {
+	margin: 0px;
+}
+.kode-item.k-title h2 {
+	margin: 0px;
+}
+.body-wrapper {
+	overflow: hidden;
+}
+.kode-title-comment-c time{
+	margin-left:12px;
+	display:inline-block;
+	clear:both;
+	padding-top:2px
+}
+.text > h2{
+	clear:both;
+}
+
+/* Pagination starts */
+.kode-404-page{
+	float:left;
+	width:100%;
+	text-align:center;
+	margin-bottom:50px;
+}
+.kode-404-page h1{
+	font-size:300px !important;
+	line-height:220px;
+	font-weight:bold;
+	margin:0px 0px 50px 0px;
+	text-shadow:0 10px 5px rgba(0, 0, 0, 0.3);
+	-moz-text-shadow:0 10px 5px rgba(0, 0, 0, 0.3);
+	-webkit-text-shadow:0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.kd-accordion .accordion.accordion-open span,
+.kd-accordion .accordion.accordion-open{
+	color:#fff;
+}
+.kode-404-page h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.kode-404-page span {
+	font-size: 35px;
+	float:left;
+	text-transform: uppercase;
+	width:100%;
+}
+.kode-innersearch{
+	display:inline-block;
+	width:70%;
+	position:relative;
+	margin-top:40px;
+}
+.kode-innersearch input[type="text"]{
+	float:left;
+	height:77px !important;
+	padding:10px 100px 10px 20px;
+	width:100%;
+	font-size:30px;
+	color:#666;
+}
+.kode-innersearch label{
+	padding:17px 30px;
+	color:#333;
+	font-size:30px;
+	background:none;
+}
+.kode-innersearch label input[type="submit"]{
+	padding:0px;
+	visibility:hidden;
+	opacity:0;
+}
+.flex-direction-nav li,
+li.gallery-item,
+.bxslider li,
+.flexslider .slides li{margin-bottom:0px;}
+li.clear{
+	margin:0px;
+	padding:0px;
+}
+.kode-item kode-slider-item ul li{
+	padding:0px;
+}
+.kode_pet_blog_des.pull-left ul{
+	float:left;
+	text-align:left;	
+}
+.kode-blog-list.kode-grid-blog .clear.clearfix{
+	margin-bottom:30px;
+	width:100%;
+	float:left;
+}
+.testimonial-wrap h2 a{
+	color:#fff;
+}
+.testimonial-wrap figure{
+	position:relative;
+	z-index:999;
+}
+.kode-pagination{
+	/* margin-top:30px; */
+}
+.special figure{
+	float:left;
+	position:relative;
+}
+.kode2-social-icons {
+    bottom: -7%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.kode2-social-icons > li{
+	display:inline-block;
+}
+.kode2-social-icons > li > a{
+	font-size:16px;
+	color:#fff;
+	border-radius:5px;
+	transform:scale(1);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	display:inline-block;
+	width:48px;
+	height:48px;
+	line-height:48px;
+}
+.kode2-social-icons > li > a > i{
+	transform:scale(1);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.kode2-social-icons > li > a:hover > i{
+	transform:scale(2);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.special{
+	float:left;
+	width:100%;
+	
+}
+.special figure{
+	position:relative;
+	float:left;
+	width:100%;
+	overflow:visible
+}
+.special figure img{
+	float:left;
+	width:100%;
+}
+.special figure:before{
+	position:absolute;
+	top:3px;
+	left:3px;
+	right:3px;
+	bottom:3px;
+	content:"";
+}
+.special:hover figure:before{
+	opacity:0.6;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.kode-pic-info {
+    float: left;
+    padding: 31px 0 0;
+    width: 100%;
+	margin-bottom:6px;
+	text-align:center;
+}
+.special figure img{
+	width:100%;
+}
+.special:hover figure > a{
+	opacity:1;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	right:45%;
+}
+.special figure > a{
+	position:absolute;
+	top:50%;
+	margin:-33px auto 0 auto;
+	font-size:48px;
+	color:#fff;
+	right:0;
+	opacity:0;
+	font-weight:normal;
+}
+.kode-pic-info h4{
+	font-family: 'Lato';
+	font-weight:bold;
+	font-size:20px;
+	margin:0px;
+	margin-top:17px;
+	color:#333;
+}
+.kode-pic-info small{
+	font-family: 'Lato';
+	font-size:20px;
+	padding:20px 0 8px 0;
+	color:#777;
+}
+.team-detail h2{
+	margin:0px 0px 10px;
+	color:#777;
+}
+/***KODE2-PET Veterinary ENDS**/
+.kode_clinic_thumb_product,
+.kode_clinic_thumb_product img,
+.kode_clinic_products {
+    float: left;
+    width: 100%;
+}
+.kode_clinic_thumb_product{
+	border:1px solid #d1d1d1;
+	margin-bottom:10px;
+}
+
+.kode_clinic_thumb_product figure{
+	float:left;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+}
+.kode_clinic_thumb_product:hover .ratingstar{
+	opacity:1;
+}
+.ratingstar {
+    bottom: 0;
+    float: left;
+    position: absolute;
+    width: 100%;
+	left:0;
+	right:0;
+	margin:0 auto 20px auto;
+	opacity:0;
+}
+.ratingstar li{
+	display:inline-block;
+	margin-right:5px;
+	color:gold;
+}
+.ratingstar li:hover i{
+	color:gold;
+}
+.adjusting_class{
+	float:left;
+	width:100%;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion{
+	float:left;
+	width:100%;
+	text-align:center;
+	font-weight:bold;
+	padding:18px 25px 0px;
+	position:relative;
+	overflow:hidden;
+	border-top:1px solid #d1d1d1;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion h3{
+	margin-bottom:3px;
+	font-weight:bold;
+	font-size:22px;
+}
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion h3{
+	color:#fff;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion span{
+	display:block;
+	font-size:18px;
+	opacity:1;
+	margin-bottom:20px;
+	min-height:31px;
+	font-family: "Lato",sans-serif;
+}
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion span{
+	opacity:0.5;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul{
+	float:left;
+	width:205px;
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 auto -60px auto;
+	bottom:0;
+	opacity:0.75;
+	list-style:none;
+/* 	transform:scale(2);
+	-moz-transform:scale(2);
+	-webkit-transform:scale(2); */
+}
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion ul {
+    margin: 0 auto 20px;
+    opacity: 1;
+/*     transform: scale(1);
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1); */
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul li{
+	float:left;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul li a {
+    background: #fff;
+    display: block;
+    font-size: 14px;
+    line-height: 31px;
+    padding: 0 10px;
+}
+.clinic-prduct-capstion ul li:hover{
+	background-color:#000;
+	border-radius:5px;
+}
+.clinic-prduct-capstion ul li:hover a{
+	color:#fff;
+	background-color:#000;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul li:nth-child(2){
+	margin:0 5px;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul li:nth-child(2) a {
+    font-size: 12px;
+    line-height: 31px;
+    padding: 0 24px;
+}
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion h3 a{
+	color:#fff;
+}
+/*
+	  ============================================================================================================================
+		   									PET STORE HTML CSS START
+	  ============================================================================================================================
+*/
+/*header start*/
+.kode_pet_info,
+.kode_pet_top_strip_store,
+.kode_pet_header_store{
+	float:left;
+	width:100%;
+}
+.kode_pet_top_strip_store{
+	background-color:#333333;
+	border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+.kode_store_social_icon{
+	float:left;
+	margin-right:11px;
+}
+.kode_pet_info ul{
+	padding:0px;
+	margin:0px;
+}
+.kode_store_social_icon > li {
+    float: left;
+}
+
+.kode_store_social_icon > li a{
+	color: #b5b5b5;
+    display: block;
+    font-size: 16px;
+    line-height: 13px;
+    padding: 21px 0 16px;
+    text-align: center;
+    width: 40px;
+}
+.kode_store_social_icon > li:hover a{
+	color:#fff;
+}
+.kode_pet_store_contct{
+	margin:0px;
+}
+.kode_store_social_icon,
+.kode_store_faq_area{
+	float:left;
+	margin:0px;
+}
+.kode_store_social_icon li,
+.kode_pet_store_contct > li,
+.kode_store_faq_area ul > li {
+	float:left;
+	list-style:none;
+	margin-bottom:0px;
+}
+.kode_pet_store_contct > li a, .kode_store_faq_area ul > li a {
+    border-left-color: #4c4c4c;
+    border-left-style: solid;
+    border-left-width: 1px;
+    color: #b5b5b5;
+    display: block;
+    font-family: "Lato",sans-serif;
+    font-size: 16px;
+	  padding: 15px 20px 14px;
+	text-transform:capitalize;
+}
+.kf_pet_topbar .kode_pet_store_contct > li a,.kf_pet_topbar  .kode_store_faq_area ul > li a{
+	font-size:14px;	
+}
+.kode-header-style-4 .kf_pet_topbar  .kode_store_faq_area ul > li a{
+	font-size:inherit;
+}
+.kode_pet_store_contct ul > li a{
+	border-left:none;
+}
+.kode_store_faq_area ul{
+	margin:0px;
+	padding:0px;
+}
+.kode_store_faq_area ul > li a:hover{
+	color:#fff;
+}
+.kode_store_faq_area ul > li:nth-child(3) a {
+    border-right: 1px solid #4c4c4c;
+}
+.kf_pet_offer_des > h4{
+	margin:0px;
+}
+.kode_pet_store_contct{
+	float:right;
+}
+.kode_pet_store_contct li:first-child a{
+	border:none;	
+}
+.kode_pet_store_contct > li a {
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.kode_pet_store_navigaton{
+    background-color: #ffffff;
+    float: left;
+    width: 100%;
+}
+.kode_pet_store_navigaton figure{
+	float:left;
+	width:100%;
+	padding:21px 0;
+}
+.kode_pet_store_navi {
+    float: left;
+    width: 100%;
+}
+
+.kode_pet_store_navi ul{
+	float:left;
+	margin:0px;
+}
+.kode_pet_store_navi li {
+    float: left;    
+	list-style:none;
+	position:relative;
+}
+.kode_pet_store_navi .kode-navigation-wrapper{
+	float:right;
+}
+.kode_pet_store_shopping.cart-option{
+	margin-left:15px;
+}
+.kode_pet_store_navi li a {
+    display: block;
+    font-size: 16px;
+    line-height: 91px;
+	color:#494949;
+	position:relative;
+	font-family: 'Lato', sans-serif;
+	padding: 0 15px;
+}
+
+/*nav span area start*/
+.kode_pet_store_shopping{
+	float:right;
+	width:101px;
+	height:91px;
+	display:inline-block;
+	font-size:15px;
+	text-align:center;
+}
+.kode_pet_store_shopping span{
+	color: #fff;
+    display: block;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 30px;
+}
+.kode_pet_store_shopping i{
+	display:block;
+}
+.kode_pet_store_shopping:hover{
+	background-color:#000 !important;
+}
+/*bx slider area start*/
+.content_pet_store,
+.kode_bx_figure img,
+.kode_pet_store_slider,
+.kode_puppy_thumb,
+.content{
+	float:left;
+	width:100%;
+}
+.kode_bx_figure{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.kode_bx_figure::before {
+    background: black none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.66;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.kode_pet_store_slider ul li{
+	position:relative;
+	float:left;
+}
+.kode_pet_store_slider ul li:before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+	background:black;
+}
+.store_bx_capstion {
+    height: 300px;
+    left: 15.5%;
+    margin-top: -200px;
+    position: absolute;
+    top: 50%;
+    width: 500px;
+}
+.store_bx_capstion span {
+    display: block;
+	text-transform:capitalize;
+}
+.store_bx_capstion h6 {
+    font-size: 71.65px;
+	color:#fff;
+	margin-bottom:14px;
+	font-weight:bold;
+	text-transform:capitalize;
+	line-height:1;
+}
+.store_bx_capstion p{
+	font-size:17px;
+	color:#fff;
+	margin-bottom:25px;
+	text-transform:capitalize;
+}
+.store_bx_capstion a{
+	float:left;
+	display:inline-block;
+	text-transform:uppercase;
+	font-size:16px;
+	padding:13px 43px;
+	color:#fff;
+	font-weight: bold;
+	border-bottom-right-radius:0;
+	border-top-left-radius:0;
+	position:relative;
+	overflow:hidden;
+	z-index:9999;
+}
+.store_bx_capstion a:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	border-radius:100%;
+	background-color:#fff;
+	transform:scale(0);
+	margin:auto;
+	z-index:-1;	
+}
+.store_bx_capstion a:hover:before{
+	transform:scale(2);	
+}
+.kode_pet_store_slider .bx-wrapper .bx-pager{
+	display:none;
+}
+/*thumb start*/
+.thumb {
+    float: left;
+    position: relative;
+    width: 100%;
+	padding-top:109px;
+	margin-bottom:41px;
+}
+.thumb figure {
+    height: 205px;
+    position: absolute;
+    text-align: center;
+	overflow:hidden;
+	border-radius:100%;
+	border-left-style: solid;
+    border-left-width: 5px;
+    top: -117px;
+    width: 202px;
+	left:0;
+	right:0;
+	margin:0 auto;
+	z-index:99999;
+}
+.thumb figure a {
+    left: 0;
+    margin-top: -15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+	color:#fff;
+	font-size:22px;
+	visibility:hidden;
+	opacity:0;
+}
+.thumb figure:hover a{
+	visibility:visible;
+	opacity:1;
+}
+.thumb figure img {
+    float: left;
+    width: 100%;
+}
+.thumb figure::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.50;
+    position: absolute;
+    right: 0;
+    top: 0;
+	transform:scale(0);
+	border-radius:100%;
+}
+.thumb figure:hover::before{
+	transform:scale(1);
+}
+.thumb figcaption{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.thumb figcaption h3{
+	text-transform:uppercase;
+	margin-bottom:15px;
+	font-weight:bold;
+}
+.thumb figcaption  p{
+	font-weight:inherit;
+	font-size:14px;
+	text-transform:capitalize;
+	margin:0;
+}
+.content_pet_store img,
+.content_pet_store figure{
+	float:left;
+	width:100%;
+	position:relative;
+}
+
+/*kode new season START*/
+.kode_all_new_season_store {
+    float: left;
+    width: 100%;
+	padding:60px;
+}
+.kode_pet_store_thumb{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.kode_pet_store_thumb img{
+	width:100%;
+}
+.kode_pet_store_thumb{
+	
+	background-image: url(images/petrren.jpg), url(images/petrren-y.jpg), url(images/petrren.jpg), url(images/petrren-y.jpg);
+    background-position: center top, left center, center bottom, right center;
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+	padding: 2px;	
+}
+.kode_pet_store_thumb figure{
+	position:relative;
+	overflow:hidden;
+}
+.kode_pet_store_thumb figcaption{	
+	height:129px;
+	text-align:center;
+	font-weight:bold;
+	color:#484f57;
+	position:absolute;
+	top:50%;
+	margin-top:-64.5px;
+	right:0;
+	z-index:99999;
+}
+.kode_top_20.kode_pet_store_thumb figcaption{
+	top:20%;
+}
+.kode_pet_store_thumb figcaption.left{
+	left:0;
+	right:auto;	
+}
+.kode_pet_store_thumb figcaption.right{
+	left:auto;
+	right:0;	
+}
+.kode_pet_store_thumb figcaption.center{
+	left:0;
+	right:0;	
+	margin:-64.5px auto auto;
+}
+.kode_pet_store_thumb figcaption.kode-txt-left{
+	text-align:left;
+}
+.kode_pet_store_thumb figcaption.kode-txt-right{
+	text-align:right;
+}
+.kode_pet_store_thumb figcaption.kode-txt-center .kode_effect_1,
+.kode_pet_store_thumb figcaption.kode-txt-center .kode_effect_2,
+.kode_pet_store_thumb figcaption.kode-txt-center .kode_effect_3,
+.kode_pet_store_thumb figcaption.kode-txt-center .kode_effect_4,
+.kode_pet_store_thumb figcaption.kode-txt-center{
+	text-align:center;
+	float:none;
+}
+.simple-column .kode_effect_1,
+.simple-column .kode_effect_2,
+.simple-column .kode_effect_3,
+.simple-column .kode_effect_4{
+	float:none;
+}
+.kode_pet_store_thumb figcaption.left{
+	margin-left:30px;
+}
+.kode_pet_store_thumb figcaption.right{
+	margin-right:30px;
+}
+.kode_pet_store_thumb figcaption.right a{
+	color:#0e0c17;
+}
+.second-color{
+	left:0px;	
+}
+.kode_pet_store_thumb figcaption.right{	
+	color:#0e0c17;
+ }
+.kode_pet_store_thumb figcaption h3{
+	margin-bottom:6px;
+	text-transform:uppercase;
+	font-size:20px;
+}
+.kode_pet_store_thumb figcaption h2{
+	margin-bottom:11px;
+	text-transform:uppercase;
+	font-size:30px;
+}
+.kode_pet_store_thumb figcaption a.kode_type_5{
+	display:inline-block;
+	border:4px solid #484f57;
+	padding:5px 14px 6px 14px;
+	color:#484f57;
+	text-transform:uppercase;
+}
+.store_top_add h3{
+	font-size:20px;
+	text-transform:uppercase;
+}
+.store_top_add h2{
+	font-size:30px;
+	text-transform:uppercase;
+}
+.store_top_add a{
+	text-transform:uppercase;
+}
+/*our product start*/
+.kode_our_products_store{
+	background-color:#f0f1f5;	
+	padding:60px 0 30px 0;
+}
+.kode_thumb_store_product,
+.kode_thumb_store_product img,
+.kode_our_products_store {
+    float: left;
+    width: 100%;
+}
+.kode_thumb_store_product{
+	border:1px solid #d1d1d1;
+	margin-bottom:30px;
+}
+.kode_thumb_store_product figure{
+	float:left;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+}
+.kode_thumb_store_product:hover .ratingstar{
+	opacity:1;
+}
+.ratingstar {
+    bottom: 0;
+    float: left;
+    position: absolute;
+    width: 100%;
+	left:0;
+	right:0;
+	margin:0 auto 20px auto;
+	opacity:0;
+}
+.ratingstar li{
+	display:inline-block;
+	margin-right:5px;
+	color:gold;
+}
+.ratingstar li:hover i{
+	color:gold;
+}
+.kode_thumb_store_product figure span{
+	display:inline-block;
+	width:146px;
+	height:146px;
+	text-align:center;
+	padding-top:120px;
+	position:absolute;
+	top:-90px;
+	left:-90px;
+	transform:rotate(-45deg);
+	font-size:12px;
+	color:#fff;
+	font-weight:bold;
+	opacity:0;
+	text-transform:uppercase;
+}
+.kode_thumb_store_product:hover figure span{
+	opacity:1;
+}
+.store_adjusting_class{
+	float:left;
+	width:100%;
+}
+.store_adjusting_class h3{
+	font-size:20px;
+}
+.kode_thumb_store_product figcaption{
+	float:left;
+	width:100%;
+	text-align:center;
+	font-weight:bold;
+	padding:18px 25px 0px;
+	position:relative;
+	overflow:hidden;
+	border-top:1px solid #d1d1d1;
+}
+
+.kode_thumb_store_product figcaption h3{
+	margin-bottom:3px;
+}
+.kode_thumb_store_product:hover figcaption h3{
+	color:#fff;
+}
+.kode_thumb_store_product figcaption span{
+	display:block;
+	font-size:18px;
+	opacity:1;
+	margin-bottom:20px;
+	font-family: "Lato",sans-serif;
+	height:31px;
+}
+.kode_thumb_store_product:hover figcaption span{
+	opacity:0.5;
+}
+.kode_thumb_store_product figcaption ul{
+	float:left;
+	width:205px;
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 auto -56px auto;
+	bottom:-8px;
+	opacity:0.75;
+	transform:scale(2);
+}
+.kode_thumb_store_product:hover figcaption ul {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    opacity: 1;
+    transform: scale(1);
+}
+.kode_thumb_store_product figcaption ul li{
+	float:left;
+}
+.kode_thumb_store_product figcaption ul li a{
+	display:block;
+	font-size:14px;
+	padding:5px 10px 5px 10px;
+	color:#fff;
+	background:#212121;
+}
+.kode_thumb_store_product figcaption ul li:nth-child(2){
+	margin:0 5px;
+}
+.kode_thumb_store_product figcaption ul li:nth-child(2) a{
+	padding:5px 24px 5px 24px;
+	font-size:12px;
+	text-transform:uppercase;
+}
+/*new season full widh start*/
+.kode-type-3 figcaption{
+	margin-top:-95.5px;
+}
+.pull-left.second-color > h2 {
+    font-size: 35px;
+	margin-bottom:8px;
+	color:#6a5f5b;
+}
+.pull-left.second-color .left-capstion{
+	margin-bottom:3px;
+	display:inline-block;
+}
+.kode-type-3  figcaption a{
+	border:1px solid #484f57;
+	text-transform:uppercase;
+}
+.left-capstion{
+	font-size:20px;
+	text-transform:uppercase;
+}
+.kode-type-3  figcaption h2{
+	font-size:25px;
+	text-transform:uppercase;
+}
+.kode-type-3  figcaption h2 span{
+	font-size:46px;
+	display:block;
+	text-transform:uppercase;
+}
+.kode-type-3 figure:before,
+.kode-type-3 figure:after{
+	bottom: 8px;
+    content: "";
+    left: 8px;
+    opacity: 0;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;	
+}
+.kode-type-3 figure:before{
+	border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    transform: scale(0, 1);
+}
+.kode-type-3 figure:after{
+	border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: scale(1, 0);	
+}
+.kode-type-3 figure:hover:before,
+.kode-type-3 figure:hover:after{
+	opacity: 1;
+    transform: scale(1);	
+}
+.kode-type-3 figcaption{
+	text-align:left;
+	margin-left:20px;
+	color:#6a5f5b;
+}
+.kode-type-3 figcaption  a{
+	color:#6a5f5b;
+	border-color:#6a5f5b;
+	margin-right:3px;
+}
+
+.kode-type-3 figcaption h2 span{
+	font-size:34px;	
+	color:#6a5f5b;color:#6a5f5b;
+}
+.kode-type-3 .third-color{
+	margin-right:20px;
+	color:#201f24;
+	text-align: right;
+	width: 310px;
+}
+.kode_pet_store_thumb .third-color > a{
+	color:#201f24;	
+}
+.kode-type-3 .third-color h2{
+	color:#38b54f;
+	font-size:60px;
+	line-height:50px;
+}
+.kode-type-3 figcaption.third-color{
+	margin-top:-87px;	
+}
+.third-color h3 a{
+	padding:10px 15px;
+	background:#38b54f;
+	color:#fff;
+	font-size:12px;
+	text-transform:capitalize;
+	border:none;
+	margin-right:5px;
+}
+/*top thumb first section start*/
+.top-thumb{
+	float:left;
+	width:100%;
+	padding:60px 0 60px 0;
+}
+
+.kode_pet_store_thumb.kode-type-2 figcaption{
+    left: 5.5%;
+    margin-bottom: 0;
+    margin:0;
+    top: 11%;
+	width:404px;
+	text-align:left;;
+	
+}
+.kode-type-2 h3{
+	display:inline-block;
+}
+.kode-type-2 h3 {    
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-transform: capitalize;
+	border:none;
+	color:#fff;
+	border-bottom:1px solid #fff;
+}
+.kode_pet_store_thumb.kode-type-2 h2{
+	font-size:35px;
+	color:#fff;
+}
+.kode_pet_store_thumb .horizental_fig {
+    top: 27%;
+	margin:0
+}
+.horizental_fig span {
+    display: block;
+    font-size: 20px;
+	font-weight:bold;
+	margin-bottom:11px;
+	text-transform:capitalize;
+}
+.kode_pet_store_thumb{
+}
+.kode-type-2.horizental_fig_2 {
+    margin:0;
+    top: 18%;
+	text-transform:capitalize;
+}
+.kode_pet_store_thumb .horizental_fig_2 h2 {
+	text-transform:capitalize;
+	margin-bottom:0px;
+}
+.kode_pet_store_thumb .horizental_fig_2 span {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 0px;
+	text-transform:capitalize;
+}
+.kode_pet_store_thumb .horizental_fig_2 > p {
+    font-size: 17px;
+	color:#fff;
+	text-transform:capitalize;
+}
+
+
+/*
+	  ============================================================
+		   Pet Store Transform Effect
+	  ============================================================
+*/
+.kf_store_item_list:hover figure img,
+.kode_pet_store_thumb:hover figure img
+{
+	transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-o-transform:scale(1.2);	
+}
+
+/*
+	  ============================================================
+		   Transform With Rotation Effect
+	  ============================================================
+*/
+/*-------------------------------------------------------------Blog Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_blog:hover figure img,
+/*-------------------------------------------------------------Find Best Companion Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_companion:hover figure img,
+.store_top_effect:hover figure img
+{
+	transform:scale(1.2) rotateZ(-6deg);
+	-moz-transform:scale(1.2) rotateZ(-6deg);
+	-webkit-transform:scale(1.2) rotateZ(-6deg);
+	-ms-transform:scale(1.2) rotateZ(-6deg);
+	-o-transform:scale(1.2) rotateZ(-6deg);	
+}
+/*
+	  ==============================================================
+		   Pet ITEM HEADING WRAP CSS START
+	  ==============================================================
+*/
+.kf_store_item_heading{
+	float:left;
+	width:100%;
+	position:relative;
+	margin-bottom:36px;	
+}
+.kf_store_item_heading h5,
+.kf_featured h5,
+.top_related h5{
+	font-size:18px;
+	color:#333333;
+	text-transform:uppercase;
+	position:relative;
+	font-weight:bold;
+	font-family: 'Lato', sans-serif;	
+}
+.kf_store_item_heading h5:before{
+	content:"";
+	position:absolute;
+	top:50%;
+	left:90px;
+	right:10px;
+	border-top:1px solid #dddddd;	
+}
+/*Featured Item Heading*/
+.kf_featured h5:before{
+	content:"";
+	position:absolute;
+	top:50%;
+	left:100px;
+	right:10px;
+	border-top:1px solid #dddddd;	
+}
+/*Top Related Heading*/
+.top_related h5:before{
+	content:"";
+	position:absolute;
+	top:50%;
+	left:230px;
+	right:10px;
+	border-top:1px solid #dddddd;	
+}
+/*
+	  ==============================================================
+		   Pet ITEM HEADING WRAP CSS END
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   Pet ON SALE ITEM WRAP CSS START
+	  ==============================================================
+*/
+.kf_store_product_wrap{
+	padding-bottom:30px;	
+}
+.kf_store_item_list{
+	float:left;
+	width:100%;
+	position:relative;
+	margin-bottom:30px;	
+}
+.kf_store_item_list figure{
+	float:left;
+	border:1px solid #dddddd;
+	width:130px;
+	overflow:hidden;	
+}
+.kf_store_item_list:hover figure{
+	box-shadow:0px 0px 50px 0px rgba(0,0,0,0.18);
+}
+.kf_store_item_list figure img{
+	width:100%;
+	height:auto;	
+}
+.kf_store_item_des{
+	float:none;
+	padding:0px 0px 0px 150px;	
+}
+.kf_product_name{
+	float:left;
+	width:100%;
+	position:relative;
+	margin:0 0 10px;	
+}
+.kf_product_name h6{
+	font-size:14px;
+	text-transform:capitalize;
+	color:#666666;
+	position:relative;
+	font-weight:bold;	
+}
+.kf_product_name h6:before{
+	content:"";
+	position:absolute;
+	top:11px;
+	left:90px;
+	right:30px;
+	border-top:1px solid #dddddd;	
+}
+.kf_product_name a{
+	position:absolute;
+	top:0px;
+	right:0px;
+	color:#323232;
+	font-size:16px;
+	vertical-align:middle;
+	line-height:22px;	
+}
+.kf_store_item_des > a{
+	display:block;
+	font-size:18px;
+	text-transform:capitalize;
+	margin:0px 0px 7px;
+	color:#333333;
+	font-family: 'Lato', sans-serif;	
+}
+.kf_price{
+	float:left;
+	width:100%;
+	margin-bottom:10px;	
+}
+.kf_price h5{
+	font-size:20px;
+	text-transform:capitalize;
+	display:inline-block;
+	margin-right:20px;
+	font-family: 'Lato', sans-serif;	
+}
+.kf_price span{
+	font-size:18px;
+	color:#aaaaaa;
+	text-decoration:line-through;
+	font-family: 'Lato', sans-serif;
+}
+.kf_store_item_des ul{
+	float:left;
+	width:100%;	
+}
+.kf_store_item_des ul li{
+	float:left;	
+}
+.kf_store_item_des ul li a{
+	color:#999999;
+	display:block;	
+}
+.margin_bottom{
+	margin-bottom:30px;	
+}
+
+/*
+	  ==============================================================
+		   Pet ON SALE ITEM WRAP CSS END
+	  ==============================================================
+*/
+
+
+/*
+	  ==============================================================
+		   Pet STORE TESTIMONIAL WRAP CSS START
+	  ==============================================================
+*/
+.testimonial_store_bg{
+	background-image:url(images/testimonial-01.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	padding:100px 0 155px;	
+}
+.testimonial_store_bg:before{
+	content:"";
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.65);	
+}
+.testimonial_store_bg .container{
+	position:relative;
+	z-index:9999;	
+}
+.store_testimonial{
+	margin:auto;
+	width:60%;
+	position:relative;	
+}
+.store_testimonial ul{
+	float:left;
+	width:100%;	
+}
+.store_testimonial ul li{
+	float:left;
+	position:relative;
+	padding:0px 50px;
+		
+}
+.store_testimonial ul li figure{
+	width:80px;
+	float:left;	
+}
+.store_testimonial ul li figure img{
+	border-radius:100%;	
+}
+.store_testimonial_des{
+	float:none;
+	padding:0px 0px 0px 100px;
+	width:auto;	
+}
+.store_testimonial_des p{
+	font-size:26px;
+	color:#fff;
+	font-weight:normal;
+	line-height:36px;
+	font-family: 'Lato', sans-serif;
+}
+.store_testimonial_des h5{
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;	
+	text-transform:uppercase;
+	padding-left:35px;
+	position:relative;
+}
+.store_testimonial_des h5:before{
+	content:"";
+	position:absolute;
+	bottom:5px;
+	left:0px;
+	width:30px;
+	height:1px;
+	background-color:#fff;
+}
+.store_testimonial .bx-wrapper{
+	margin:0px;	
+}
+.store_testimonial .bx-wrapper .bx-pager.bx-default-pager a{
+	width:15px;
+	height:15px;
+	background-color:#95a2a8;
+	border-radius:100%;
+}
+.store_testimonial .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+	bottom:-40px;	
+}
+.store_testimonial .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.store_testimonial .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color:#fff;	
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a{
+	width:30px;
+	height:60px;
+	border:1px solid #fff;	
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a:hover{
+	width:60px;	
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-prev{
+	left:-220px;	
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-next{
+	right:-220px;	
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-prev:before,
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-next:after{
+	content:"\f104";
+	position:absolute;
+	font-family:fontawesome;
+	top:14px;
+	left:11px;
+	font-size:20px;
+	color:#fff;
+	text-indent:0px;	
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-next:after{
+	content:"\f105";
+	left:auto;
+	right:11px;	
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-prev:hover:before{
+	left:25px;	
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-next:hover:after{
+	right:25px;	
+}
+/*
+	  ==============================================================
+		   Pet STORE TESTIMONIAL WRAP CSS END
+	  ==============================================================
+*/
+
+
+/*
+	  ==============================================================
+		   Pet Heading Wrap Style
+	  ==============================================================
+*/
+/*Heading 1 Style*/
+.kode_store_heading_3
+{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;
+	margin-bottom:30px;	
+}
+.kode_store_heading_3 h3
+{
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:0px 0px 16px;
+	line-height:25px;
+	font-size:30px;	
+}
+.kode_store_heading_3 span
+{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.kode_store_heading_3 span:before
+{
+	content:"";
+	position:absolute;
+	top:12px;
+	left:0px;
+	right:0px;
+	margin:auto;
+	width:120px;
+	height:1px;
+	background-color:#666666;	
+}
+/*Heading 3 Style*/
+.kode_store_heading_3 span{
+	display:inline-block;
+	margin-bottom:10px;
+}
+.kode_store_heading_3 p{
+	margin-bottom:0px;
+}
+.kode_store_heading_3 i{
+	display:inline-block;
+	font-size:18px;
+	color:#000000;
+	position:relative;
+	z-index:9999;
+	padding:0px 8px;
+	background-color:#ededed;	
+}
+
+
+/*
+	  ============================================================
+		  Love Pet Wrap Start
+	  ============================================================
+*/
+
+figure.effect-apollo,
+.kode-type-3 {
+	background: #333;
+	position:relative;
+	overflow:hidden;
+}
+.effect-apollo.red{
+	background: #f75259;	
+}
+.effect-apollo.green{
+	background-color:#2f9848;	
+}
+figure.effect-apollo img,
+.kode-type-3 figure img {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-apollo:before,
+.kode-type-3:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+figure.effect-apollo:hover img,
+.kode-type-3:hover img {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-apollo:hover:before,
+.kode-type-3:hover:before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+
+/*
+	  ============================================================================================================================
+		   									PET CLICNIC HTML CSS START
+	  ============================================================================================================================
+*/
+.kode_pet_clinic_slider,
+.kode_pet_clinic_element,
+.content,
+.wrapper,
+.content_clinic{
+	float:left;
+	width:100%;	
+}
+/***************************************HEADER START***********************************/
+.kode_clinic_top_strip,
+.kode_pet_clinic_contct,
+.kode_pet__clinic_social,
+.header{
+	float:left;
+	width:100%;
+	margin:0;
+	list-style:none;
+	
+}
+.kode_clinic_top_strip .kode_pet_clinic_contct{
+	margin-top:10px;
+}
+.kode_clinic_top_strip{
+	border-top-style: solid;
+    border-top-width: 8px;
+	border-color:rgba(255,255,255,0.6);
+	background:#24B700;
+	padding:11px 0;
+	position:relative;
+	text-align:center;
+}
+.kode_pet_clinic_contct li{
+	list-style:none;
+}
+.kode_pet__clinic_social li{
+	margin-top:10px;
+	margin-right:15px;
+	float:left;
+	list-style:none;
+}
+.kode_pet__clinic_social li a {
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    height: 36px;
+    line-height: 33px;
+    text-align: center;
+    width: 36px;
+	position:relative;
+	z-index:99999;
+}
+.kode_clinic_top_strip div.logo{
+	width:220px;
+	margin:0 auto;
+	border-style: solid;
+    border-width:8px 8px 0 8px ;
+	background:#fff;
+	height:98px;
+	position:absolute;	
+	right:0;
+	bottom:0;
+	left:0;
+	padding:31px 11px;
+}
+.kode_clinic_top_strip div.logo:before{
+	content:"";
+	left:0;
+	right:0;
+	bottom:-12px;
+	position:absolute;
+	width: 0;
+	z-index:999;
+	height: 0;
+	border-style: solid;
+	border-width: 12px 102px 0;
+	border-color: #ffffff transparent transparent transparent;
+}
+.kode_clinic_top_strip,
+.kode_clinic_top_strip div.logo{
+	border-color:#4DAFE1;
+}
+.kode_pet_store_navigaton .logo{
+	float:left;
+	width:100%;
+}
+.kode_clinic_top_strip div.logo a img{
+	width:100%;
+	height:auto;
+}
+.kode_pet_clinic_contct ul {
+    float: right;
+	margin:0 0 0 0;
+}
+.kode_pet_clinic_contct ul li{
+	float:left;
+}
+.kode_pet_clinic_contct ul li a {
+	padding-left: 15px;
+    padding-right: 0;
+	color:#fff;
+	font-size:16px;
+	line-height:33px;
+}
+.kode_pet_clinic_contct ul li:first-child a::before {
+    border-right: 1px solid #ffffff;
+    bottom: 0;
+    content: "";
+    height: 17px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: -1px;
+    top: 2px;
+}
+.kode_pet_clinic_contct ul li:first-child a {
+    padding-right: 10px;
+	padding-left:0;
+	position:relative;
+}
+/***************************************NAVIGATION START***********************************/
+.kode_pet_clinic_navigation:before{
+	position:absolute;
+	content:'';
+	left:0;
+	right:0;
+	top:0;
+	background:rgba(255,255,255,0.2);
+	width:100%;
+	height:100%;
+}
+.kode_pet_clinic_navigation{
+	float:left;
+	width:100%;
+	text-align:center;
+	position:relative;
+}
+.kode_navi_clinic{
+	margin:0 auto;
+	display: inline-flex;
+}
+.kode_navi_clinic li{
+	float:left;	
+	margin-bottom:0px;
+	list-style:none;
+	position:relative;
+}
+.kode_navi_clinic > li:nth-child(7) {
+	margin:0;
+}
+.kode_navi_clinic li a{
+	font-size:16px;
+	display:block;
+	padding:25px 20px 24px;
+	text-transform:uppercase;
+	color:#fff;
+	position:relative;
+	overflow:hidden;
+	line-height: 25px;
+}
+.kode_navi_clinic li a i{
+	font-size:13px;
+	margin-right:10px;
+}
+.kode-navigation-wrapper .navigation ul.menu ul.sub-menu li a{
+	padding-top:0px;
+	padding-bottom:0px;
+	line-height:51px;
+}
+.kode-navigation-wrapper .navigation ul.menu ul.sub-menu li a:before,
+.kode-navigation-wrapper .navigation ul.menu ul.sub-menu li a:after{
+	display:none;
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a{
+	line-height:57px;
+}
+/***************************************KODE PET CLINIC BANNER START***********************************/
+.kode_pet_clinic_slider{
+	position:relative;
+}
+.kode_bx_clinic_figure {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.kode_bx_clinic_figure::before {
+    background: #000000 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.bx_clinic_capstion {
+    height: 300px;
+    right: 15.5%;
+    margin-top: -200px;
+    position: absolute;
+    top: 50%;
+    width: 500px;
+}
+.bx_clinic_capstion h6 {
+    color: #ffffff;
+    font-size: 71.65px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+	font-family: 'Lato', sans-serif;
+}
+.bx_clinic_capstion p {
+    color: #ffffff;
+    font-size: 17px;
+    margin-bottom: 27px;
+    text-transform: capitalize;
+	line-height:25px;
+}
+.bx_clinic_capstion a {
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px 42px 15px 42px;
+    text-transform: uppercase;
+	border-radius:5px;
+	position:relative;
+	z-index:2;
+	line-height:25px;
+}
+.kode_pet_clinic_slider .bx-pager.bx-default-pager {
+    display: none;
+}
+/***************************************KODE PET CLINIC ELEMENT START***********************************/
+
+.kode_pet_clinic_element{
+	float:left;
+	width:100%;
+	position:relative;
+	min-height:258px;
+	margin-bottom:11px;
+}
+.kode_clinic_element_service{
+	float:left;
+	width:100%;
+	position:absolute;
+	top:-70%;
+}
+.kode_clinic_service_thumb{
+	float:left;
+	text-align:center;
+	padding:63px 20px 55px;
+	position:relative;
+	z-index:2;
+	overflow:hidden;
+	width:100%;
+}
+.kode_clinic_service_thumb span{
+	margin:0 0 24px 0;
+	width:127px;
+	height:127px;
+	text-align:center;
+	font-size:55px;
+	border:1px solid #fff;
+	border-radius:100%;
+	display:inline-block;
+	line-height:123px;
+	color:#fff;
+}
+.kode_clinic_service_thumb h4{
+	margin:0 0 20px 0;
+	text-transform:capitalize;
+	color:#fff;
+	font-weight:bold;
+	font-size:25px;
+}
+.kode_clinic_service_thumb p{
+	margin:0 0 15px 0;
+	text-transform:capitalize;
+	color:#fff;
+}
+.kode_clinic_service_thumb a{
+	display:inline-block;
+	text-transform:uppercase;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+}
+.kode_clinic_service_thumb a:hover{
+	color:#fff;
+}
+/***************************************KODE OUR PET CLINIC START***********************************/
+
+
+
+
+.kode_our_pet_clinic,
+.kode_pet_appointment,
+.kode_pet_clinic_blog,
+.kode_clinic_products,
+.kode_clinic_appointment{
+	float:left;
+	width:100%;
+	padding:50px 0;
+	overflow:hidden;
+}
+/*HEADING 1 START*/
+.kode_pet_clinic_heading_1{
+	float:left;
+	width:100%;
+	text-align:center;
+	color:#333333;
+	margin:0 0 31px 0;
+}
+.kode_pet_clinic_heading_1 h2{
+	margin:0 0 23px 0;
+	font-size: 30px;
+	line-height: 1;
+	font-weight:bold;
+	text-transform: uppercase;
+}
+.kode_pet_clinic_heading_1 h3{
+	margin:0;
+	font-size: 16px;
+	line-height: 1.0909090909;
+	color:#666;
+}
+/*HEADING 2 START*/
+.kode_our_pet_heading_2{
+	float:left;
+	width:100%;
+	text-align:center;
+	color:#333333;
+	padding:0 137px;
+}
+.kode_our_pet_heading_2 h4{
+	margin:0 0 22px 0;
+	font-size: 20px;
+	line-height: 1.2;
+	font-family: 'Lato', sans-serif;
+}
+.kode_our_pet_heading_2 p{
+	margin:0 0 25px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+}
+.btn-effect-simple,
+.kode_our_pet_heading_2 a{
+	padding:11px 35px 12px 35px;
+	font-size:16px;
+	margin:0;
+	text-transform:uppercase;
+	display:inline-block;
+	border-radius:5px;
+	color:#fff;
+	font-weight:bold;
+	position:relative;
+	z-index:2;
+}
+.kode_our_pet_service_thumb{
+	float:left;
+	width:100%;
+	margin:0 0 26px 0;
+}
+.circle_fig{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.circle_fig figure{
+	width:282px;
+	height:282px;
+	/* border:4px solid; */
+	border-radius:100%;
+	overflow:hidden;
+	margin:0 auto;
+	position:relative;
+	text-align:center;
+	background:#666666;
+	float:none;
+}
+.circle_fig figure a {
+    color: #ffffff;
+    font-size: 18px;
+    left: 0;
+    margin: -12px auto 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 20;
+	font-weight:bold;
+}
+/***************************************KODE OUR PET CLINIC APPOINTMENT START***********************************/
+.kode_clinic_appointment{
+	position:relative;
+	margin-bottom:0;
+}
+.kode_clinic_products .kode_pet_clinic_heading_1,
+.kode_pet_clinic_blog .kode_pet_clinic_heading_1,
+.kode_clinic_appointment .kode_pet_clinic_heading_1{
+	padding-top:4px;
+}
+.kode_pet_clinic_blog .kode_pet_clinic_heading_1{
+	margin-bottom:30px;
+}
+.kode_clinic_appointment h2, .kode_clinic_appointment h3{
+	color:#fff;
+}
+.kode_clinic_appointment:before{
+	content:"";
+	background:#000000;
+	opacity:0.8;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	position:absolute;
+}
+.kode_clinic_banner{
+	float:left;
+	width:100%;
+}
+.kode_pet_clinic_appointment{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.clinic-input-area {
+    float: left;
+    width: 100%;
+}
+.kode_pet_clinic_appointment .btn-group > .btn, .btn-group-vertical > .btn ,
+.kode_pet_clinic_appointment input[type="email"],.kode_pet_clinic_appointment input[type="subject"],.kode_pet_clinic_appointment input[type="name"],.kode_pet_clinic_appointment input[type="text"] {
+    border: 1px solid #fff;
+    color: #fff;
+    height: 43px;
+    margin-bottom: 30px;
+    padding: 8px 10px;
+    width: 100%;
+	background:transparent;
+	font-family: 'Lato', sans-serif;
+	font-weight:bold;
+	font-size:14px;
+}
+.kode_pet_clinic_appointment textarea,
+.kode_pet_clinic_appointment .btn-group > .btn, .btn-group-vertical > .btn:hover ,
+.kode_pet_clinic_appointment input[type="email"]:hover {
+    background:transparent;
+	color:#fff !important;
+}
+.kode_pet_clinic_appointment textarea {
+    border: 1px solid #fff;
+    color: #fff;
+    height: 205px;
+    margin-bottom: 30px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+	background:transparent;
+	font-family: 'Lato', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+.kode_pet_clinic_appointment textarea:focus{
+	border:1px solid #fff;	
+}
+.kode_pet_clinic_appointment  .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default:hover,
+.kode_pet_clinic_appointment  .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default,
+.kode_pet_clinic_appointment .dropdown-menu > li > a,
+.kode_pet_clinic_appointment .dropdown-menu > li > a:hover,
+.kode_pet_clinic_appointment .btn.btn-default.dropdown-toggl,
+.kode_pet_clinic_appointment .btn.btn-default.dropdown-toggl .open,
+.kode_pet_clinic_appointment .btn.btn-default.dropdown-toggle:hover{
+	color:#fff !important;
+}
+.kode_pet_clinic_appointment .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{
+	border-color:#fff !important;
+	background-color:transparent !important;
+}
+.kode_pet_clinic_appointment .dropdown-menu > li > a:hover{
+	background:#24b700;
+}
+.kode_pet_clinic_appointment .btn-group > .btn, .btn-group-vertical > .btn {
+    float: left;
+    position: relative;
+    text-align: left;
+    width: 100%;
+	border-radius:0;
+}
+.kode_pet_clinic_appointment .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+.kode_pet_clinic_appointment .btn .fa {
+	margin-left:58.5%;
+}
+.kode_pet_clinic_appointment .btn .caret {
+    margin-left: 61%;
+}
+.kode_pet_clinic_appointment .btn-group, .btn-group-vertical{
+	width:100%;
+}
+.kode_pet_clinic_appointment .dropdown-menu{
+	width:100%;
+	margin:-12% 0 0 0;
+	
+}
+/*.kode_pet_clinic_appointment .form-button{
+	padding:9px 35px 10px 35px;
+	color:#fff;
+	border:none;
+	margin:0 0 10px 0;
+	border-radius:5px;
+	font-weight:bold;
+	font-size:16px;
+	position:relative;
+	z-index:2;
+}*/
+/***************************************KODE OUR PET CLINIC BLOG START***********************************/
+.kode_pet_clinic_blog{
+	position:relative;
+}
+.kode_clinic-blog-post{
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+}
+.kode_clinic-blog-post figure{
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:center;
+	overflow:hidden;
+}
+.kode_clinic-blog-post figure a.time-read-more{
+	position:absolute;
+	top:100%;
+	margin:-15px auto 0 auto;
+	color: #ffffff;
+    left: 100%;
+	font-size:20px;
+	bottom:0;
+}
+.kode_clinic-blog-post figure img{
+	width:100%;
+}
+.kode_clinic-blog-post:hover figure a.time-read-more{
+	top:50%;
+	left:0;
+	right:0;
+}
+.kode_clinic_blog_capstion {
+    border: 1px solid #d2d2d2;
+    color: #666666;
+    float: left;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 23px 19px 30px 30px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+	background:#f9f9f9;
+}
+.time-newevent {
+    bottom: 0;
+    color: #ffffff;
+    font-size: 26px;
+    right: 0;
+    padding: 12px 15px 13px 15px;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+	font-weight:bold;
+}
+.time-newevent span {
+    display: block;
+    font-size: 16px;
+}
+.kode_clinic_blog_capstion > a {
+	display:inline-block;
+	font-size:16px;
+	font-weight:bold;
+}
+.kode_clinic_blog_capstion > ul {
+    float: left;
+    margin: 0 0 18px 0;
+    width: 100%;
+	list-style:none;
+}
+.kode_clinic_blog_capstion ul li.blog-info i{
+	margin-right:10px;
+	vertical-align:middle;
+}
+.kode_clinic_blog_capstion .kode-blog-content.kode_pet_blog_des p{
+	text-align:left;
+}
+.kode-blog-small-ux figure{
+	position:relative;
+	overflow:hidden;
+}
+.kode-blog-small-ux figure .kode-blog-thumbnail{
+	margin:0px;
+}
+.kode-blog-thumbnail a img{
+	width:100%;
+}
+.kode_clinic_blog_capstion li {
+    float: left;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 auto;
+    padding: 0 14px;
+}
+.kode_clinic_blog_capstion li a{
+	color:#666666;
+}
+.kode_clinic_blog_capstion li:first-child{
+	padding-left:0;
+	border-right:1px solid #c0c0c0;
+}
+.kode_clinic_blog_capstion h4{
+	margin:0px;
+	font-weight:bold;
+	display:inline-block;
+	color:#333333;
+	font-size:24px;
+}
+.kode_clinic_blog_capstion .kode-blog-content p{
+	margin-bottom:22px;
+	color:#727272;
+	line-height:30px;
+}
+.kode-blog-list .kode_pet_blog_des{
+	margin-top:22px;
+}
+.kf_update_blog_wrap{
+	margin-bottom:30px;
+}
+.kf_update_blog_wrap .kode_pet_blog_des{
+	margin-top:0px;
+}
+.kode_clinic_blog_capstion .kode_pet_blog_des{
+	margin-top:15px;
+}
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-prev:before, 
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-next:after{
+	display:none;
+}
+/*
+============================================
+			shazad ali
+============================================
+*/
+/*************************KODE-2  PET GALLERY***********STARTS*****************/
+.kode2_pet_our{
+	float:left;
+	width:100%;
+	background:#efefef;
+	text-align:center;
+	padding:50px 0px;
+}
+/***KODE2-PET GALLERY**/
+.kode2-gallery-picture{
+	float:left;
+	width:100%;
+	margin-left:-0px;
+	margin-right:-0px;
+}
+.kode2-pet-gallery ul li{
+	display:inline-block;
+}
+.kode2-Veterinary .kode2-title h2,
+.kode-news h2,
+.kode2_pet_our h2,
+.kode2-title h2{
+	font-family: 'Lato';
+	font-size:36px;
+	font-weight:bold;
+	margin:0 0 18px 0;
+}
+.kode2-Veterinary .kode2-title h5,
+.kode-news h5,
+.kode2_pet_our h5,
+.kode2-title h5{
+	font-family: 'Lato','Regular';
+	font-size:22px;
+	margin:0px 0px 29px 0;
+}
+
+.kode2-pet-gallery{
+	margin-bottom:30px;
+}	
+.kode2-pet-gallery ul{
+	margin:0px;
+}
+.kode2-pet-gallery ul li a{
+	text-decoration:none;
+	font-size:16px;
+	color:#666666;
+	border:1px solid #c7c7c7;
+	line-height:0px;
+	display:inline-block;
+	border-radius:1px;
+	font-family: 'Lato';
+	font-weight:bold;
+	border-radius:5px;
+	margin:0px 9px;
+	padding:24px 42px 27px 42px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	opacity:0.6;
+	transform:scale(1);
+}
+.kode2-pet-gallery ul li a:hover{
+	color:#fff;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	opacity:1;
+	transform:scale(0.9);
+}
+.no-padding{
+	padding:0px;
+}
+.kode2-picture-gallery{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.kode2-picture-gallery  figure{
+	width:100%;
+	height:100%;
+}
+.kode2-picture-gallery figure:before{
+	position:absolute;
+	height:0%;
+	width:0%;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	content:"";
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	margin:auto;
+}
+.kode2-picture-gallery:hover figure:before{
+	opacity:0.7;
+	 height:100%;
+	 width:100%;
+}
+.kode2-picture-gallery a{
+	position:absolute;
+	top:50%;
+	left:45%;
+	font-size:30px;
+	color:#fff;
+	 transition: all 0.3s ease-in-out;
+	 -webkit-transition: all 0.3s ease-in-out;
+	opacity:0;
+	margin:0 auto;
+	transform:scaleY(0);
+}
+.kode2-picture-gallery:hover a{
+	position:absolute;
+	top:50%;
+	left:45%;
+	font-size:30px;
+	color:#fff;
+	bottom:0px;
+	opacity:1;
+	 transition: all 0.5s ease-in-out;
+	 -webkit-transition: all 0.5s ease-in-out;
+	  margin-top:-14px;
+	  transform:scale(1);
+}
+.kode2-gallery-picture figure > img{
+	width:101%;
+	background-image:cover;
+	background-repeat:no-repeat;
+}
+/***KODE2-PET GALLERY filtRABLE STARTS**/
+.filter-width-2col{
+	width:24.98%;
+	display:inline-block;
+}
+/***KODE2-PET GALLERY filtRABLE ENDS**/
+.kode2-more-img{
+	float:left;
+	width:100%;
+	padding:30px 0 0px;
+	margin-bottom:10px;
+}
+
+/***KODE2-PET GALLERY filtRABLE hover**/
+.kode2-more-img > a {
+	padding:10px 21px;
+	color:#fff;
+	display:inline-block;
+	text-decoration:none;
+	border-radius:5px;
+	font-family: 'Lato';
+	font-weight:bold;
+	font-size:16px;
+	position:relative;
+	z-index:2;
+}
+/***KODE2-PET GALLERY filtRABLE ends**/
+/***KODE2-PET GALLERY ENDS**/
+
+
+/***KODE2-PET Veterinary STARTS**/
+.kode2-Veterinary{
+	float:left;
+	width:100%;
+	text-align:center;
+	padding:50px 0px;
+	
+}
+.special figure{
+	float:left;
+	position:relative;
+}
+.kode2-social-icons {
+    bottom: -7%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.kode2-social-icons > li{
+	display:inline-block;
+}
+.kode2-social-icons > li > a{
+	font-size:16px;
+	color:#fff;	
+	transform:scale(1);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	display:inline-block;
+	width:48px;
+	height:48px;
+	line-height:48px;
+}
+.kode2-social-icons > li > a > i{
+	transform:scale(1);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.kode2-social-icons > li > a:hover > i{
+	transform:scale(2);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.special{
+	float:left;
+	width:100%;
+	
+}
+.special figure{
+	position:relative;
+	float:left;
+	width:100%;
+	overflow:visible
+}
+.special figure img{
+	float:left;
+	width:100%;
+}
+.special figure:before{
+	position:absolute;
+	top:3px;
+	left:3px;
+	right:3px;
+	bottom:3px;
+	content:"";
+}
+.special:hover figure:before{
+	opacity:0.6;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.kode-pic-info {
+    float: left;
+    padding: 31px 0 0;
+    width: 100%;
+	margin-bottom:6px;
+}
+.kode-pic-info  small{
+	width:100%;
+	float:left;
+}
+.special figure img{
+	width:100%;
+}
+.special:hover figure > a{
+	opacity:1;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	right:45%;
+}
+.special figure > a{
+	position:absolute;
+	top:50%;
+	margin:-33px auto 0 auto;
+	font-size:48px;
+	color:#fff;
+	right:0;
+	opacity:0;
+	font-weight:normal;
+}
+.kode-pic-info h4{
+	font-family: 'Lato';
+	font-weight:bold;
+	font-size:20px;
+	margin:0px;
+	margin-top:17px;
+	color:#777;
+}
+.kode-pic-info small{
+	font-family: 'Lato';
+	font-size:16px;
+	padding:5px 0 0;
+	color:#777;
+}
+/***KODE2-PET Veterinary ENDS**/
+.kode_clinic_thumb_product,
+.kode_clinic_thumb_product img,
+.kode_clinic_products {
+    float: left;
+    width: 100%;
+}
+.kode_clinic_thumb_product{
+	border:1px solid #d1d1d1;
+	margin-bottom:10px;
+}
+
+.kode_clinic_thumb_product figure{
+	float:left;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+}
+.kode_clinic_thumb_product:hover .ratingstar{
+	opacity:1;
+}
+.ratingstar {
+    bottom: 0;
+    float: left;
+    position: absolute;
+    width: 100%;
+	left:0;
+	right:0;
+	margin:0 auto 20px auto;
+	opacity:0;
+}
+.ratingstar li{
+	display:inline-block;
+	margin-right:5px;
+	color:gold;
+}
+.ratingstar li:hover i{
+	color:gold;
+}
+.adjusting_class{
+	float:left;
+	width:100%;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion{
+	float:left;
+	width:100%;
+	text-align:center;
+	font-weight:bold;
+	padding:0px 25px 0;
+	position:relative;
+	overflow:hidden;
+	border-top:1px solid #d1d1d1;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion h3{
+	margin-bottom:3px;
+	font-weight:bold;
+	font-size:22px;
+}
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion h3{
+	color:#fff;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion span{
+	display:block;
+	font-size:18px;
+	opacity:1;
+	margin-bottom:20px;
+	min-height:31px;
+	font-family: "Lato",sans-serif;
+}
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion span{
+	opacity:0.5;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul{
+	float:left;
+	width:205px;
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 auto -80px auto;
+	bottom:0;
+	opacity:0;
+/* 	transform:scale(2);
+	-moz-transform:scale(2);
+	-webkit-transform:scale(2); */
+}
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion ul {
+    margin: 0 auto 13px;
+    opacity: 1;
+/*     transform: scale(1);
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1); */
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul li{
+	float:left;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul li a {
+   
+    display: block;
+    font-size: 14px;
+    line-height: 31px;
+    padding: 0 10px;
+	border-radius:5px;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul li:nth-child(2){
+	margin:0 5px;
+}
+.kode_clinic_thumb_product .clinic-prduct-capstion ul li:nth-child(2) a {
+    font-size: 12px;
+    line-height: 31px;
+    padding: 0 24px;
+}
+/***KODE2-PET newsletter STARTS**/
+.kode2-newsletter{
+	float:left;
+	width:100%;
+	text-align:center;
+	background-image:url(images/newsletter.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+	color:#fff;
+}
+.kode2-newsletter:before{
+	position:absolute;
+	content:"";
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	height:100%;
+	width:100%;
+	background:#000;
+	opacity:0.75;
+}
+.kode2-news-letter-full{
+	position:relative;
+	float:left;
+	width:100%;
+	padding:50px 0px;
+}
+.kode2-news-letter-full .kode2-title > h2{
+	margin-bottom:24px;
+}
+.kode2-news-letter-full .kode2-title > h2,
+.kode2-news-letter-full .kode2-title > h5{
+	color:#fff;
+}
+.kode2_pet_our .kode2-title h2 ,
+.kode2_pet_our .kode2-title h5{
+	color:#333333;
+}
+.kode2-Veterinary .kode2-title h2 ,
+.kode2-title h5{
+	color:#333333;
+}
+.kode2-news-letter-full > form {
+    margin: 0 auto;
+    width: 620px;
+}
+
+.kode2-news-letter-full > a{
+    display: inline-block;
+    padding: 20px 44px 15px;
+	text-decoration:none;
+	color:#fff;
+	line-height:0px;
+	border-radius:5px;
+	font-family: 'Lato';
+	margin-bottom:10px;
+	position:relative;
+	z-index:20;
+}
+/***KODE2-PET newsletter ENDS**/
+
+/*
+	  ============================================================================================================================
+		   									PET CLICNIC EFFECT CSS START
+	  ============================================================================================================================
+*/
+/*
+============================================
+			PET SOCIAL ICON EFFECTS START
+============================================
+*/
+.kode_pet__clinic_social li a:hover i{
+
+}
+
+.kode_pet__clinic_social li a::before {
+    border-radius: 100%;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+	background-color:#fff;
+	z-index:-1;
+}
+.kode_pet__clinic_social li a:hover::before{
+	width:100%;
+	height:100%;
+} 
+/*
+============================================
+			PET NAVIGATON ANCOR EFFECTS START
+============================================
+*/
+.kode_navi_clinic li a:hover::before {
+    width: 100%;
+	opacity:1;
+}
+.kode_navi_clinic li a::before {
+    border-bottom: 4px solid #fff;
+    bottom: 0;
+    content: "";
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+/*
+============================================
+			PET BX CAPSTION EFFECTS START
+============================================
+*/
+.effect::before {
+	border-radius: 5px;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+	z-index:-1;
+	background:#fff;
+}
+.effect:hover::before{
+	width:100%;
+	height:100%;
+	opacity:1;
+} 
+.kode_our_pet_heading_2 a:hover::before{
+	background:#24B700;
+}
+.kode_our_pet_heading_2 a:hover{
+	color:#fff;
+}
+/*
+============================================
+			PET SERVICE THUM EFFECTS START
+============================================
+*/
+.kode_clinic_service_thumb::before {
+    bottom: 70%;
+    content: "";
+    left: 48%;
+    margin: auto;
+    opacity: 0;
+    position: absolute;
+    right: 49%;
+    top: 28%;
+    z-index: -1;
+}
+.kode_clinic_service_thumb:hover:before {
+    background-color: rgba(255,255,255,0.1) !important;
+    opacity: 1;
+    transform: scale(80);
+}
+.kode_clinic_service_thumb:hover span {
+    transform: rotateY(360deg);
+    transition: all 0.3s ease-in-out 0s;
+	background-color:#fff;
+	box-shadow: 0px 0px 15px 11px rgba(70,219,32,1);
+}
+/*
+============================================
+			PET CRICUL IMG EFFECTS START
+============================================
+*/
+.circle_fig figure img{
+	opacity: 0.47;
+}
+.circle_fig:hover figure img{
+	opacity:1;
+}
+
+.circle_fig figure::before {
+    border-radius: 100%;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    z-index: 10;
+}
+.circle_fig figure:hover::before{
+	width:100%;
+	height:100%;
+	opacity:0.55;
+} 
+/*
+============================================
+			PET BLOG THUMB EFFECTS START
+============================================
+*/
+.kode_clinic-blog-post figure::before{
+	content:"";
+	top:100%;
+	bottom:0;
+	left:100%;
+	right:0;
+	position:absolute;
+	opacity:0.65;
+}
+.kode_clinic-blog-post:hover figure::before{
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	opacity:0.65;
+}
+/*
+============================================
+			PET PRODUCT THUMB EFFECTS START
+============================================
+*/
+.kode_clinic_thumb_product{
+	transition:all 0.1s ease-in-out!important;
+}
+.kode_clinic_thumb_product:hover {
+    box-shadow:0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    /* transform: scale(1.05); */
+}
+
+
+
+
+/*
+	  ========================================================================================================================
+										PET STORE Transaction Effect
+	  ========================================================================================================================
+*/
+.kode_pet_store_navi li a::before,
+.kode_pet_store_navi li a::after,
+.kode_store_social_icon > li a,
+.kode_pet_store_shopping,
+.kode_pet_top_strip_store li a::before,
+.kode_pet_top_strip_store li a::after,
+.kode_thumb_store_product figcaption ul,
+.kode_thumb_store_product figcaption span,
+.kode_thumb_store_product figcaption h3,
+.kode_thumb_store_product:hover figcaption,
+.kode_thumb_store_product figure span,
+.ratingstar,
+.thumb figure::before,
+.thumb figure a,
+.kode_pet_store_contct > li a, .kode_store_faq_area ul > li a,
+.kode_store_social_icon > li a,
+.kf_store_item_list a,
+.kf_store_item_list figure img,
+.store_testimonial .bx-wrapper .bx-controls-direction a,
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-prev:before,
+.store_testimonial .bx-wrapper .bx-controls-direction a.bx-next:after,
+.store_bx_capstion a:before,
+.store_bx_capstion a,
+.store_top_effect figure img,
+/*
+	  ========================================================================================================================
+										PET CLINIC Transaction Effect
+	  ========================================================================================================================
+*/
+.kode_goal_wrap .accordion-open,
+.pet_services_thumb:hover .capstion_heading h4,
+.pet_services_thumb:hover .capstion_heading i,
+.capstion_heading h4,
+.capstion_heading i,
+.pet_services_thumb:hover figure:before,
+.pet_services_thumb figure:before,
+.pet_services_thumb figure,
+.new_companion2,
+.new_companion2_capstion,
+.new_companion2:hover .new_companion2_capstion,
+.new_companion2:hover .new_companion2_capstion h5,
+.new_companion2_capstion h5,
+.new_companion2:hover .new_companion2_capstion,
+.service_area_thumb:hover .service_area_thumb_capstion .service-rate,
+.service-rate,
+.service_area_thumb:hover .service_area_thumb_capstion a,
+.service_area_thumb:hover .service_area_thumb_capstion h4,
+.service_area_thumb_capstion a,
+.service_area_thumb_capstion h4,
+.service_area_thumb figure:before,
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion li a,
+.clinic-prduct-capstion span,
+.clinic-prduct-capstion ul li,
+.clinic-prduct-capstion ul li a,
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion,
+.kode_clinic_service_thumb:hover span ,
+.kode_clinic_thumb_product clinic-prduct-capstion ul li a,
+.kode_clinic_thumb_product clinic-prduct-capstion span,
+.kode_clinic_thumb_product:hover figcaption,
+.kode_clinic_thumb_product:hover .ratingstar,
+.ratingstar li:hover i,
+.kode_clinic_thumb_product:hover figcaption h3,
+.kode_clinic_thumb_product:hover figcaption span,
+.kode_clinic_thumb_product:hover figcaption span,
+.kode_clinic_thumb_product:hover figcaption span,
+.kode_clinic_thumb_product:hover figcaption ul,
+.kode-_clinic_blog-capstion li a:hover,
+.kode_our_pet_heading_2 a:hover::before,
+.kode_our_pet_heading_2 a:hover,
+.kode_clinic_service_thumb::before,
+.kode_clinic_service_thumb:hover::before ,
+.kode_clinic_service_thumb > span:hover,
+.effect:hover,
+.effect:hover::before,
+.kode_pet__clinic_social li a:hover i,
+.kode_pet__clinic_social li a::before,
+.kode_pet__clinic_social li a:hover::before,
+.circle_fig figure img,
+.circle_fig:hover figure img,
+.circle_fig:hover figure::before,
+.circle_fig figure::before,
+.kode_clinic-blog-post figure::before,
+.kode_clinic-blog-post:hover figure a,
+.kode_clinic-blog-post:hover figure::before,
+.kode_clinic_service_thumb:hover,
+.kode_navi_clinic li a:hover::before,
+.kode_navi_clinic li a::before,
+.clinic-prduct-capstion ul li a,
+.kode_clinic_thumb_product .clinic-prduct-capstion ul,
+.kode_clinic_thumb_product:hover .clinic-prduct-capstion ul,
+.clinic-prduct-capstion h3,
+.kode_pet_store_thumb figure img,
+.kode-services i,
+.kode-blog-thumbnail a img
+{
+	transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;	
+}
+.kode_pet_blog:hover .kode-blog-thumbnail a img{
+	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-ms-transform:scale(1.1);
+	-o-transform:scale(1.1);
+}
+
+
+.kode-woo.kode-shop-list ul.bxslider,
+.kode-woo.kode-shop-list ul.bxslider li{
+	float:left;
+	width:100%;
+}
+/* Style */
+.widget_shopping_cart_content ul.cart_list.product_list_widget li{
+	padding:0 10px;
+	margin:0px;
+}
+.widget_shopping_cart_content ul.cart_list.product_list_widget li a{
+	line-height:normal;
+	text-align:left;
+}
+.kode_pet_store_shopping .widget_shopping_cart_content li span.quantity{
+	padding-top:0px;
+}
+.kode_pet_store_shopping .widget_shopping_cart_content li span.amount{
+	color:#000 !important;
+	padding-top:0px;
+}
+.widget_shopping_cart_content ul.cart_list.product_list_widget li span.quantity{
+	position:absolute;
+	top:25px;
+	left:0;
+}
+.kode_pet_store_shopping .widget_shopping_cart_content p.total strong{
+	color:#fff;
+}
+.kode_pet_store_shopping .widget_shopping_cart_content p.total span.amount{
+	padding:0px;
+	color:#fff;
+}
+p.buttons a.button{
+	padding:12px 0px;	
+}
+p.buttons a.button:hover{
+	background-color:#000 !important;
+}
+.widget_shopping_cart_content p.buttons a{
+	line-height:normal;
+	font-weight:700;
+}
+.widget_shopping_cart_content{
+	display:none;	
+}
+.kode-parallax-wrapper{
+	width:100%;
+	float:left;
+}
+.kode_pet_clinic_appointment select{
+	color:#fff;
+	background:transparent;
+	margin-bottom:30px;
+	font-weight: bold;
+	font-size:14px;
+}
+.kode_pet_clinic_appointment select option{
+	background:#333;	
+	color:#fff;
+}
+.kode-padding-with .gallery-item{
+	padding-bottom:30px;
+}
+.kode-padding-without .gallery-item{
+	padding:0px;
+}
+.kode-padding-without{
+	padding:0px !important;
+}
+.kode-padding-without.columns{
+	padding:0px !important;
+}
+div[class*="kode-service-type-"]{
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+}
+.kode-simple-grid .kode_pet_blog_des,
+.kode-simple-grid .kode-video iframe{
+	margin:0px;
+}
+.kode-simple-grid .kode_pet_blog .kode-blog-thumbnail{
+	margin-bottom:24px;
+}
+.kode-simple-grid .kode-blog-content a{
+	float:none;
+}
+.kode-blog-full.kode-single-detail .kode-post-meta.kode_pet_blog_des{
+	float:left;
+	width:auto;
+}
+.kode-simple-grid .blog-info.blog-category a{
+	float:right;
+}
+.kode_pet_store_shopping.cart-option span{
+	cursor:pointer;	
+}
+.kode-simple-full .blog-info.blog-category a{
+	float:left;
+}
+.kode-simple-full .blog-info.blog-category .sep{
+	float:left;
+}
+.kode-simple-full .kode_pet_blog_des{
+	margin:0px;
+}
+.kode-simple-full .kode-blog-content.kode_pet_blog_des a{
+	float:none;
+}
+.widget_testimonial.flexslider .flex-control-nav-wrapper .flex-control-paging li a{
+	background-color:#000;
+}
+.kode-simple-full .kode-blog-thumbnail{
+	margin-bottom:30px;
+}
+.kode-simple-full figure,
+.kode-simple-full .kode-blog-thumbnail .kode-blog-thumbnail{
+	margin:0px;
+}
+.kode-item.kode-blog-full.kode-single-detail .kode-blog-thumbnail.kode-video{
+	
+}
+.kode-blog-thumbnail.kode-video iframe{
+	margin:0px;
+	float:left;
+}
+.kode-post-media-video figure figcaption{
+	position:relative;
+}
+.kode-post-meta.kode_pet_blog_des.pull-left .blog-info.blog-category > a{
+	float:right;
+}
+.kode-blog-thumbnail.kode-audio iframe{
+	margin:0px;
+}
+.blog-item-wrapper .blog-item-holder .kode_clinic-blog-post,
+.blog-item-wrapper .blog-item-holder .kode-fullwidth-blog .columns{
+	margin-bottom:30px;
+}
+.kd-table.table-1 table tr th{
+	color #000;
+}
+.kode_owl_slider_lst{
+	position:relative;
+	padding:0px;
+}
+/* About Us Our Organizxation Style */
+.kode_owl_slider_lst .owl-controls{
+	position:relative;
+}
+.kode_owl_slider_lst .owl-controls .owl-nav{
+	display:block;
+	position:relative;
+	top:-310px;
+	left:-14px;
+	right:-14px;
+	z-index:999;
+}
+.kode_owl_slider_lst .owl-controls .owl-nav div{
+	display:block !important;
+	border:0px;
+	font-size:0px;
+}
+.kode_owl_slider_lst .owl-controls .owl-nav div.owl-prev,
+.kode_owl_slider_lst .owl-controls .owl-nav div.owl-next{
+	display:inline-block;
+	width:39px;
+	height:55px;
+	text-align:center;
+	line-height:40px;
+	color:#fff;
+	float:left;
+	border-radius:0;
+	position:absolute;
+	left:-15px;
+	border:0px;
+	font-size:0px;
+}
+.kode_owl_slider_lst .owl-controls .owl-nav div.owl-next{
+	float:right;
+	right:-30px;
+	left:auto;
+}
+.kode_owl_slider_lst .owl-controls .owl-nav div.owl-prev:before,
+.kode_owl_slider_lst .owl-controls .owl-nav div.owl-next:before{
+	content:"\f100";
+	font-family:fontawesome;
+	position:absolute;
+	top:7px;
+	left:14px;
+	color:#fff;
+	font-size:16px;
+	font-weight:bold;
+}
+.kode_owl_slider_lst .owl-controls .owl-nav div.owl-next:before{
+	content:"\f101";
+}
+.customNavigation{
+	display:none;
+}
+/* .customNavigation{
+	position:absolute;
+	top:150px;
+	left:-14px;
+	right:-14px;
+	z-index:999;
+}
+.kode_owl_slider_lst .customNavigation a.next,
+.kode_owl_slider_lst .customNavigation a.prev{
+	display:inline-block;
+	width:39px;
+	height:55px;
+	text-align:center;
+	line-height:40px;
+	color:#fff;
+	float:left;
+	border-radius:0;
+	font-size:14.66px;
+}
+.kode_owl_slider_lst .customNavigation a.next{
+	float:right;
+} */
+.kf_team_social_detail ul{
+	padding:0px;
+	list-style:none;
+	margin:0px;
+}
+.kode-minus-top-50{
+	margin-top:-50px;
+	float:left;
+	width:100%;
+}
+.service-pre-video span strong{
+	color:#000;
+	font-weight:bold;
+}
+#commentform .kode-no-space{
+	margin-left:0px;
+}
+#commentform .kode-no-space{
+ margin-left:0px;
+}
+/* Comment Style Start */
+.kode-comments-area .kode-section-title h2{
+	font-weight:bold;
+}
+.kode-comments-area .kode-maintitle h3,
+.kode-comments-area .kode-maintitle h3 span{
+	font-weight:bold;
+}
+.comment-reply-title{
+	font-weight:bold;
+	font-size:20px;
+}
+/* Blog Style */
+.col-md-3 .kode_clinic_blog_capstion li{
+	font-size:16px;
+}
+.list-price a.added_to_cart{
+	background-color: #000;
+    border-radius: 5px;
+    bottom: 60px;
+    color: #fff;
+    float: left;
+    font-weight: bold;
+    padding: 2px 6px;
+    position: absolute;
+    right: 30px
+}
+.shop_table .button{
+	height:35px !important;
+}
+.coupon .input-text{
+	border-radius:5px;
+}
+.kode-item.kode-blog-full.service-detail > h2{
+	float:left:
+	width:100%;
+}
+.margin-top-bottom{
+	margin-top:30px;
+}
+/* Add yo Cart Style */
+.kf_update_store_des ul li a.added_to_cart.wc-forward{
+	position:absolute;
+	float:left;
+	top:0px;
+	font-size:0px;
+}
+.kf_update_store_des ul li a.added_to_cart.wc-forward:before{
+	content:"\f02d";
+	font-family:FontAwesome;
+	position:absolute;
+	top:3px;
+	left:7px;
+	font-size:25px;
+	color:#000;
+	z-index:99999;
+}
+/* Services Page Blockquotes Style */
+.full-service-description blockquote:before{
+	position:absolute;
+	left:40px;
+	top:16px;
+}
+.full-service-description blockquote:after{
+	right:60px;
+	bottom:10px;
+	position:absolute;
+	top:auto;
+}
+.full-service-description .kd-table .table{
+	border:1px solid #ccc;
+}
+.full-service-description .kd-table tbody tr td{
+	border-right:1px solid #ccc;
+}
+.full-service-description .kd-table tbody tr td:last-child{
+	border-right:0px;
+}
+.full-service-description h3,
+.full-service-related .kode_related_service h4{
+	font-weight:bold;
+	font-size:25px;
+}
+
+.header-style-4.kode-subheader{
+	padding:90px 0 0;
+	min-height:230px;
+}
+#searchform input[type="submit"] {
+    height: 0;
+    padding: 0;
+    width: 0;
+}
+
+
+.kode-service-type-1{
+	float: left;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.kode-service-type-1:before{
+	background-color: rgba(255, 255, 255, 0.8);
+    content: "";
+    height: 200%;
+    left: 140%;
+    position: absolute;
+    top: 0;
+    transform: rotate(42deg);
+    -moz-transform: rotate(42deg);
+    -webkit-transform: rotate(42deg);
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    width: 220%;
+    z-index: 10;
+}
+.kode-service-type-1:hover:before{
+	background-color: rgba(255,255,255,0.15);
+	left:-144%;
+}
+.kf_pet_looking_wrap {
+	float: left;
+	width: 100%;
+}
+.kf_pet_looking_wrap:hover{
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+	transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+}
+.kf_pet_blog_detail blockquote:before, .kf_pet_blog_detail blockquote:after{
+	display: none;
+
+}
+.kf_pet_mission .bx-wrapper .bx-controls-direction a{
+	margin-top: 0px !important;
+}
+.kf_pet_logo_nav .kode_search.kode_search-input{
+	color:#666;
+}
+.kode_pet_blog_des ul{
+	margin-left:0px;
+	text-align:center;	
+}
+.kode_pet_blog_des > ul > li.blog-info{
+	display:block;	
+}
+.kode_pet_blog_des > ul li.blog-info a{
+	float:none;	
+}
+.kode_pet_blog_des ul li.blog-author a{
+	float:none;
+	display:inline-block;	
+}
+.kode_pet_blog_des ul li.blog-category span,
+.kode_pet_blog_des ul li.blog-category a{
+	float:none;	
+	display:inline-block;
+}
+.kode_pet_blog .kode_pet_blog_des .blog-info.blog-category a,
+.kode_pet_blog_des ul li .blog-info.blog-category a,
+.kode_pet_blog_des ul li .blog-info.blog-category span{
+	float:none;
+	display:inline-block;	
+}
+.kode_pet_blog_des .blog-info.blog-category .sep{
+	float:none;
+	display:inline-block;	
+}
+.kode_pet_blog_des ul li i{
+	margin-right:15px;
+}
+.kode_pet_blog_des ul.kode-post-meta-detail-new li i{
+	float:none;
+	display:inline-block;	
+}
+.kode_pet_blog_des ul.kode-post-meta-detail-new > li > a{
+	display:inline-block;	
+}
+
+
+.flex-control-nav-wrapper {
+    float: left;
+    position: relative !important;
+    width: 100%;
+}​​

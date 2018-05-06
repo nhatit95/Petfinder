@@ -1,0 +1,1168 @@
+/*============ Media 1600Px Start ============ */
+@media (max-width: 1600px){
+
+.kode_testimonial p span{
+	display:none;
+}
+.kode_gallery_testi{
+	padding:20px 0px;
+}
+.kode_gallery_testi .kode_pet_heading_2 h3{
+	font-size:20px;
+}
+.kode_testimonial{
+	padding:40px 35px 0px;
+}
+.kode_test_des p:after{
+	bottom:29px;
+}
+}
+
+/*============	Media 940Px Start ============ */
+@media screen and (min-width: 1199px) and (max-width: 1380px) {
+	.kode-caption-wrapper.position-left, .kode-caption.position-left{
+		margin:10px 0 0 -510px;	
+	}
+.kode_pet_service_lst:hover .kode_pet_service_hover{
+	top:44%;
+}
+.kode_pet_testi{
+	padding:13px 60px;
+}
+
+.kode_pet_heading_2 span:after{
+	right:72px	
+}
+.kode_testimonial{
+	padding:25px 35px 0;	
+}
+.kode_testimonial p{
+	margin-bottom:10px;	
+}
+.kode_testimonial p::before{
+	top:-38px;	
+}
+.kode_pet_heading_2{
+	margin-bottom:20px;	
+}
+.kode_testimonial figure{
+	margin-bottom:10px;	
+}
+.kode_pet_appoit_bg::after{
+	background-size:26%;	
+}
+.kode_test_des{
+	margin:-68px 0 0;
+}
+figure.effect-hera figcaption::before{
+	width:150px;
+	height:150px;
+}
+}
+
+/*============ Media 1199Px Start ============ */
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+.kode_pet_caption{display:none;}
+
+.kode_pet_navigation ul.nav li a{
+	padding:39px 12px 47px;
+	font-size:12px;
+}
+.kode_pet_banner .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+	margin:0px -228px 0px 0px;	
+}
+.kode_pet_caption{
+	width:400px;
+}
+.kode_pet_caption{
+	margin:-100px -465px 0 0;	
+}
+.kode_pet_caption h2{
+	font-size:35px;
+	margin-bottom:30px;
+}
+.kode_pet_caption a{
+	padding:10px 24px;
+}
+.kode_pet_banner .bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto{
+	bottom:20px;	
+}
+.kode_pet_dwnld{
+	text-align:center;	
+}
+.kode_pet_dwnld h5{
+	line-height:35px;
+	margin:0px 0px 10px;	
+}
+.kode_pet_dwnld a{
+	float:none;
+}
+.kode_pet_testi_bg::before{
+	width:100%;	
+}
+.kode_pet_blog{
+	margin-bottom:20px;		
+}
+span.kode_pet_heading_dir_left::before,
+span.kode_pet_heading_dir_right::before{
+	width:150px;	
+}
+.kode_pet_lnk_1{
+	padding:15px 25px;
+}
+.kode_pet_foo_lst{
+	margin-bottom:20px;	
+}
+.kode_pet_trusted{
+	text-align:center;
+}
+.kode_pet_trusted h3,
+.kode_pet_trusted p
+{
+	float:none;
+}
+.kode_pet_trusted p{
+	margin-bottom:20px;
+}
+.kode_pet_trusted a{
+	position:static;
+}
+.kode_pet_navigation .navbar-default .navbar-nav > li{
+	margin:0px;	
+}
+.kode_price_outer_wrap{
+	width:100%;	
+}
+.kode_homless_read h6{
+	margin-bottom:30px;	
+}
+.kode_pet_heading_4 h4{
+	margin:0px 0px 70px;	
+}
+.kode_gallery_testi{
+	width:30%;	
+}
+.kode_pet_heading_2 span::after{
+	right:98px;	
+}
+.kode_testimonial{
+	padding:30px 30px 0;	
+}
+.kode_testimonial p::before{
+	top:-40px;	
+}
+.gallery_testimonial .owl-controls .owl-buttons{
+	width:26%;	
+}
+.kode_testimonial p{
+	margin-bottom:20px;	
+}
+.kode_pet_appoit_bg::before{
+	background-size:13%;	
+}
+.kode_pet_appoit_bg::after{
+	background-size:24%;	
+}
+.kode_pet_heading_1 p:first-of-type{
+	display:none;	
+}
+.kode_donate2:hover::after{
+	border-width:211px 0 0 359px; 	
+}
+figure.effect-hera figcaption::before{
+	width:130px;
+	height:130px;	
+}
+.kode_test_des p::after{
+	bottom:34px;
+}
+.kode-caption-wrapper.position-left, .kode-caption.position-left{
+		margin: -100px 0 0 -425px;
+	}
+	.kode_pet_service_lst:hover .kode_pet_service_caption{
+		top: 32px;
+	}
+	.kf_pet_logo{
+		width: 180px;
+	}
+	.kf_pet_navigation ul li a{
+		padding-left: 16px 8px;
+	}
+	.kf_pet_search, .kf_pet_cart_item{
+		margin: 10px 10px 0 0;
+		width: auto !important;
+		right: auto !important;
+		top: auto !important;
+
+	}
+}
+/*============ Media 1024Px Start ============ */
+@media (max-width: 1024px) {
+	
+	.kode_pet_service_lst:hover .kode_pet_service_caption{
+		top:38px;
+	}
+	.kode_moq_piler:hover .kode_moq_piler_logo{
+		bottom:63px;
+	}
+	.kode_test_des{
+		margin:-68px 0 0;
+	}
+	.kode_test_des p::after{
+		bottom:22px;
+	}
+	/* PET CLINIC RESPONSIVE */
+	.kode_pet_store_navi li a{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.clinic-prduct-capstion ul li{
+		margin-left:3px;
+	}
+	.middle_banner h2{
+		margin:-3px 0 5px;
+	}
+	.middle_banner p{
+		margin:0px;
+	}
+	.kode-service-desc-petcare{
+		bottom:-188px;
+	}
+	.kode_pet_service_lst:hover .kode-service-desc-petcare{
+		bottom:8%;
+	}
+}
+
+/*============	Media 768Px Start ============ */ 
+@media (min-width: 768px) and (max-width: 990px) {
+	
+	.kode_pet_navigation .container{background:#fff;}
+	.kode_pet_caption{display:none;}
+	.dl-menuwrapper{
+		display:block;
+		float:right;
+		margin:12px 0px;
+	}
+	.kode_pet_logo{
+		margin:0px;
+	}
+	.kode_pet_navigation .navbar{
+		display:none;
+	}
+	.kode_pet_navigation .container{
+		padding-top:15px;
+		padding-bottom:15px;
+	}
+	.kode_pet_navigation .nav-cover:before{
+		border-bottom-width:90px;
+	}
+	.kode_pet_navigation .nav-cover:after{
+		border-top-width:90px;
+	}
+	.kode_pet_search{
+		width:238px;
+	}
+	.kode_pet_dwnld h5{
+		white-space:nowrap;
+		text-overflow: ellipsis;
+		overflow:hidden;
+		display:inherit;
+	}
+
+.kode_pet_navigation ul.nav li a{
+	padding:12px 12px;
+}
+.kode_pet_banner .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+	margin:0px -228px 0px 0px;	
+}
+.kode_pet_caption{
+	margin:-60px -465px 0 0;	
+}
+.kode_pet_caption h2{
+	font-size:35px;
+	margin-bottom:30px;
+}
+.kode_pet_caption a{
+	padding:10px 24px;
+}
+.kode_pet_banner .bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto{
+	bottom:20px;	
+}
+.kode_pet_dwnld{
+	text-align:center;	
+}
+.kode_pet_dwnld h5{
+	line-height:35px;
+	margin:0px 0px 10px;	
+}
+.kode_pet_dwnld a{
+	float:none;	
+}
+.kode_pet_testi_bg::before{
+	width:100%;	
+}
+.kode_pet_blog{
+	margin-bottom:20px;		
+}
+span.kode_pet_heading_dir_left::before,
+span.kode_pet_heading_dir_right::before{
+	width:150px;	
+}
+.kode_pet_lnk_1{
+	padding:15px 25px;
+}
+.kode_pet_foo_lst{
+	margin-bottom:20px;	
+}
+.kode_pet_trusted{
+	text-align:center;
+}
+.kode_pet_trusted h3,
+.kode_pet_trusted p
+{
+	float:none;
+}
+.kode_pet_trusted p{
+	margin-bottom:20px;
+}
+.kode_pet_trusted a{
+	position:static;
+}
+.kode_pet_heading_4 h4{
+	font-size:30px;	
+}
+.kode_price_outer_wrap{
+	width:100%;		
+}
+.kode_donate1,
+.kode_donate2{
+	width:100%;	
+}
+.span_top,
+.span_bottom{
+	display:none;	
+}
+.kode_donate2:hover::after{
+	border-width:195px 0 0 720px;	
+}
+.kode_homless_read h6{
+	margin-bottom:20px;	
+}
+.kode_gallery_testi{
+	width:50%;	
+}
+.gallery_testimonial .owl-controls .owl-buttons{
+	width:45%;	
+}
+.kode_testimonial{
+	padding:20px 30px 0;	
+}
+.kode_testimonial p{
+	margin-bottom:20px;	
+}
+.kode_testimonial p::before{
+	top:-33px;	
+}
+.kode_testimonial figure{
+	margin-bottom:15px;	
+}
+.kode_pet_heading_2{
+	margin-bottom:25px;	
+}
+.kode_pet_appotmnt{
+	width:100%;	
+}
+.kode_pet_appoit_bg::before{
+	background-size:14%;	
+}
+.kode_pet_appoit_bg::after{
+	background-size:21%;	
+}
+.kode_donate1:hover::before{
+	border-width:178px 0 0 723px;	
+}
+figure.effect-hera figcaption::before{
+	width:170px;
+	height:170px;	
+}
+.kode_test_des{
+	margin:-70px 0 0;	
+}
+.kode-counter ul li h6{
+	margin-bottom:25px;
+}
+.kode-blog-list ul li figure{
+		margin-bottom:10px;
+	}
+	.kode_pet_service_lst{
+		margin-bottom:20px;
+	}
+	.word-count{
+		font-size:35px;
+	}
+	.kode_love_img{
+		padding:0 250px;
+	}
+	.kode_pet_blog_des ul > li{
+		padding:0 7px;
+	}
+	.kode_pet_blog_des ul > li > a{
+		font-size:13px;
+	}
+	.kode-navigation-wrapper{display:none;}
+	#kode-parallax-wrapper-2::after{
+		background:none !important;
+	}
+	.kode_pet_service_lst:hover .kode-service-desc-petcare{
+		bottom:18%;
+	}
+	.kode-service-desc-petcare{
+		bottom:-162px;
+	}
+	.kf_pet_team_wrap{
+		margin-bottom:30px;
+	}
+	/* PET CLINIC HEADER */
+	.kode_pet_store_navigaton .logo,
+	.kode_pet_store_navi{
+		width:auto;
+	}
+	.kode_pet_store_navi{
+		float:right;
+		margin-top: -1px;
+	}
+	.kode_pet_store_navigaton .kode_pet_store_shopping{
+		float:left;
+	}
+	.dl-menuwrapper ul{
+		z-index:99;
+	}
+	.dl-menuwrapper li{
+		width:100%;
+	}
+	.dl-menuwrapper{
+		margin: 26px 0 12px 12px;
+	}
+	.kode_pet_info .kode_pet_store_contct{
+		width:100%;
+	}
+	.kode_pet_info,
+	.kode_store_social_icon,
+	.kode_store_faq_area{
+		text-align:center;
+		float:none;
+	}
+	.kode_store_social_icon li,
+	.kode_pet_store_contct > li,
+	.kode_store_faq_area > li{
+		display:inline-block;
+		float:none;
+	}
+	.kode-caption .kode-caption-text{
+		display:none;
+	}
+	.kode-caption-wrapper.position-left, .kode-caption.position-left{
+		margin: -40px 0 0 -300px;
+	}
+	.kode-caption .kode-caption-title{
+		font-size:50px;
+	}
+	.kode-counter{
+		margin-bottom:30px;
+	}
+	.kode_clinic_thumb_product{
+		margin-bottom:50px;
+	}
+	/* PET CLINIC RESPONSIVE */
+	.kode_store_social_icon li, .kode_pet_store_contct > li, .kode_store_faq_area ul > li{
+		display:inline-block;
+	}
+	.kode_pet_store_thumb.store_top_effect{
+		margin:0px 0px 20px;
+	}
+	.kode_top_strip, .kode_pet_clinic_contct, .kode_pet__clinic_social, .header{
+		display:inline-block;
+		float:none;
+	}
+	.kode_pet__clinic_social li,
+	.kode_pet_clinic_contct ul,
+	.kode_pet_clinic_contct ul li{
+		display:inline-block;
+		float:none;
+	}
+	.kode_top_strip ul.kode_pet__clinic_social{
+		margin:110px 0px 0px;
+	}
+	.kode_navi_clinic li a{
+		font-size:11px;
+	}
+	.kode_clinic_element_service{
+		top:-20%;
+	}
+	.bx_capstion p{
+		display:none;
+	}
+	.bx_capstion{
+		margin-top:-130px;
+		right:28.5%
+	}
+	.kf_pet_search, .kf_pet_cart_item{
+		margin: 8px 8px 0 0;
+		width: auto !important;
+		right: auto !important;
+		top: auto !important;
+
+	}
+	.dl-menuwrapper{
+		margin: 11px 0 12px 12px;
+	}
+	
+}
+
+/*============ Media 767Px Start ============ */
+@media (max-width: 767px) {
+	
+.kode-navigation-wrapper{display:none;}
+.kode_pet_navigation{
+	position:static
+}
+.kode_pet_range_sldr{
+	width:100%;
+}
+.kode_pet_appotmnt{
+	width:100%;
+}
+.kode_pet_heading_1{
+	overflow:hidden
+}
+.kode_pet_navigation .nav-cover::before, .kode_pet_navigation .nav-cover::after{
+	display:none;
+}
+.kode_pet_navigation .navbar{
+	display:none;
+}
+.dl-menuwrapper{
+	display:block;
+	float:right;
+	margin:35px 0px;
+}
+.kode_pet_caption{
+	margin:-100px -465px 0 0;	
+}
+.kode_pet_caption h2{
+	font-size:35px;
+	margin-bottom:30px;
+}
+.kode_pet_caption a{
+	padding:10px 24px;
+}
+.kode_pet_banner .bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto{
+	bottom:10px;	
+}
+.kode_pet_banner .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+	margin:0px -228px 0px 0px;	
+}
+.kode_pet_dwnld{
+	text-align:center;	
+}
+.kode_pet_dwnld h5{
+	line-height:35px;
+	margin:0px 0px 10px;	
+}
+.kode_pet_dwnld a{
+	float:none;	
+}
+.kode_pet_trusted{
+	text-align:center;
+}
+.kode_pet_trusted h3,
+.kode_pet_trusted p
+{
+	float:none;
+}
+.kode_pet_trusted p{
+	margin-bottom:20px;
+}
+.kode_pet_trusted a{
+	position:static;
+}
+.kode_pet_blog{
+	margin-bottom:20px;		
+}
+.kode_pet_testi_bg::before{
+	width:100%;	
+}
+span.kode_pet_heading_dir_left::before,
+span.kode_pet_heading_dir_right::before{
+	width:150px;	
+}
+.kode_pet_foo_lst{
+	margin-bottom:20px;	
+}
+.kode_pet_caption {
+    left: 0;
+    margin: 0;
+    right: 0;
+    top: 10%;
+    width: 100%;
+}
+.kode_pet_caption h2{
+	font-size:30px;
+}
+.kode_pet_top_strip .top-info {
+	width:100%;
+	margin:0px;
+	text-align:center;
+}
+.kode_pet_top_strip .top-info a{
+	display:inline-block;
+	float:none;
+	margin:0px 0px 10px 0px;
+}
+.kode_pet_dwnld h5{
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	display:inherit;
+	font-size:16px;
+}
+section{
+	padding:30px 0px;
+}
+.kode_pet_heading_1 h4{
+	font-size:18px;
+	margin:0 15px 12px;
+}
+.kode_pet_service_lst{
+	margin:0px 0px 20px 0px;
+}
+.kode_pet_heading_1{
+	padding:0px;
+}
+.kode_pet_heading2 h2{
+	font-size:30px;
+}
+.kode_pet_heading2 h4{
+	font-size:16px;
+	margin-bottom:10px;
+}
+.kode_pet_trusted h3{
+	font-size:22px;
+}
+.kode_pet_testi{
+	padding:30px;
+}
+.kode_pet_value{
+	float:left;
+	width:100%;
+	text-align:center;
+	min-height:136px;
+}
+.kode_pet_value img{
+	width:auto;
+	float:none
+	
+}
+.kode-subheader.subheader-height{
+	padding:40px 0px;
+	height:auto;
+}
+.kode-subheader h2{
+	font-size:34px;
+}
+.kode_pet_ui_elmnt{
+	float:left;
+	width:100%;
+}
+.kode_pet_search{
+	float:right;
+}
+#koderespond form p{
+	width:100%;
+}
+.kf_pet_team_wrap{
+	margin-bottom:30px;
+}
+.kf_team_social_detail ul li{
+	display:inline-block !important;
+	float:none !important;
+}
+.progress-names .label{
+	width:40px;
+	margin-left:-50px;
+}
+#kode-parallax-wrapper-2::after{
+	background:none !important;
+}
+.kode-service-desc-petcare{
+	bottom:-118px !important;
+}
+.kode_pet_service_lst:hover .kode-service-desc-petcare{
+	bottom:33% !important;
+}
+.kode_test_des p{
+	font-size:16px;
+}
+.kode_clinic_service_thumb{
+	margin-bottom:30px;
+}
+.kode_pet_blog_des > ul > li.blog-info{
+	display:inline-flex;
+}
+/*Changing*/
+.kode_pet_heading_4 h4{
+	font-size:28px;	
+}
+.kode_price_outer_wrap,
+	.kode_donate1,
+	.kode_donate2
+	{
+		width:100%;	
+	}
+	.span_top,
+	.span_bottom{
+		display:none;	
+	}
+	.kode_donate2:hover::after{
+		border-width:211px 0 0 610px;	
+	}
+	.kode_homless_read h6{
+		margin-bottom:20px;	
+	}
+	.kode_pet_heading_1 p{
+		padding:0 70px;	
+	}
+	.kode_gallery_testi{
+		width:50%;	
+	}
+	.gallery_testimonial .owl-controls .owl-buttons{
+		width:40%;	
+	}
+	.kode_pet_heading_2 span::after{
+		right:100px;	
+	}
+	.kode_pet_heading_2{
+		margin-bottom:15px;	
+	}
+	.kode_pet_heading_2 h3{
+		margin-bottom:10px;	
+	}
+	.kode_testimonial{
+		padding:15px 25px 0;	
+	}
+	.kode_testimonial p{
+		margin-bottom:15px;	
+	}
+	.kode_testimonial p::before{
+		top:-25px;	
+	}
+	.kode_donate1:hover::before{
+		border-width:178px 0 0 612px;	
+	}
+	.kode_test_des p::before,
+	.kode_test_des p::after
+	{
+		font-size:20px;	
+	}
+	.kode_test_des{
+		margin:-74px 0 0;	
+	}
+	.kode_test_des p::after{
+		bottom:30px;	
+	}
+	.kode_test_des p::before{
+		bottom:-30px;	
+	}
+	.kode-blog-list ul li figure{
+		margin-bottom:10px;
+	}
+	.kode_love_img{
+		padding:0px 60px;
+	}
+	.kode_pet_foo_lst{
+		min-height:115px;
+	}
+	/* PET CLINIC HEADER */
+	.kode_pet_store_navigaton .logo,
+	.kode_pet_store_navi{
+		width:auto;
+	}
+	.kode_pet_store_navi{
+		float:right;
+		margin-top: -1px;
+	}
+	.kode_pet_store_navigaton .kode_pet_store_shopping{
+		float:left;
+	}
+	.dl-menuwrapper ul{
+		z-index:99;
+	}
+	.dl-menuwrapper li{
+		width:100%;
+	}
+	.dl-menuwrapper{
+		margin: 26px 0;
+	}
+	.kode-header-style-4 .dl-menuwrapper{
+		margin: 15px;
+	}
+	.kode_pet_store_shopping{
+		margin-right:10px;
+	}
+	.kode_pet_info .kode_pet_store_contct{
+		width:100%;
+	}
+	.kode_pet_info,
+	.kode_store_social_icon,
+	.kode_store_faq_area{
+		text-align:center;
+		float:none;
+	}
+	.kode_store_social_icon li,
+	.kode_pet_store_contct > li,
+	.kode_store_faq_area > li{
+		display:inline-block !important;
+		float:none !important;
+	}
+	.kf_pet_search, .kf_pet_cart_item{
+		margin: 10px 10px 0 0 !important;
+		width: auto !important;
+		right: auto !important;
+		top: auto !important;
+		float: left !important;
+	}
+	.kode-header-style-4 .kf_pet_logo{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+}
+
+/*============ Media 640Px Star ============ */
+@media (max-width: 640px) {
+	.body-wrapper{width:100%;padding:0px;}
+	.kode-navigation-wrapper{display:none;}
+	.kode_pet_caption.caption_left{
+		display:none;
+	}
+	.kode-counter ul li h6{
+		margin-bottom:25px;
+	}
+	.kode_test_des{
+		margin:-86px 0px 0px;
+	}
+}
+
+/*============ Media 480Px Star ============ */
+@media (max-width: 480px) {
+	.body-wrapper{width:100%;padding:0px;}
+	.kode-navigation-wrapper{display:none;}
+	#kodecomments .children > li{padding:0px;}
+	#kodecomments ul li figure ~ .text{width:100%;padding:0px;}
+	.kode-postsection ul li h6{font-weight:400;color:#333;}
+	.kode-postsection ul li a{font-size:20px;}
+	.kode-admin-post figure{width:124px;}
+	.kode-admin-post figure ~ .admin-info{padding:0px 15px;clear:both;width:100%;}
+	.kode_gallery_testi{width:100%;padding:100px 0px;}
+	.kode_pet_banner .bx-default-pager{display:none;}
+	.kode_testimonial p span{display:block;}
+	.kode_pet_value{margin:0px;}
+	.kode_pet_caption.caption_left{
+		display:none;
+	}
+	.kode_pet_foo_scl ul li{
+	float:none;
+	display:inline-block;
+	}
+	.kode_footr_copy{
+		margin-bottom:15px;
+	}
+	.kode_pet_foo_scl{
+		float:none;
+		text-align:center;
+	}
+	#our-blogs{
+		overflow:hidden;
+	}
+	
+	.kode_pet_logo img{
+		width:202px;
+	}
+	.dl-menuwrapper {
+		display: block;
+		float: right;
+		margin: 29px 0;
+	}
+	.kode_pet_banner{
+		overflow:hidden;
+	}
+	.kode_pet_scl_icon{
+		float:left;
+		width:100%;
+		margin:0px 0px 10px 0px;
+	}
+	.kode_pet_scl_icon ul{
+		float:left;
+		width:100%;
+		text-align:center;
+	}
+	.kode_pet_scl_icon ul li{
+		float:none;
+		display:inline-block;
+		margin:0px 2px;
+	}
+	.kode_pet_search{
+		float:left;
+		width:100%;
+	}
+	.kode_pet_ui_elmnt{
+		float:left;
+		width:100%;
+	}
+	/*Changing*/
+	.kode_pet_heading_4 h4{
+		font-size:24px;	
+	}
+	.kode_donate1 h2, .kode_donate2 h2{
+		font-size:46px;	
+	}
+	.kode_homless_read h6{
+		margin-bottom:20px;
+		line-height:25px;	
+	}
+	.kode_pet_heading_1 p{
+		padding:0 10px;	
+	}
+	.kode_pet_heading_1 h3, .kode_pet_heading_2 h3, .kode_pet_heading_3 h3{
+		line-height:34px;	
+	}
+	.gallery_testimonial .owl-controls .owl-buttons{
+		width:87%;
+		bottom:18px;	
+	}
+	.kode_gallery_testi{
+		padding:20px 0px;	
+	}
+	.kode_pet_heading_2 span::after{
+		right:178px;	
+	}
+	.kode_pet_heading_2 h3{
+		margin-bottom:8px;	
+	}
+	.kode_testimonial p{
+		margin-bottom:5px;	
+	}
+	.kode_pet_heading_2{
+		margin-bottom:20px;	
+	}
+	.kode_footr_copy p{
+		font-size:14px;	
+	}
+	.kode_pet_footer a{
+		font-size:40px;	
+	}
+	.kode_pet_blog{
+		padding:25px 20px;	
+	}
+	.kode_donate2:hover::after{
+		border-width:211px 0 0 451px;	
+	}
+	.kode_donate1:hover::before{
+		border-width:178px 0 0 451px;	
+	}
+	figure.effect-hera figcaption::before{
+		width:170px;
+		height:170px;	
+	}
+	.kode_test_des p::before,
+	.kode_test_des p::after
+	{
+		font-size:20px;	
+	}
+	.kode_test_des{
+		margin:-63px 0 0;	
+	}
+	.kode_pet_service_lst:hover .kode_pet_service_caption{
+		top:105px;
+	}
+	.kode_test_des{
+		margin:-72px 0 0;
+	}
+	.kode-counter ul li h6{
+		margin-bottom:25px;
+	}
+	.kode-caption-wrapper{
+		display:none;
+	}
+	.kode_pet_service_hover p{
+		display:none;
+	}
+	.kode_pet_service_hover{
+		margin:-10px 0px 0px;
+	}
+	.kode_pet_service_lst figure img{
+		width:100% !important;
+		height:auto;
+	}
+	#contact-us{
+		background-size:100%;
+		background-repeat:no-repeat;
+	}
+	.kode_appotmnt_field{
+		margin:0px 0px 20px;
+	}
+	/* PET CLINIC STYLE */
+	.kode_pet_store_navigaton .logo,
+	.kode_pet_store_navi{
+		width:auto;
+		text-align:center;
+	}
+	.kode_pet_store_navigaton .logo{
+		margin-bottom:20px;
+	}
+	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+		width:100%;
+	}
+	.kode_footr_copy{
+		text-align:center;
+	}
+	.kode_pet_foo_scl ul li{
+		float:none !important;
+		display: inline-block;
+	}
+	.kode_pet_foo_scl{
+		width:100%;
+	}
+	.widget_shopping_cart_content{
+		left:0px;
+	}
+	.kode_pet_store_contct{
+		display:none;
+	}
+	.kode_store_faq_area{
+		display:none;
+	}
+	.kode_pet_store_shopping{
+		display:none;
+	}
+	.kode_pet_store_contct > li a{
+		padding-left:0px;
+	}
+	.kode-pet-nav-sticky-style.kf_sticky{
+		position:relative;
+		z-index:9999;
+	}
+	.store_top_add{
+		display:none;
+		margin-bottom:20px;
+	}
+	.kode_pet_store_thumb{
+		margin-bottom:20px;
+	}
+	.kode_clinic_thumb_product{
+		margin-bottom:20px;
+	}
+	.kf_store_item_des{
+		float:left;
+		width:100%;
+		padding:0px;
+	}
+	.kf_store_item_list figure{
+		text-align:center;
+		float:none;
+		width:auto;
+	}
+	.store_testimonial_des{
+		padding:0px;
+		width:100%;
+	}
+	.store_testimonial ul li figure{
+		width:100%;
+	}
+	.store_testimonial ul li{
+		padding:0px;
+	}
+	.store_testimonial{
+		width:100%;
+	}
+	.kode_clinic_top_strip div.logo{
+		width:100%;
+		position:relative;
+	}
+	.kode_clinic_top_strip div.logo:before{
+		content:none;
+	}
+	.kode_clinic_top_strip div.logo{
+		padding:16px 11px;
+	}
+	.kode_pet__clinic_social li{
+		display:inline-block;
+		float:none;
+	}
+	.kode_pet__clinic_social{
+		text-align:center;
+	}
+	.kode_pet__clinic_social li{
+		margin-right:0px;
+	}
+	.kode_pet_clinic_contct{
+		text-align:center;
+	}
+	.kode_pet_clinic_contct ul li{
+		float:none;
+		display:inline-block;
+	}
+	.kode_pet__clinic_social.kode-team-network{
+		text-align:center;
+	}
+	.kode_donate1 h2, .kode_donate2 h2{
+		font-size:45px !important;
+	}
+	.kode_pet_service_lst:hover .kode-service-desc-petcare{
+		bottom:43% !important;
+	}
+	.kode-service-desc-petcare{
+		bottom:-16px !important;
+	}
+}
+
+/*============ Media 320Px Star ============ */
+@media (max-width: 320px) {
+	.body-wrapper{width:100%;padding:0px;}
+	.kode-navigation-wrapper{display:none;}
+	.kode_donate2:hover::after{
+		border-width:211px 0 0 291px;	
+	}
+	.kode_pet_heading_2 span::after{
+		right:102px;	
+	}
+	.kode_donate1:hover::before{
+		border-width:178px 0 0 289px;	
+	}
+	.kode_pet_heading_4 h3{
+		line-height:35px;
+	}
+	.kode-tag a{
+		padding:2px 16px 2px 18px;
+	}
+	.detail-info .kode-socialnetwork{
+		width:100%;
+	}
+	.detail-info .kode-socialnetwork ul li{
+		text-align:center;
+	}
+	.kode_pet_blog_des > ul > li{
+		width:100%;
+		border:none;
+		padding-left:0px;
+	}
+	.kode_pet_blog_des > ul > li > a{
+		float:left;
+		padding-left:0px;
+	}
+	/* PET CLINIC RESPONSIVE */
+}

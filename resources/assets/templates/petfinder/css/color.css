@@ -1,0 +1,617 @@
+/*
+	  ============================================================
+		   Font Color
+	  ============================================================
+*/
+.kode_pet_top_strip .top-info a:hover,
+.widget_recentpost > ul > li:hover .post-info h6 a,
+/*-------------------------------------------------------------Logo Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_logo a,
+/*-------------------------------------------------------------Banner Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_caption a:hover,
+/*-------------------------------------------------------------Bread Crumb Wrap Style------------------------------------------------------------------------------------------*/
+.kode-breadcrumb li:hover a,
+/*-------------------------------------------------------------Pet Services Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_service_hover a:hover,
+/*-------------------------------------------------------------Download Sermon Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_lnk_1,
+/*-------------------------------------------------------------Suffer Homeless Wrap Style------------------------------------------------------------------------------------------*/
+.kode_homless_read a:hover,
+/*-------------------------------------------------------------Blog Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_blog:hover .kode_pet_blog_des ul li,
+.kode_pet_blog_des ul li:hover a,
+/*-------------------------------------------------------------Suffer Homeless Wrap Style------------------------------------------------------------------------------------------*/
+.kode_moq_piler:hover .kode_moq_piler_logo i,
+/*-------------------------------------------------------------Pet Image Gallery Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_galry_icon li a,
+/*-------------------------------------------------------------Find Best Wrap Style------------------------------------------------------------------------------------------*/
+.kode_bst_pet_lst ul li:hover .kode_pet_bst_des h5,
+/*-------------------------------------------------------------Blog Detail Sidebar Wrap Style------------------------------------------------------------------------------------------*/
+blockquote:before,
+blockquote:after,
+#koderespond form input[type="text"],
+#koderespond form p textarea,
+#koderespond form p input[type="button"]:hover,
+#koderespond form p input[type="submit"]:hover, 
+.kode_pet_navigation ul.nav li:hover a, 
+.kode_pet_navigation ul.nav li.active a,
+/*-------------------------------------------------------------Request Your Appoitment Wrap Style------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------Love Pet Wrap Style------------------------------------------------------------------------------------------*/
+.gallery_testimonial .owl-controls .owl-buttons div.owl-prev:before,
+.gallery_testimonial .owl-controls .owl-buttons div.owl-next:before,
+.kode-socialnetwork ul li:hover a,
+.widget_socialnetwork ul li:hover a,
+.kode_pet_foo_lst:hover a i,
+.kode_pet_foo_lst:hover a
+{
+	color:#54cd38;	
+}
+
+
+
+/*
+	  ============================================================
+		   Border Color
+	  ============================================================
+*/
+/*-------------------------------------------------------------Search Bar Wrap Style------------------------------------------------------------------------------------------*/
+.current,
+.kode_pet_search input[type="text"]:focus,
+.kode-search label:before,
+/*-------------------------------------------------------------Find Best Wrap Style------------------------------------------------------------------------------------------*/
+.kode_bst_pet_icon i:after,
+/*-------------------------------------------------------------Find Best Companion Wrap Style------------------------------------------------------------------------------------------*/
+.kode_moq_piler_logo,
+.kode_moq_piler_logo i,
+/*-------------------------------------------------------------We Love Our Pet Wrap Style------------------------------------------------------------------------------------------*/
+.kode-services-left:hover i,
+.kode-services-right:hover i,
+/*-------------------------------------------------------------Blog Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_blog:hover,
+/*-------------------------------------------------------------Suffer Homeless Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_range_sldr .slider-handle,
+/*-------------------------------------------------------------Blog Detail Sidebar Wrap Style------------------------------------------------------------------------------------------*/
+blockquote,
+#koderespond form input[type="text"]:focus,
+#koderespond form p textarea:focus,
+#koderespond form p input[type="button"]:hover,
+#koderespond form p input[type="submit"]:hover,
+/*-------------------------------------------------------------Footer Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_foo_scl ul li:hover a,
+/*-------------------------------------------------------------Aside Bar Wrap Style------------------------------------------------------------------------------------------*/
+.widget-search .kode-search input[type="text"]:focus
+{
+	border-color:#54cd38;	
+}
+
+
+
+/*
+	  ============================================================
+		   Transaction Effect
+	  ============================================================
+*/
+.kode_pet_top_strip .top-info a,
+.post-info h6 a,
+.widget_recentpost > ul > li figure img,
+/*-------------------------------------------------------------Search Bar Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_search,
+.kode_pet_search a,
+.kode_pet_search a:before,
+/*-------------------------------------------------------------Navigation Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_navigation ul.nav li,
+.kode_pet_navigation ul.nav li.active:before,
+.kode_pet_navigation ul.nav li:hover:before,
+.kode_pet_navigation ul.nav li a,
+/*-------------------------------------------------------------Social Icon Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_scl_icon ul li a:before,
+/*-------------------------------------------------------------Bread Crumb Wrap Style------------------------------------------------------------------------------------------*/
+.kode-breadcrumb li a,
+/*-------------------------------------------------------------Banner Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_caption a,
+.hvr-radial-out,
+.hvr-radial-out:before,
+.kode_pet_banner .bx-wrapper .bx-pager.bx-default-pager a,
+/*-------------------------------------------------------------download Sermon Wrap Style------------------------------------------------------------------------------------------*/
+.hvr-sweep-to-right,
+.hvr-sweep-to-right:before,
+.kode_pet_dwnld a,
+.kode_pet_service_lst figure:before,
+/*-------------------------------------------------------------Pet Services Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_service_lst,
+.kode_pet_service_caption,
+.kode_pet_service_caption h5,
+.kode_pet_service_hover,
+/*-------------------------------------------------------------Suffer Homeless Wrap Style------------------------------------------------------------------------------------------*/
+.kode_homless_read a,
+.kode_homless_read a:before,
+.kode_homless_read a,:after,
+.kode_donate2:after,
+.kode_donate1:before,
+/*-------------------------------------------------------------Find Best Wrap Style------------------------------------------------------------------------------------------*/
+.kode_bst_pet_icon i,
+.kode_bst_pet_icon i:after,
+.kode_pet_bst_des h5,
+/*-------------------------------------------------------------Find Best Companion Wrap Style------------------------------------------------------------------------------------------*/
+.kode_moq_piler,
+.kode_moq_piler_logo,
+.kode_moq_piler_logo i,
+.kode_moq_piler_logo h5,
+.kode_moq_piler_logo h5:before,
+/*-------------------------------------------------------------Pet Our Image Gallery Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_gallery figure:before,
+.kode_pet_galry_icon,
+.kode_pet_galry_icon li a,
+.kode_pet_galry_icon li a:before,
+figure.effect-hera p a i:hover,
+.kode-gutter-gallery figure:before,
+/*-------------------------------------------------------------Blog Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_blog figure img,
+.kode_pet_blog:hover h6,
+.kode_pet_blog:hover .kode_pet_blog_des ul li,
+.kode_pet_blog,
+.kode_pet_blog h6,
+.kode_pet_blog_des ul li,
+.kode_pet_blog_des ul li a,
+/*-------------------------------------------------------------Blog Detail Sidebar Wrap Style------------------------------------------------------------------------------------------*/
+.widget_categories ul li,
+.widget_archive ul li,
+.widget_categories ul li a,
+.widget_archive ul li a,
+.widget_categories ul li a:before,
+.widget_archive ul li a:before,
+#koderespond form p input[type="button"],
+#koderespond form p input[type="submit"],
+/*-------------------------------------------------------------Footer Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_foo_scl ul li a,
+.kode_pet_foo_scl ul li a:before,
+.kode_pet_foo_lst:hover a,
+.kode_pet_foo_lst:hover a i,
+/*-------------------------------------------------------------Request Your Appoitment Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_app_btn input[type="submit"],
+.kode_pet_app_btn button,
+/*-------------------------------------------------------------Valueable Client Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_value, 
+.back-to-top,
+/*-------------------------------------------------------------Love Pet Wrap Style------------------------------------------------------------------------------------------*/
+.kode_love_wrap_left ul li i,
+.kode_love_wrap ul li i,
+/*-------------------------------------------------------------Pet Testimonial Wrap Style------------------------------------------------------------------------------------------*/
+.kode_test_des,
+.kode_gallery_img figure:after,
+.kode-tag a:before,
+.kode-socialnetwork ul li a,
+.widget_socialnetwork ul li a,
+.post-info ul li a,
+.short-time a,
+.comment-info h6 a,
+.kode-blog-list ul li figure img,
+.back-to-top a,
+.kode-socialnetwork ul li a,
+.widget_socialnetwork ul li a, 
+.kode-tag a,
+.page-numbers li a, .page-links > a, .kode-pagination a,
+.add-cart,
+.kode_clinic_blog_capstion ul li a,
+.kode_clinic_blog_capstion ul li,
+.kode_clinic_blog_capstion ul li i,
+.kode_clinic_blog_capstion h4 a,
+.kf_pet_team_wrap figure:before,
+.kf_team_social_detail,
+.kf_pet_team_des,
+.kf_pet_team_name,
+/*-------------------------------------------------------------ShortCode Wrap Style------------------------------------------------------------------------------------------*/
+.kf_flat_link_1,
+/*-------------------------------------------------------------Doctor Team Wrap Style------------------------------------------------------------------------------------------*/
+.kf_team_social_detail ul li,
+.kf_team_social_detail ul li a,
+.kode-service-desc-petcare,
+.clinic-prduct-capstion h3,
+.special figure:before,
+/*-------------------------------------------------------------Home Woo Commerce Wrap Style------------------------------------------------------------------------------------------*/
+.clinic-prduct-capstion h3 a,
+/*Update Color*/
+.kf_pet_price_wrap,
+.kf_pet_price_wrap h5,
+.kf_pet_price_wrap ul li,
+.kf_pet_price_wrap ul li a,
+.kf_pet_price_wrap ul li:after,
+.kf_pricetable_price h3,
+.kf_pricetable_price sup,
+.kf_pricetable_price sub,
+.kf_pet_service_wrap:hover,
+.kf_pet_price_wrap > a,
+.kf_blog_update_des a,
+.kf_update_blog_wrap figure img,
+.kf_blog_update_des h5,
+.kf_update_blog_wrap,
+.kf_update_store_wrap,
+.kf_update_store_wrap figure,
+.kf_update_img_des,
+.kf_update_img_des p,
+.kf_update_img_des ul,
+.kf_update_img_des ul a,
+.kf_new_item,
+.kf_update_store_des,
+.kf_update_store_des h5,
+.kf_update_store_des p,
+.kf_update_store_des ul li,
+.kf_update_store_des ul li a,
+.kf_update_img_des > a
+{
+	transition:all 0.4s ease-in-out;
+	-webkit-transition:all 0.4s ease-in-out;
+	-moz-transition:all 0.4s ease-in-out;
+	-o-transition:all 0.4s ease-in-out;
+	-moz-transition:all 0.4s ease-in-out;	
+}
+
+/*
+	  ============================================================
+		   Transform Effect
+	  ============================================================
+*/
+/*-------------------------------------------------------------Find Best Wrap Style------------------------------------------------------------------------------------------*/
+.hovicon.effect-1.sub-b:hover:after,
+.kode_bst_pet_icon i:after,
+.kode_bst_pet_lst ul li:hover .kode_bst_pet_icon i:after
+{
+	transform:scale(1);
+	-moz-transform:scale(1);
+	-webkit-transform:scale(1);
+	-ms-transform:scale(1);
+	-o-transform:scale(1);	
+}
+
+/*
+	  ============================================================
+		   Transform With Rotation Effect
+	  ============================================================
+*/
+/*-------------------------------------------------------------Blog Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_blog:hover figure img,
+/*-------------------------------------------------------------Find Best Companion Wrap Style------------------------------------------------------------------------------------------*/
+.kode_pet_companion:hover figure img
+{
+	transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-o-transform:scale(1.2);	
+}
+
+/*
+	  ============================================================
+		  Content Selection
+	  ============================================================
+*/
+::selection {
+    background: #6a879f;
+    color:#ffffff;
+}
+::-webkit-selection {
+    background: #6a879f;
+    color: #ffffff;
+}
+::-moz-selection {
+    background: #6a879f;
+    color: #ffffff;
+}
+
+
+
+/*
+	  ====================================================================================================================================================================================
+		   													THEME COLOR 2
+	  ====================================================================================================================================================================================
+*/
+
+/*
+	  ============================================================
+		   Font Color 2
+	  ============================================================
+*/
+.kode_pet_caption h2 span
+{
+	color:#ffeb7d;	
+}
+
+/*
+	  ============================================================
+		   Background Color 2
+	  ============================================================
+*/
+.kode_pet_search a::before,
+.kode_pet_trusted_bg:before
+{
+	background-color:#54cd38;	
+}
+
+/*
+	  ============================================================
+		   Border Color 2
+	  ============================================================
+*/
+.kode_pet_navigation ul.nav li.active a,
+.kode_pet_navigation ul.nav li:hover a
+{
+	border-color:#54cd38;	
+}
+
+
+/*
+	  ====================================================================================================================================================================================
+		   													THEME HEADING & CONTENT COLOR
+	  ====================================================================================================================================================================================
+*/
+
+/*
+	  ============================================================
+		   Font Color
+	  ============================================================
+*/
+.kode_pet_bst_des h5,
+.kode_pet_companion_des h5,
+.kode_pet_blog_des h5,
+.kode_pet_blog_des ul li{
+	color:#333;
+}
+.kode_pet_trusted h3,
+.kode_pet_trusted p{
+	color:#fff;
+}
+
+/*
+	  ============================================================
+		   Background Color
+	  ============================================================
+*/
+.kode_pet_service_caption,
+span.kode_pet_heading_dir_left:before,
+span.kode_pet_heading_dir_right:before,
+.kode_bst_pet_icon i,
+.kode_pet_trusted a,
+.kode_pet_app_btn input[type="submit"],
+.kode_pet_app_btn button,
+footer:before{
+	background-color:#323232;	
+}
+.kode_pet_navigation ul.nav li a.current{
+	border-top-color:#54cd38;
+}
+/*
+	  ============================================================
+		   Shadow Color
+	  ============================================================
+*/
+.kode_pet_service_lst:hover{
+	box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.2);	
+}
+
+
+/*
+	  ===============================================================================================================================================
+	  ================================================================NEW PET DESIGN CSS=============================================================
+	  ===============================================================================================================================================
+*/
+
+/*
+	  ============================================================
+		   Transaction Effect
+	  ============================================================
+*/
+/*Header Style*/
+.kf_pet_callus ul li a,
+.kf_pet_ui_element ul li a,
+.kf_pet_navigation ul li a,
+.kf_pet_navigation ul ul,
+.kf_pet_navigation ul ul li,
+.kf_pet_navigation ul ul li a,
+.kf_pet_navigation ul ul ul,
+.kf_pet_search a,
+.kf_pet_search a i,
+.kf_pet_cart_item a,
+.kf_pet_cart_item a i,
+/*Banner Style*/
+.kf_pet_banner_caption a,
+.kf_pet_service_wrap,
+.kf_pet_service_wrap a,
+/*Looking Services style*/
+.kf_pet_looking_wrap,
+.kf_pet_looking_des,
+.kf_looking_hover_wrap,
+.kf_looking_hover_wrap > a,
+.kf_pet_looking_wrap figure:before,
+.kf_pet_looking_wrap figure:after,
+/*Client Says Css Start*/
+.kf_pet_testi_3_fig figure img,
+.kf_pet_testi_3_fig_des h5 > a,
+/*Get Appointment Css Start*/
+.kf_pet_field input[type="text"],
+.kf_pet_field textarea,
+.kf_pet_field input[type="submit"],
+.kf_pet_field button,
+/*Client Says & Shop Css Start*/
+.kf_pet_client_wrap .bx-wrapper .bx-pager.bx-default-pager a,
+/*Campanion Wrap style*/
+.kf_pet_campanion,
+.kf_pet_campanion figure,
+.kf_pet_campanion figure::before,
+.kf_pet_cam_des,
+.kf_pet_cam_des h5,
+.kf_pet_cam_des h5 > a,
+.kf_pet_cam_des p,
+.kf_pet_cam_des span,
+.kf_pet_cam_hover,
+.kf_pet_cam_hover a,
+.kf_pet_cam_hover p,
+.kf_pet_cam_hover_hdg,
+.kf_pet_cam_hover_hdg > h5 > a,
+/*Shop Page Style*/
+.kf_pet_range_slider input[type="submit"],
+.kf_pet_range_slider button,
+/*Update Our Product Wrap Style*/
+.kf_pet_scl_icon ul li a,
+.kf_pet_product_des h5 > a,
+.kf_pet_product_img img,
+.kf_pet_product_des ul a,
+.kf_pet_scl_icon,
+/*Why Choose us Wrap Style*/
+.kf_pet_choose,
+.kf_choose_hdg,
+.kf_choose_hdg h5 > a,
+.kf_choose_hdg span,
+/*Latest News Style*/
+.kf_pet_news_wrap,
+.kf_pet_news_wrap figure,
+.kf_pet_news_wrap figure:before,
+.kf_pet_news_link,
+.kf_pet_news_des:before,
+.kf_pet_news_link a,
+.kf_pet_news_des,
+.kf_pet_news_des h5 > a,
+.kf_pet_news_des ul li,
+.kf_pet_news_des ul li a,
+.kf_pet_news_des p,
+/*Subscribe News-Letter Style*/
+.kf_pet_newsletter input[type="submit"],
+.kf_pet_newsletter button,
+/*Footer Wrap Style*/
+.kf_pet_address a,
+.kf_pet_foo_info ul li,
+.kf_pet_newsletter input[type="email"],
+.kf_pet_foo_info ul li:before,
+.kf_pet_foo_info ul li a,
+.kf_pet_foo_social ul li a,
+.kf_pet_copyright p a,
+.kf_pet_instagram ul li a img,
+.widget_meta ul li:before,
+/*Blog Page Style*/
+.kf_pet_breadcrumb ul li,
+/*Pagination Wrap Style*/
+.kf_pet_pagination ul li a,
+/*Aside bar Style*/
+.kf_pet_feat_sales > li,
+.kf_pet_feat_sales > li figure img,
+/*Blog Detail Page Style*/
+.kf_pet_blog_detail > figure img,
+.kf_pet_blog_detail h4 > a,
+.kf_pet_blog_detail ul a,
+.kf_pet_detail_images > figure img,
+/*Comment Style*/
+.kf_pet_admin_des h6 > a,
+.kf_pet_comment ul li,
+.kf_client_comment,
+.kf_client_comment figure,
+.kf_pet_client_des h6 > a,
+.kf_pet_client_des > a,
+.kf_post_field input[type="text"],
+.kf_post_field input[type="email"],
+.kf_post_field textarea,
+.kf_post_field input[type="submit"],
+.kf_post_field button,
+/*Blog Detail Aside Style*/
+.kf_pet_aside_search input[type="search"],
+.kf_pet_aside_search a,
+.kf_pet_detail_category ul li a span,
+.kf_pet_detail_category ul li a,
+.kf_pet_latset_post > ul > li,
+.kf_pet_related_des > ul > li,
+.kf_pet_related_des p > a,
+.kf_pet_related_des > ul > li > a,
+.kf_pet_latset_post > ul > li figure img,
+.kf_pet_flicker ul li a img,
+/*Services we offer Style*/
+.kf_pet_offer_des h4 > a,
+/*Our Mission Style*/
+.kf_pet_mission .bx-wrapper .bx-controls-direction a,
+/*Price table style*/
+.kf_pet_price_wrap_new,
+.kf_pet_price_des_new > a,
+.kf_pet_price_des_new,
+/*Team wrap style*/
+.kf_pet_taem_wrap_new,
+.kf_pet_taem_wrap,
+.kf_pet_taem_wrap figure img,
+.kf_pet_team_des,
+.kf_pet_team_des h5 > a,
+.kf_pet_team_des h5 > a:before,
+.kf_pet_team_des p,
+.kf_pet_team_des_new,
+/*Contact us page style*/
+.kf_pet_contact_list::before,
+.kf_pet_contact_list a i,
+.kf_pet_contact_list a,
+.kf_pet_contact_list,
+.kf_pet_contact_list h5,
+.kf_pet_contact_list p,
+/*Contact us Form Style*/
+.kf_pet_contactus input[type="text"],
+.kf_pet_contactus input[type="email"],
+.kf_pet_contactus textarea,
+.kf_pet_contactus input[type="submit"],
+.kf_pet_contactus button,
+/*404 page style*/
+.kf_pet_404page > a,
+/*Comming Soon Page Style*/
+/*Gallery style*/
+.kf_pet_filter_nav ul li::before,
+.kf_pet_filter_nav ul li a,
+.kf_pet_gallery_wrap:before,
+.kf_pet_gallery_icon > a,
+.kf_pet_gallery_wrap figure:before,
+.kf_pet_gallery_wrap figure:after,
+/*Shop detail page style*/
+.kf_shop_pager a:before,
+/*Item Detail Wrap Style*/
+.kf_pet_add_cart > a,
+.kf_pet_cart_scl ul li a,
+.kf_pet_prdct_tab_wrap ul li a,
+/*Best Seller Style*/
+/*Services Page Style*/
+.kf_pet_service_broucher ul li,
+.kf_pet_service_broucher ul li a,
+.kf_pet_chunk_hdg i,
+.fa-angle-right::before,
+.kf_pet_featurd_client ul li,
+/*Blog-06 Page Style*/
+.kf_pet_grid_readmore,
+.kf_pet_grid_readmore ul li a,
+.kf_pet_grid_readmore::before,
+.kf_pet_blog_social ul li a,
+.kf_pet_grid_readmore > a ,
+.kf_pet_grid_des ul li a,
+.kf_pet_grid_icon,
+.kf_pet_grid_icon a,
+.widget_kode_flickr_widget a::before,
+.kf_pet_link_1, .woocommerce div.product .woocommerce-tabs ul.tabs li, .woocommerce div.product .woocommerce-tabs ul.tabs li a
+{
+	transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;	
+}
+
+
+
+/*
+	  ============================================================
+		   Transform Effect
+	  ============================================================
+*/
+.kf_pet_latset_post > ul > li:hover figure img,
+.kf_pet_detail_images > figure:hover img,
+.kf_pet_flicker ul li:hover a img,
+.kf_pet_taem_wrap:hover figure img,
+.kf_pet_instagram ul li:hover a img
+{
+	transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-o-transform:scale(1.2);	
+}
+
+
+

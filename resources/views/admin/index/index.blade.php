@@ -19,6 +19,7 @@ Trang quản trị
     <div class="content-wrapper">
       @if(Auth::check())
         <p>Da dang nhap</p>
+        <p>{{Auth::user()->id  }}</p>
         <p>{{Auth::user()->fullname  }}</p>
         <p>{{Auth::user()->password  }}</p>
         <p>{{Auth::user()->username  }}</p>

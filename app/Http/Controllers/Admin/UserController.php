@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\Admin\User;
+use App\Model\Admin\User_roles;
 use App\Http\Requests\UserRequest;
 use App\Http\Requests\UserEditRequest;
 
@@ -25,18 +26,20 @@ class UserController extends Controller
         return null; // not supported
       }
 
-    public function __construct(User $mUser){
+    public function __construct(User $mUser, User_roles $mRole){
         $this->mUser = $mUser;
+        $this->mRole = $mRole;
     }
 
     public function index(){
         $oItems = $this->mUser->getItems();
-        
-    	return view('admin.user.index', compact('oItems'));
+        $arRoles = $this->mRole->getItems();
+    	return view('admin.user.index', compact('oItems', 'arRoles'));
     }
 
     public function getAdd(){
-    	return view('admin.user.add');
+        $arRoles = $this->mRole->getItems();
+    	return view('admin.user.add', compact('arRoles'));
     }
     public function postAdd(UserRequest $request){
         $picture = $request->hinhanh;
@@ -49,16 +52,16 @@ class UserController extends Controller
             $picture = 'nopic.jpg';
         }
         $oItem = [
-            "username"       => trim($request->username),
-            "fullname"       => trim($request->fullname),
-            "role"           => trim($request->role),
-            "email"          => trim($request->email),
-            "phone_number"   => trim($request->phone_number),
-            "status"         => trim($request->status),
-            "avartar"        => $picture,
-            "birthday"       => trim($request->birthday),
+            "username"     => trim($request->username),
+            "fullname"     => trim($request->fullname),
+            "role_id"      => trim($request->role),
+            "email"        => trim($request->email),
+            "phone_number" => trim($request->phone_number),
+            "status"       => trim($request->status),
+            "avatar"       => $picture,
+            "birthday"     => trim($request->birthday),
             "gender"       => trim($request->gender),
-            "password"       => bcrypt(trim($request->password)),
+            "password"     => bcrypt(trim($request->password)),
         ];
         $result = $this->mUser->addItem($oItem);
         if ($result) {
@@ -81,24 +84,72 @@ class UserController extends Controller
 
     public function getEdit($id){
         $oItem = $this->mUser->getItem($id);
-        return view('admin.user.edit', compact('oItem'));
+        $arRoles = $this->mRole->getItems();
+        return view('admin.user.edit', compact('oItem', 'arRoles'));
     }
 
-    public function postEdit($id, UserEditRequest $request){
-        if ($request->password == '') {
-            $noItem = [
-                'fullname'   =>  trim($request->fullname),
-             ];
+    public function postEdit($id, Request $request){
+        $newPicture = $request->newPicture;
+
+        if ($newPicture != '' && $request->new_password != '') {
+            $path = $request->file('newPicture')->store('files');
+            $tmp = explode('/', $path);
+            $newPicture = end($tmp);
+            $moItem = [
+                'username'     => trim($request->username),
+                'fullname'     => trim($request->fullname),
+                'password'     => bcrypt(trim($request->new_password)),
+                'role_id'      => trim($request->role),
+                'email'        => trim($request->email),
+                'phone_number' => trim($request->phone_number),
+                'gender'       => trim($request->gender),
+                'birthday'     => $request->birthday,
+                'status'       => trim($request->status),
+                'avatar'       => $newPicture,
+            ];
+        }else if($newPicture != '' && $request->new_password == ''){
+            $path = $request->file('newPicture')->store('files');
+            $tmp = explode('/', $path);
+            $newPicture = end($tmp);
+            $moItem = [
+                'username'     => trim($request->username),
+                'fullname'     => trim($request->fullname),
+                'role_id'      => trim($request->role),
+                'email'        => trim($request->email),
+                'phone_number' => trim($request->phone_number),
+                'gender'       => trim($request->gender),
+                'birthday'     => $request->birthday,
+                'status'       => trim($request->status),
+                'avatar'       => $newPicture,
+            ];
+        }else if($newPicture == '' && $request->new_password != ''){
+            $moItem = [
+                'username'     => trim($request->username),
+                'fullname'     => trim($request->fullname),
+                'password'     => md5(trim($request->new_password)),
+                'role_id'      => trim($request->role),
+                'email'        => trim($request->email),
+                'phone_number' => trim($request->phone_number),
+                'gender'       => trim($request->gender),
+                'birthday'     => $request->birthday,
+                'status'       => trim($request->status),
+            ];
         }else{
-            $noItem = [
-                'fullname'   =>  trim($request->fullname),
-                'password'   =>  bcrypt(trim($request->password)),
-             ];
+            $moItem = [
+                'username'     => trim($request->username),
+                'fullname'     => trim($request->fullname),
+                'role_id'      => trim($request->role),
+                'email'        => trim($request->email),
+                'phone_number' => trim($request->phone_number),
+                'gender'       => trim($request->gender),
+                'birthday'     => $request->birthday,
+                'status'       => trim($request->status),
+            ];
         }
-        // dd($noItem);
-        $result = $this->mUser->editItem($id, $noItem);
+        // var_dump($moItem); die();
+        $result =  $this->mUser->editItem($id, $moItem);
         if ($result) {
-            $request->session()->flash('msg', 'Sửa thành công');       
+            $request->session()->flash('msg', 'Sửa thành công');
         }else{
             $request->session()->flash('msg', 'Lỗi trong quá trình sửa');
         }

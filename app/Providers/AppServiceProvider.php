@@ -18,9 +18,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::share('publicUrl', getenv('PUBLIC_URL'));
-        View::share('adminUrl', getenv('ADMIN_URL'));
-        View::share('adminUrl', getenv('SHARE_URL'));
+        View::share('PUBLIC_URL', getenv('PUBLIC_URL'));
+        View::share('ADMIN_URL', getenv('ADMIN_URL'));
+        View::share('SHARE_URL', getenv('SHARE_URL'));
         View::share('arCats', Cat::all());
         View::share('arItems', $arItems = News::orderBy('id_news', 'DESC')->paginate(4));
         View::share('advertisements', $advertisements = Advertisements::all());

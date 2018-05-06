@@ -28,22 +28,106 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="treeview">
           <a href="{{route('admin.user.index')}}">
-            <i class="fa fa-pie-chart"></i>
-            <span>Account Management</span>
+            <i class="fa fa-cog"></i> 
+            <span>Managements</span>
+            <span class="pull-right-container">
+              <i class="fa fa-cogs pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('admin.user.index')}}" ><i class="fa fa-circle-o"></i> Management's home</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> System setting</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> View website</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-user-circle-o"></i>
+            <span>Account Managements</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
             <li><a href="{{route('admin.user.index')}}" ><i class="fa fa-circle-o"></i> Account's list</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Role's list</a></li>
+            <li><a href="{{route('admin.role.index')}}"><i class="fa fa-circle-o"></i> List of role</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-weixin"></i>
+            <span>Messages</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('admin.message.index')}}" ><i class="fa fa-circle-o"></i> Message's list</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-calendar-plus-o"></i>
+            <span>Events</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Event's list</a></li>
+            <li><a href="{{route('admin.event_cat.index')}}" ><i class="fa fa-circle-o"></i> Categories's list</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-android "></i>
+            <span>Pets</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('admin.user.index')}}" ><i class="fa fa-circle-o"></i> Categories's list</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Pet's list</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-file-text"></i>
+            <span>Posts</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('admin.user.index')}}" ><i class="fa fa-circle-o"></i> Categories's list</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Post's list</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-handshake-o"></i>
+            <span>Services</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('admin.user.index')}}" ><i class="fa fa-circle-o"></i>Categories's list</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Service's list</a></li>
           </ul>
         </li>
         
-        <li class="header">LABELS</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li class   ="header">LABELS</li>
+        <li><a href ="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+        <li><a href ="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+        <li><a href ="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
