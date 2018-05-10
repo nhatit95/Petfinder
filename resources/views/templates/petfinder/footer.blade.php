@@ -2,25 +2,25 @@
         <!-- ..............................................................................................  -->
         <!-- content -->  
    
-        <section class="kf_pet_subscribe_bg">
-          <div class="container">
-            <div class="kf_pet_heading_1">
-              <h4>Newsletter</h4>
-              <p>Proactively ipsum media appropriately materials without lorem networks that native cultivate it daycare</p>
-            </div>
-            <div class="kf_pet_subscribe_wrap">
-              <form method="post" id="kode-submit-form" data-ajax="http://kodeforest.net/wp-demo/petcare/wp-admin/admin-ajax.php" data-security="43c7d24557" data-action="newsletter_mailchimp">
-                <div class="kf_pet_newsletter">
-                  <input type="text" id="email" name="email" placeholder="Enter your Email Here" class="placeholder2">
-                  </div>
-                  <div class="kf_pet_newsletter">
-                    <input type="submit" value="subscribe">
-                      <p class="status"></p>
-                    </div>
-                  </form>
-                </div>
+          <section class="kf_pet_subscribe_bg">
+            <div class="container">
+              <div class="kf_pet_heading_1">
+                <h4>Newsletter</h4>
+                <p>Proactively ipsum media appropriately materials without lorem networks that native cultivate it daycare</p>
               </div>
-            </section>
+              <div class="kf_pet_subscribe_wrap">
+                <form method="post" id="kode-submit-form" data-ajax="http://kodeforest.net/wp-demo/petcare/wp-admin/admin-ajax.php" data-security="43c7d24557" data-action="newsletter_mailchimp">
+                  <div class="kf_pet_newsletter">
+                    <input type="text" id="email" name="email" placeholder="Enter your Email Here" class="placeholder2">
+                    </div>
+                    <div class="kf_pet_newsletter">
+                      <input type="submit" value="subscribe">
+                        <p class="status"></p>
+                      </div>
+                    </form>
+                </div>
+            </div>
+          </section>
           </div>
           <div class="clear" ></div>
           <footer class="kode-footer-style-2">
@@ -116,7 +116,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="kf_pet_copyright">
-                      <p>©2015 PetCare. All Right Reserved</p>
+                      <p>©2018 PetCare. All Right Reserved</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -201,5 +201,34 @@
     <script type='text/javascript' src='{{$PUBLIC_URL}}js/jquery.easing.min.js'></script>
     <script type='text/javascript' src='{{$PUBLIC_URL}}js/masterslider.min.js'></script>
     <script type='text/javascript' src='{{$PUBLIC_URL}}js/jquery.prettyPhoto.min.js'></script>
+
+    <script src="{{$PUBLIC_URL}}js/jquery-1.11.3.min.jsjs"></script>
+    <script src="{{$PUBLIC_URL}}js/animate-form.js"></script>
+    <script src="{{$PUBLIC_URL}}js/migrate.js"></script>
+    <script src="{{$PUBLIC_URL}}js/owl.carousel.min.js"></script>
+    <script src="{{$PUBLIC_URL}}js/jquery.isotope.js"></script>
+    <script src="{{$PUBLIC_URL}}js/search-script.js"></script>
+    <script src="{{$PUBLIC_URL}}js/jquery.counterup.min.js"></script>
+    <script src="{{$PUBLIC_URL}}js/jquery.interactive_bg.js"></script>
+    <script src="{{$PUBLIC_URL}}js/audioplayer.js"></script>
+    <script src="{{$PUBLIC_URL}}js/jquery.scrollme.js"></script>
+    <script src="{{$PUBLIC_URL}}js/custom.js"></script>
+
+    <script src="{{$PUBLIC_URL}}js/bootstrap.min.js"></script>
+    <script src="{{$PUBLIC_URL}}js/jquery.prettyphoto.js"></script>
+    <script src="{{$PUBLIC_URL}}js/modernizr.custom.js"></script>
+    <script src="{{$PUBLIC_URL}}js/waypoints.min.js"></script>
+
+
+    <!-- jQuery 3 -->
+    <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- FastClick -->
+    <script src="public/bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="public/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="public/dist/js/demo.js"></script>
+
+
   </body>
 </html>

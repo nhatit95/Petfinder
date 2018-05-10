@@ -2197,16 +2197,16 @@ figure.effect-apollo:hover span {
 
 
 .widget_shopping_cart_content{
-	float:left;
-	width:300px;
-	position:absolute;
-	top:100%;
-	right:0px;
-	z-index:100;
-	box-shadow:0px 0px 10px 0px rgba(0,0,0,0.2);
-	background:#fff;
-	padding:10px;
-	border-radius:5px;
+	float: left;
+    width: 171px;
+    position: absolute;
+    top: 112%;
+    right: 0px;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
 }
 .widget_shopping_cart_content p.total{
 	padding:10px;

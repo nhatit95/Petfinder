@@ -381,64 +381,48 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
 		]);
 	});
 
-	Route::group(['prefix' => 'news'], function(){
-		Route::get('',[
-			'uses' => 'NewsController@index',
-			'as'   => 'admin.news.index'
-		]);
-
-		Route::get('add',[
-			'uses' => 'NewsController@getAdd',
-			'as'   => 'admin.news.add'
-		]);
-
-		Route::post('add',[
-			'uses' => 'NewsController@postAdd',
-			'as'   => 'admin.news.add'
-		]);
-
-		Route::get('edit/{id}',[
-			'uses' => 'NewsController@getEdit',
-			'as'   => 'admin.news.edit'
-		]);
-
-		Route::post('edit/{id}',[
-			'uses' => 'NewsController@postEdit',
-			'as'   => 'admin.news.edit'
-		]);
-
-		Route::get('del/{id}',[
-					'uses' => 'NewsController@del',
-					'as'   => 'admin.news.del'
-		]);
-
-		Route::get('search',[
-			'uses' => 'NewsController@search',
-			'as'   => 'admin.news.search'
-		]);
-	});
+	
 });
 
 Route::group(['namespace' => 'petfinder', 'prefix' => ''], function(){
-	Route::get('home', [
-		'uses'  => 'IndexNewsController@index',
-		'as'	=> 'petfinder.news.index'
+	Route::get('', [
+		'uses'  => 'IndexPetfinderController@index',
+		'as'	=> 'petfinder.petfinder.index'
 	]);
 
-	Route::get('add', [
-		'uses'  => 'NewsController@add',
-		'as'	=> 'petfinder.news.add'
+	Route::get('finder', [
+		'uses' => 'FinderController@index',
+		'as'   => 'petfinder.petfinder.index'
 	]);
 
-	Route::get('{slug}-{id}.html', [
-		'uses'  => 'NewsController@detail',
-		'as'	=> 'petfinder.news.detail'
+	Route::get('blog', [
+		'uses' => 'BlogController@index',
+		'as'   => 'petfinder.petfinder.blog'
 	]);
+
+	Route::get('detail', [
+		'uses' => 'DetailController@index',
+		'as'   => 'petfinder.petfinder.detail'
+	]);
+
+	Route::get('profile',[
+		'uses'  => 'ProfileController@index',
+		'as'   => 'profile',
+	]);
+	// Route::get('add', [
+	// 	'uses'  => 'NewsController@add',
+	// 	'as'	=> 'petfinder.petfinder.add'
+	// ]);
+
+	// Route::get('{slug}-{id}.html', [
+	// 	'uses'  => 'NewsController@detail',
+	// 	'as'	=> 'petfinder.petfinder.detail'
+	// ]);
 	
-	Route::get('tin-tuc/{slug}-{id}', [
-		'uses'  => 'NewsController@cat',
-		'as'	=> 'petfinder.news.cat'
-	]);
+	// Route::get('tin-tuc/{slug}-{id}', [
+	// 	'uses'  => 'NewsController@cat',
+	// 	'as'	=> 'petfinder.petfinder.cat'
+	// ]);
 
 	
 });
@@ -457,8 +441,20 @@ Route::group(['namespace' => 'Auth'], function(){
 		'as'   => 'auth.auth.login',
 	]);
 
+	Route::get('register',[
+		'uses'  => 'AuthController@getRegister',
+		'as'   => 'auth.auth.register',
+	]);
+
+	Route::post('register',[
+		'uses'  => 'AuthController@postRegister',
+		'as'   => 'auth.auth.register',
+	]);
+
 	Route::get('logout',[
 		'uses'  => 'AuthController@logout',
 		'as'   => 'logout',
 	]);
+
+
 });

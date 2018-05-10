@@ -8,3 +8,12 @@
 /*
  * E fatto!
  */
+
+ .finder-title{
+ 	text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #4d4751;
+    text-decoration: none;
+ }

@@ -11,7 +11,7 @@ Trang quản trị
             <small>Control panel</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
             <li class="active">Dashboard</li>
           </ol>
         </section>
@@ -25,6 +25,7 @@ Trang quản trị
         <p>{{Auth::user()->username  }}</p>
         <p>{{Auth::user()->phone_number  }}</p>
         <p>{{Auth::user()->email  }}</p>
+        <p>{{Auth::user()->role_id  }}</p>
         <p>{{Auth::user()->birthday  }}</p>
       @else
         <p>chu dang nhap</p>

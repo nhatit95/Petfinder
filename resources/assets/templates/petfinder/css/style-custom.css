@@ -639,3 +639,9 @@ figure.effect-hera p a i:hover,
 .kode-linksection:hover:before,.kode-linksection:hover,.hvr-radial-out:before{background: #ffffff !important;  }
 .kode_clinic_service_thumb:hover span{box-shadow: 0 0 15px 11px #f29100 !important;  }
 .kode-widget.kode-sidebar-element{background-color: #f9f9f9 !important;  padding:30px;float:left;width:100%;}
+
+
+.singin-box{
+	width: 720px;
+    margin: 7% auto;
+}

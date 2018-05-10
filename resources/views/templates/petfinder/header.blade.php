@@ -65,6 +65,25 @@
 <link rel='stylesheet' id='ms-main-css'  href='{{$PUBLIC_URL}}css/masterslider.main.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ms-custom-css'  href='{{$PUBLIC_URL}}css/custom.css' type='text/css' media='all' />
 
+<!-- Blog -->
+<link href="{{$PUBLIC_URL}}css/blogstyle1.css" rel="stylesheet">
+<link href="{{$PUBLIC_URL}}css/theme-color.css" rel="stylesheet">
+<link href="{{$PUBLIC_URL}}css/audioplayer.css" rel="stylesheet" >
+<link href="{{$PUBLIC_URL}}css/icomoon.css" rel="stylesheet">
+<link href="{{$PUBLIC_URL}}css/blogstyle.css" rel="stylesheet" type="text/css">
+
+<!-- Profile -->
+<link rel="stylesheet" href="public/bower_components/Ionicons/css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="public/dist/css/AdminLTE.min.css">
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+   folder instead of downloading all of them to reduce the load. -->
+<link rel="stylesheet" href="public/dist/css/skins/_all-skins.min.css">
+
+<!-- Google Font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+
 <link rel='https://api.w.org/' href='http://kodeforest.net/wp-demo/petcare/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://kodeforest.net/wp-demo/petcare/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wlwmanifest.xml" />
@@ -160,11 +179,11 @@
                     <ul class="kode_pet_store_contct">
                         <li>
                             <a href="#">Email Us : 
-                                <span class="__cf_email__" data-cfemail="7831161e173811161e17561b1715">[email&#160;protected]</span>
+                                <span class="__cf_email__" data-cfemail="7831161e173811161e17561b1715"> nhatNguyenDUT@gmail.com</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">Call Us : 123.456.7899</a>
+                            <a href="#">Call Us : +84 169 213 7964</a>
                         </li>
                     </ul>
                 </div>
@@ -297,16 +316,33 @@
                 <!--Cart Item Wrap Start-->
                 <div class="kf_pet_cart_item cart-option">
                     <a href="#" id="no-active-btn-shopping">
-                        <i class="fa fa-shopping-cart"></i>
+                       <i class="fa fa-user" aria-hidden="true"></i>
                     </a>
-                    <div class="widget_shopping_cart_content"></div>
+                    <!-- <div class="widget_shopping_cart_content"></div> -->
+                    <div class="widget_shopping_cart_content" style="display: block;">
+                        <p class="woocommerce-mini-cart__empty-message">
+                            <a href="#">Login</a>
+                        </p>
+                        
+                        <p class="woocommerce-mini-cart__empty-message">
+                            <a href="#">Profile</a>
+                        </p>
+                         <p class="woocommerce-mini-cart__empty-message">
+                            <a href="#">Activity</a>
+                        </p>
+                         <p class="woocommerce-mini-cart__empty-message">
+                            <a href="#">Layout</a>
+                        </p>
+                    </div>
                     <span>0</span>
                     <div class="kf_pet_cart_des">
-                        <h5>Shopping Cart</h5>
-                        <h6>0 items - 0</h6>
+                        <h5>Username</h5>
+                        <!-- <h6>Days</h6> -->
                     </div>
+
                 </div>
                 <!--Cart Item Wrap End-->
+
                 <!--Search Wrap End-->
                 <div id="kode_search" class="kode_search kf_pet_search">
                     <a class="search-here kode_chu_search">
@@ -446,4 +482,4 @@
             <!--Logo & Navigation Wrap End-->
         </header>
             <!-- is search -->
-            <div class="content-wrapper">
+            <div class="content-wrapper1">
