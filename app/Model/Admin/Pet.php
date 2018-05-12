@@ -21,6 +21,10 @@ class Pet extends Authenticatable
         return $this->findOrFail($id);
     }
 
+    public function getYourPets($id){
+        return $this->where('user_id', '=', $id)->get();
+    }
+
     public function addItem($oItem){
         return $this->insert($oItem);
     }

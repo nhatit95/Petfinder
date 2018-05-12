@@ -29,6 +29,7 @@ class AppServiceProvider extends ServiceProvider
         View::share('PUBLIC_URL', getenv('PUBLIC_URL'));
         View::share('ADMIN_URL', getenv('ADMIN_URL'));
         View::share('SHARE_URL', getenv('SHARE_URL'));
+        View::share('PIC_URL', getenv('PIC_URL'));
         View::share('arServices', Service::all());
         View::share('arServiceCats', Service_cat::all());
         // View::share('arCats', Cat::all());

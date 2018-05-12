@@ -119,6 +119,8 @@ Update information
                             <button type="submit" class="btn btn-primary">Submit</button>
                           </div>
 
+                          <input  type="hidden" class="form-control"  name="check" id="check" value="admin">
+
                         <div class="clearfix"></div>
                     </form>
                 </div>

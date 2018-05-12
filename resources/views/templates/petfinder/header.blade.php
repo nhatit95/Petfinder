@@ -33,6 +33,8 @@
         padding: 0 !important;
     }
 </style>
+<script type="text/javascript" src="{{ $ADMIN_URL }}ckeditor/ckeditor.js"></script> 
+
 <link rel='stylesheet' id='contact-form-7-css'  href='{{$PUBLIC_URL}}css/style1.css' type='text/css' media='all' />
 <link rel='stylesheet' id='contact-form-7-css'  href='{{$PUBLIC_URL}}css/style2.css' type='text/css' media='all' />
 <link rel='stylesheet' id='contact-form-7-css'  href='{{$PUBLIC_URL}}css/style3.css' type='text/css' media='all' />
@@ -75,7 +77,7 @@
 <!-- Profile -->
 <link rel="stylesheet" href="public/bower_components/Ionicons/css/ionicons.min.css">
 <!-- Theme style -->
-<link rel="stylesheet" href="public/dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="public/dist/css/AdminLTE1.min.css">
 <!-- AdminLTE Skins. Choose a skin from the css/skins
    folder instead of downloading all of them to reduce the load. -->
 <link rel="stylesheet" href="public/dist/css/skins/_all-skins.min.css">
@@ -163,7 +165,7 @@
 <!-- Header start -->
 </head>
 <body class="home page-template-default page page-id-609 _masterslider _msp_version_2.26.0 header-sticky sticky-sidebar-enable  " id="home">
-    <div class="body-wrapper" data-home="http://kodeforest.net/wp-demo/petcare/" data-radius="" data-width="" data-color="" data-touch="">
+    <div class="body-wrapper" data-home="{{route('petfinder.petfinder.index')}}" data-radius="" data-width="" data-color="" data-touch="">
     <header class="kode-header-style-4">
         <!--Top Bar Wrap Start-->
         <div class="kf_pet_topbar">
@@ -195,7 +197,7 @@
             <div class="container">
                 <!--Logo Wrap Start-->
                 <div class="kf_pet_logo">
-                    <a class="logo" href="http://kodeforest.net/wp-demo/petcare/" >
+                    <a class="logo" href="{{route('petfinder.petfinder.index')}}" >
                         <img src="{{$PUBLIC_URL}}img/pet-logo.png" alt="" width="240" height="55" />
                     </a>
                 </div>
@@ -204,39 +206,38 @@
                     <button class="dl-trigger">Open Menu</button>
                     <ul id="menu-main-menu-2" class="dl-menu kode-main-mobile-menu">
                         <li id="menu-item-662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-609 current_page_item menu-item-has-children menu-item-662">
-                            <a href="http://kodeforest.net/wp-demo/petcare/">Home</a>
+                            <a href="{{route('petfinder.petfinder.index')}}">Home</a>
+                        </li>
+                        <li id="menu-item-661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661">
+                            <a href="#">About Us</a>
+                        </li>
+
+                        <li id="menu-item-664" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-664">
+                            <a href="#">Services</a>
                             <ul class="dl-submenu">
-                                <li id="menu-item-914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-914">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/home-2/">Home Layout 2</a>
+                                <li id="menu-item-785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
+                                    <a href="#">Petcare</a>
                                 </li>
-                                <li id="menu-item-917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-917">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/home-layout-3/">Home Layout 3</a>
+                                <li id="menu-item-673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-673">
+                                    <a href="#">Pet adoption</a>
                                 </li>
-                                <li id="menu-item-907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-907">
-                                    <a href="http://kodeforest.net/wp-demo/pets/single/">Single Version</a>
-                                </li>
-                                <li id="menu-item-909" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-909">
-                                    <a href="http://kodeforest.net/wp-demo/pets/store">Store Version</a>
-                                </li>
-                                <li id="menu-item-908" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-908">
-                                    <a href="http://kodeforest.net/wp-demo/pets/medical/">Medical Version</a>
+                                <li id="menu-item-663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663">
+                                    <a href="#">Our Services</a>
+                                </li>     
+                                <li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674">
+                                    <a href="#">Appointment Form</a>
                                 </li>
                             </ul>
                         </li>
-                        <li id="menu-item-661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661">
-                            <a href="http://kodeforest.net/wp-demo/petcare/about-us/">About Us</a>
-                        </li>
+
                         <li id="menu-item-726" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-726">
                             <a href="#">Gallery</a>
                             <ul class="dl-submenu">
                                 <li id="menu-item-729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-729">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/test-gallery/">Gallery 2 Column</a>
+                                    <a href="#">Dog</a>
                                 </li>
                                 <li id="menu-item-728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-728">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/style-1-gallery-3-column/">Gallery 3 Column</a>
-                                </li>
-                                <li id="menu-item-727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-727">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/style-1-gallery-4-column/">Gallery 4 Column</a>
+                                    <a href="#">Pet</a>
                                 </li>
                             </ul>
                         </li>
@@ -244,101 +245,55 @@
                             <a href="#">Blog</a>
                             <ul class="dl-submenu">
                                 <li id="menu-item-792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-792">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/blog-modern-grid/">Blog Modern Grid</a>
+                                    <a href="#">New post</a>
                                 </li>
                                 <li id="menu-item-791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-791">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/blog-modern-grid-2-column/">Blog Grid 2 Column</a>
-                                </li>
-                                <li id="menu-item-832" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-832">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/cats-are-adorable-pets-4-2/">Blog Detail</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li id="menu-item-664" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-664">
-                            <a href="#">Pages</a>
-                            <ul class="dl-submenu">
-                                <li id="menu-item-785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/pet-team/">Pet Team</a>
-                                </li>
-                                <li id="menu-item-673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-673">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/home-layout-3aa">Error 404</a>
-                                </li>
-                                <li id="menu-item-663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/our-services/">Our Services</a>
-                                </li>
-                                <li id="menu-item-666" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-666">
-                                    <a href="#">Blog Grid</a>
-                                    <ul class="dl-submenu">
-                                        <li id="menu-item-670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-670">
-                                            <a href="http://kodeforest.net/wp-demo/petcare/blog-grid-2-column/">Blog Grid 2 Column</a>
-                                        </li>
-                                        <li id="menu-item-671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-671">
-                                            <a href="http://kodeforest.net/wp-demo/petcare/blog-grid-3-column/">Blog Grid 3 Column</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="menu-item-667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-667">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/blog-full-view/">Blog Full View</a>
-                                    <ul class="dl-submenu">
-                                        <li id="menu-item-668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-668">
-                                            <a href="http://kodeforest.net/wp-demo/petcare/blog-full-with-left-sidebar/">Blog Full With Left Sidebar</a>
-                                        </li>
-                                        <li id="menu-item-669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669">
-                                            <a href="http://kodeforest.net/wp-demo/petcare/blog-full-with-right-sidebar/">Blog Full With Right Sidebar</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="menu-item-675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-675">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/pricing-plans/">Pricing &#038; Plans</a>
-                                </li>
-                                <li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/appointment-form/">Appointment Form</a>
+                                    <a href="#">Lates post</a>
                                 </li>
                             </ul>
                         </li>
                         <li id="menu-item-894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-894">
-                            <a href="http://kodeforest.net/wp-demo/petcare/shop/">Shop</a>
-                            <ul class="dl-submenu">
-                                <li id="menu-item-912" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-912">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/shop-2/">Shop Style 2</a>
-                                </li>
-                                <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-779">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/product/pet-biscuits-2/">Shop Detail</a>
-                                </li>
-                            </ul>
+                            <a href="#">Shop</a>
                         </li>
                         <li id="menu-item-830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830">
-                            <a href="http://kodeforest.net/wp-demo/petcare/contact-us-2/">Contact Us</a>
+                            <a href="#">Contact Us</a>
                         </li>
                     </ul>
                 </div>
                 <!--Navigation Wrap Start-->
                 <!--Cart Item Wrap Start-->
                 <div class="kf_pet_cart_item cart-option">
-                    <a href="#" id="no-active-btn-shopping">
-                       <i class="fa fa-user" aria-hidden="true"></i>
-                    </a>
                     <!-- <div class="widget_shopping_cart_content"></div> -->
-                    <div class="widget_shopping_cart_content" style="display: block;">
-                        <p class="woocommerce-mini-cart__empty-message">
-                            <a href="#">Login</a>
-                        </p>
-                        
-                        <p class="woocommerce-mini-cart__empty-message">
-                            <a href="#">Profile</a>
-                        </p>
-                         <p class="woocommerce-mini-cart__empty-message">
-                            <a href="#">Activity</a>
-                        </p>
-                         <p class="woocommerce-mini-cart__empty-message">
-                            <a href="#">Layout</a>
-                        </p>
-                    </div>
-                    <span>0</span>
-                    <div class="kf_pet_cart_des">
-                        <h5>Username</h5>
-                        <!-- <h6>Days</h6> -->
-                    </div>
+                    @if(Auth::check())
+                        <a href="#" id="no-active-btn-shopping">
+                           <img style="width: 40px; height: 40px" src="{{$PIC_URL}}{{Auth::user()->avatar}}" class="img-circle" alt="User Image">
+                        </a>
+                        <div class="widget_shopping_cart_content" style="display: block;">                    
+                            <p class="woocommerce-mini-cart__empty-message">
+                                <a href="{{route('petfinder.profile.index')}}">Profile</a>
+                            </p>
+                            <p class="woocommerce-mini-cart__empty-message">
+                                <a href="{{route('auth.auth.logout')}}">Logout</a>
+                            </p>
+                        </div>
+
+                        <span>0</span>
+                        <div class="kf_pet_cart_des">
+                            <h5>
+                                <a href="{{route('petfinder.profile.index')}}">{{Auth::user()->fullname}}</a>
+                            </h5>
+                            <!-- <h6>Days</h6> -->
+                        </div>
+
+                    @else<!-- 
+                        <a href="#" id="no-active-btn-shopping">
+                           <i class="fa fa-user" aria-hidden="true"></i>
+                        </a> -->
+                        <div class="kf_pet_cart_des">
+                            <h5><a href="{{route('auth.auth.login')}}">LOGIN</a></h5>
+                        </div>
+                    @endif
+                    
 
                 </div>
                 <!--Cart Item Wrap End-->
@@ -364,112 +319,50 @@
                             <nav class="navigation">
                                 <div class="menu-main-menu-2-container">
                                     <ul id="menu-main-menu-3" class="menu">
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-609 current_page_item menu-item-has-children menu-item-662">
-                                            <a href="http://kodeforest.net/wp-demo/petcare/">Home</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-914">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/home-2/">Home Layout 2</a>
+                                        <li id="menu-item-662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-609 current_page_item menu-item-has-children menu-item-662">
+                                            <a href="{{route('petfinder.petfinder.index')}}">Home</a>
+                                        </li>
+                                        <li id="menu-item-661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661">
+                                            <a href="#">About Us</a>
+                                        </li>
+
+                                        <li id="menu-item-664" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-664">
+                                            <a href="#">Services</a>
+                                            <ul class="dl-submenu">
+                                                <li id="menu-item-785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
+                                                    <a href="#">Petcare</a>
                                                 </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-917">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/home-layout-3/">Home Layout 3</a>
+                                                <li id="menu-item-673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-673">
+                                                    <a href="#">Pet adoption</a>
                                                 </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-907">
-                                                    <a href="http://kodeforest.net/wp-demo/pets/single/">Single Version</a>
+                                                <li id="menu-item-663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663">
+                                                    <a href="#">Our Services</a>
+                                                </li>     
+                                                
+                                            </ul>
+                                        </li>
+
+                                        <li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674">
+                                                    <a href="#">Appointment Form</a>
                                                 </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-909">
-                                                    <a href="http://kodeforest.net/wp-demo/pets/store">Store Version</a>
+
+                                       
+                                        <li id="menu-item-790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-790">
+                                            <a href="{{route('petfinder.petfinder.blog')}}">Blog</a>
+                                            <ul class="dl-submenu">
+                                                <li id="menu-item-792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-792">
+                                                    <a href="#">New post</a>
                                                 </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-908">
-                                                    <a href="http://kodeforest.net/wp-demo/pets/medical/">Medical Version</a>
+                                                <li id="menu-item-791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-791">
+                                                    <a href="#">Lates post</a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661">
-                                            <a href="http://kodeforest.net/wp-demo/petcare/about-us/">About Us</a>
+                                        <li id="menu-item-894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-894">
+                                            <a href="#">Shop</a>
                                         </li>
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-726">
-                                            <a href="#">Gallery</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-729">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/test-gallery/">Gallery 2 Column</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-728">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/style-1-gallery-3-column/">Gallery 3 Column</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-727">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/style-1-gallery-4-column/">Gallery 4 Column</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-790">
-                                            <a href="#">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-792">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/blog-modern-grid/">Blog Modern Grid</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-791">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/blog-modern-grid-2-column/">Blog Grid 2 Column</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-832">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/cats-are-adorable-pets-4-2/">Blog Detail</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-664">
-                                            <a href="#">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/pet-team/">Pet Team</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-673">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/home-layout-3aa">Error 404</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/our-services/">Our Services</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-666">
-                                                    <a href="#">Blog Grid</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-670">
-                                                            <a href="http://kodeforest.net/wp-demo/petcare/blog-grid-2-column/">Blog Grid 2 Column</a>
-                                                        </li>
-                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-671">
-                                                            <a href="http://kodeforest.net/wp-demo/petcare/blog-grid-3-column/">Blog Grid 3 Column</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-667">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/blog-full-view/">Blog Full View</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-668">
-                                                            <a href="http://kodeforest.net/wp-demo/petcare/blog-full-with-left-sidebar/">Blog Full With Left Sidebar</a>
-                                                        </li>
-                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669">
-                                                            <a href="http://kodeforest.net/wp-demo/petcare/blog-full-with-right-sidebar/">Blog Full With Right Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-675">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/pricing-plans/">Pricing &#038; Plans</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/appointment-form/">Appointment Form</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-894">
-                                            <a href="http://kodeforest.net/wp-demo/petcare/shop/">Shop</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-912">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/shop-2/">Shop Style 2</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-779">
-                                                    <a href="http://kodeforest.net/wp-demo/petcare/product/pet-biscuits-2/">Shop Detail</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830">
-                                            <a href="http://kodeforest.net/wp-demo/petcare/contact-us-2/">Contact Us</a>
+                                        <li id="menu-item-830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830">
+                                            <a href="#">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>

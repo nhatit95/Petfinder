@@ -21,6 +21,9 @@ class Post extends Authenticatable
         return $this->findOrFail($id);
     }
 
+    public function getYourPosts($id){
+        return $this->where('user_id', '=', $id)->get();
+    }
     public function addItem($oItem){
         return $this->insert($oItem);
     }

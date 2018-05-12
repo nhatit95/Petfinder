@@ -115,7 +115,5 @@ Update information about event
                 </div>
             </div>
         </div>
-
-
     </div>
 @stop

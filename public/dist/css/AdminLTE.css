@@ -4486,6 +4486,10 @@ table.text-center th {
 .modal-success .modal-body {
   background-color: #00a65a !important;
 }
+.bg-green1{
+  background-color: #3C8DBC !important;
+}
+
 .bg-navy {
   background-color: #001f3f !important;
 }

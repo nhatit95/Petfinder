@@ -36,8 +36,8 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{route('admin.user.index')}}" ><i class="fa fa-circle-o"></i> Management's home</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> System setting</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> View website</a></li>
+            <li><a href="{{route('petfinder.petfinder.index')}}"><i class="fa fa-circle-o"></i> System setting</a></li>
+            <li><a href="{{route('petfinder.petfinder.index')}}"><i class="fa fa-circle-o"></i> View website</a></li>
           </ul>
         </li>
 

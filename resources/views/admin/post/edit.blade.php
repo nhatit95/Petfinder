@@ -100,7 +100,5 @@ Update information about post
                 </div>
             </div>
         </div>
-
-
     </div>
 @stop

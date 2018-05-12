@@ -69,7 +69,5 @@ Create a new message
                 </div>
             </div>
         </div>
-
-
     </div>
 @stop

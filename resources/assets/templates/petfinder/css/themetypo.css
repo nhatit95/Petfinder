@@ -94,8 +94,10 @@ select {
 }
 
 label {
-    color: #333333;
+    color: #3c8dbc;
     display: block;
+    font-size: 18px;
+    font-weight: bold !important;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -108,16 +110,18 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-    border: 1px solid #d2d2d2;
-    color: #b2b2b2;
+    border: 1px solid #3c8dbc;
+    color: #2f2c2c;
     display: inline-block;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 400;
-    height: 44px;
+    margin-left: 10px;
+    height: 36px;
     line-height: 20px;
     outline: none;
-    padding: 4px 10px;
+    padding: 5px 12px;
     vertical-align: middle;
+    margin-bottom: 5px !important;
 }
 
 form p {

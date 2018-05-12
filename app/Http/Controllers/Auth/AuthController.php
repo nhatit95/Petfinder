@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\Admin\User;
 use App\Model\Admin\User_roles;
-use App\Http\Requests\UserRequest;
-use App\Http\Requests\UserEditRequest;
 
 class AuthController extends Controller
 {
@@ -21,7 +19,7 @@ class AuthController extends Controller
     public function getRegister(){
         return view('auth.auth.register');
     }
-    public function postRegister(UserRequest $request){
+    public function postRegister(Request $request){
         $picture = $request->hinhanh;
 
         if ($picture != '') {
@@ -65,12 +63,21 @@ class AuthController extends Controller
     		/*'active' =>1*/
 
     	]);
-    	if($result){
-    		return redirect()->route('admin.index.index');
-    	}else{
+        
+    	if($result && Auth::user()->role_id == 2){
+    		return redirect()->route('petfinder.profile.index');
+    	}elseif ($result && Auth::user()->role_id == 1) {
+            return redirect()->route('admin.index.index');
+        }else{
     		$request->session()->flash('msg', 'Your username/password is not correctly.');
-    		return redirect()->route('login');
+    		return redirect()->route('auth.auth.login');
     	}
+    }
+
+    public function logout(Request $request){
+        Auth::logout();
+        return view('auth.auth.login');
+
     }
 
 

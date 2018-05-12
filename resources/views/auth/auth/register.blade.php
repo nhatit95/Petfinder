@@ -52,32 +52,29 @@ Register
                                 <input type="email" class="form-control" required="true" name="email" id="email" placeholder="Enter email">
                               </div>
 
-                              <div class="form-group has-feedback">
-                                  <label>Phone number:</label>
+                              <div class="form-group">
+                                <label>Phone number</label>
 
-                                  <input type="tel" required="true" pattern="^[0-9-+s()]*$" name="phone_number" id="phone_number" class="form-control" placeholder="Enter your phone number">
-                                  <!-- /.input group -->
-                              </div>
+                                <input type="tel" required="true" pattern="^[0-9-+s()]*$" name="phone_number" id="phone_number" style="border: 1px solid #3c8dbc; width: 100%; font-size: 18px !important height: 36px !important; padding: 10px; margin-left: 10px;" placeholder="Enter your phone number">
+                                <!-- /.input group -->
+                            </div>
 
-                              <div class="form-group has-feedback">
-                                  <label>Gender</label>
-                                  <select class="form-control select2" name="gender" id="gender" required="true" style="width: 100%;">
-                                    <option selected="selected">Man</option>
-                                    <option>Women</option>
-                                  </select>
-                              </div>
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <select class="form-control" name="gender" id="gender" required="true" style="border: 1px solid #3c8dbc; width: 100%; font-size: 18px !important; height: 40px !important; margin-left: 10px;">
+                                  <option selected="selected">Man</option>
+                                  <option>Woman</option>
+                                </select>
+                            </div>
 
-                              <div class="form-group has-feedback">
-                                  <label>Date masks:</label>
+                            <div class="form-group">
+                                <label>Birthday</label>
 
-                                  <div class="input-group">
-                                    <div class="input-group-addon">
-                                      <i class="fa fa-calendar"></i>
-                                    </div>
-                                    <input type="date" id="birthday" name="birthday" class="form-control" placeholder ="'dd/mm/yyyy'" data-mask>
-                                  </div>
-                                  <!-- /.input group -->
+                                <div class="form-group">                                
+                                  <input style="border: 1px solid #3c8dbc; width: 100%; font-size: 18px !important; height: 36px !important; padding: 10px; margin-left: 10px;" required="true" type="date" id="birthday" name="birthday" class="form-control" >
                                 </div>
+                                <!-- /.input group -->
+                              </div>
                               
 
                               <div class="form-group">

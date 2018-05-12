@@ -35,7 +35,7 @@ class MessageController extends Controller
         $check   = 0;
         $arUsers = $this->mUser->getItems();
         foreach ($arUsers as $arUser) {
-            if ($arUser->fullname == $to_id) {
+            if ($arUser->username == $to_id) {
                 $to_id = $arUser->id;
                 $check = 1;
             }

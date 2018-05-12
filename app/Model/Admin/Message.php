@@ -33,4 +33,15 @@ class Message extends Model
         $oItem = $this->findOrFail($id);
         return $oItem->update($moItem);
     }
+
+    public function getYourMessages($id){
+        return DB::table('messages')
+              ->where('from_id', '=', $id)
+              ->orWhere('to_id', '=', $id)
+              ->get();
+    }
+
+    // public function getYourMessages($id){
+    //     return $this->where('from_id =' $id)->get();
+    // }
 }

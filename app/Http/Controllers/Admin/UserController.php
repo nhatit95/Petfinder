@@ -42,7 +42,7 @@ class UserController extends Controller
     	return view('admin.user.add', compact('arRoles'));
     }
     public function postAdd(UserRequest $request){
-        $picture = $request->hinhanh;
+        $picture = $request->hinhanh;       
 
         if ($picture != '') {
             $path = $request->file('hinhanh')->store('files');
@@ -70,6 +70,7 @@ class UserController extends Controller
             $request->session()->flash('msg', 'Lỗi trong quá trình thêm');
         }
         return redirect()->route('admin.user.index');
+        
     }
 
     public function del($id, Request $request){
@@ -90,6 +91,7 @@ class UserController extends Controller
 
     public function postEdit($id, Request $request){
         $newPicture = $request->newPicture;
+        $check = $request->check;
 
         if ($newPicture != '' && $request->new_password != '') {
             $path = $request->file('newPicture')->store('files');
@@ -153,6 +155,10 @@ class UserController extends Controller
         }else{
             $request->session()->flash('msg', 'Lỗi trong quá trình sửa');
         }
-        return redirect()->route('admin.user.index');
+        if ($check == 'member') {            
+            return redirect()->route('petfinder.profile.index');
+        }else{
+            return redirect()->route('admin.user.index');
+        }
     }
 }

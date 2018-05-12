@@ -34,6 +34,10 @@ class Event extends Authenticatable
         $oItem = $this->findOrFail($id);
         return $oItem->update($moItem);
     }
+
+    public function getYourEvents($id){
+        return $this->where('user_id', '=', $id)->get();
+    }
 }
 
 

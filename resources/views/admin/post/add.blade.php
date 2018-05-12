@@ -89,7 +89,5 @@ Create a new Post
                 </div>
             </div>
         </div>
-
-
     </div>
 @stop

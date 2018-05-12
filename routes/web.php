@@ -392,7 +392,7 @@ Route::group(['namespace' => 'petfinder', 'prefix' => ''], function(){
 
 	Route::get('finder', [
 		'uses' => 'FinderController@index',
-		'as'   => 'petfinder.petfinder.index'
+		'as'   => 'petfinder.petfinder.finder'
 	]);
 
 	Route::get('blog', [
@@ -403,12 +403,84 @@ Route::group(['namespace' => 'petfinder', 'prefix' => ''], function(){
 	Route::get('detail', [
 		'uses' => 'DetailController@index',
 		'as'   => 'petfinder.petfinder.detail'
-	]);
+	]);	
 
-	Route::get('profile',[
-		'uses'  => 'ProfileController@index',
-		'as'   => 'profile',
-	]);
+	Route::group(['prefix' => 'profile'], function(){
+		Route::get('',[
+			'uses'  => 'ProfileController@index',
+			'as'   => 'petfinder.profile.index',
+		]);
+// PET
+		Route::get('petadd',[
+			'uses'  => 'ProfileController@getPetAdd',
+			'as'   => 'petfinder.profile.petadd',
+		]);
+
+		Route::post('petadd',[
+			'uses'  => 'ProfileController@postPetAdd',
+			'as'   => 'petfinder.profile.petadd',
+		]);
+
+		Route::get('petdel/{id}',[
+			'uses' => 'ProfileController@petDel',
+			'as'   => 'petfinder.profile.petdel'
+		]);
+
+		Route::get('petedit/{id}',[
+			'uses' => 'ProfileController@getPetEdit',
+			'as'   => 'petfinder.profile.petedit'
+		]);
+
+		Route::post('petedit/{id}',[
+			'uses' => 'ProfileController@postPetEdit',
+			'as'   => 'petfinder.profile.petedit'
+		]);
+
+// POST
+		Route::get('postadd',[
+			'uses'  => 'ProfileController@getPostAdd',
+			'as'   => 'petfinder.profile.postadd',
+		]);
+
+		Route::post('postadd',[
+			'uses'  => 'ProfileController@postPostAdd',
+			'as'   => 'petfinder.profile.postadd',
+		]);
+
+		Route::get('postdel/{id}',[
+			'uses' => 'ProfileController@postDel',
+			'as'   => 'petfinder.profile.postdel'
+		]);
+
+		Route::get('postedit/{id}',[
+			'uses' => 'ProfileController@getPostEdit',
+			'as'   => 'petfinder.profile.postedit'
+		]);
+
+		Route::post('postedit/{id}',[
+			'uses' => 'ProfileController@postPostEdit',
+			'as'   => 'petfinder.profile.postedit'
+		]);
+
+//MESSAGE
+		Route::get('messageadd',[
+			'uses'  => 'ProfileController@getMessageAdd',
+			'as'   => 'petfinder.profile.messageadd',
+		]);
+
+		Route::post('messageadd',[
+			'uses'  => 'ProfileController@postMessageAdd',
+			'as'   => 'petfinder.profile.messageadd',
+		]);
+
+		Route::get('messagedel/{id}',[
+			'uses' => 'ProfileController@messageDel',
+			'as'   => 'petfinder.profile.messagedel'
+		]); 
+
+
+	
+	});
 	// Route::get('add', [
 	// 	'uses'  => 'NewsController@add',
 	// 	'as'	=> 'petfinder.petfinder.add'
@@ -453,7 +525,7 @@ Route::group(['namespace' => 'Auth'], function(){
 
 	Route::get('logout',[
 		'uses'  => 'AuthController@logout',
-		'as'   => 'logout',
+		'as'   => 'auth.auth.logout',
 	]);
 
 

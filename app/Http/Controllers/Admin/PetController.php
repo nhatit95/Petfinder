@@ -93,11 +93,11 @@ class PetController extends Controller
                 "address"     => trim($request->address),
                 "status"      => trim($request->status),
                 "discription" => trim($request->discription),
-                'avatar'     => $newPicture,
+                'avatar'      => $newPicture,
             ];
         }else{
             $moItem = [
-               "pet_name"    => trim($request->pet_name),
+               "pet_name"     => trim($request->pet_name),
                 "cat_id"      => trim($request->cat_id),
                 "user_id"     => trim($request->user_id),
                 "age"         => trim($request->age),

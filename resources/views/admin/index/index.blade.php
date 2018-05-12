@@ -26,6 +26,7 @@ Trang quản trị
         <p>{{Auth::user()->phone_number  }}</p>
         <p>{{Auth::user()->email  }}</p>
         <p>{{Auth::user()->role_id  }}</p>
+        <p>{{Auth::user()->avatar  }}</p>
         <p>{{Auth::user()->birthday  }}</p>
       @else
         <p>chu dang nhap</p>
