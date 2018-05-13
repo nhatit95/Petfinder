@@ -180,7 +180,8 @@
     <script type='text/javascript' src='{{$PUBLIC_URL}}js/modernizr.custom.js'></script>
     <script type='text/javascript' src='{{$PUBLIC_URL}}js/jquery.dlmenu.js'></script>
     <script type='text/javascript' src='{{$PUBLIC_URL}}js/comment-reply.min.js'></script>
-    <script type='text/javascript' src='{{$PUBLIC_URL}}js/bootstrap.min.js'></script>
+    <!-- <script type='text/javascript' src='{{$PUBLIC_URL}}js/bootstrap.min.js'></script> -->
+    <script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type='text/javascript' src='{{$PUBLIC_URL}}js/bootstrap-slider.js'></script>
     <script type='text/javascript' src='{{$PUBLIC_URL}}js/search.js'></script>
     <script type='text/javascript' src='{{$PUBLIC_URL}}js/jquery.accordion.js'></script>
@@ -214,7 +215,7 @@
     <script src="{{$PUBLIC_URL}}js/jquery.scrollme.js"></script>
     <script src="{{$PUBLIC_URL}}js/custom.js"></script>
 
-    <script src="{{$PUBLIC_URL}}js/bootstrap.min.js"></script>
+    <!-- <script src="{{$PUBLIC_URL}}js/bootstrap.min.js"></script> -->
     <script src="{{$PUBLIC_URL}}js/jquery.prettyphoto.js"></script>
     <script src="{{$PUBLIC_URL}}js/modernizr.custom.js"></script>
     <script src="{{$PUBLIC_URL}}js/waypoints.min.js"></script>

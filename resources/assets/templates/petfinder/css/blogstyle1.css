@@ -1264,8 +1264,7 @@ ul ul,ol ol {
   width: 100%;
   z-index: 11;
   padding: 35px 0;
-  position: relative;
-  background-color: #ececec;
+  background-color: #f29100;
 }
 
 .cp-inner-banner-outer {

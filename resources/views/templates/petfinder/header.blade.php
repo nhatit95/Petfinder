@@ -329,37 +329,40 @@
                                         <li id="menu-item-664" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-664">
                                             <a href="#">Services</a>
                                             <ul class="dl-submenu">
-                                                <li id="menu-item-785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
-                                                    <a href="#">Petcare</a>
-                                                </li>
-                                                <li id="menu-item-673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-673">
-                                                    <a href="#">Pet adoption</a>
-                                                </li>
-                                                <li id="menu-item-663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663">
-                                                    <a href="#">Our Services</a>
-                                                </li>     
+                                                @foreach($arServices as $arService)
+                                                    <?php 
+                                                        $service_id = $arService->service_id;
+                                                        $service_url = route('petfinder.petfinder.servicedetail', ['id' => $service_id]);
+                                                        if($service_id == 4){
+                                                            $service_url = route('petfinder.petfinder.finder');
+                                                        }
+                                                    ?>
+
+                                                    <li id="menu-item-785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
+                                                        <a href="{{$service_url}}">{{$arService->service_name}}</a>
+                                                    </li>
+                                                @endforeach   
                                                 
                                             </ul>
                                         </li>
 
                                         <li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674">
-                                                    <a href="#">Appointment Form</a>
+                                                    <a href="#">Appointment</a>
                                                 </li>
 
                                        
                                         <li id="menu-item-790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-790">
                                             <a href="{{route('petfinder.petfinder.blog')}}">Blog</a>
                                             <ul class="dl-submenu">
-                                                <li id="menu-item-792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-792">
-                                                    <a href="#">New post</a>
-                                                </li>
-                                                <li id="menu-item-791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-791">
-                                                    <a href="#">Lates post</a>
-                                                </li>
+                                                @foreach($arPostCats as $arPostCat)
+                                                    <?php 
+                                                        $cat_id = $arPostCat->cat_id;
+                                                    ?>
+                                                    <li id="menu-item-785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
+                                                        <a href="{{route('petfinder.petfinder.blog')}}">{{$arPostCat->cat_name}}</a>
+                                                    </li>
+                                                @endforeach   
                                             </ul>
-                                        </li>
-                                        <li id="menu-item-894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-894">
-                                            <a href="#">Shop</a>
                                         </li>
                                         <li id="menu-item-830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830">
                                             <a href="#">Contact Us</a>

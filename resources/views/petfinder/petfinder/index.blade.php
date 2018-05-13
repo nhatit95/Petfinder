@@ -20,8 +20,12 @@
                             <img  class="ms-layer" src="{{$PUBLIC_URL}}img/blank.gif" data-src="{{$PUBLIC_URL}}img/shape1.png" alt="" style=""     data-ease="easeOutQuint"  data-parallax="4" data-type="image" data-offset-x="737" data-offset-y="311" data-origin="tl" data-position="normal" />
                             <img  class="ms-layer" src="{{$PUBLIC_URL}}img/blank.gif" data-src="{{$PUBLIC_URL}}img/shape2.png" alt="" style=""     data-ease="easeOutQuint"  data-parallax="6" data-type="image" data-offset-x="1216" data-offset-y="334" data-origin="tl" data-position="normal" />
                             <img  class="ms-layer" src="{{$PUBLIC_URL}}img/blank.gif" data-src="{{$PUBLIC_URL}}img/adopt.png" alt="" style=""  data-effect="t(true,n,-150,n,n,n,n,n,n,n,n,n,n,n,n)"   data-ease="easeOutQuint" data-type="image"         data-offset-x="-350" data-offset-y="-80" data-origin="mc" data-position="normal" />
-                            <img  class="ms-layer" src="{{$PUBLIC_URL}}img/blank.gif" data-src="{{$PUBLIC_URL}}img/btn-1.png" alt="" style=""  data-effect="t(true,n,n,n,n,n,n,n,n,n,n,n,n,n,n)"   data-ease="easeOutQuint" data-type="image"         data-offset-x="-481" data-offset-y="46" data-origin="mc" data-position="normal" />
-                            <img  class="ms-layer" src="{{$PUBLIC_URL}}img/blank.gif" data-src="{{$PUBLIC_URL}}img/text-1.png" alt="" style=""  data-effect="t(true,-500,n,n,n,n,n,n,n,n,n,n,n,n,n)"   data-ease="easeOutQuint" data-type="image"         data-offset-x="-344" data-offset-y="-14" data-origin="mc" data-position="normal" />
+                            <a href="{{route('petfinder.petfinder.finder')}}"> 
+                              <img  class="ms-layer" src="{{$PUBLIC_URL}}img/blank.gif" data-src="{{$PUBLIC_URL}}img/btn-1.png" alt="" style=""  data-effect="t(true,n,n,n,n,n,n,n,n,n,n,n,n,n,n)"   data-ease="easeOutQuint" data-type="image"         data-offset-x="-481" data-offset-y="46" data-origin="mc" data-position="normal" />
+                            </a>
+                            <a href="{{route('petfinder.petfinder.finder')}}"> 
+                              <img  class="ms-layer" src="{{$PUBLIC_URL}}img/blank.gif" data-src="{{$PUBLIC_URL}}img/text-1.png" alt="" style=""  data-effect="t(true,-500,n,n,n,n,n,n,n,n,n,n,n,n,n)"   data-ease="easeOutQuint" data-type="image"         data-offset-x="-344" data-offset-y="-14" data-origin="mc" data-position="normal" />
+                            </a>
                             <img  class="ms-layer" src="{{$PUBLIC_URL}}img/blank.gif" data-src="{{$PUBLIC_URL}}img/dog-1.png" alt="" style=""  data-effect="t(true,n,500,n,n,n,n,n,n,n,n,n,n,n,n)"   data-ease="easeInOutQuint" data-type="image"         data-offset-x="496" data-offset-y="175" data-origin="mc" data-position="normal" />
                           </div>
                           <div  class="ms-slide" data-delay="3" data-fill-mode="fill" style="background-color:#e0dede;" >
@@ -80,6 +84,7 @@
                      ?>
                       
                     @foreach ($arServices as $arService)
+                      <?php $service_id = $arService->service_id?>
                       @if($arService->cat_id == 1)
                         <div class="  col-md-3 columns" >
                           <div   class="  kode-service-type-1" >
@@ -87,7 +92,15 @@
                               <i class="fa fa-globe"></i>
                               <h4>{{$arService->service_name}}</h4>
                               <p style="color:#ffffff">Fun &#038; active dog walking service</p>
-                              <a class="kf_pet_link_1 pet_sm_link" href="#">Detail</a>
+                              <?php 
+                                  $service_id = $arService->service_id;
+                                  $service_url = route('petfinder.petfinder.servicedetail', ['id' => $service_id]);
+                                  if($service_id == 4){
+                                      $service_url = route('petfinder.petfinder.finder');
+                                  }
+                              ?>
+                              <a class="kf_pet_link_1 pet_sm_link" href="{{$service_url}}">Detail</a>
+                             <!--  <a class="kf_pet_link_1 pet_sm_link" href="{{route('petfinder.petfinder.servicedetail', ['id' => $service_id])}}">Detail</a> -->
                             </div>
                           </div>
                         </div>
@@ -138,7 +151,7 @@
                               <div class="kf_looking_hover_wrap">
                                 <h5>{{$arService->service_name}}</h5>
                                   <p>{{$arService->description}}</p>
-                                <a href="http://kodeforest.net/wp-demo/petcare/services/charlie-2-3-3-6-2/" class="kf_pet_link_1 pet_sm_link">Learn More</a>
+                                <a href="{{ route('petfinder.petfinder.servicedetail', ['id' => $service_id]) }}" class="kf_pet_link_1 pet_sm_link">Learn More</a>
                               </div>
                             </div>
                           </div>

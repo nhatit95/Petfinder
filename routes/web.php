@@ -405,6 +405,21 @@ Route::group(['namespace' => 'petfinder', 'prefix' => ''], function(){
 		'as'   => 'petfinder.petfinder.detail'
 	]);	
 
+	Route::get('servicedetail/{id}', [
+		'uses' => 'ServiceDetailController@show',
+		'as'   => 'petfinder.petfinder.servicedetail'
+	]);	
+
+	Route::get('petdetail/{id}', [
+		'uses' => 'PetDetailController@show',
+		'as'   => 'petfinder.petfinder.petdetail'
+	]);	
+
+	Route::get('blogdetail/{id}', [
+		'uses' => 'BlogDetailController@show',
+		'as'   => 'petfinder.petfinder.blogdetail'
+	]);
+
 	Route::group(['prefix' => 'profile'], function(){
 		Route::get('',[
 			'uses'  => 'ProfileController@index',

@@ -32,8 +32,12 @@ class AppServiceProvider extends ServiceProvider
         View::share('PIC_URL', getenv('PIC_URL'));
         View::share('arServices', Service::all());
         View::share('arServiceCats', Service_cat::all());
+        View::share('arPostCats', Post_cat::all());
+        View::share('arPosts', Post::all());
+        View::share('arUsers', User::all());
         // View::share('arCats', Cat::all());
-        // View::share('arItems', $arItems = News::orderBy('id_news', 'DESC')->paginate(4));
+        View::share('arOtherServices', $arOtherServices = Service::orderBy('service_id', 'ASC')->paginate(5));
+        View::share('arOtherPosts', $arOtherServices = Post::orderBy('post_id', 'DESC')->paginate(5));
         // View::share('advertisements', $advertisements = Advertisements::all());
     }
 

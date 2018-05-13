@@ -69,8 +69,8 @@
           <hr />
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a id="#settings" href="#settings" data-toggle="tab">Settings</a></li>
-              <li ><a id="#yourpet" href="#yourpet" data-toggle="tab">Your pets</a></li>
+              <li class="active"><a  href="#settings" data-toggle="tab">Settings</a></li>
+              <li ><a  href="#yourpet" data-toggle="tab">Your pets</a></li>
               <li ><a href="#post" data-toggle="tab">Your Post</a></li>
               <li ><a href="#event" data-toggle="tab">Events</a></li>
               <li ><a href="#message" data-toggle="tab">Messages</a></li>
