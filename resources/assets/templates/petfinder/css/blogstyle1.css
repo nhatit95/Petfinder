@@ -2752,7 +2752,7 @@ ul ul,ol ol {
 }
 
 .cp-text .right-nav li a {
-  padding: 10px;
+  padding: 12px;
   display: block;
 }
 
@@ -5668,3 +5668,5 @@ a,ul li,.cp-btn-style1,.cp-btn-style2:before,.cp-btn-style1:before,.cp-btn-style
 .font-family {
   font-family: arial,sans-serif;
 }
+
+

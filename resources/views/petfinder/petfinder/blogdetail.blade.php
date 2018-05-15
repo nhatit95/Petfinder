@@ -111,8 +111,8 @@
                                                       <img src="{{$PIC_URL}}{{$arOtherPost->avatar}}" alt="">
                                                       </figure>
                                                       <div class="cp-text">
-                                                          <a style="font-weight: bold;" href="{{ route('petfinder.petfinder.servicedetail', ['id' => $post_id]) }}">{{title_case($arOtherPost->post_name)}}</a>
-                                                          <span class="date">{{$description}}</span>
+                                                          <a style="font-weight: bold;" href="{{ route('petfinder.petfinder.blogdetail', ['id' => $post_id]) }}">{{title_case($arOtherPost->post_name)}}</a>
+                                                          <span class="date"><?php echo $description; ?></span>
                                                       </div>
                                                     </div>
                                                   </li>

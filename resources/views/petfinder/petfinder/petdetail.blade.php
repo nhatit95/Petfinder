@@ -85,7 +85,7 @@
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                         @foreach($arUsers as $arUser)
                                           @if($arPet->user_id == $arUser->id)
-                                              <a href="#">{{$arUser->username}}</a>
+                                              <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}">{{$arUser->username}}</a>
                                           @endif
                                         @endforeach
                                       </li>
@@ -111,15 +111,17 @@
                                       </li>
                                     </ul>
                                     <ul class="right-nav">
-                                      <li>
-                                        <i class="fa fa-heart" aria-hidden="true"></i> 232
-                                      </li>
-                                      <li class="share share-push">
+                                      <li class="">
                                         @if(Auth::check())
-                                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-register"> Register
-                                          </button>
+                                            @foreach($arUsers as $arUser)
+                                              @if($arPet->user_id == $arUser->id)
+                                                  <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}" class="badge badge-danger">
+                                                   <i style="font-size: 20px;" class="fa fa-phone-square"></i> CONTACT 
+                                                  </a>
+                                              @endif
+                                            @endforeach
                                         @else 
-                                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-login"> Register
+                                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-login"> CONTACT
                                           </button>
                                         @endif
                                       </li>
@@ -178,26 +180,23 @@
                                               </div>
                                               <div class="widget widget-recent-post">
                                                 <hr />
-                                                <h3>Other Services</h3>
+                                                <h3>Other Pets</h3>
                                                 <hr />
                                                 <ul>
-                                                  @foreach($arOtherServices as $arOtherService)
+                                                  @foreach($arOtherPets as $arOtherPet)
                                                   <?php 
-                                                    $pet_id = $arOtherService->pet_id;
-                                                    $description = str_limit($arOtherService->description, 30);
-                                                    $pet_url = route('petfinder.petfinder.servicedetail', ['id' => $pet_id]);
-                                                    if($pet_id == 4){
-                                                        $pet_url = route('petfinder.petfinder.finder');
-                                                    }
+                                                    $pet_id = $arOtherPet->pet_id;
+                                                    $description = str_limit($arOtherPet->discription, 30);
+                                                    $pet_url = route('petfinder.petfinder.petdetail', ['id' => $pet_id]);
                                                   ?>
                                                   <li>
                                                     <div class="cp-recent-inner">
                                                       <figure class="cp-thumb">
-                                                      <img src="{{$PIC_URL}}{{$arOtherService->avatar}}" alt="">
+                                                      <img src="{{$PIC_URL}}{{$arOtherPet->avatar}}" alt="">
                                                       </figure>
                                                       <div class="cp-text">
-                                                          <a style="font-weight: bold;" href="{{$pet_url}}">{{title_case($arOtherService->pet_name)}}</a>
-                                                          <span class="date">{{$description}}</span>
+                                                          <a style="font-weight: bold;" href="{{$pet_url}}">{{title_case($arOtherPet->pet_name)}}</a>
+                                                          <span class="date"><?php echo $description; ?></span>
                                                       </div>
                                                     </div>
                                                   </li>

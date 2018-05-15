@@ -237,7 +237,7 @@
                             @endif
                           @endforeach
 
-                          <td>{{$mess_content}}</td>
+                          <td><?php echo $mess_content; ?></td>
                           <td>{{$create_at}}</td>
                           <td>
                             <a href="{{$urlDel}}"> <button type="button" class="btn bg-red margin">Del</button> </a>

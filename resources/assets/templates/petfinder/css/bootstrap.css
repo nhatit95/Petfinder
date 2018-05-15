@@ -4803,15 +4803,15 @@ a.label:focus {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 1;
   color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #777;
-  border-radius: 10px;
+  background-color: #ff8d00;
+  border-radius: 2px;
 }
 .badge:empty {
   display: none;

@@ -395,6 +395,12 @@ Route::group(['namespace' => 'petfinder', 'prefix' => ''], function(){
 		'as'   => 'petfinder.petfinder.finder'
 	]);
 
+	Route::post('finder', [
+		'uses' => 'FinderController@postindex',
+		'as'   => 'petfinder.petfinder.finder'
+	]);
+
+
 	Route::get('blog', [
 		'uses' => 'BlogController@index',
 		'as'   => 'petfinder.petfinder.blog'
@@ -419,12 +425,35 @@ Route::group(['namespace' => 'petfinder', 'prefix' => ''], function(){
 		'uses' => 'BlogDetailController@show',
 		'as'   => 'petfinder.petfinder.blogdetail'
 	]);
+	Route::post('search_ajax/{breed}/{age}/{gender}/{city}', [
+		'uses' => 'AjaxController@search',
+		'as'   => 'petfinder.petfinder.ajaxsearch',
+	]);
+
 
 	Route::group(['prefix' => 'profile'], function(){
 		Route::get('',[
 			'uses'  => 'ProfileController@index',
 			'as'   => 'petfinder.profile.index',
 		]);
+
+		//GUEST
+		Route::get('guestprofile/{id}',[
+			'uses'  => 'GuestController@getIndex',
+			'as'   => 'petfinder.profile.guestprofile',
+		]);
+		Route::post('guestprofile/{id}',[
+			'uses'  => 'GuestController@postIndex',
+			'as'   => 'petfinder.profile.guestprofile',
+		]);
+		Route::post('guestmessageadd',[
+			'uses'  => 'GuestController@postGuestMessageAdd',
+			'as'   => 'petfinder.profile.guestmessageadd',
+		]);
+		// Route::get('guestmessageadd',[
+		// 	'uses'  => 'GuestController@getGuestMessageAdd',
+		// 	'as'   => 'petfinder.profile.guestmessageadd',
+		// ]);
 // PET
 		Route::get('petadd',[
 			'uses'  => 'ProfileController@getPetAdd',
@@ -544,4 +573,20 @@ Route::group(['namespace' => 'Auth'], function(){
 	]);
 
 
+
 });
+
+Route::get('ajax', 'AjaxController@index');
+Route::get('getRequest', function(){
+	if(Request::ajax()){
+		return '<h2>Nothing</h2> ';
+	}
+});
+
+Route::get('/rooms/ajax/{breed}', [
+    'uses' =>'AjaxController@searchPet',
+    'as'   =>'search-pet',
+]);
+
+
+

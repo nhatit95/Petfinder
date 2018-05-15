@@ -3,7 +3,7 @@
 namespace App\Model\Admin;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Support\Facades\DB;
 class Pet_cat extends Model
 {
     protected $table        = 'pet_categories';
@@ -27,6 +27,10 @@ class Pet_cat extends Model
         $oItem = $this->findOrFail($id);
         return $oItem->delete();
     }
+
+    // public function getBreeds(){
+    //     $result =DB::table('pet_categories')->select('cat_name')->groupBy('cat_name')->get();
+    // }
 
     public function editItem($id, $moItem){
         $oItem = $this->findOrFail($id);

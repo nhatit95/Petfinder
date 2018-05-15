@@ -4,6 +4,7 @@ namespace App\Model\Admin;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\DB;
 
 class Pet extends Authenticatable
 {
@@ -24,6 +25,13 @@ class Pet extends Authenticatable
     public function getYourPets($id){
         return $this->where('user_id', '=', $id)->get();
     }
+    // public function getCities(){
+    //     $result =DB::table('pets')->select('city')->groupBy('city')->get();
+    // }
+    // public function getAges(){
+    //     $result =DB::table('pets')->select('age')->groupBy('age')->get();
+    // }
+
 
     public function addItem($oItem){
         return $this->insert($oItem);

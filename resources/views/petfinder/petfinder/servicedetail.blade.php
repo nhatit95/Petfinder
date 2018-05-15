@@ -85,7 +85,7 @@
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                         @foreach($arUsers as $arUser)
                                           @if($arService->user_id == $arUser->id)
-                                              <a href="#">{{$arUser->username}}</a>
+                                              <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}">{{$arUser->username}}</a>
                                           @endif
                                         @endforeach
                                       </li>
@@ -106,15 +106,17 @@
                                       </li>
                                     </ul>
                                     <ul class="right-nav">
-                                      <li>
-                                        <i class="fa fa-heart" aria-hidden="true"></i> 232
-                                      </li>
-                                      <li class="share share-push">
+                                      <li class="">
                                         @if(Auth::check())
-                                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-register"> Register
-                                          </button>
+                                            @foreach($arUsers as $arUser)
+                                              @if($arService->user_id == $arUser->id)
+                                                  <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}" class="badge badge-danger">
+                                                   <i style="font-size: 20px;" class="fa fa-phone-square"></i> CONTACT 
+                                                  </a>
+                                              @endif
+                                            @endforeach
                                         @else 
-                                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-login"> Register
+                                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-login"> CONTACT
                                           </button>
                                         @endif
                                       </li>
