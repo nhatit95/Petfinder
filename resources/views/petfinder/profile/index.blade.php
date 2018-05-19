@@ -69,13 +69,141 @@
           <hr />
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a  href="#settings" data-toggle="tab">Settings</a></li>
-              <li ><a  href="#yourpet" data-toggle="tab">Your pets</a></li>
-              <li ><a href="#post" data-toggle="tab">Your Post</a></li>
-              <li ><a href="#event" data-toggle="tab">Events</a></li>
-              <li ><a href="#message" data-toggle="tab">Messages</a></li>
+              <li class="active"><a href="#message" data-toggle="tab">Notifications</a></li>
+              <li ><a  href="#yourpet" data-toggle="tab">Your Pets</a></li>
+              <li ><a href="#post" data-toggle="tab">Your Posts</a></li>
+              <li ><a href="#event" data-toggle="tab">Your Events</a></li>
+              <li ><a  href="#settings" data-toggle="tab">Update Informations</a></li>
             </ul>
             <div class="tab-content">
+              
+              <div class="active tab-pane" id="message">
+                <div class="">
+                  <div class="">
+                      <div class="">
+                        <h3 class="">List of Notifications</h3>
+                        <hr>
+                            @if(Session::has('msg'))
+                              <div class="alert alert-success alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                {{ Session::get('msg') }}
+                              </div>
+                            @endif
+                            <p style="text-align: center;">
+                              <a href="{{route('petfinder.profile.messageadd')}}" class="addtop"><img src="assets/img/add.png" alt="" /> 
+                                <button type="button" class="btn bg-green1 margin">Creat a new item</button>
+                              </a>
+                            </p>
+
+                      </div>
+                          <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Activity</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th >Content</th>
+                        <th style="width: 10%">Time</th>
+                        <!-- <th>Edit</th> -->
+                        <th>Delete</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        @foreach($arMessages as $arMessage)
+                          @php
+                            $mess_id      = $arMessage->mess_id;
+                            $from_id      = $arMessage->from_id;
+                            $to_id        = $arMessage->to_id;
+                            $activity     = $arMessage->activity;
+                            $mess_title   = $arMessage->mess_title;
+                            $mess_content = $arMessage->mess_content;
+                            $create_at    = $arMessage->create_at;
+                            $urlDel       = route('petfinder.profile.messagedel', [$mess_id]);
+                          @endphp
+                        <tr>
+                          <td>{{$mess_title}}</td>
+                          <td><?php echo $activity;  ?></td>
+                          @foreach($arUsers as $arUser)
+                            @if($from_id  == $arUser->id)
+                                @if($arUser->fullname == Auth::user()->fullname)
+                                  <td >
+                                      <strong style="color: #black">{{$arUser->fullname}}</strong>
+                                  </td>
+                                @else 
+                                  <td >
+                                    <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}">
+                                      <strong style="color: red">{{$arUser->fullname}}</strong>
+                                    </a>
+                                    <i class="fa fa-reply" style="padding-left: 11px;"></i>
+                                  </td>
+                                @endif
+
+                            @endif
+                          @endforeach
+
+                          @foreach($arUsers as $arUser)
+                            @if($to_id  == $arUser->id)
+                                @if($arUser->fullname == Auth::user()->fullname)
+                                  <td >
+                                      <strong style="color: #black">{{$arUser->fullname}}</strong>
+                                  </td>
+                                @else 
+                                  <td>
+                                    <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}">
+                                      <i class="fa fa-reply" style="padding-right: 11px;"></i>
+                                      <strong style="color: red">{{$arUser->fullname}}</strong>
+                                    </a>
+                                  </td>
+                                @endif
+                            @endif
+                          @endforeach
+
+                          
+                           
+                          <td>
+                            <a href="#" data-toggle="modal" data-target="#{{$mess_id}}">
+                              <i class="fa fa-folder-open-o" style="padding-top: 7px; float: left;    padding-right: 11px;"></i>
+                              <?php echo (str_limit($mess_content, 15)); ?>
+                            </a>
+
+                          </td>
+                            
+                          <div class="modal fade" id="{{$mess_id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Contents</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <?php echo (($mess_content)); ?>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <td>{{$create_at}}</td>
+                          <td>
+                            <a href="{{$urlDel}}"> <button type="button" class="btn bg-red margin">Del</button> </a>
+                          </td>
+                        </tr>
+                        @endforeach
+                      </tfoot>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+              </div>
+              </div>
+
               <div class="tab-pane" id="event">
                   <div class="">
                     <div class="">
@@ -164,92 +292,6 @@
                     <!-- /.box-body -->
                   </div>
                 </div>
-              </div>
-
-              <div class="tab-pane" id="message">
-                <div class="">
-                  <div class="">
-                      <div class="">
-                        <h3 class="">List of Messages</h3>
-                        <hr>
-                            @if(Session::has('msg'))
-                              <div class="alert alert-success alert-dismissible">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                {{ Session::get('msg') }}
-                              </div>
-                            @endif
-                            <p style="text-align: center;">
-                              <a href="{{route('petfinder.profile.messageadd')}}" class="addtop"><img src="assets/img/add.png" alt="" /> 
-                                <button type="button" class="btn bg-green1 margin">Creat a new item</button>
-                              </a>
-                            </p>
-
-                      </div>
-                          <!-- /.box-header -->
-                  <div class="box-body">
-                    <table id="example1" class="table table-bordered table-striped">
-                      <thead>
-                      <tr>
-                        <th>Message Title</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Content</th>
-                        <th>Time</th>
-                        <!-- <th>Edit</th> -->
-                        <th>Delete</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                        @foreach($arMessages as $arMessage)
-                          @php
-                            $mess_id      = $arMessage->mess_id;
-                            $from_id      = $arMessage->from_id;
-                            $to_id        = $arMessage->to_id;
-                            $mess_title   = $arMessage->mess_title;
-                            $mess_content = $arMessage->mess_content;
-                            $create_at    = $arMessage->create_at;
-                            $urlDel       = route('petfinder.profile.messagedel', [$mess_id]);
-                          @endphp
-                        <tr>
-                          <td>{{$mess_title}}</td>
-                          @foreach($arUsers as $arUser)
-                            @if($from_id  == $arUser->id)
-                                @if($arUser->fullname == Auth::user()->fullname)
-                                  <td >
-                                    <strong style="color: #3C8DBC">{{$arUser->fullname}}</strong>
-                                  </td>
-                                @else 
-                                  <td >{{$arUser->fullname}}</td>
-                                @endif
-
-                            @endif
-                          @endforeach
-
-                          @foreach($arUsers as $arUser)
-                            @if($to_id  == $arUser->id)
-                                @if($arUser->fullname == Auth::user()->fullname)
-                                  <td >
-                                    <strong style="color: #3C8DBC">{{$arUser->fullname}}</strong>
-                                  </td>
-                                @else 
-                                  <td >{{$arUser->fullname}}</td>
-                                @endif
-                            @endif
-                          @endforeach
-
-                          <td><?php echo $mess_content; ?></td>
-                          <td>{{$create_at}}</td>
-                          <td>
-                            <a href="{{$urlDel}}"> <button type="button" class="btn bg-red margin">Del</button> </a>
-                          </td>
-                        </tr>
-                        @endforeach
-                      </tfoot>
-                    </table>
-                  </div>
-                  <!-- /.box-body -->
-                </div>
-              </div>
               </div>
 
 
@@ -448,7 +490,7 @@
               </div>
               <!-- /.tab-pane -->
 
-              <div class="active tab-pane" id="settings">
+              <div class="tab-pane" id="settings">
                 <?php 
                   $id = Auth::user()->id; 
                   $avatar =  Auth::user()->avatar;

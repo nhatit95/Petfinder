@@ -39,6 +39,7 @@ class AppServiceProvider extends ServiceProvider
         View::share('arOtherServices', $arOtherServices = Service::orderBy('service_id', 'ASC')->paginate(5));
         View::share('arOtherPosts', $arOtherPosts = Post::orderBy('post_id', 'DESC')->paginate(5));
         View::share('arOtherPets', $arOtherPets = Pet::orderBy('pet_id', 'DESC')->paginate(5));
+        View::share('arBlogs', $arBlogs = Post::orderBy('post_id', 'DESC')->paginate(3));
         // View::share('advertisements', $advertisements = Advertisements::all());
     }
 

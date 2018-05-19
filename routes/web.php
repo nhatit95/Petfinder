@@ -425,6 +425,17 @@ Route::group(['namespace' => 'petfinder', 'prefix' => ''], function(){
 		'uses' => 'BlogDetailController@show',
 		'as'   => 'petfinder.petfinder.blogdetail'
 	]);
+
+	Route::get('petregister/{id}/{pet_id}',[
+		'uses'  => 'PetRegisterController@getIndex',
+		'as'   => 'petfinder.petfinder.petregister',
+	]);
+
+	Route::get('serviceregister/{id}/{service_id}',[
+		'uses'  => 'ServiceRegisterController@getIndex',
+		'as'   => 'petfinder.petfinder.serviceregister',
+	]);
+
 	Route::post('search_ajax/{breed}/{age}/{gender}/{city}', [
 		'uses' => 'AjaxController@search',
 		'as'   => 'petfinder.petfinder.ajaxsearch',
@@ -442,6 +453,7 @@ Route::group(['namespace' => 'petfinder', 'prefix' => ''], function(){
 			'uses'  => 'GuestController@getIndex',
 			'as'   => 'petfinder.profile.guestprofile',
 		]);
+
 		Route::post('guestprofile/{id}',[
 			'uses'  => 'GuestController@postIndex',
 			'as'   => 'petfinder.profile.guestprofile',
@@ -571,22 +583,7 @@ Route::group(['namespace' => 'Auth'], function(){
 		'uses'  => 'AuthController@logout',
 		'as'   => 'auth.auth.logout',
 	]);
-
-
-
 });
-
-Route::get('ajax', 'AjaxController@index');
-Route::get('getRequest', function(){
-	if(Request::ajax()){
-		return '<h2>Nothing</h2> ';
-	}
-});
-
-Route::get('/rooms/ajax/{breed}', [
-    'uses' =>'AjaxController@searchPet',
-    'as'   =>'search-pet',
-]);
 
 
 

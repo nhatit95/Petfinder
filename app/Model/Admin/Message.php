@@ -10,7 +10,7 @@ class Message extends Model
     protected $table        = 'messages';
     protected $primaryKey   = 'mess_id';
     public $timestamps      = false;
-    protected $fillable     = ['mess_id', 'from_id', 'to_id', 'mess_title', 'mess_content', 'create_at'];
+    protected $fillable     = ['mess_id', 'from_id', 'to_id', 'mess_title', 'activity', 'mess_content', 'create_at'];
 
     public function getItems(){
         return $this->all();

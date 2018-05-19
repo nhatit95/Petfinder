@@ -110,7 +110,7 @@
                                         @if(Auth::check())
                                             @foreach($arUsers as $arUser)
                                               @if($arService->user_id == $arUser->id)
-                                                  <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}" class="badge badge-danger">
+                                                  <a href="{{route('petfinder.petfinder.serviceregister', ['id' => $arUser->id, 'service_id' => $arService->service_id])}}" class="badge badge-danger">
                                                    <i style="font-size: 20px;" class="fa fa-phone-square"></i> CONTACT 
                                                   </a>
                                               @endif

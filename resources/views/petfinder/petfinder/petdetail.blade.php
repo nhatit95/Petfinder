@@ -23,25 +23,7 @@
                 </section> -->
                 
                   
-                  <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
 
                   <div class="modal modal-danger fade" id="modal-login">
                     <div class="modal-dialog">
@@ -115,7 +97,7 @@
                                         @if(Auth::check())
                                             @foreach($arUsers as $arUser)
                                               @if($arPet->user_id == $arUser->id)
-                                                  <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}" class="badge badge-danger">
+                                                  <a href="{{route('petfinder.petfinder.petregister', ['id' => $arUser->id, 'pet_id' => $arPet->pet_id])}}" class="badge badge-danger">
                                                    <i style="font-size: 20px;" class="fa fa-phone-square"></i> CONTACT 
                                                   </a>
                                               @endif

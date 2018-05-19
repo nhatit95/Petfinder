@@ -43,11 +43,11 @@ class GuestController extends Controller
         //     $request->session()->flash('msg', 'We did not found your address, please check again');
         //     return view('petfinder.profile.index');
         // }
-
         $oItem   = [
             "mess_title"   => trim($request->mess_title),
             "from_id"      => trim($request->from_id),
             "to_id"        => trim($request->to_id),
+            "activity"     => trim($request->activity),
             "mess_content" => trim($request->mess_content),
             "create_at"    => trim(date('Y-m-d H:i:s')),
         ];

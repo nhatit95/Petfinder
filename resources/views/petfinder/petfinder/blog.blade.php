@@ -43,7 +43,7 @@
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                         @foreach($arUsers as $arUser)
                                           @if($arPost->user_id == $arUser->id)
-                                              <a href="#">{{$arUser->username}}</a>
+                                              <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}">{{$arUser->username}}</a>
                                           @endif
                                         @endforeach
                                       </li>

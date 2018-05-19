@@ -94,7 +94,7 @@
 
                                   <div class="form-group">
                                     <label >Activity</label>
-                                    <input disabled="true" type="text"  class="form-control" required="true" value='Chat' >
+                                    <input disabled="true" type="text"  class="form-control" required="true" value='Register Service' >
                                   </div>
 
                                   <div class="form-group">
@@ -134,7 +134,7 @@
                                     <input type="text" class="form-control" name="to_id" value="{{$arUser->id}}" >
                                   </div>
                                   <div class="form-group" style="visibility: hidden;">
-                                    <input type="text" class="form-control" name="activity" value="Chat" >
+                                    <input type="text" class="form-control" name="activity" value="<a target='_blank' href='http://petfinder.biz:8088/servicedetail/{{$arService->service_id}}'>Register Service <br /><strong>{{$arService->service_name}}</strong></a>">
                                   </div>
                               <div class="clearfix"></div>
                           </form>

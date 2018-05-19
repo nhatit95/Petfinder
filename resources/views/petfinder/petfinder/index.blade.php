@@ -145,13 +145,13 @@
                                 </div>
                                 <div class="kf_pet_looking_heading">
                                   <h5>{{$arService->service_name}}</h5>
-                                  <p>{{$arService->description}}</p>
+                                  <p><?php echo (str_limit($arService->description, 30)); ?></p>
                                 </div>
                               </div>
                               <div class="kf_looking_hover_wrap">
                                 <h5>{{$arService->service_name}}</h5>
                                   <p>{{$arService->description}}</p>
-                                <a href="{{ route('petfinder.petfinder.servicedetail', ['id' => $service_id]) }}" class="kf_pet_link_1 pet_sm_link">Learn More</a>
+                                <a href="{{ route('petfinder.petfinder.servicedetail', ['id' => $arService->service_id]) }}" class="kf_pet_link_1 pet_sm_link">Learn More</a>
                               </div>
                             </div>
                           </div>
@@ -1242,120 +1242,50 @@
                     <div class="blog-item-holder">
                       <div class="kode-blog-list-view kode-medium-blog-view row">
                         <div class="clear"></div>
-                        <div class="col-md-4 columns">
-                          <div class="kode-item kode-blog-medium">
-                            <article id="blog-med-379" class="kode_medium kode-simple-medium post-379 post type-post status-publish format-standard has-post-thumbnail hentry category-dogs category-love category-pet tag-keeper tag-pets">
-                              <div class="kf_pet_news_wrap">
-                                <figure>
-                                  <div class="kode-blog-thumbnail">
-                                    <img src="http://kodeforest.net/wp-demo/petcare/wp-content/uploads/2015/12/blog-2-350x350.jpg" alt="" width="350" height="350" />
-                                  </div>
-                                  <figcaption class="kf_pet_news_link ">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/how-to-keep-pets-clean/">
-                                      <i class="fa fa-image"></i>
-                                    </a>
-                                  </figcaption>
-                                </figure>
-                                <div class="kf_pet_news_des">
-                                  <h5>
-                                    <a href="http://kodeforest.net/wp-demo/petcare/how-to-keep-pets-clean/">How to Keep Pets Clean</a>
-                                  </h5>
-                                  <ul>
-                                    <li class="blog-info blog-date">
-                                      <i class="fa fa-clock-o"></i>
-                                      <a href="http://kodeforest.net/wp-demo/petcare/2015/12/15/">9:05 am</a>
-                                    </li>
-                                    <li class="blog-info blog-comment">
-                                      <i class="fa fa-comment-o"></i>
-                                      <a href="http://kodeforest.net/wp-demo/petcare/how-to-keep-pets-clean/#respond" >1 Comment</a>
-                                    </li>
-                                  </ul>
-                                  <div class="kode-blog-content">
-                                    <p>No vel nonumy viderer. Duo pertinax cotidieque at, eum te integre detraxit philosophia, quando dictas mea an. Pute</p>
-                                    <a class="kf-readmore" href="http://kodeforest.net/wp-demo/petcare/how-to-keep-pets-clean/">Read More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </article>
-                          </div>
-                        </div>
-                        <div class="col-md-4 columns">
-                          <div class="kode-item kode-blog-medium">
-                            <article id="blog-med-113" class="kode_medium kode-simple-medium post-113 post type-post status-publish format-standard has-post-thumbnail hentry category-love category-pet category-petcare tag-keeper tag-pet">
-                              <div class="kf_pet_news_wrap">
-                                <figure>
-                                  <div class="kode-blog-thumbnail">
-                                    <img src="{{$PUBLIC_URL}}img/pet_blog5-350x350.jpg" alt="" width="350" height="350" />
-                                  </div>
-                                  <figcaption class="kf_pet_news_link ">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/bringing-a-new-kitten-home/">
-                                      <i class="fa fa-image"></i>
-                                    </a>
-                                  </figcaption>
-                                </figure>
-                                <div class="kf_pet_news_des">
-                                  <h5>
-                                    <a href="http://kodeforest.net/wp-demo/petcare/bringing-a-new-kitten-home/">Bringing a New Kitten Hom</a>
-                                  </h5>
-                                  <ul>
-                                    <li class="blog-info blog-date">
-                                      <i class="fa fa-clock-o"></i>
-                                      <a href="http://kodeforest.net/wp-demo/petcare/2015/11/22/">10:17 am</a>
-                                    </li>
-                                    <li class="blog-info blog-comment">
-                                      <i class="fa fa-comment-o"></i>
-                                      <a href="http://kodeforest.net/wp-demo/petcare/bringing-a-new-kitten-home/#respond" >2 Comment</a>
-                                    </li>
-                                  </ul>
-                                  <div class="kode-blog-content">
-                                    <p>No vel nonumy viderer. Duo pertinax cotidieque at, eum te integre detraxit philosophia, quando dictas mea an. Pute</p>
-                                    <a class="kf-readmore" href="http://kodeforest.net/wp-demo/petcare/bringing-a-new-kitten-home/">Read More</a>
+                        @foreach ($arBlogs as $arBlog)
+                          <div class="col-md-4 columns">
+                            <div class="kode-item kode-blog-medium">
+                              <article id="blog-med-379" class="kode_medium kode-simple-medium post-379 post type-post status-publish format-standard has-post-thumbnail hentry category-dogs category-love category-pet tag-keeper tag-pets">
+                                <div class="kf_pet_news_wrap">
+                                  <figure>
+                                    <div class="kode-blog-thumbnail">
+                                      <img src="{{$PIC_URL}}{{$arBlog->avatar}}" alt="" width="350" height="350" />
+                                    </div>
+                                    <figcaption class="kf_pet_news_link ">
+                                      <?php $blog_id = $arBlog->post_id ?>
+                                      <a href="{{ route('petfinder.petfinder.blogdetail', ['id' => $blog_id]) }}">
+                                        <i class="fa fa-image"></i>
+                                      </a>
+                                    </figcaption>
+                                  </figure>
+                                  <div class="kf_pet_news_des">
+                                    <h5>
+                                      <a href="{{ route('petfinder.petfinder.blogdetail', ['id' => $blog_id]) }}">{{$arBlog->post_name}}</a>
+                                    </h5>
+                                    <ul>
+                                      <li class="blog-info blog-date">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="{{ route('petfinder.petfinder.blogdetail', ['id' => $blog_id]) }}">{{$arBlog->create_at}}</a>
+                                      </li>
+                                      <li class="blog-info blog-comment">
+                                        <i class="fa fa-comment-o"></i>
+                                        @foreach($arUsers as $arUser)
+                                          @if($arBlog->user_id == $arUser->id)
+                                              <a href="{{route('petfinder.profile.guestprofile', ['id' => $arUser->id])}}">{{$arUser->username}}</a>
+                                          @endif
+                                        @endforeach
+                                      </li>
+                                    </ul>
+                                    <div class="kode-blog-content">
+                                      <p><?php echo $arBlog->discription; ?></p>
+                                      <a class="kf-readmore" href="{{route('petfinder.petfinder.blogdetail', ['id' => $blog_id]) }}">Read More</a>
+                                    </div>
                                   </div>
                                 </div>
-                              </div>
-                            </article>
+                              </article>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-md-4 columns">
-                          <div class="kode-item kode-blog-medium">
-                            <article id="blog-med-112" class="kode_medium kode-simple-medium post-112 post type-post status-publish format-standard has-post-thumbnail hentry category-cats category-dogs category-pet tag-keeper tag-pet">
-                              <div class="kf_pet_news_wrap">
-                                <figure>
-                                  <div class="kode-blog-thumbnail">
-                                    <a href="{{$PUBLIC_URL}}img/pet_blog3.jpg" data-rel="prettyphoto[]" >
-                                      <img src="{{$PUBLIC_URL}}img/pet_blog3-350x350.jpg" alt="" width="350" height="350" />
-                                    </a>
-                                    <div class="kode-blog-thumbnail kode-audio"></div>
-                                  </div>
-                                  <figcaption class="kf_pet_news_link ">
-                                    <a href="http://kodeforest.net/wp-demo/petcare/foods-to-avoid-feeding-your-pet/">
-                                      <i class="fa fa-image"></i>
-                                    </a>
-                                  </figcaption>
-                                </figure>
-                                <div class="kf_pet_news_des">
-                                  <h5>
-                                    <a href="http://kodeforest.net/wp-demo/petcare/foods-to-avoid-feeding-your-pet/">Pets are like family</a>
-                                  </h5>
-                                  <ul>
-                                    <li class="blog-info blog-date">
-                                      <i class="fa fa-clock-o"></i>
-                                      <a href="http://kodeforest.net/wp-demo/petcare/2015/11/22/">10:17 am</a>
-                                    </li>
-                                    <li class="blog-info blog-comment">
-                                      <i class="fa fa-comment-o"></i>
-                                      <a href="http://kodeforest.net/wp-demo/petcare/foods-to-avoid-feeding-your-pet/#respond" >2 Comment</a>
-                                    </li>
-                                  </ul>
-                                  <div class="kode-blog-content">
-                                    <p>No vel nonumy viderer. Duo pertinax cotidieque at, eum te integre detraxit philosophia, quando dictas mea an. Pute</p>
-                                    <a class="kf-readmore" href="http://kodeforest.net/wp-demo/petcare/foods-to-avoid-feeding-your-pet/">Read More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </article>
-                          </div>
-                        </div>
+                        @endforeach
                       </div>
                     </div>
                   </div>
