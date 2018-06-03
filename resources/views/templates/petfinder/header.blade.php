@@ -172,11 +172,6 @@
         <div class="kf_pet_topbar">
             <div class="container">
                 <div class="kf_pet_callus">
-                    <ul class="kode_store_faq_area">
-                        <li><a href="#">Site Map</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Pricing</a></li>
-                    </ul>
                 </div>
                 <div class="kf_pet_ui_element">
                     <ul class="kode_pet_store_contct">
@@ -348,8 +343,8 @@
                                         </li>
 
                                         <li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674">
-                                                    <a href="#">Appointment</a>
-                                                </li>
+                                            <a href="#">Appointment</a>
+                                        </li>
 
                                        
                                         <li id="menu-item-790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-790">
@@ -366,7 +361,7 @@
                                             </ul>
                                         </li>
                                         <li id="menu-item-830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830">
-                                            <a href="#">Contact Us</a>
+                                            <a href="{{route('petfinder.petfinder.finder')}}">Pet Adoption</a>
                                         </li>
                                     </ul>
                                 </div>

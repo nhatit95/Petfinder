@@ -360,7 +360,10 @@
                             @endif
                           @endforeach
 
-                          <td>{{$discription}}</td>
+                          <!-- <td>
+                            <p><?php echo str_limit($discription,50); ?></p>
+                          </td> -->
+
                           <td>
                               @if($avatar == '')
                                   <img src="{{$nopicUrl}}" alt="" height="80px" width="80px" />

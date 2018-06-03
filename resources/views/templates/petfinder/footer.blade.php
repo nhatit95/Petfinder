@@ -28,14 +28,14 @@
               <div class="row">
                 <div id="petcare_address_widget-2" class="col-md-3 widget widget_petcare_address_widget kode-widget">
                   <div class="kf_pet_foo_addres widget">
-                    <h5 class="widget-title">Store Address</h5>
+                    <h5 class="widget-title">Address</h5>
                     <div class="clear"></div>
                     <ul>
                       <li>
                         <i class="fa fa-home"></i>
                         <div class="kf_pet_address">
                           <h5>Address:</h5>
-                          <p>121 King Street, Melbourn Australia</p>
+                          <p>121 Nguyen Luong Bang Street, Danang Vietnam</p>
                         </div>
                       </li>
                       <li>
@@ -43,7 +43,7 @@
                         <div class="kf_pet_address">
                           <h5>Email:</h5>
                           <a href="#">
-                            <span class="__cf_email__" data-cfemail="bdd4d3dbd2fdd6d2d9d8dbd2cfd8cec993ded2d0">[email&#160;protected]</span>
+                            <span class="__cf_email__" data-cfemail="bdd4d3dbd2fdd6d2d9d8dbd2cfd8cec993ded2d0">nhatnguyendut@gmail.com</span>
                           </a>
                         </div>
                       </li>
@@ -51,55 +51,59 @@
                         <i class="fa fa-phone"></i>
                         <div class="kf_pet_address">
                           <h5>Contact Us:</h5>
-                          <p>111 kodeforest</p>
+                          <p>(+84 169 213 7964)</p>
                         </div>
                       </li>
                     </ul>
                   </div>
                   <!--// TextWidget //-->
                 </div>
+                
                 <div id="meta-2" class="col-md-3 widget widget_meta kode-widget">
-                  <h5 class="widget-title">Information</h5>
-                  <div class="clear"></div>
-                  <ul>
-                    <li>
-                      <a href="http://kodeforest.net/wp-demo/petcare/wp-login.php">Log in</a>
-                    </li>
-                    <li>
-                      <a href="http://kodeforest.net/wp-demo/petcare/feed/">Entries 
-                        <abbr title="Really Simple Syndication">RSS</abbr>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="http://kodeforest.net/wp-demo/petcare/comments/feed/">Comments 
-                        <abbr title="Really Simple Syndication">RSS</abbr>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://en-ca.wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a>
-                    </li>
-                  </ul>
-                </div>
-                <div id="nav_menu-10" class="col-md-3 widget widget_nav_menu kode-widget">
-                  <h5 class="widget-title">MY ACCOUNT</h5>
+                  <h5 class="widget-title">Services</h5>
                   <div class="clear"></div>
                   <div class="menu-woocommerce-menu-container">
                     <ul id="menu-woocommerce-menu" class="menu">
-                      <li id="menu-item-822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-822">
-                        <a href="http://kodeforest.net/wp-demo/petcare/cart/">Cart</a>
-                      </li>
-                      <li id="menu-item-826" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-826">
-                        <a href="http://kodeforest.net/wp-demo/petcare/shop/">Shop</a>
-                      </li>
-                      <li id="menu-item-823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-823">
-                        <a href="http://kodeforest.net/wp-demo/petcare/checkout-page/">Checkout</a>
-                      </li>
-                      <li id="menu-item-824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-824">
-                        <a href="http://kodeforest.net/wp-demo/petcare/my-account/">My Account</a>
-                      </li>
+                      <ul class="dl-submenu">
+                        @foreach($arPostCats as $arPostCat)
+                            <?php 
+                                $cat_id = $arPostCat->cat_id;
+                            ?>
+                            <li id="menu-item-785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
+                                <a href="{{route('petfinder.petfinder.blog')}}">{{$arPostCat->cat_name}}</a>
+                            </li>
+                        @endforeach   
+                    </ul>
+                    </ul>
+                  </div>
+                </div> 
+
+                <div id="nav_menu-10" class="col-md-3 widget widget_nav_menu kode-widget">
+                  <h5 class="widget-title">Services</h5>
+                  <div class="clear"></div>
+                  <div class="menu-woocommerce-menu-container">
+                    <ul id="menu-woocommerce-menu" class="menu">
+                      <ul class="dl-submenu">
+                        @foreach($arServices as $arService)
+                            <?php 
+                                $service_id = $arService->service_id;
+                                $service_url = route('petfinder.petfinder.servicedetail', ['id' => $service_id]);
+                                if($service_id == 4){
+                                    $service_url = route('petfinder.petfinder.finder');
+                                }
+                            ?>
+
+                            <li id="menu-item-785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
+                                <a href="{{$service_url}}">{{$arService->service_name}}</a>
+                            </li>
+                        @endforeach   
+                    </ul>
                     </ul>
                   </div>
                 </div>
+                
+                 
+
                 <div id="kode_flickr_widget-3" class="col-md-3 widget widget_kode_flickr_widget kode-widget">
                   <h5 class="widget-title">Flickr Photos</h5>
                   <div class="clear"></div>
@@ -154,9 +158,9 @@
         </div>
         <!-- body-wrapper -->
 
-    <script type='text/javascript'>
+    <!-- <script type='text/javascript'>
     var wpcf7 = {"apiSettings":{"root":"http:\/\/kodeforest.net\/wp-demo\/petcare\/wp-json\/","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
-    </script>
+    </script> -->
     <script type='text/javascript'>
       var wc_add_to_cart_params = {"ajax_url":"\/wp-demo\/petcare\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp-demo\/petcare\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/kodeforest.net\/wp-demo\/petcare\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
     </script>

@@ -62,7 +62,7 @@
                                       </li>
                                     </ul>
                                   </div>
-                                  <p>{{$arPost->discription}}</p>
+                                  <p><?php echo str_limit($arPost->discription,100); ?></p>
                                   <?php $post_id = $arPost->post_id ?>
                                   <a href="{{ route('petfinder.petfinder.blogdetail', ['id' => $post_id]) }}" class="cp-btn-style3">Read More</a>
                                 </div>

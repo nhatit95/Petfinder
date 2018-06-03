@@ -492,6 +492,7 @@
                             <div class="kf_pet_cam_des">
                               <h5>
                                 <a style="color: #ff5e00; font-size: 22px;" href="{{route('petfinder.petfinder.petdetail', ['id' => $pet_id])}}"> {{$arPet->pet_name}}</a>
+                                <hr style="margin-top: 5px; margin-bottom: -11px;">
                               </h5>
                                 @foreach($arPetCats as $arPetCat)
                                   @if($arPet->cat_id  == $arPetCat->cat_id)

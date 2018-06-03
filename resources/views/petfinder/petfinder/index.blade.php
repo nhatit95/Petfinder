@@ -91,7 +91,7 @@
                             <div style="{{$arColor[$i]}}" class="kf_pet_service_wrap">
                               <i class="fa fa-globe"></i>
                               <h4>{{$arService->service_name}}</h4>
-                              <p style="color:#ffffff">Fun &#038; active dog walking service</p>
+                              <p style="color:#ffffff"><?php echo str_limit($arService->description,100); ?></p>
                               <?php 
                                   $service_id = $arService->service_id;
                                   $service_url = route('petfinder.petfinder.servicedetail', ['id' => $service_id]);
@@ -150,7 +150,7 @@
                               </div>
                               <div class="kf_looking_hover_wrap">
                                 <h5>{{$arService->service_name}}</h5>
-                                  <p>{{$arService->description}}</p>
+                                   <p><?php echo (str_limit($arService->description, 60)); ?></p>
                                 <a href="{{ route('petfinder.petfinder.servicedetail', ['id' => $arService->service_id]) }}" class="kf_pet_link_1 pet_sm_link">Learn More</a>
                               </div>
                             </div>
@@ -223,10 +223,11 @@
                         <p style="color:#333333">Ask us for appointment for your pet, we are just one phone call away.</p>
                       </div>
                     </div>
-                    <div  class="simple-column  " >
-                      <div role="form" class="wpcf7" id="wpcf7-f633-o1" lang="en-US" dir="ltr">
+                    <div  class="simple-column" >
+                      <div class="wpcf7" id="wpcf7-f633-o1" lang="en-US" dir="ltr">
                         <div class="screen-reader-response"></div>
-                        <form action="/wp-demo/petcare/#wpcf7-f633-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                        <form role="form" action="{{ route('petfinder.profile.guestmessageadd') }}" method="post" enctype="multipart/form-data">
+                              {{csrf_field()}}
                           <div style="display: none;">
                             <input type="hidden" name="_wpcf7" value="633" />
                             <input type="hidden" name="_wpcf7_version" value="4.8" />
@@ -240,14 +241,14 @@
                               <div class="col-md-6">
                                 <div class="kf_pet_field">
                                   <span class="wpcf7-form-control-wrap text-628">
-                                    <input type="text" name="text-628" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="First Name" />
+                                    <input type="text" required="true" name="mess_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Title" />
                                   </span>
                                 </div>
                               </div>
                               <div class="col-md-6">
                                 <div class="kf_pet_field">
                                   <span class="wpcf7-form-control-wrap text-628">
-                                    <input type="text" name="text-628" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Last Name" />
+                                    <input type="text" name="text-628" disabled="true" value="{{Auth::user()->fullname}}" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" />
                                   </span>
                                 </div>
                               </div>
@@ -265,49 +266,32 @@
                                   </span>
                                 </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="kf_pet_field">
-                                  <span class="wpcf7-form-control-wrap text-628">
-                                    <input type="text" name="text-628" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Pet Category" />
-                                  </span>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="kf_pet_field">
-                                  <span class="wpcf7-form-control-wrap text-628">
-                                    <input type="text" name="text-628" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Service Type" />
-                                  </span>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="kf_pet_field">
-                                  <span class="wpcf7-form-control-wrap text-628">
-                                    <input type="text" name="text-628" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Visiting Date" />
-                                  </span>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="kf_pet_field">
-                                  <span class="wpcf7-form-control-wrap text-628">
-                                    <input type="text" name="text-628" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Visiting Time" />
-                                  </span>
-                                </div>
                               </div>
                               <div class="col-md-12">
                                 <div class="kf_pet_field">
                                   <span class="wpcf7-form-control-wrap textarea-182">
-                                    <textarea name="textarea-182" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Anything we should know about youre pet?"></textarea>
+                                    <textarea id="mess_content" rows="5" name="mess_content" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Anything we should know about youre pet?"></textarea>
                                   </span>
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="kf_pet_field">
-                                  <input type="submit" value="get an appointment" class="wpcf7-form-control wpcf7-submit" />
+                                <div class="">
+                                  <button type="submit" class="btn btn-primary">Get an appointment</button>
                                 </div>
                               </div>
                             </div>
                           </div>
                           <div class="wpcf7-response-output wpcf7-display-none"></div>
+                            <div class="form-group" style="visibility: hidden;">
+                              <input type="text" class="form-control" name="from_id" value="{{Auth::user()->id}}" >
+                            </div>
+
+                            <div class="form-group" style="visibility: hidden;">
+                              <input type="text" class="form-control" name="to_id" value="20" >
+                            </div>
+                            <div class="form-group" style="visibility: hidden;">
+                              <input type="text" class="form-control" name="activity" value="Get an Appointment">
+                            </div>
                         </form>
                       </div>
                     </div>
@@ -708,7 +692,7 @@
               </div>
               <div class="clear"></div>
             </div> -->
-            <div id="content-section-7" >
+            <!-- <div id="content-section-7" >
               <div class=" kode-parallax-wrapper kode-background-image"  id="kode-parallax-wrapper-7" data-bgspeed="0" style=";background-image: url('{{$PUBLIC_URL}}img/petcare_progress_coutners_bg.jpg'); background-attachment: scroll; background-size: cover; background-repeat: no-repeat; padding-top: 74px; padding-bottom: 50px; " >
                 <style scoped>#kode-parallax-wrapper-7{ position:relative;}#kode-parallax-wrapper-7 .container{ position:relative;z-index:99999;}#kode-parallax-wrapper-7:before{background-color:#0c0c0c;opacity:0.75;content:"";position:absolute;left:0px;top:0px;height:100%;width:100%;}</style>
                 <div class="container">
@@ -800,7 +784,7 @@
                 </div>
               </div>
               <div class="clear"></div>
-            </div>
+            </div> -->
            <!--  <div id="content-section-8" >
               <div class=" kode-parallax-wrapper kode-background-color"  id="kode-parallax-wrapper-8"  style="padding-top: 70px; padding-bottom: 40px; ;background:#ffffff">
                 <div class="container">
@@ -1096,7 +1080,7 @@
                               <img src="{{$PUBLIC_URL}}img/pet_services_new11-350x350.jpg" alt="" width="350" height="350" />
                             </figure>
                             <div class="kf_pet_gallery_icon">
-                              <a data-gal="prettyphoto[]" href="{{$PUBLIC_URL}}img/pet_services_new11.jpg">
+                              <a data-gal="prettyphoto[]" href="{{$PUBLIC_URL}}img/pet_services_new11-350x350.jpg">
                                 <i class="fa fa-search"></i>
                               </a>
                               <a target="enable" href="">
@@ -1112,7 +1096,7 @@
                               <img src="{{$PUBLIC_URL}}img/pet_services_new10-350x350.jpg" alt="" width="350" height="350" />
                             </figure>
                             <div class="kf_pet_gallery_icon">
-                              <a data-gal="prettyphoto[]" href="{{$PUBLIC_URL}}img/pet_services_new10.jpg">
+                              <a data-gal="prettyphoto[]" href="{{$PUBLIC_URL}}img/pet_services_new10-350x350.jpg">
                                 <i class="fa fa-search"></i>
                               </a>
                               <a target="enable" href="">
